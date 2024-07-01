@@ -15,12 +15,15 @@
 *$image,redirect-rule=32x32.png:5,domain=djxmaza.in|thecubexguide.com|dev.miuiflash.com|jytechs.in
 @@*$ghide,domain=dev.miuiflash.com|djxmaza.in|thecubexguide.com|jytechs.in
 @@||googletagmanager.com^$script,domain=dev.miuiflash.com|djxmaza.in|thecubexguide.com|jytechs.in
-@@*$script,xhr,to=googlesyndication.com|doubleclick.net|fundingchoicesmessages.google.com,from=dev.miuiflash.com|djxmaza.in|thecubexguide.com|jytechs.in
-jytechs.in,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nowoif, _blank)
 @@||googlesyndication.com^$frame,domain=djxmaza.in|dev.miuiflash.com|thecubexguide.com|jytechs.in
-jytechs.in,dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
+@@*$script,xhr,to=googlesyndication.com|doubleclick.net|fundingchoicesmessages.google.com,from=dev.miuiflash.com|djxmaza.in|thecubexguide.com|jytechs.in
 ||devfiles.pages.dev/img/*.jpeg$image,domain=djxmaza.in|dev.miuiflash.com|thecubexguide.com|jytechs.in
+jytechs.in,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nowoif, _blank)
+jytechs.in,dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
 jytechs.in,djxmaza.in,miuiflash.com,thecubexguide.com##[href*="random-affiliate.atimaze.com"]
+jytechs.in,djxmaza.in,miuiflash.com,thecubexguide.com##+js(rpnt, script, /about|aboutdis|div-gpt-ad-|iframe|featuredimage|google_ads_/, form, condition, getComputedStyle)
+jytechs.in,djxmaza.in,miuiflash.com,thecubexguide.com##+js(rpnt, script, /window\.getComputedStyle(.+)/, window.getComputedStyle(row))
+jytechs.in,dev.miuiflash.com,djxmaza.in,thecubexguide.com##[id*="gpt_unit"], [id*="div-gpt-"], [id*="google_ads_"], [id*="ad_"], [class*="Google"], [alt*="Advertisement"], [class*="ads"]:style(display: block !important; visibility: visible !important;)
 jytechs.in,djxmaza.in,miuiflash.com,thecubexguide.com#@##featuredimage
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/rr818d/
@@ -2598,22 +2601,14 @@ magicgameworld.com##+js(aost, document.getElementById, adsBlocked)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120124
 @@||up-cripto.com^$script,1p
 
-! https://github.com/AdguardTeam/AdguardFilters/issues/120351
-! https://github.com/AdguardTeam/AdguardFilters/issues/120120
-#@##iqadtile5
-###iqadtile5:not(:empty)
-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120307
 netflav.com##.video_iframe_overlay_absolute_background_container
-missav.com##div[x-show="showBanner"]
+missav.*,missav123.com,missav789.com,myav.com##div[x-show="showBanner"]
 ! https://github.com/uBlockOrigin/uAssets/issues/16375
 ! https://github.com/AdguardTeam/AdguardFilters/issues/182426
-missav.com,missav123.com,missav789.com,myav.com##+js(acs, document.createElement, htmlAds)
-missav.com,missav123.com,missav789.com,myav.com##+js(nowoif)
-missav.com,missav123.com,missav789.com,myav.com##^script:has-text(htmlAds)
-
-! animexstream. tk popups
-animexstream.*##+js(aopr, __Y)
+missav.*,missav123.com,missav789.com,myav.com##+js(acs, document.createElement, htmlAds)
+missav.*,missav123.com,missav789.com,myav.com##+js(nowoif)
+missav.*,missav123.com,missav789.com,myav.com##^script:has-text(htmlAds)
 
 ! wilifilm.net popup
 wilifilm.net##+js(aopr, BetterJsPop)
@@ -5407,3 +5402,11 @@ sportskart.*##^script:has-text(u_cfg)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/170100
 cdnm4m.nl##+js(nowoif)
+
+! https://listauthorschat.slack.com/archives/C05G8V3NERH/p1719797252047079
+||html-load.com/loader.min.js^$script,3p,domain=wfmz.com
+!#if cap_html_filtering
+wfmz.com##^script[onload*="error-report.com"]
+!#else
+||wfmz.com^$csp=script-src-attr 'none'
+!#endif
