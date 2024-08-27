@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Thu, 14 Mar 2024 15:07:06 +0000
+! Last modified: Tue, 27 Aug 2024 13:03:51 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -7,6 +7,17 @@
 !
 ! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
 ! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
+
+! START: Exceptions to generic cosmetic filters
+! https://github.com/uBlockOrigin/uBOL-home/issues/181
+
+! https://github.com/uBlockOrigin/uAssets/issues/24959
+@@||proininews.gr^$ghide
+proininews.gr##ins.adsbygoogle[data-ad-slot]
+proininews.gr##ins.adsbygoogle[data-ad-client]
+proininews.gr##.single-ads
+
+! END: Exceptions to generic cosmetic filters
 
 ! https://github.com/uBlockOrigin/uBOL-issues/issues/8
 ||pushbullet.com^$3p,badfilter
@@ -50,7 +61,7 @@ spankbang.com,spankbang.mov##+js(nowoif)
 ||gstatic.com/adx/doubleclick.ico$image,3p,redirect=32x32.png
 
 ! https://github.com/uBlockOrigin/uBOL-issues/issues/26
-@@||succeedscene.com/ads_*/ads.load.js$script
+||succeedscene.com/ads_*/ads.load.js$script,3p,redirect=noop.js
 
 ! https://github.com/uBlockOrigin/uAssets/commit/2da9930ccf5816a4c99d55bfd0f8b322ffd2d834
 ! https://github.com/uBlockOrigin/uAssets/issues/16945
@@ -63,3 +74,15 @@ spankbang.com,spankbang.mov##+js(nowoif)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/11h42bd/anti_adblocker_on_a_switch_rom_site_of_all_places/
 nsw2u.com##+js(aeld, , Adb)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1djhn6p/ubo_lite_missed_some_ads/
+*$script,3p,from=ovagames.com,to=~facebook.net|~fbcdn.net
+
+! https://github.com/uBlockOrigin/uBOL-home/issues/157
+*$script,3p,from=minoplres.xyz,to=~jwpcdn.com
+
+! https://github.com/uBlockOrigin/uBOL-home/issues/177
+!#if env_chromium
+||cbsnews.com^$csp=worker-src 'none'
+cbsnews.com##+js(rpnt, script, var CBSNEWS =, navigator.serviceWorker.getRegistrations().then((registrations=>{for(const registration of registrations){if(registration.scope.includes("cbsnews.com")){registration.unregister()}}}));var CBSNEWS =)
+!#endif
