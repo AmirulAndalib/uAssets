@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Tue, 27 Aug 2024 13:03:51 +0000
+! Last modified: Wed, 28 Aug 2024 07:15:42 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -16,6 +16,9 @@
 proininews.gr##ins.adsbygoogle[data-ad-slot]
 proininews.gr##ins.adsbygoogle[data-ad-client]
 proininews.gr##.single-ads
+
+! https://github.com/uBlockOrigin/uAssets/issues/25086
+@@||idlixofficialx.net^$ghide
 
 ! END: Exceptions to generic cosmetic filters
 
