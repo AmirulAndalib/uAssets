@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 29 Aug 2024 02:24:42 +0000
+! Last modified: Thu, 29 Aug 2024 20:25:04 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1731,6 +1731,7 @@ newsshopper.co.uk###po-inline-article-above
 angioproteomie.com,artdaily.cc,radioandmusic.com,researchnews.cc###popup
 focus-gesundheit.de###popup-background
 kyivindependent.com###popup-banner-subscription-ecom
+kyivindependent.com###popup-banner-subscription-store
 inhope.org###popup-home
 peoplesworld.org###popupModal
 nitrokey.com###popup_newsletter
