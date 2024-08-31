@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Thu, 29 Aug 2024 20:25:04 +0000
+! Last modified: Sat, 31 Aug 2024 03:55:45 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -55,6 +55,8 @@ vidsrc.*##+js(nosiif, /0x|sandCheck/)
 vidsrc.*##+js(nowoif)
 vidsrc.*##+js(aopr, __Y)
 vidsrc.*##+js(aopr, AaDetector)
+vidsrc.*##+js(rmnt, script, adserverDomain)
+vidsrc.*##^script:has-text(/\{delete window\[/)
 vidsrc.*###pop_asdf
 ||vidsrc.pro/uwu-js^$script
 embed.smashystream.com###addiv
@@ -550,6 +552,7 @@ jpopsingles.eu##+js(acs, document.createElement, break;case)
 jpopsingles.eu##+js(aeld, DOMContentLoaded, document.documentElement.lang.toLowerCase)
 jpopsingles.eu##+js(rmnt, script, adsSrc)
 jpopsingles.eu##+js(no-fetch-if, ads, length:10, {"type": "cors"})
+jpopsingles.eu##+js(aost, atob, injectedScript)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1932
 megawarez.org##+js(aopw, smrtSB)
@@ -666,6 +669,22 @@ imasdk.googleapis.com##+js(no-fetch-if, secure.adnxs.com/ptv, war:noop-vast4.xml
 imasdk.googleapis.com##+js(xml-prune, VAST, , adnxs)
 !#endif
 
+! https://github.com/uBlockOrigin/uAssets/issues/2449
+! https://github.com/AdguardTeam/AdguardFilters/issues/147765
+! https://github.com/uBlockOrigin/uAssets/issues/13169
+a2zapk.*##+js(acs, atob, decodeURIComponent)
+a2zapk.*##+js(aopr, AaDetector)
+a2zapk.*##+js(set, notifyMe, noopFunc)
+||a2zapk.*/js/notification.js
+@@||a2zupload.com^$ghide
+@@||googlesyndication.com/pagead/$script,domain=a2zupload.com
+@@*$image,domain=a2zupload.com
+a2zapk.*,a2zupload.com##ins.adsbygoogle
+a2zapk.*,educatiocenter.online##+js(acs, $, alertmsg)
+@@||dl.a2zapk.*/getred.php$xhr,domain=a2zapk.*|educatiocenter.online
+@@||tmp.a2zapk.*/js/advertisement/$frame,domain=a2zapk.*|educatiocenter.online
+||googlesyndication.com^$image,redirect-rule=1x1.gif,domain=a2zapk.*|educatiocenter.online
+
 ! END: Rules from filters.txt
 
 ! START: Regional lists
@@ -689,6 +708,7 @@ bydleni.cz###clickLeft
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24614
 wiflix-catalogue.pro#@#a[href*=".php"]
+wiflix-catalogue.*##.btnnew
 
 ! <<<<< Oficjalne polskie filtry przeciwko alertom o Adblocku >>>>>
 ! https://www.reddit.com/r/uBlockOrigin/comments/1e6cknh/website_slow_my_down/
@@ -866,9 +886,9 @@ onlyfaucet.com##+js(rmnt, script, /fetch|adb/i)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21956
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$xhr,domain=mtv.it|mtv.de|mtv.co.uk|mtvema.com
-||imasdk.googleapis.com/pal/sdkloader/pal.js$redirect-rule=noop.js,domain=mtv.it|mtv.de|mtv.co.uk|mtvema.com
+||imasdk.googleapis.com/pal/sdkloader/pal.js$redirect=noop.js,domain=mtv.it|mtv.de|mtv.co.uk|mtvema.com
 ! https://github.com/uBlockOrigin/uAssets/issues/21981
-||imasdk.googleapis.com^$script,xhr,3p,redirect-rule=noopjs,domain=mtv.nl
+||imasdk.googleapis.com^$script,xhr,3p,redirect=noopjs,domain=mtv.nl
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21966
 timesnewsgroup.com.au##+js(acs, $, popup)
@@ -887,7 +907,7 @@ livecamrips.com##+js(rmnt, script, window.open)
 exactlyhowlong.com##+js(noeval-if, ads)
 
 ! https://sportitalialive.com/video/viewlivestreaming?rel=9&cntr=0 anti-adb
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima.js,domain=sportitalialive.com
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=sportitalialive.com
 sportitalialive.com##+js(nostif, ads)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21992
@@ -906,8 +926,8 @@ digter8.com##+js(acs, eval, replace)
 @@||sultanovic.info^$ghide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22016
-||jads.co^$script,3p,redirect-rule=noopjs,domain=2th.me
-||juicyads.com^$image,3p,redirect-rule=1x1.gif,domain=2th.me
+||jads.co^$script,3p,redirect=noopjs,domain=2th.me
+||juicyads.com^$image,3p,redirect=1x1.gif,domain=2th.me
 2th.me##.pc-container
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/170718
@@ -1017,7 +1037,7 @@ hole-io.com##.webgl-content:style(width: 100% !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22190
 @@||servedbyadbutler.com/vast.spark$xhr,3p,domain=freerideworldtour.com
-||servedbyadbutler.com^$media,3p,redirect-rule=noopmp3-0.1s,domain=freerideworldtour.com
+||servedbyadbutler.com^$media,3p,redirect=noopmp3-0.1s,domain=freerideworldtour.com
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/171445
 x-x-x.tube##+js(aopr, popns)
@@ -1222,10 +1242,6 @@ looptorrent.org##+js(aopr, checkAdsStatus)
 ! https://github.com/uBlockOrigin/uAssets/issues/22462
 pornovka.cz##+js(acs, document.querySelectorAll, popMagic)
 pornovka.cz##+js(no-fetch-if, ads)
-
-! https://musichq.pe/ - popup
-musichq.pe##+js(rmnt, script, shown_at)
-musichq.pe##+js(nowoif)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1aop550/voxiomio_is_detecting_ublock_origin/
 ||voxiom.io^$xhr,1p,redirect-rule=nooptext
@@ -2833,8 +2849,10 @@ pawastreams.info###adcash
 pawastreams.info###dismiss-btn
 
 ! https://community.brave.com/t/video-streamer-doesnt-work-only-on-brave/562140 - ads
+! https://github.com/AdguardTeam/AdguardFilters/issues/187395
 autoembed.cc,whisperingauroras.com##+js(aopr, AaDetector)
-oaaxpgp3.xyz##+js(nowoif)
+autoembed.cc,oaaxpgp3.xyz##+js(nowoif)
+nontongo.win##+js(rmnt, script, popundersPerIP)
 oaaxpgp3.xyz##+js(acs, Math, localStorage['\x)
 ||lashahib.net^
 ||s0-greate.net^$3p
@@ -3049,3 +3067,26 @@ paste.fo##style:has-text(/background\: url\(https/):remove()
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1f3ui8r/adblock_detected/
 serviceemmc.com##+js(aopr, checkAdsStatus)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25118
+! https://github.com/uBlockOrigin/uAssets/issues/25119
+cineplateforme.*,cpasfo.*##.g-buttons
+cpasfo.*###cn-content
+cineplateforme.cc###playerOver
+
+! https://github.com/uBlockOrigin/uAssets/issues/22145
+.gif$image,domain=sadisflix.*
+sadisflix.*##a[href^="https://shorturl.at/"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/25121
+giga-streaming.com##+js(rmnt, script, popundersPerIP)
+giga-streaming.com##^script[data-cfasync]:has-text(popundersPerIP)
+giga-uqload.xyz##+js(nostif, afterOpen)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25122
+! https://github.com/uBlockOrigin/uAssets/commit/a7c3807f5e12d5a8882f5d645a206249fb8fe0cb#r146053763
+||player.kick.com^$frame,3p,domain=interactivemap.app
+||interactivemap.app/admin/api/sidebarframeleft/$subdocument,1p
+interactivemap.app###streamers
+interactivemap.app##.footer
+interactivemap.app##.sidebar-tabs-panels:style(max-height: 700px !important;)
