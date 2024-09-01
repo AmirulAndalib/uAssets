@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2023)
-! Last modified: Sat, 31 Aug 2024 15:27:57 +0000
+! Last modified: Sun, 01 Sep 2024 08:18:07 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -190,6 +190,7 @@ sportfacts.net,sportshub.to,sportnews.to##+js(no-xhr-if, googlesyndication)
 ||sportnews.to/fox/plugins/block/js/$script
 sportfacts.net,sportnews.to##+js(aopr, antiAdBlockerHandler)
 topsporter.net##+js(no-fetch-if, /^/)
+sportnews.to#@#.ads-by-google
 
 ! https://github.com/uBlockOrigin/uAssets/issues/16320
 seznam.cz##.banner-wrapper:upward(2):remove()
@@ -4910,8 +4911,9 @@ trainerscity.com##+js(rpnt, script, startTime: '5', startTime: '0')
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20321
 speedrun.com##+js(json-prune, session.showAds)
-||speedrun.com/cargo.js^$script,1p
 ||speedrun.com/api/v2/PutSessionPing^$xhr,1p,method=post
+||new-skip.speedrun.com/d?upapi=true^$1p,method=post
+||new-skip.speedrun.com/v?upapi=true^$1p,method=post
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20322
 biletomat.pl##+js(set, toggleAdBlockInfo, falseFunc)
@@ -5445,6 +5447,7 @@ sonixgvn.net##+js(aeld, DOMContentLoaded, overlays)
 ||sonixgvn.net/cdn-cgi/zaraz/s.js^$script,1p,important
 ||sonixgvn.net/wp-content/plugins/adrotate/$script,1p,important
 ||sonixgvn.net/cdn-cgi/apps/head/$script,1p,important
+||cdn.vlitag.com^$script,domain=sonixgvn.net,redirect=noopjs
 
 ! basketballbuzz .ca anti-adb
 basketballbuzz.ca##+js(rmnt, script, deblocker)

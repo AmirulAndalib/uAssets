@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sat, 31 Aug 2024 15:27:57 +0000
+! Last modified: Sun, 01 Sep 2024 08:18:07 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8908,10 +8908,10 @@ jav.guru###text-92
 jav.guru###text-93
 /cdn-cgi/trace$xhr,1p,domain=abysscdn.com|playhydrax.com
 abysscdn.com##div[style*="z-index:100000"]
-abysscdn.com##+js(aopr, document.onclick)
-abysscdn.com##+js(aopr, document.ontouchend)
 abysscdn.com##.playover
-abysscdn.com###overlay
+abysscdn.com,playhydrax.com##+js(set, document.ontouchend, null)
+abysscdn.com,playhydrax.com##+js(set, document.onclick, null)
+abysscdn.com,playhydrax.com###overlay
 playhydrax.com##+js(rpnt, script, (isNoAds), (true))
 @@*$ghide,domain=kimcartoon.*|kisscartoon.se|kc.linksgen.com
 kimcartoon.*###disAdb1
@@ -9391,7 +9391,7 @@ qwant.com##div[data-testid="pam.container"]:style(max-height: 1px !important; op
 @@||qwant.com^$ping,1p
 @@||spite.cz^$ghide
 civitai.com##+js(no-fetch-if, googlesyndication)
-civitai.com##[data-aa-adunit]:upward(.mantine-Paper-root):remove()
+civitai.com##div.shadow:has(a[href="/pricing"] img[alt="Please support civitai and creators by disabling adblock"])
 civitai.com##.mantine-Paper-root > .mantine-Stack-root:has-text(Become a supporter):upward(.mantine-Paper-root)
 ||ads.civitai.com^$script,1p,redirect-rule=noopjs
 ||d3mw273ubcaiex.cloudfront.net/images/ad/$image
@@ -9429,7 +9429,6 @@ linkos.info,photogen.hair,sharedrive.*##+js(nowoif)
 pictoa.com##+js(aopw, tiPopAction)
 sunci.net,yoykp.com##+js(aopr, app_vars.please_disable_adblock)
 sunci.net,yoykp.com##+js(acs, navigator, FingerprintJS)
-||d3o9njeb29ydop.cloudfront.net^
 ! trigonevo .com anti-adb
 trigonevo.com##+js(acs, eval, replace)
 trigonevo.com##+js(rmnt, script, deblocker)
@@ -10350,7 +10349,6 @@ autoembed.cc,whisperingauroras.com##+js(aopr, AaDetector)
 autoembed.cc,oaaxpgp3.xyz##+js(nowoif)
 nontongo.win##+js(rmnt, script, popundersPerIP)
 oaaxpgp3.xyz##+js(acs, Math, localStorage['\x)
-||lashahib.net^
 ||s0-greate.net^$3p
 ||track.torarymor.world^$doc
 @@||dash3.cashvib.com^$ghide
@@ -10414,7 +10412,9 @@ javsek.net##+js(nosiif, pop)
 $script,3p,denyallow=facebook.net|fbcdn.net,domain=javsek.net
 melaniezettofrais.online##+js(nostif, sandbox)
 1jour1film.cyou###fakeplayer
-jokersportshd.org,tennis.stream##+js(nowoif, /aff|jump/)
+jokerscores.com,jokersportshd.org,tennis.stream##+js(nowoif, /aff|jump/)
+||clearonclick.com^$popup
+||clearonclick.com^
 @@||101soundboards.com^$ghide
 101soundboards.com##[id^="rewarded_ad_"]:not(#rewarded_ad_blocker):style(display: block !important; visibility: visible !important;)
 101soundboards.com##+js(no-fetch-if, googlesyndication)
@@ -10436,7 +10436,6 @@ movieweb.com,screenrant.com,thegamer.com#@#.video
 kaas.ro##+js(aopr, aclib)
 kaas.ro##+js(aopr, Adcash)
 vidco.pro##+js(rmnt, script, adserverDomain)
-||gruwzapcst.com^
 mlbbox.me##.position-absolute
 mlbbox.me,kenitv.me##+js(acs, EventTarget.prototype.addEventListener, delete window)
 mlbbox.me,kenitv.me##+js(acs, document.documentElement, break;case $.)
@@ -10472,7 +10471,9 @@ cineplateforme.cc###playerOver
 .gif$image,domain=sadisflix.*
 sadisflix.*##a[href^="https://shorturl.at/"]
 giga-streaming.com##+js(rmnt, script, popundersPerIP)
+giga-streaming.com##+js(nowoif)
 giga-streaming.com##^script[data-cfasync]:has-text(popundersPerIP)
+giga-streaming.com##.popup-overlay
 giga-uqload.xyz##+js(nostif, afterOpen)
 ||player.kick.com^$frame,3p,domain=interactivemap.app
 ||interactivemap.app/admin/api/sidebarframeleft/$frame,1p
@@ -10485,6 +10486,8 @@ plasticsnews.com##body.has-interstitial-ads .has-interstitial-ads-page, body.has
 ! watchwrestlingup. org ads
 educ4m.com,fromwatch.com,visualnewshub.com##+js(rmnt, script, popundersPerIP)
 pak-mcqs.net##+js(aopw, _pop)
+visalist.io##+js(no-fetch-if, adsbygoogle)
+multimovies.*###clickfakeplayer:remove-attr(href)
 ! Link shortener filters go into their own dedicated list
 ! *** filters/ubo-link-shorteners.txt ***
 ! gplinks all domains (gplinks.co/EWu8)
@@ -14903,7 +14906,6 @@ cine-calidad.*##+js(ra, href, #opfk)
 cine-calidad.*##.links
 cambb.xxx##.thumb div.ad:upward(.thumb)
 cambb.xxx,nudecams.xxx##+js(no-xhr-if, googlesyndication)
-cambb.xxx,nudecams.xxx##+js(set, adbPopup, noopFunc)
 cambb.xxx,nudecams.xxx###adb
 embed.indavideo.hu##+js(set, AdHandler.adblocked, 0)
 sexgames.xxx##+js(aopr, loadTool)
@@ -17751,7 +17753,7 @@ seopolarity.com##.sidebar_adds
 mmorpg.org.pl##+js(no-fetch-if, wtg-ads)
 mmorpg.org.pl##div.bABcMb.sc-5odcub-0
 hostmath.com##+js(set, canRunAds, true)
-hdmovie20.com##+js(ra, href, #clickfakeplayer)
+hdmovie2.*,hdmovie20.com,hdmovie22.com###clickfakeplayer[href]:remove-attr(href)
 playmyopinion.com##+js(acs, $, modal)
 ! xvideos.wptri.com popup
 xvideos.wptri.com##+js(nowoif)
@@ -19066,7 +19068,6 @@ veryfreeporn.com##^script:has-text(popMagic)
 veryfreeporn.com##.js-mob-popup
 uporn.icu##+js(acs, decodeURI, decodeURIComponent)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=goodstream.*
-hdmovie2.*##+js(ra, href, #clickfakeplayer)
 ! moviewatch .com.pk ads
 moviewatch.com.pk##+js(aopw, atOptions)
 moviewatch.com.pk##+js(acs, document.createElement, appendChild)
@@ -19092,6 +19093,7 @@ voirseries.*##.salidor_inner
 voirseries.*###playerOver
 netu.*###qdiv
 .com/add.php^$xhr,3p
+voirseries.*##.report-pub
 *$script,redirect-rule=noopjs,domain=feyorra.site
 ! hh3dhay.xyz/com popup
 hh3dhay.com##.float-ck-center-lt
@@ -20681,6 +20683,7 @@ sportfacts.net,sportshub.to,sportnews.to##+js(no-xhr-if, googlesyndication)
 ||sportnews.to/fox/plugins/block/js/$script
 sportfacts.net,sportnews.to##+js(aopr, antiAdBlockerHandler)
 topsporter.net##+js(no-fetch-if, /^/)
+sportnews.to#@#.ads-by-google
 seznam.cz##.banner-wrapper:upward(2):remove()
 seznam.cz##[data-draggable-target]:has-text(Rekl):not(*:has([href*="radio"]))
 seznam.cz##.sticky-content:has-text(Reklama)
@@ -23411,8 +23414,9 @@ ymovies.vip##+js(aopr, mm)
 ||ymovies.vip/sab_*.html$frame
 trainerscity.com##+js(rpnt, script, startTime: '5', startTime: '0')
 speedrun.com##+js(json-prune, session.showAds)
-||speedrun.com/cargo.js^$script,1p
 ||speedrun.com/api/v2/PutSessionPing^$xhr,1p,method=post
+||new-skip.speedrun.com/d?upapi=true^$1p,method=post
+||new-skip.speedrun.com/v?upapi=true^$1p,method=post
 biletomat.pl##+js(set, toggleAdBlockInfo, falseFunc)
 ||biletomat.pl/en/api/process_order_lite^$xhr,1p,removeparam=http_referer
 @@||matchendirect.fr^$ghide
@@ -23694,6 +23698,7 @@ sonixgvn.net##+js(aeld, DOMContentLoaded, overlays)
 ||sonixgvn.net/cdn-cgi/zaraz/s.js^$script,1p,important
 ||sonixgvn.net/wp-content/plugins/adrotate/$script,1p,important
 ||sonixgvn.net/cdn-cgi/apps/head/$script,1p,important
+||cdn.vlitag.com^$script,domain=sonixgvn.net,redirect=noopjs
 ! basketballbuzz .ca anti-adb
 basketballbuzz.ca##+js(rmnt, script, deblocker)
 ! dribbblegraphics .com anti-adb
