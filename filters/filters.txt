@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: Wed, 04 Sep 2024 03:44:57 +0000
+! Last modified: Fri, 06 Sep 2024 18:42:07 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -5032,14 +5032,6 @@ transparentcalifornia.com##+js(set, $.magnificPopup.open, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/2832
 klartext-ne.de##+js(acs, document.addEventListener, google_ad_client)
 
-! https://github.com/uBlockOrigin/uAssets/issues/2812
-! https://github.com/NanoMeow/QuickReports/issues/353
-titsbox.com##+js(aeld, click, exopop)
-titsbox.com##+js(nowoif)
-*$script,3p,domain=titsbox.com
-titsbox.com##[class*="banners"]
-||titsbox.com/iframe/*_NTV_
-||titsbox.com/js/pns.min.js
 ! https://github.com/uBlockOrigin/uAssets/issues/1121
 zmovs.com##+js(nowoif)
 zmovs.com##+js(aopr, ALoader)
@@ -7888,6 +7880,7 @@ cambro.tv##[href^="https://t.grtya.com/"]
 ||widgets.skyprivate.com/promo/$frame
 cambro.tv##+js(set, flashvars.logo_url, '')
 cambro.tv##+js(set, flashvars.logo_text, '')
+cambro.tv##+js(acs, document.querySelectorAll, popMagic)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5061
 ! https://github.com/uBlockOrigin/uAssets/issues/7043
@@ -8603,15 +8596,6 @@ imgdawgknuttz.com##+js(aopr, Pub2a)
 *$frame,3p,domain=imgdawgknuttz.com
 *$script,3p,domain=imgdawgknuttz.com
 ||trifms.com^
-
-! https://github.com/uBlockOrigin/uAssets/issues/5450
-@@||javsubtitle.co^$ghide
-javsubtitle.co###impanel
-javsubtitle.co###mimpanel
-javsubtitle.co##.boxAds
-javsubtitle.co##.boxAds2
-javsubtitle.co##.header-ads
-javsubtitle.co##.mid-ads
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5454
 @@||iphonetweak.fr^$ghide
@@ -10446,7 +10430,6 @@ secretsdujeu.com##+js(acs, document.getElementById, adsrefresh)
 
 ! https://github.com/NanoMeow/QuickReports/issues/3098
 cruisingearth.com##+js(nostif, show)
-@@/wutime$script,1p
 
 ! https://github.com/NanoMeow/QuickReports/issues/1738
 @@||roanoke.com^$ghide
@@ -11390,12 +11373,13 @@ desired.de##+js(ra, data-ivad-preroll-adtag, video, stay)
 ||stern.de/__assets/homad
 ||static.kicker.de/content/js/vendor/homad
 spiegel.de##^script:has-text(homad)
-welt.de,~dutyfarm.welt.de##+js(json-prune, vastUrl)
-welt.de,~dutyfarm.welt.de##div[id][style^="z-index: 2"][style*="margin"][style*="auto"][style*="top"][style$="px; position: absolute;"]:remove()
 giga.de,kino.de,spieletipps.de##+js(rpnt, script, /\"homad\"\,/)
 t-online.de##+js(rpnt, script, /\"homad\":\{\"state\":\"enabled\"\}/, "homad":{"state":"disabled"})
 !#if !cap_html_filtering
+welt.de,~dutyfarm.welt.de##div[id][style^="z-index: 2"][style*="margin"][style*="auto"][style*="top"][style$="px; position: absolute;"]:remove()
 spiegel.de##+js(rmnt, script, homad)
+!#else
+||welt.de/homadConfigEnabled.json$xhr,replace=/"enabled":true/"enabled":false/
 !#endif
 plus.rtl.de##+js(json-prune, adReinsertion)
 tvspielfilm.de,tvtoday.de,chip.de,focus.de##+js(set, DL8_GLOBALS.enableAdSupport, false)

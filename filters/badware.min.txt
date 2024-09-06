@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Wed, 04 Sep 2024 03:44:57 +0000
+! Last modified: Fri, 06 Sep 2024 18:42:07 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -647,6 +647,18 @@ tech4yougadgets.com##+js(aopr, Notification)
 .info/?key=*&pixel=$doc
 /?z=*&syncedCookie=true&rhd=false$doc,popup
 ||snapbabes9.com^$all
+||matcher.one^$all
+||onlyhotdgirl.com^$all
+||playfulmilfs.com^$all
+||wooqi.win^$all
+||chemiclk.com^$all
+||techluki.com^$all
+||lovestrive.org^$all
+||vcnbbtrack.com^$all
+||zodertracker.com^$all
+||latenightlovers.com^$all
+||clickrotate.net^$all
+||date2night.b-cdn.net^$all
 ||mikkim.top^$all
 ||discordvip.createsocialcard.top^$all
 ^s1=*&click_id=$doc
@@ -3280,6 +3292,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||mybluehost.me/*/amendes.org/$doc,to=~amendes.gouv.fr
 ||amz.boy.mybluehost.me^$doc,to=~amendes.gouv.fr
 ||wcomhost.com/amendes-gouv/$doc,to=~amendes.gouv.fr
+||wcomhost.com/impots-gouv/$doc,to=~impots.gouv.fr
+||impotsgouv.*.wcomhost.com^$doc,to=~impots.gouv.fr
 /am/*.php^$doc,to=arubabusiness.it|mybluehost.me|wcomhost.com|~amendes.gouv.fr
 ||fi/a/Amendes/*.php^$doc,to=fi|~amendes.gouv.fr
 ||fi/part/Amendes/*.php^$doc,to=fi|~amendes.gouv.fr
@@ -3356,7 +3370,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||sites.google.com/view/expressdhl^$all,to=~dhl.com
 ||xn--d1aqfkf.xn--p1ai/bitrix/.../GlobalSources/$all,to=~dhl.com
 ||app.farmaciadelmonestironline.com/SER/dnkdl/$all,to=~dhl.com
-||solutionfun.info^$all
 ||leatherqueen.shop^$all
 ||dhl-express-ppd.infanion.com^$all,to=~dhl.com
 ||elementor.cloud/*/ENGHUY645/$doc,to=~dhl.com
@@ -3605,6 +3618,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||uspsparcels.net^$all,to=~usps.com
 ||freeusps.com^$all,to=~usps.com
 ||netusps.com^$all,to=~usps.com
+||uspssmartpackagelockers.com^$all,to=~usps.com
 /^https:\/\/usps\.[-a-z]{6,}\.(?:com|top)\/(?:address\.html|information|verify)\b/$doc,to=com|top|~usps.com
 /^https:\/\/ur[cex][a-z]{2,4}\.com\/(?:address\.html|information|verify)\b/$doc,to=com|~usps.com
 .top/pg?do=$doc,to=top
@@ -3784,7 +3798,6 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||cprapid.com^$doc
 ||utahpolicetraining.*.mybluehost.me^$all
 ||mybluehost.me/*/choronopost/$doc,to=~chronopost.fr
-||dropbox*.weebly.com^$doc
 /^https:\/\/([a-z]-){10,15}[a-z]\.(?:com|net|org)\.tr\//$doc,to=com.tr|net.tr|org.tr
 /views/go/start.php^$doc
 /^https:\/\/pub-[a-f0-9]{32}\.r2\.dev/be[a0-9]\d{2,3}\.html\b/$doc,match-case,to=r2.dev
@@ -3799,11 +3812,13 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||smrturl.co/o/*/53458494^$doc
 ||play.huikzkw.top^$doc,to=~dbsvickers.com
 ||agripro-fr-*.com^$doc,to=~agriaffaires.com
+||notifyhubss.net^$doc
 ! docusign.com
 ||signature-rho.vercel.app^$all,to=~docusign.com
 ||roycamining.com/pdeb/Untitled/$all,to=~docusign.com
 ||msoft_docusign_verification_secured-doc_office.zatrdg.com^$all,to=~docusign.com
 ||f1nancier.com^$doc
+||myvalue365.com/calender/css/images/$doc,to=~docusign.com
 ||pub-*.r2.dev/alt_type.html^$doc,to=~docusign.com
 ||pub-*.r2.dev/auth_gen.html^$doc,to=~docusign.com
 ||pub-*.r2.dev/auth_response.html^$doc,to=~docusign.com
@@ -3900,7 +3915,6 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||pddgov.cc^$all,to=~gov.vn
 ||vssid.*.cc^$doc,to=~baohiemxahoi.gov.vn
 ||kbthuhoivontreo.com^$all,to=~vst.mof.gov.vn
-||giaohangtietkiem247.com^$all,to=~giaohangtietkiem.vn
 ||cct-giaohangtietkiem.com^$all,to=~giaohangtietkiem.vn
 ||sendotv.shop^$all,to=~sendo.vn
 ||vnsendotv.vip^$all,to=~sendo.vn
@@ -3914,6 +3928,19 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||nzx65821s.com^$all,to=~shopee.vn
 ||congtygiaohangtietkiemvn.com^$all,to=~giaohangtietkiem.vn
 ||giaohangtietkiemvn.com^$all,to=~giaohangtietkiem.vn
+||hethongnoibo.bio.link^$all,to=~lazada.vn
+||sendovn.shop^$all,to=~sendo.vn
+||kpd63519s.com^$all,to=~shopee.vn
+||vnpttechnology.weebly.com^$all,to=~vnpt.com.vn
+||baovietvc.top^$all,to=~baovietbank.vn
+||baoviet*.top^$doc,to=~baovietbank.vn
+||nhanvienghtk.com^$all,to=~giaohangtietkiem.vn
+||giaohangtietkiem247.*^$all,to=giaohangtietkiem247.*|~giaohangtietkiem.vn
+||talcopur.com^$all
+||hanorid.com^$all
+||orawakle.com^$all
+||ellifluo.com^$all
+||ebortbide.com^$all
 ||ioncibria.com^$all
 ||sishedra.com^$all
 ||legropth.com^$all
@@ -3993,35 +4020,34 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||waredot.com^$doc
 ||waredot.us^$doc
 /l/DMP_captcha_for_vpn?$all
+||kmspico.*^$doc,to=kmspico.*
+||kmspico-$doc
 ||kms-full.com^$doc
-||kmspico.ws^$doc
 ||kmspico.io^$doc
-||kmsauto.uno^$doc
 ||kms-tool.com^$doc
 ||kmsauto.tech^$doc
 ||kmsautodown.space^$doc
 ||gpstracker.site^$all
 ||kmsauto.org^$doc
 ||furykms.com^$doc
-||kmspico-official.org^$doc
+||ativadorkmspico.com^$doc
+||get-kmspico.com^$doc
+||getkmspico.com^$doc
+||kmspico10.com^$doc
+||kmspicoactivator.net^$doc
+||kmspicoativador.org^$doc
+||kmspicoofficial.com^$doc
+||kmspicoportable.com^$doc
+||officialkmspico.com^$doc
+||oficial-kmspico.com^$doc
 ||roundyearfun.org^$all
 ||roundyearfun.com^$all
-||anyplacehere.me^$all
-||funaroundy.click^$all
-||funtwitter.games^$all
 ||twitter-circle.com^$all
-||funroundy.click^$all
-||twitterfun.games^$all
-||funxgames.site^$all
-||funroundy.online^$all
 ||funxgames.me^$all
-||anyplacehere.store^$all
 ||infinitytweet.me^$all
-||infinitweet.com^$all
 ||infinitytweet.com^$all
 ||infinityweet.me^$all
 ||infinityweet.com^$all
-||anyplacehere.online^$all
 ||googie-anaiytics.com^$all
 ||bootcdn.net^$all
 ||bootcss.com^$all
@@ -4158,3 +4184,5 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||tempisite.com^$all
 ||eltacosu.lol^$all,to=~elta.gr
 ||sunpass-etoll-id.kupu.desa.id^$all
+/^https:\/\/(?:www\.)?roblox(?:\.com)?\.[a-z]{2}\//$doc,to=roblox.*|~roblox.com
+||gofile.io/d/yMHabA|$doc
