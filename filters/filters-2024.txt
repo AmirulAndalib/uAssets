@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Fri, 06 Sep 2024 18:42:07 +0000
+! Last modified: Sun, 08 Sep 2024 20:09:01 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -674,6 +674,22 @@ a2zapk.*,educatiocenter.online##+js(acs, $, alertmsg)
 play.virginmediatelevision.ie##+js(json-prune, avails)
 play.virginmediatelevision.ie##+js(json-prune-fetch-response, response.ads, , propsToMatch, /streams)
 
+! serialy.bombuj.tv | .si anti adb
+! https://github.com/uBlockOrigin/uAssets/issues/22253
+@@||bombuj.*^$ghide
+bombuj.*##.ad_banner
+bombuj.*##[id*="ekla"]
+bombuj.*##style:has-text(blink_me_ad):upward(2)
+! https://github.com/uBlockOrigin/uAssets/issues/25239
+bombuj.*###players a[href][target="_blank"]:remove-attr(/href|target/)
+bombuj.*##[id^="ad_banner"] ~ a
+||wurfl.io/wurfl.js$script,3p
+waaaw.*,waaw1.*##+js(aopr, doSecondPop)
+waaaw.*,waaw.*,waaw1.*##+js(aopr, BetterJsPop)
+/cdn-cgi/trace$xhr,domain=waaw.*|waaaw.*
+bombuj.*##+js(no-fetch-if, ads)
+bombuj.*##+js(nobab)
+
 ! END: Rules from filters.txt
 
 ! START: Regional lists
@@ -811,7 +827,7 @@ postermockup.com##+js(aost, setTimeout, adsBlocked)
 ||check-host.net/images/rondguarg$image,1p
 ||check-host.net/images/alexwhost.png$image,1p
 ||check-host.net/images/aezawlogo.$image,1p
-check-host.net###hostacq, .hostavq, #antkeatvhawaprivatealps, .specgo, #antkeatvhawaaeza-permnnt, #antkeatvhaqaalexhost, #antkeatvhawapp-juiaryt, #antkeatvhawapp-juiaryt2, .rw-elative, [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://go.aez"]
+check-host.net###hostacq, .hostavq, #antkeatvhaeaprivatealps, .specho, #antkeatvhaeaaeza-permnnt, #antkeatvhaqaalexhost, #antkeatvhaeapp-juiaryt, #antkeatvhaeapp-juiaryt2, .re-elative, [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://privatealps.net/"], [onclick*="https://aeza.net/"], a[href^="https://aeza.net/"]
 
 ! conceptartworld. com antiadb
 @@||conceptartworld.com^$ghide
@@ -2337,7 +2353,8 @@ lowcygier.pl##.tile-container-small:has(> a[href*="/?utm_term=index&utm_source=m
 lowcygier.pl##header.intro:style(margin-bottom: 0px !important;)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1dglzes/any_solution_to_bypass_adblock_detection_on/
-hartvannederland.nl,vandaaginside.nl##+js(set, Object.prototype.ADBLOCK_DETECTION, '')
+! https://github.com/uBlockOrigin/uAssets/issues/25254
+hartvannederland.nl,shownieuws.nl,vandaaginside.nl##+js(set, Object.prototype.ADBLOCK_DETECTION, '')
 ||assets.prod.webx.talpa.digital/ad/banner.gif?$xhr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24128
@@ -2760,9 +2777,6 @@ chasingthedonkey.com##+js(nowoif)
 ! https://www.taste.com.au/food-news/arnotts-told-us-secret-recipe-their-discontinued-honey-jumbles-biscuits/y036sar4 - top placeholder
 taste.com.au##.main-header:style(top: 0 !important)
 
-! https://github.com/uBlockOrigin/uAssets/issues/24677#issuecomment-2262916020
-tvline.com##+js(rmnt, script, /adm|adb/i)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/24714
 @@||decompiler.com/javascripts/*$script,1p
 
@@ -3147,3 +3161,25 @@ drakecomic.com##+js(set, checkAdBlocker, noopFunc)
 ! https://github.com/uBlockOrigin/uAssets/issues/25229
 freedrivemovie.com##+js(no-fetch-if, googlesyndication)
 ||freedrivemovie.com/wp-content/themes/dooplay/js/anti-adblock.js
+
+! https://hentaitube.icu popup
+lovetofu.cyou##+js(nowoif)
+! https://udw88666.com popup
+alldeepfake.ink##+js(nowoif)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fbrkmy/ad_blocker_detected_on_the_following_website/
+@@||lolcalhost.ru^$script,1p
+||lolcalhost.ru/aclib.js$important
+crichdplays.ru,player102.top###floated
+crichd-player.top,crichdplays.ru,lolcalhost.ru##+js(acs, EventTarget.prototype.addEventListener, delete window)
+stitichsports.com##+js(rmnt, script, antiAdBlockerHandler)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25250
+@@||api.adinplay.com/libs/aiptag/pub/LBS/littlebigsnake.com/tag.min.js$script,domain=littlebigsnake.com
+
+! https://metin2lobby.com anti-adb
+@@||metin2lobby.com^$ghide
+@@||metin2lobby.com/js/*/apw-$script,1p
+
+! https://github.com/easylist/easylist/issues/19978
+multi.xxx##+js(set, flashvars.video_click_url, '')
