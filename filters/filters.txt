@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: Sun, 08 Sep 2024 20:09:01 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -1315,6 +1315,8 @@ sankakucomplex.com##.vce-ad-container
 sankakucomplex.com#@#.scad
 sankaku.app##+js(no-xhr-if, googlesyndication)
 chan.sankakucomplex.com##body.no-scroll:style(overflow: auto !important; position: static !important; width: unset !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/25266
+sankakucomplex.com##+js(set, Object.prototype.hideAds, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/778
 ! https://github.com/jspenguin2017/uBlockProtector/issues/853
@@ -3243,6 +3245,7 @@ animeflv.*##+js(acs, jQuery, 'pp12')
 ! https://github.com/uBlockOrigin/uAssets/issues/21463
 jkanime.*##+js(nowoif)
 sfastwish.com##+js(aopr, __Y)
+||ad.responsad1.space^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1686
 8tracks.com##+js(set, App.views.adsView.adblock, false)
@@ -6985,9 +6988,6 @@ hulu.com##+js(json-prune-fetch-response, breaks pause_ads video_metadata.end_cre
 hulu.com##+js(json-prune, breaks pause_ads video_metadata.end_credits_time, pause_ads)
 hulu.com##+js(json-prune, breaks pause_ads video_metadata.end_credits_time, breaks)
 hulu.com##+js(xml-prune, xpath(//*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"][.//*[name()="BaseURL" and contains(text()\,'/ads-')]] | //*[name()="Period"]/@start), Period[id^="Ad"i], .mpd)
-
-! https://github.com/uBlockOrigin/uAssets/issues/4356
-@@||adserver.iprom.net/adserver7$xhr,domain=rtl.hr
 
 ! https://github.com/NanoAdblocker/NanoCore/issues/235
 myjest.com##+js(nosiif, _$, 12345)

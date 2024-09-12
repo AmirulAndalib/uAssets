@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2023)
-! Last modified: Mon, 09 Sep 2024 04:58:00 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1593,10 +1593,11 @@ shineads.*##[href="https://app.toolsmeen.com/signup/semrush"]
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/146997
 ! https://github.com/uBlockOrigin/uAssets/issues/23937
+! https://github.com/uBlockOrigin/uBOL-home/issues/202
 globlenews.in##+js(no-fetch-if, googlesyndication)
 #@#.ad-zone
 #@#.ad-space
-~howtogeek.com,~makeuseof.com,~xda-developers.com##.ad-zone:not(.textads)
+##.ad-zone:not(.textads)
 ~nieru.net##.ad-space:not(.textads):not(.adbox)
 
 ! CHP v3.9.2+
@@ -3678,7 +3679,6 @@ sotwe.com##.tweet-card .v-responsive.media-carousel-image .v-responsive__content
 *$frame,redirect-rule=noopframe,domain=megaup.net
 download.megaup.net##a img:not([src="images/main_logo_inverted.png"]):matches-css(height: /^([2-4]{1}[0-9]{2}(\.[0-9]+)?px|0px)$/):style(visibility: hidden !important;)
 download.megaup.net##+js(spoof-css, a img:not([src="images/main_logo_inverted.png"]), visibility, visible)
-download.megaup.net##+js(rpnt, script, /for\s*\(\s*(const|let|var).*?;return;\}\}.*?;return;.*?;return;\}/g, , condition, attribute)
 @@||megaup.net/imageads/$image,1p
 @@||download.megaup.net^$script,1p
 
@@ -4081,10 +4081,7 @@ filmisub.cc##+js(aost, setTimeout, adsBlocked)
 ! https://github.com/uBlockOrigin/uAssets/issues/19455
 ! https://www.reddit.com/r/uBlockOrigin/comments/1bjq73a/adblock_detection_in_jazzradiocom_difm_etc/
 ! https://github.com/uBlockOrigin/uAssets/commit/559bef48dd5cde353c6f2d83e127593a0462bb1a#commitcomment-142849479
-classicalradio.com,di.fm,jazzradio.com,radiotunes.com,rockradio.com,zenradio.com##+js(set, di.VAST.XHRURLHandler, noopFunc)
-classicalradio.com,di.fm,jazzradio.com,radiotunes.com,rockradio.com,zenradio.com##+js(no-xhr-if, googlesyndication)
-classicalradio.com,di.fm,jazzradio.com,radiotunes.com,rockradio.com,zenradio.com##+js(set, di.app.WebplayerApp.Ads.Supervisor.eligibleForPreroll, trueFunc)
-classicalradio.com,di.fm,jazzradio.com,radiotunes.com,rockradio.com,zenradio.com##+js(set, di.app.WebplayerApp.Ads.Supervisor.eligibleForMidroll, trueFunc)
+classicalradio.com,di.fm,jazzradio.com,radiotunes.com,rockradio.com,zenradio.com##+js(set, di.app.WebplayerApp.Ads.Adblocks.app.AdBlockDetectApp.startWithParent, false)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/19430
 ||cdn77.org^$3p,domain=pricebefore.com
@@ -4101,7 +4098,7 @@ audiotools.pro,audizine.com,blackenterprise.com,cheatsheet.com,cwtv.com,esportst
 familyminded.com,foxvalleyfoodie.com,merriam-webster.com,news.com.au,playstationlifestyle.net,sportsnaut.com,tempumail.com,toledoblade.com##+js(aopr, __cmpGdprAppliesGlobally)
 pc-builds.com,qtoptens.com,reuters.com,today.com,videogamer.com,wrestlinginc.com##+js(set, admiral, noopFunc)
 !#if cap_html_filtering
-abc17news.com,awkward.com,awkwardmom.com##^script:has-text('"v4ac1eiZr0"')
+abc17news.com,awkwardmom.com##^script:has-text('"v4ac1eiZr0"')
 bailiwickexpress.com,barnsleychronicle.com,becomingpeculiar.com,bethcakes.com,betweenenglandandiowa.com,blogher.com,bluegraygal.com,briefeguru.de##^script:has-text('"v4ac1eiZr0"')
 carmagazine.co.uk,cattime.com,cbr.com,celiacandthebeast.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##^script:has-text('"v4ac1eiZr0"')
 dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dustyoldthing.com##^script:has-text('"v4ac1eiZr0"')
@@ -4121,9 +4118,9 @@ viralviralvideos.com##^script:has-text('"v4ac1eiZr0"')
 wannacomewith.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids.com,worldsurfleague.com,xda-developers.com##^script:has-text('"v4ac1eiZr0"')
 cheatsheet.com,pwinsider.com##^script:has-text(admiral)
 ! https://github.com/uBlockOrigin/uAssets/issues/24721
-247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,bgr.com,cbsnews.com,cbssports.com,cleveland.com,eater.com,eldiariony.com,indiewire.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,syracuse.com,tvline.com,usmagazine.com##^script:has-text('"").split(",")[4]')
+247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,awkward.com,bgr.com,cbsnews.com,cbssports.com,cleveland.com,eater.com,eldiariony.com,indiewire.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sport-fm.gr,syracuse.com,tvline.com,usmagazine.com##^script:has-text('"").split(",")[4]')
 !#else
-abc17news.com,awkward.com,awkwardmom.com##+js(rmnt, script, '"v4ac1eiZr0"')
+abc17news.com,awkwardmom.com##+js(rmnt, script, '"v4ac1eiZr0"')
 bailiwickexpress.com,barnsleychronicle.com,becomingpeculiar.com,bethcakes.com,betweenenglandandiowa.com,blogher.com,bluegraygal.com,briefeguru.de##+js(rmnt, script, '"v4ac1eiZr0"')
 carmagazine.co.uk,cattime.com,cbr.com,celiacandthebeast.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##+js(rmnt, script, '"v4ac1eiZr0"')
 dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dustyoldthing.com##+js(rmnt, script, '"v4ac1eiZr0"')
@@ -4146,7 +4143,7 @@ cheatsheet.com,pwinsider.com##+js(rmnt, script, admiral)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1efsgku/can_i_get_around_this_adblock_detection_popup/
 ! https://www.reddit.com/#reddit/r/uBlockOrigin/comments/1efcm93/247_sports_is_detecting_ubo/
 ! https://github.com/uBlockOrigin/uAssets/issues/24721
-247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,bgr.com,cbsnews.com,cbssports.com,cleveland.com,eater.com,eldiariony.com,indiewire.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,syracuse.com,tvline.com,usmagazine.com##+js(rmnt, script, '"").split(",")[4]')
+247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,awkward.com,bgr.com,cbsnews.com,cbssports.com,cleveland.com,eater.com,eldiariony.com,indiewire.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sport-fm.gr,syracuse.com,tvline.com,usmagazine.com##+js(rmnt, script, '"").split(",")[4]')
 !#endif
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=givemesport.com,important
 superherohype.com##a.wp-block-button__link:is([href^="https://amzn.to/"], [href^="https://www.amazon.com/"])
@@ -4569,11 +4566,13 @@ google.com##.D1fz0e
 
 ! Fineshop Design anti-adb sites
 ! https://github.com/uBlockOrigin/uAssets/discussions/17361#discussioncomment-7098041
+! https://github.com/uBlockOrigin/uAssets/issues/24803
 !#if cap_html_filtering
-answerpython.com,gsm-solution.com,h-donghua.com,hindisubbedacademy.com,mydverse.*,pkgovjobz.com,ripexbooster.xyz,serial4.com,serial412.blogspot.com,sigmalinks.in,tutorgaming.com,everydaytechvams.com,dipsnp.com,cccam4sat.com##^script:has-text(antiAdBlockerHandler)
+answerpython.com,gsm-solution.com,h-donghua.com,hindisubbedacademy.com,linksdramas2.blogspot.com,mydverse.*,pkgovjobz.com,ripexbooster.xyz,serial4.com,serial412.blogspot.com,sigmalinks.in,tutorgaming.com,everydaytechvams.com,dipsnp.com,cccam4sat.com##^script:has-text(antiAdBlockerHandler)
 !#else
-answerpython.com,gsm-solution.com,h-donghua.com,hindisubbedacademy.com,mydverse.*,pkgovjobz.com,ripexbooster.xyz,serial4.com,serial412.blogspot.com,sigmalinks.in,tutorgaming.com,everydaytechvams.com,dipsnp.com,cccam4sat.com##+js(rmnt, script, antiAdBlockerHandler)
+answerpython.com,gsm-solution.com,h-donghua.com,hindisubbedacademy.com,linksdramas2.blogspot.com,mydverse.*,pkgovjobz.com,ripexbooster.xyz,serial4.com,serial412.blogspot.com,sigmalinks.in,tutorgaming.com,everydaytechvams.com,dipsnp.com,cccam4sat.com##+js(rmnt, script, antiAdBlockerHandler)
 !#endif
+! ##.popSc
 
 ! https://github.com/easylist/easylist/issues/17377
 !#if !env_mobile
@@ -5286,7 +5285,7 @@ fplstatistics.co.uk##ins.adsbygoogle:style(clip-path: circle(0) !important;)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$script,3p,domain=fplstatistics.co.uk
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense^$script,3p,domain=fplstatistics.co.uk
 @@||fundingchoicesmessages.google.com^$script,3p,domain=fplstatistics.co.uk
-||googleads.g.doubleclick.net/pagead^$frame,3p,redirect-rule=noopframe,domain=fplstatistics.co.uk
+||googleads.g.doubleclick.net/pagead^$frame,3p,redirect=noopframe,domain=fplstatistics.co.uk
 fplstatistics.co.uk##+js(no-fetch-if, googlesyndication)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20971
@@ -5347,7 +5346,7 @@ fwcdn.pl##[id*="banner"]
 thespruce.com##.mntl-leaderboard-spacer:style(min-height: 0px !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21035
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=trojmiasto.pl,redirect-rule=google-ima.js
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=trojmiasto.pl,redirect=google-ima.js
 
 ! hdmoviefair. buzz popups
 hdmoviefair.*##+js(aost, document.createElement, onerror)
@@ -5373,10 +5372,15 @@ mirroshu.top##[id^="div-gpt-ad-"]
 poophq.com,veev.to##+js(aopr, VEEVPop)
 poophq.com,veev.to##+js(nowoif)
 poophq.com,veev.to##+js(set, fapit.check, noopFunc)
-poophq.com,veev.to##+js(rpnt, script, window.__VEEVPLAYER__, '/*start*/ !function(){"use strict";let t=Object.keys;Object.keys=function(n){return n&&n.html&&n.html.instance&&n.html.instance.start&&n.env&&n.env.instance&&n.env.instance.start&&n.http&&n.http.instance&&n.http.instance.start&&(n.html.instance.start=function(){},n.env.instance.start=function(){},n.http.instance.start=function(){}),t(n)}}();/*end*/window.__VEEVPLAYER__')
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 @@*$ghide,domain=poophq.com|veev.to
 veev.to#@#.avb-active
+!#if cap_html_filtering
+||static.veevcdn.co/assets/videoplayer/$script,replace=/this\[\'cd\'/this['cu'/g
+!#else
+!poophq.com,veev.to##+js(rpnt, script, window.__VEEVPLAYER__, '/*start*/ !function(){"use strict";let t=Object.keys;Object.keys=function(n){return n&&n.html&&n.html.instance&&n.html.instance.start&&n.env&&n.env.instance&&n.env.instance.start&&n.http&&n.http.instance&&n.http.instance.start&&(n.html.instance.start=function(){},n.env.instance.start=function(){},n.http.instance.start=function(){}),t(n)}}();/*end*/window.__VEEVPLAYER__')
+@@*.js|$xhr,domain=veev.to|poophq.com
+!#endif
 
 ! filmydown .site/fast-dl .co popups
 fast-dl.co,filmydown.*##+js(nowoif)
@@ -5461,7 +5465,7 @@ sonixgvn.net##+js(aeld, DOMContentLoaded, overlays)
 ||sonixgvn.net/cdn-cgi/zaraz/s.js^$script,1p,important
 ||sonixgvn.net/wp-content/plugins/adrotate/$script,1p,important
 ||sonixgvn.net/cdn-cgi/apps/head/$script,1p,important
-||vlitag.com^$script,xhr,domain=sonixgvn.net,redirect-rule=noopjs
+||vlitag.com^$script,xhr,domain=sonixgvn.net,redirect=noopjs
 
 ! basketballbuzz .ca anti-adb
 basketballbuzz.ca##+js(rmnt, script, deblocker)

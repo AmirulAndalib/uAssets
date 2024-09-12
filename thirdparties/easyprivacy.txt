@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Sun, 08 Sep 2024 20:09:01 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -2758,6 +2758,8 @@ _trackWebtrekkEvents.
 _view_pixel&$image
 _webanalytics.
 _WebVitalsReporter_
+! https://www.mcclatchy.com/our-impact/markets
+/ng.gif?
 ! Facebook pixels
 ! /ajax/bnzai?_
 /ajax/bz?_
@@ -10884,6 +10886,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||panorama.wixapps.net^
 ||pap.qualityunit.com^$third-party
 ||parallax.askmediagroup.com^
+||paramount.tech/lookup/
 ||parkwhiz.com/events/
 ||parsely.com/keys/$script,third-party
 ||partners.etoro.com^$script
@@ -11662,6 +11665,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ucoz.net/stat/
 ||uhit.eu/id/$third-party
 ||uid.mediacorp.sg^
+||uilogging.tcdevops.com^
 ||uim.tifbs.net^
 ||umami.aigenerations.net^
 ||unibet.de/stan/campaign.do?*&affiliateId=$subdocument,third-party
@@ -12084,6 +12088,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||antillephone.com^$third-party
 ||beyondsecurity.com^$third-party
 ||geotrust.com^$third-party
+||gmo-cybersecurity.com/siteseal/$third-party
 ||guarantee-cdn.com^$third-party
 ||howsmyssl.com^$third-party
 ||js.trendmd.com^$script,subdocument,third-party
@@ -13520,6 +13525,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||console-telemetry.oci.oraclecloud.com^
 ||consumer.org.nz/session/ping/
 ||containers.appdomain.cloud/api/send-log$domain=ibm.com
+||cookpad.com/*/activity_logs
 ||copilot-telemetry.githubusercontent.com^
 ||count.darkreader.app^
 ||count.rin.ru^
@@ -14198,6 +14204,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pftk.temu.com^
 ||ph.thenextweb.com^
 ||phonearena.com/_track.php
+||pi.ai/proxy/api/event
 ||pikbest.com/?m=Stats&
 ||ping.hashnode.com^
 ||ping.hungama.com^
@@ -14439,6 +14446,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||statista.com/data/ptm.gif
 ||statistics.streamdav.com^
 ||stats.aerotime.aero^
+||stats.allenai.org^
 ||stats.calcalist.co.il^
 ||stats.chromatone.center^
 ||stats.codeur.com^
@@ -15034,6 +15042,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||carolsdaughter.com/IZ/uaPO0cuk/init.js
 ||carters.com/0F3091f3/init.js
 ||chron.com/413gkwMT/init.js
+||cookpad.com/FqtAw5et/init.js
 ||couchsurfing.com/bEcn7fQX/init.js
 ||crunchbase.com/rw7M6iAV/init.js
 ||ctinsider.com/413gkwMT/init.js
@@ -48871,7 +48880,6 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||go.piccolo.mobi^
 ||go.picsart.com^
 ||go.pinoy.innovatedating.com^
-||go.playbackbone.com^
 ||go.player2app.com^
 ||go.poland.innovatedating.com^
 ||go.polen-app.com^
@@ -52128,6 +52136,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||tracker.bt.uol.com.br^
 ||tracker.publico.pt^
 ||uai.com.br^*/analytics.js
+||unleash.livepix.gg^
 ||uol.com.br/stats?
 ! Romanian
 ||agrointel.ro/ga.js
@@ -52460,7 +52469,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||cleverpush.com/channel/$script,domain=bsdex.de|heise.de
 @@||cleverpush.com/sdk/$script,domain=heise.de
 @@||cloudflare.com/ajax/libs/fingerprintjs2/$domain=extracttable.com|fckrasnodar.ru|login.kroton.com.br
-@@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|injora.com|myair.resmed.com
+@@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|injora.com|kiichin.com|myair.resmed.com
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=luxuryrealestate.com
 @@||cloudinary.com/perimeterx/$image,domain=perimeterx.com

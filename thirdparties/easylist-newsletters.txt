@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Mon, 09 Sep 2024 04:58:00 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1770,7 +1770,7 @@ mv-voice.com,paloaltoonline.com###side-block-02
 mv-voice.com,paloaltoonline.com###side-block-04
 pocketgamer.biz###sidebar-mailer
 shieldsgazette.com###sidebar-newsletter-signup
-film-news.co.uk,game-news.co.uk,music-news.com,theatre-news.com###sign-up
+aserto.com,film-news.co.uk,game-news.co.uk,music-news.com,theatre-news.com###sign-up
 permanentstyle.com###signUpWrapperOuter
 washingtonmonthly.com###signup
 livenation.co.nz###signup-component
@@ -2319,6 +2319,7 @@ chicagocrusader.com##.elementor-element-648759a3
 dailysceptic.org##.elementor-element-85562d2
 innotechtoday.com##.elementor-element-8da89b7
 techgenix.com##.elementor-element-8e82188
+julieroys.com##.elementor-element-9d638ba
 whereyourebetween.com##.elementor-element-ba0e7fd
 gvwire.com##.elementor-element-be4633f
 lakegenevacountrymeats.com##.elementor-element-dc75b6d
@@ -2476,7 +2477,8 @@ catholicherald.co.uk,centralmaine.com,kusc.org,mondoweiss.net,motoring.com.au,na
 atlanticcouncil.org,dictionary.com,pressherald.com,pv-magazine.com,reason.com,revolvermag.com,thefinancialbrand.com,trendingpolitics.com,undark.org,vtdigger.org##.gform_wrapper
 platformer.news,therage.co##.gh-cta
 supercombomagazine.com##.gh-foot-menu
-broadbandbreakfast.com,disconnect.blog,therage.co##.gh-footer-signup
+broadbandbreakfast.com,disconnect.blog,platformer.news,therage.co##.gh-footer-signup
+platformer.news##.gh-header
 evinfocus.com,kyivindependent.com,readtangle.com,thecompanion.app##.gh-portal-triggerbtn-iframe
 thepickool.com##.gh-post-page-cta
 team17.com##.global-newsletterBanner
@@ -2546,7 +2548,7 @@ topgear.com##.hrWTog
 thehustle.co##.hs-cta-wrapper
 blog.payara.fish##.hs-form-private
 wallhere.com##.hub-newsletter
-mustsharenews.com##.hustle-inline
+evreporter.com,mustsharenews.com##.hustle-inline
 interviewcake.com##.ic-alert-email-newsletter-signup
 insideclimatenews.org##.icn-newsletter-block
 floridianpress.com##.if-signup-sidebar
@@ -2725,6 +2727,7 @@ mv-voice.com##.meter-warning-box
 paloaltoonline.com##.meter-warning-text
 metro.co.uk##.metro-email-signup
 metro.co.uk##.metro-email-signup-mpu
+misinforeview.hks.harvard.edu##.misinfo-banner
 motherjones.com##.mj-text-cta
 heartfm.co.za##.mk-subscribe-link
 findingtheuniverse.com,levittownnow.com,techpolicy.press,thegazette.com##.ml-form-embedContainer
@@ -2948,6 +2951,7 @@ marketbeat.com##.p-3.h-100
 levernews.com##.p-7.border-eerie-black
 tvseriesfinale.com##.p2-subscribe
 insightcrime.org##.page-general__newsletter-btn
+clashmusic.com##.pane-block-96
 thebulletin.be##.pane-bulweb-general-bulletinguide-block
 thebulletin.be##.pane-bulweb-general-registration-block
 electronicintifada.net##.pane-mailchimp-signup-ei-readers
@@ -2980,6 +2984,7 @@ thecooldown.com,wanderlust.co.uk##.popup-box
 busbeestyle.com##.popup-modal
 grist.org##.popup-overlay-newsletter-signup
 homecookingadventure.com##.popup-signup
+dmarge.com##.popup-subscribe
 businessinsider.com##.popup-wrapper
 kyivindependent.com##.popupBannerSubscribeUd
 longevity.technology##.popup_bg
@@ -3093,6 +3098,7 @@ youcouldtravel.com##.sidebar-item-subscribe-form
 taskandpurpose.com,thedrive.com##.sidebar-newsletter-container
 starttv.com##.sidebar-newsletter-signup-wrap
 techgenix.com##.sidebar-optin
+19thnews.org##.sidebar-promo--newsletter
 curiocity.com##.sidebar-section--subscribe
 inspiredtaste.net,tuc.org.uk##.sidebar-signup
 online-tech-tips.com##.sidebar-signup-form
@@ -3236,11 +3242,12 @@ rt.com##.subscribe-layout
 spaceref.com##.subscribe-line-link
 media4growth.com##.subscribe-ltr
 techpout.com##.subscribe-medium
-meetup.com##.subscribe-modal
+ia.acs.org.au,meetup.com##.subscribe-modal
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au##.subscribe-newsletter
 hawaiitribune-herald.com,wccftech.com,westhawaiitoday.com##.subscribe-now
 longislandpress.com,metro.us##.subscribe-now-box
 thecanary.co##.subscribe-panel
+insider.fitt.co##.subscribe-pop-up-bar
 blog.rootsofprogress.org,tpain.com##.subscribe-popup
 politics.co.uk##.subscribe-popup-container
 aciafrica.org,catholicnewsagency.com##.subscribe-post
@@ -3434,6 +3441,7 @@ merriam-webster.com##.wotd-side__subscribe
 creepycatalog.com##.wp-block-cata-newsletter
 astronomy.com##.wp-block-cover[style="padding-top:0;padding-bottom:0"]
 eugeneweekly.com##.wp-block-eugene-weekly-newsletter-signup
+gearpatrol.com##.wp-block-gearpatrol-newsletter-signup
 cookingwithjanica.com##.wp-block-group__inner-container
 interiordesign.net##.wp-block-id-newsletter
 snackstack.net##.wp-block-jetpack-subscriptions
@@ -3617,6 +3625,7 @@ neo4j.com#?#.sidebar-item-container:-abp-contains(Email me)
 newsroom.co.nz#?#.has-background:-abp-contains(/newsletter|inbox/)
 newsroom.ucla.edu#?#.promo-card-primary:-abp-contains(Check your inbox)
 newswire.ca#?#.pull-right.inline-gallery-container:-abp-contains(Post this)
+notateslaapp.com#?#.mobile-only-on-col-ab:-abp-contains(Subscribe)
 notthebee.com#?#.bg-gray-50:-abp-contains(Want to stay informed)
 pcmag.com#?#.md\:decorative-horizontal-lines:-abp-contains(subscribe)
 people.com#?#strong:-abp-contains(daily newsletter)
@@ -3639,6 +3648,7 @@ thestreamable.com#?#.rounded-3.px-5:-abp-contains(Newsletter)
 thetransmitter.org#?#.bg-dark-brown:-abp-contains(Sign up)
 urbandictionary.com#?#.rounded-md.md\:p-8.p-5.shadow-light:-abp-contains(Sign up)
 vox.com#?#.duet--article--highlight:-abp-contains(Sign up here)
+washington.edu#?#.textwidget > .textwidget:-abp-contains(Subscribe)
 worldsensorium.com#?#.has-medium-font-size:-abp-contains(newsletter)
 yourstory.com#?#.mt-\[2rem\]:-abp-contains(newsletter)
 !! medium
@@ -4056,6 +4066,16 @@ scottishlegal.com##body,html:style(overflow: auto !important; position: initial 
 dailytarheel.com###dth-borderless-modal
 dailytarheel.com##.modal-backdrop
 dailytarheel.com##body,html:style(overflow: auto !important; position: initial !important;)
+! insider.fitt.co
+insider.fitt.co##.fitt-subscribe-pop-up-window
+insider.fitt.co##+js(rc, subscribe-pop-active, body, stay)
+! bucketlistly.blog
+bucketlistly.blog##.footer-newsletter-wrapper
+bucketlistly.blog##.modal-overlay
+bucketlistly.blog##body,html:style(overflow: auto !important; position: initial !important;)
+! restofworld.org
+restofworld.org##.newsletter-signup
+restofworld.org##+js(rc, blocking-signup, html, stay)
 ! .jetpack-subscribe-modal
 skepchick.org,liamodell.com,snackstack.net##.jetpack-subscribe-modal
 skepchick.org,liamodell.com,snackstack.net##body,html:style(overflow: auto !important; position: initial !important;)
@@ -4252,12 +4272,12 @@ pv-magazine-usa.com###newsletter-modal
 pv-magazine-usa.com##.modal-backdrop
 pv-magazine-usa.com##body,html:style(height: auto !important; overflow: auto !important)
 ! substack.com
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##.intro-popup
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, show-intro-popup, html, stay)
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, has-intro-popup, html, stay)
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, modal-in, html, stay)
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##div[class^="_background_1h9fv_"]
-techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##._subscribeDialog_1h9fv_1
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##.intro-popup
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, show-intro-popup, html, stay)
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, has-intro-popup, html, stay)
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##+js(rc, modal-in, html, stay)
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##div[class^="_background_1h9fv_"]
+publicnotice.co,techemails.com,aisnakeoil.com,secretsofprivacy.com,moreisdifferent.blog,latent.space,statsignificant.com,noahpinion.blog,read.perspectiveship.com,newsletter.maartengrootendorst.com,newsletter.eng-leadership.com,blog.codingconfessions.com,afterbabel.com,theintrinsicperspective.com,elysian.press,experimental-history.com,thebignewsletter.com,honest-broker.com,henrikkarlsson.xyz,honest-broker.com,henrikkarlsson.xyz,computerenhance.com,friendlyatheist.com,unchartedterritories.tomaspueyo.com,construction-physics.com,sambowman.co,asiasentinel.com,understandingai.org,hamiltonnolan.com,aporiamagazine.com,garbageday.email,jacobwolf.report,semianalysis.com,dossier.today,engineeringleadership.xyz,piratewires.com,slowboring.com,flowstate.fm,popular.info,newsletter.banklesshq.com,antiracismnewsletter.com,racket.news,eugyppius.com,dkb.blog,duffelblog.com,theankler.com,fullstackeconomics.com,substack.com,platformer.news##._subscribeDialog_1h9fv_1
 ! core.app (newsletter)
 core.app##+js(set-local-storage-item, show-email-intake-form, false)
 ! interestingengineering.com
@@ -4849,6 +4869,7 @@ hippieshine.com,totallypersonal.co.uk,workprotools.store##.proof-factor-app
 jobrapido.com##.proposal-box
 glassons.com,hallensteins.com##.ps-curtain
 herbiesheadshop.com##.pulse-subscribe
+theroyaloakmarylebone.com##.pum
 ceenergynews.com##.pum-overlay[data-popmake*="newsletter-signup-popup"]
 zappos.com##.qi-z
 freemans.com##.quitifyBannerContainer
@@ -5306,6 +5327,7 @@ jn.pt##.t-footer-nl
 expansao.co.ao##.t-nl-box-1
 dinheirovivo.pt##.t-s18-i
 tecnoblog.net##.tb-newsletter
+gkpb.com.br##.tdi_143
 tecmundo.com.br##.tec--thebrief
 tecmundo.com.br##.tec--thebrief__bg
 tecmundo.com.br##.tec--widget-thebrief

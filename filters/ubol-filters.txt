@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Sun, 08 Sep 2024 20:09:01 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -36,6 +36,12 @@ freehostbox.net##ins.adsbygoogle[data-ad-slot]
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/71177#issuecomment-752391555
 @@||javbix.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/24722
+@@||rpgbot.net^$ghide
+rpgbot.net##.bottomad
+rpgbot.net##span[id^="ezoic-pub-ad-placeholder-"]
+rpgbot.net##span[data-ez-ph-id]
 
 ! END: Exceptions to generic cosmetic filters
 
@@ -116,3 +122,9 @@ empire-anime.*,empire-stream.*,empire-streaming.*,empire-streamz.*##+js(nowoif, 
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23471
 ||ads-twitter.com^$frame,redirect=noopframe,domain=media.cms.markiza.sk
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fbun7c/adblock_detected_ubo_lite/ (hopefully)
+/yzfdmoan.js$script,redirect=noop.js,domain=maxstream.video|maxlinks.online|maxstreams.site|uprot.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/25274
+://ads.$object,redirect=noopframe,domain=rtl.hr

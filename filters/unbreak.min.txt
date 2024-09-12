@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Unbreak
 ! Expires: 5 days
-! Last modified: Sat, 31 Aug 2024 03:55:45 +0000
+! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
 ! Diff-Path: %diffpath%#ublock-unbreak
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -126,8 +126,6 @@ reyada.com#@#.ads_area
 hintergrundbild.org#@#.ads1
 @@||crackle.com/*/crypto-js.js$script,1p
 @@/cdn-cgi/pe/bag2?*optimizely.com$domain=coindesk.com
-/adstream.$badfilter
-/adstream.$domain=~adstream.com|~adstream.com.ro
 @@||ak.sail-horizon.com/scout/$script,domain=businessinsider.com
 @@||tracker.btorrent.xyz^$websocket
 @@||cloudflare.com/ajax/libs/*$script,domain=androidcentral.com
@@ -945,7 +943,6 @@ getcoloringpages.com#@#.adsBlock
 ! alidns.com CNAME
 @@||alibaba.tanx.com^$domain=alidns.com
 @@||adobedtm.com^*/satellitelib-$script,domain=finishlibrary.steelcase.com
-|https://$xhr,3p,domain=kimcartoon.to,badfilter
 @@||mensjournal.com.cdn.ezoic.net^$domain=mensjournal.com
 ! youthhealthmag broken search
 |https://$script,3p,domain=youthhealthmag.com,badfilter
@@ -2671,7 +2668,6 @@ forum.dji.com##+js(set, sensorsDataAnalytic201505.track, noopFunc)
 ||pubscholar.cn/static/common/fingerprint.js^$script,1p,redirect=fingerprint2.js,important
 @@||v.fwmrm.net/ad/*html5_live^$script,domain=channel4.com
 ||v.fwmrm.net/ad/*html5_live^$script,removeparam=caid,domain=channel4.com
-hltv.org#@#.playerOfTheWeekContainer
 @@||fundingchoicesmessages.google.com/i/pub-$script,domain=fanatik.com.tr|milliyet.com.tr|posta.com.tr
 @@||fundingchoicesmessages.google.com/f/$script,domain=fanatik.com.tr|milliyet.com.tr|posta.com.tr
 macrotrends.net##+js(set, clicky, {})
