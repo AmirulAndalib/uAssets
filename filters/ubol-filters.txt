@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Thu, 12 Sep 2024 06:58:37 +0000
+! Last modified: Fri, 13 Sep 2024 07:06:30 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -42,6 +42,11 @@ freehostbox.net##ins.adsbygoogle[data-ad-slot]
 rpgbot.net##.bottomad
 rpgbot.net##span[id^="ezoic-pub-ad-placeholder-"]
 rpgbot.net##span[data-ez-ph-id]
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/157584
+@@||mytempsms.com^$ghide
+mytempsms.com##ins.adsbygoogle[data-ad-slot]
+mytempsms.com##ins.adsbygoogle[data-ad-client]
 
 ! END: Exceptions to generic cosmetic filters
 
