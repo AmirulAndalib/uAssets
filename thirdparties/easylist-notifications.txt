@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Notifications
-! Last modified: Sun, 15 Sep 2024 04:40:01 +0000
+! Last modified: Mon, 16 Sep 2024 21:05:31 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -466,6 +466,7 @@
 ||pushjunky.com^$third-party
 ||pushkahouse.com^$third-party
 ||pushkaplus.com^$third-party
+||pushloop.io^$third-party
 ||pushly.com^$third-party
 ||pushmaster-cdn.xyz^$third-party
 ||pushmejs.com^$third-party
