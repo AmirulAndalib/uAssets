@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 17 Sep 2024 15:16:47 +0000
+! Last modified: Fri, 20 Sep 2024 05:22:53 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -298,9 +298,11 @@ steuerbot.com##+js(trusted-set-local-storage-item, cookies, '{"essential":true,"
 ! https://vadhander.hogakusten.com/
 ! https://vadhander.kramfors.se/
 vadhander.hogakusten.com,vadhander.kramfors.se##+js(trusted-set-local-storage-item, cookie_consent, '{"consent":true,"necessary":true,"preference":false,"statistics":false,"marketing":false}')
-! https://www.veriff.com/
+! https://www.veriff.com/ - EU IP
 veriff.com##+js(set-cookie, veriff_cookie_consent_completed, true)
 veriff.com##+js(trusted-set-cookie, veriff_cookie_consent, %7B%22performance%22%3Afalse%2C%22functionality%22%3Afalse%2C%22targeting%22%3Afalse%7D)
+! https://www.veriff.com/ - US IP
+veriff.com##+js(trusted-set-cookie, veriff_cookie_notice, %7B%22dismisssed%22%3Atrue%7D)
 ! https://programme.conventus.de/en
 programme.conventus.de##+js(trusted-set-cookie, USE_COOKIE_CONSENT_STATE, {%22necessary%22:true})
 ! https://arena.pl/
@@ -406,6 +408,8 @@ bitget.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 buywholefoodsonline.co.uk##+js(trusted-set-cookie, cookiesSettingsData, '{"1":2,"2":0,"3":0,"4":0}')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/188823
 unka.bilecik.edu.tr##+js(set-cookie, .AspNet.Consent, yes, , reload, 1)
+! https://github.com/uBlockOrigin/uAssets/issues/25362
+mediapart.fr##+js(trusted-set-cookie, cc, {%22disagreement%22:[%22ad%22%2C%22visit%22]%2C%22creation%22:$now$%2C%22update%22:$now$}, , , domain, mediapart.fr)
 
 
 !! Needs additional cookies
@@ -793,7 +797,9 @@ nordax.com##+js(trusted-set-cookie, cookie_consent, %7B%22allowEssentials%22%3At
 
 ! https://www.youtube.com/ - Video recommendations
 ! https://www.reddit.com/r/uBlockOrigin/comments/1693mka/
-youtube.com##+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1, domain, youtube.com)
+! https://github.com/uBlockOrigin/uAssets/issues/20586#issuecomment-2357294152
+! youtube.com##+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1, domain, youtube.com)
+m.youtube.com,www.youtube.com##+js(trusted-click-element, button[aria-label*="Accept the use of cookie"], , 1000)
 ! GDPR dialog when moving from Google to Youtube
 ! https://github.com/uBlockOrigin/uAssets/discussions/18598#discussioncomment-7362961
 consent.youtube.com##+js(trusted-click-element, form[action] button[jsname="tWT92d"])
@@ -1592,10 +1598,15 @@ redbull.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , d
 ! https://www.jeuxvideo.com/
 jeuxvideo.com##+js(trusted-click-element, button[onclick="Didomi.setUserAgreeToAll();"], , 1000)
 idnes.cz##+js(trusted-click-element, a[href="javascript:Didomi.setUserAgreeToAll();"], , 1000)
-20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##+js(trusted-click-element, #didomi-notice-agree-button, , 1000)
+20minutos.es,24sata.hr,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##+js(trusted-click-element, #didomi-notice-agree-button, , 1000)
 20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es###didomi-host:style(visibility: hidden !important;)
 20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##body.didomi-popup-open:style(overflow: auto !important;)
 @@||sdk.privacy-center.org^$script,domain=dnevnik.hr|actu.fr|ledauphine.com
+
+! didomi-continue-without-agreeing
+meteofrance.com##+js(trusted-click-element, span.didomi-continue-without-agreeing, , 1000)
+meteofrance.com###didomi-host:style(visibility: hidden !important;)
+meteofrance.com##body.didomi-popup-open:style(overflow: auto !important;)
 
 ! https://de.euronews.com/next/2024/07/04/kohlenstoffarme-forderung-aserbaidschan-mochte-diversifizierung-des-traditionellen-energie video broken, decline tracking
 euronews.com###poool-fullscreen-widget
@@ -1716,3 +1727,15 @@ kicker.de###kick__pur__layer:has(a[href][onclick="ov.cmp.acceptAllConsents()"]):
 formulatv.com##+js(trusted-click-element, button.fc-primary-button, , 1000)
 formulatv.com##.fc-consent-root:style(opacity: 0 !important;)
 formulatv.com##body[style="overflow: hidden;"]:style(overflow: auto !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25347
+ignboards.com##+js(trusted-set-cookie, boards-eu-gdpr, eu, , , domain, ignboards.com, reload, 1)
+
+! https://web.de/ - accept
+web.de##+js(trusted-click-element, button[data-id="save-all-pur"], , 1000)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25366
+! https://www.linternaute.com/hightech/jeux-video/5995467-inzoi-quel-est-ce-jeu-aux-graphismes-hyper-realistes-qui-entend-concurrencer-les-sims/
+linternaute.com##+js(trusted-click-element, button.button__acceptAll)
+linternaute.com###appconsent:style(visibility: hidden !important;)
+linternaute.com##body.appconsent_noscroll:style(overflow: auto !important;)

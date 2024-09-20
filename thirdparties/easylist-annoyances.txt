@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Tue, 17 Sep 2024 15:16:47 +0000
+! Last modified: Fri, 20 Sep 2024 05:22:53 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1047,6 +1047,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||diigo.com/images/diigo-icon/$third-party
 ||discordapp.com/api/servers/*/widget.json$third-party,xmlhttprequest
 ||disqus.com/api/*/listRelated.json?
+||donorbox.org/embed/$third-party
 ||dotmailer-surveys.com^$third-party
 ||download.skype.com/share/$third-party
 ||eff.org/bloggers/badges/$third-party
@@ -1387,6 +1388,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||goftino.com/static/assets/$media
 ||gofundme.com/*/widget/$subdocument,third-party
 ||gubagoo.io/v4/media/
+||helpcrunch.com/sounds/
 ||helpscout.net/static/ui-sounds/
 ||intelliticks.com/prod/common/$media
 ||jivo.ru/sounds/
@@ -2503,6 +2505,7 @@ scribd.com##div[data-testid="sticky-wrapper"]
 softwarekeep.com##img[alt="Banner"]
 gettr.com##img[alt="GETTR coin"]
 ! :has
+nzherald.co.nz##.element-action-button:has-text(SHARE YOUR STORY)
 laravel-news.com##.mt-10:has-text(Laravel Jobs)
 dailysignal.com#?#.tds-content > p:-abp-contains(Donate now)
 positive.news#?#.pb--medium:-abp-contains(Be part of the solution)
@@ -2982,6 +2985,8 @@ fastcompany.com##body,html:style(height: auto !important; overflow: auto !import
 huckberry.com##body,html:style(height: auto !important; overflow: auto !important)
 huckberry.com##.modal-content
 huckberry.com##.fade
+! semrush.com
+semrush.com##+js(set-session-storage-item, sem30_popup_shown, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/22927 (forced login)
 clarin.com##+js(nostif, _waitingAuth0Counter)
 ! bestrecipes.com.au (forced login)

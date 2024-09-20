@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Sun, 15 Sep 2024 04:40:01 +0000
+! Last modified: Fri, 20 Sep 2024 05:22:53 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -59,6 +59,15 @@ ewybory.eu##[id^="aswift_"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25323
 @@||plutomovies.com^$ghide
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/150232
+@@||honor.com^$ghide
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/149223
+! https://github.com/AdguardTeam/AdguardFilters/issues/149624
+@@*$ghide,domain=ewrc-models.com|ewrc-results.com
+ewrc-models.com,ewrc-results.com##ins.adsbygoogle[data-ad-slot]
+ewrc-models.com,ewrc-results.com##ins.adsbygoogle[data-ad-client]
 
 ! END: Exceptions to generic cosmetic filters
 

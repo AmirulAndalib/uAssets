@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2022)
-! Last modified: Tue, 17 Sep 2024 15:16:47 +0000
+! Last modified: Fri, 20 Sep 2024 05:22:53 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -325,6 +325,7 @@ cdn.gamemonetize.com###imaContainer
 ! https://github.com/uBlockOrigin/uAssets/issues/11279
 superpsx.com##+js(no-xhr-if, googlesyndication)
 superpsx.com##+js(aost, document.getElementById, adsBlocked)
+superpsx.com##+js(trusted-suppress-native-method, fetch, '"adsbygoogle.js"', abort)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/11282
 so1.asia##+js(nano-stb, , , 0.02)
@@ -3566,6 +3567,7 @@ missyusa.com##+js(nostif, error-report.com)
 ||img-load.com^$~css,domain=etoday.co.kr|dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 @@/loader.min.js$xhr,script,domain=etoday.co.kr|dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 /loader.min.js$xhr,script,domain=etoday.co.kr|dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud,replace=/;return [a-z0-9]{1,2}\(\)\[.*?\]\(\(function\([a-z0-9]{1,2}\){for\(var/;return; return whocare()[nobodycare(111)]((function(){for(var/g
+/loader.min.js$xhr,script,domain=etoday.co.kr|dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud,replace=/function [a-zA-Z]{1,2}\([a-z]\,[a-z]\)\{var [a-u]=[a-u];try\{var/function dontcare(){var nevercare=1;try{var/g
 ||thestar.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
 ||yorkshirepost.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
 !#else
@@ -3600,7 +3602,7 @@ ygosu.com,bamgosu.site##div[style="text-align:center"]:has(> iframe[src])
 ||html-load.com/report?$xhr
 ||html-load.cc^$font,ping,media
 ||html-load.cc/report?$xhr
-||html-load.com/loader.min.js$domain=ndtvprofit.com|crosswordsolver.com|cruciverba.it|gloria.hr|heureka.cz|javatpoint.com|meeco.kr|motscroises.fr|oeffnungszeitenbuch.de|palabr.as|the-crossword-solver.com|word-grabber.com|wort-suchen.de|woxikon.*
+||html-load.com/loader.min.js$domain=ndtvprofit.com|crosswordsolver.com|cruciverba.it|gloria.hr|heureka.cz|javatpoint.com|laleggepertutti.it|meeco.kr|motscroises.fr|oeffnungszeitenbuch.de|oraridiapertura24.it|palabr.as|the-crossword-solver.com|word-grabber.com|wort-suchen.de|woxikon.*
 .live/fl1hrrg/$doc,popup,domain=live
 .xyz/fl1hrrg/$doc,popup,domain=xyz
 .site/fl1hrrg/$doc,popup,domain=site
@@ -3624,12 +3626,12 @@ a-ha.io,cboard.net,joongdo.co.kr,viva100.com,gamingdeputy.com,alle-tests.nl##+js
 !#if cap_html_filtering
 interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,gamingdeputy.com,thesaurus.net,alle-tests.nl,maketecheasier.com,automobile-catalog.com,allthekingz.com,motorbikecatalog.com,tweaksforgeeks.com,m.inven.co.kr##^script:has-text(KCgpPT57bGV0IGU)
 badmouth1.com,blog.esuteru.com,blog.livedoor.jp,dziennik.pl,etnews.com,eurointegration.com.ua,flatpanelshd.com,fourfourtwo.co.kr,gadgets360.com,hoyme.jp,itainews.com,iusm.co.kr,jin115.com,lamire.jp,logicieleducatif.fr,missyusa.com,mydaily.co.kr,ndtvprofit.com,picrew.me,taxguru.in,text-compare.com,tweaksforgeeks.com,reportera.co.kr,sportsrec.com,sportsseoul.com,videogamemods.com,wfmz.com,worldhistory.org,onlinegdb.com,winfuture.de,issuya.com,pravda.com.ua,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,oradesibiu.ro,freemcserver.net##^script[onload*="error-report.com"]
-allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##^script:has-text(error-report.com)
+allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,laleggepertutti.it,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##^script:has-text(error-report.com)
 worldhistory.org##^script:has-text(adShield)
 slobodnadalmacija.hr##^script:has-text(adrecover.com)
 !#else
 interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,gamingdeputy.com,thesaurus.net,alle-tests.nl,maketecheasier.com,automobile-catalog.com,allthekingz.com,motorbikecatalog.com,tweaksforgeeks.com,m.inven.co.kr##+js(rmnt, script, KCgpPT57bGV0IGU)
-allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##+js(rmnt, script, error-report.com)
+allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,heureka.cz,indiatimes.com,laleggepertutti.it,meeco.kr,motscroises.fr,oeffnungszeitenbuch.de,oraridiapertura24.it,palabr.as,the-crossword-solver.com,word-grabber.com,wort-suchen.de,woxikon.*,freemcserver.net##+js(rmnt, script, error-report.com)
 worldhistory.org##+js(rmnt, script, adShield)
 slobodnadalmacija.hr##+js(rmnt, script, adrecover.com)
 !#endif
@@ -3737,8 +3739,9 @@ komiklokal.me##+js(nowoif)
 ! https://github.com/uBlockOrigin/uAssets/issues/19326
 flipkart.com##span:has-text(/^Ad$/):upward(div[style])
 flipkart.com##div[data-id] > div[data-tkid] > div[class]:has-text(Sponsored):upward(div[data-id])
+flipkart.com##div[data-id]:has(rect[width="62"][height="18"][fill="white"] + path[d^="M5.82955"][fill="#9E9E9E"])
 !#if env_mobile
-flipkart.com##div[dir]:has-text(/^AD$/):upward(div[style])
+flipkart.com##div[dir]:has-text(/^(?:Sponsored|AD)$/):upward(div[style])
 flipkart.com##div[style*="width:24px;height:20px;"]:has(img[src*="/promos/"]):upward(div[style])
 !#endif
 
@@ -3909,7 +3912,6 @@ xbjav.com##.table
 /nativeads_v2/nativeads_v2_$script,1p
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/129299
-/js/acmsd/*
 javedit.com##.ads_video_overlay_mobile
 
 ! https://github.com/uBlockOrigin/uAssets/issues/14775
@@ -4398,7 +4400,8 @@ viefaucet.com##+js(nostif, showAdblock)
 ! https://github.com/uBlockOrigin/uAssets/issues/16358
 viefaucet.com#@#.ad-description
 viefaucet.com##.ads
-viefaucet.com##.is-guttered > .ads:upward(.is-guttered)
+! https://github.com/uBlockOrigin/uAssets/issues/25346
+! viefaucet.com##.is-guttered > .ads:upward(.is-guttered)
 @@||googletagmanager.com/gtm.js$script,domain=videoslyrics.com|videolyrics.in
 *$script,domain=videolyrics.in,redirect-rule=noopjs
 ||videolyrics.in^$csp=style-src *
