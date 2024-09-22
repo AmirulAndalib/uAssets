@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Link shorteners
-! Last modified: Fri, 20 Sep 2024 19:53:46 +0000
+! Last modified: Sun, 22 Sep 2024 17:12:49 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -1158,8 +1158,8 @@ edukaroo.com##+js(nano-sib, count, *, 0.001)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24050
 ! https://github.com/uBlockOrigin/uAssets/discussions/17361#discussioncomment-10351538 (https://stfly .biz/7gdPs)
-blogesque.net,bookbucketlyst.com,explorosity.net,optimizepics.com,stfly.*,stly.*,torovalley.net,explorosity.net,travize.net,trekcheck.net,metoza.net,techlike.net##+js(rmnt, script, justDetectAdblock)
-blogesque.net,bookbucketlyst.com,explorosity.net,optimizepics.com,stfly.*,stly.*,torovalley.net,explorosity.net,travize.net,trekcheck.net,metoza.net,techlike.net##+js(acs, document.documentElement, break;case $.)
+blogesque.net,bookbucketlyst.com,explorosity.net,optimizepics.com,stfly.*,stly.*,torovalley.net,explorosity.net,travize.net,trekcheck.net,metoza.net,techlike.net,snaplessons.net,atravan.net,transoa.net,techmize.net,crenue.net##+js(rmnt, script, justDetectAdblock)
+blogesque.net,bookbucketlyst.com,explorosity.net,optimizepics.com,stfly.*,stly.*,torovalley.net,explorosity.net,travize.net,trekcheck.net,metoza.net,techlike.net,snaplessons.net,atravan.net,transoa.net,techmize.net,crenue.net##+js(acs, document.documentElement, break;case $.)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24042
 ! https://github.com/uBlockOrigin/uAssets/issues/24313
@@ -1381,3 +1381,6 @@ dailytech-news.eu##+js(rpnt, script, /element\.contains\(document\.activeElement
 ! https://github.com/uBlockOrigin/uAssets/issues/25226 - (https://worldmak .com/?c1d952d8)
 worldmak.com##+js(no-fetch-if, googlesyndication)
 technoinformations.com,worldmak.com###wpsafe-link:style(display: block !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25386
+bollywoodchamp.in##+js(noeval-if, /chp_?ad/)
