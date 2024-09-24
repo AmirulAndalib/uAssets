@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Mon, 23 Sep 2024 05:45:39 +0000
+! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -264,7 +264,7 @@ abysscdn.com##.playover
 abysscdn.com,playhydrax.com##+js(set, document.ontouchend, null)
 abysscdn.com,playhydrax.com##+js(set, document.onclick, null)
 ! popups when moving out of fullscreen
-abysscdn.com,playhydrax.com##+js(aost, HTMLElement.prototype.click, _0x)
+abysscdn.com,hihihaha1.xyz,hihihaha2.xyz,playhydrax.com##+js(aost, HTMLElement.prototype.click, _0x)
 ! https://github.com/uBlockOrigin/uAssets/issues/24918
 abysscdn.com,playhydrax.com###overlay
 ! https://www.reddit.com/r/uBlockOrigin/comments/1ef4r1f/kisscartoonnz_blocks_720p_quality_for_adblock/
@@ -700,6 +700,12 @@ bombuj.*##+js(nobab)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=rtl.hr
 @@||cdn.jsdelivr.net/npm/videojs-contrib-ads$script,domain=rtl.hr
 *$object,redirect-rule=noopframe,domain=rtl.hr
+
+! https://github.com/uBlockOrigin/uAssets/issues/6585
+! https://github.com/uBlockOrigin/uAssets/issues/14423
+fcportables.com##+js(set, adsClasses, undefined)
+fcportables.com##+js(set, gsecs, 0)
+fcportables.com##+js(rmnt, script, ai_adb)
 
 ! END: Rules from filters.txt
 
@@ -1338,7 +1344,7 @@ dragontea.ink##iframe[id^="google_ads_iframe"]
 dragontea.ink##.dta
 dragontea.ink##+js(nosiif, /_0x|dtaf/)
 dragontea.ink##style:has-text(.reading-content img):remove()
-dragontea.ink##+js(rpnt, script, "}};, "}}; jQuery(document).ready(function(t){let e=document.createElement("link");e.setAttribute("rel"\,"stylesheet")\,e.setAttribute("media"\,"all")\,e.setAttribute("href"\,"https://dragontea.ink/wp-content/cache/autoptimize/css/autoptimize_325679dd9090b57747bdd165077b8cc2.css")\,document.head.appendChild(e)\,t(".dmpvazRKNzBib1IxNjh0T0cwUUUxekEyY3F6Wm5QYzJDWGZqdXFnRzZ0TT0nuobc").parent().prev().prev().prev();var a=1\,n=16\,r=11\,i="08"\,g=""\,c=""\,d=0\,o=2\,p=3\,s=0\,h=100;s++\,s*=2\,h/=2\,h/=2;var $=3\,u=20;function b(){let e=t(".entry-header.header")\,a=parseInt(e.attr("data-id"));return a}function m(t\,e\,a\,n\,r){return CryptoJSAesJson.decrypt(t\,e+a+n+r)}function f(t\,e){return CryptoJSAesJson.decrypt(t\,e)}function l(t\,e){return parseInt(t.toString()+e.toString())}function k(t\,e\,a){return t.toString()+e.toString()+a.toString()}$*=2\,u=u-2-2\,i="03"\,o++\,r++\,n=n/4-2\,a++\,a*=4\,n++\,n++\,n++\,a-=5\,r++\,i="07"\,t(".reading-content .page-break img").each(function(){var e\,g=t(this)\,c=f(g.attr("id").toString()\,(e=parseInt((b()+l(r\,i))*a-t(".reading-content .page-break img").length)\,e=l(2*n+1\,e)).toString());g.attr("id"\,c)})\,r=0\,n=0\,a=0\,i=0\,t(".reading-content .page-break img").each(function(){var e=t(this)\,a=parseInt(e.attr("id").replace(/image-(\d+)[a-z]+/i\,"$1"));t(".reading-content .page-break").eq(a).append(e)})\,t(".reading-content .page-break img").each(function(){var e=t(this).attr("id");g+=e.substr(-1)\,t(this).attr("id"\,e.slice(0\,-1))})\,d++\,$++\,$++\,u/=4\,u*=2\,o*=2\,p-=3\,p++\,t(".reading-content .page-break img").each(function(){var e\,a=t(this)\,n=f(a.attr("dta").toString()\,(e=parseInt((b()+l($\,u))*(2*d)-t(".reading-content .page-break img").length-(4*d+1))\,e=k(2*o+p+p+1\,g\,e)).toString());a.attr("dta"\,n)})\,d=0\,$=0\,u=0\,o=0\,p=0\,t(".reading-content .page-break img").each(function(){var e=t(this).attr("dta").substr(-2);c+=e\,t(this).removeAttr("dta")})\,s*=s\,s++\,h-=25\,h++\,h++\,t(".reading-content .page-break img").each(function(){var e=t(this)\,a=f(e.attr("data-src").toString()\,(b()\,k(b()+4*s\,c\,t(".reading-content .page-break img").length*(2*h))).toString());e.attr("data-src"\,a)})\,s=0\,h=0\,t(".reading-content .page-break img").each(function(){t(this).addClass("wp-manga-chapter-img img-responsive lazyload effect-fade")})\,_0xabe6x4d=!0});)
+dragontea.ink##+js(rpnt, script, "}};, "}}; jQuery(document).ready(function(t){let e=document.createElement("link");e.setAttribute("rel"\,"stylesheet")\,e.setAttribute("media"\,"all")\,e.setAttribute("href"\,"https://dragontea.ink/wp-content/cache/autoptimize/css/autoptimize_5bd1c33b717b78702e18c3923e8fa4f0.css")\,document.head.appendChild(e)\,t(".dmpvazRKNzBib1IxNjh0T0cwUUUxekEyY3F6Wm5QYzJDWGZqdXFnRzZ0TT0nuobc").parent().prev().prev().prev();var a=1\,n=16\,r=11\,i="08"\,g=""\,c=""\,d=0\,o=2\,p=3\,s=0\,h=100;s++\,s*=2\,h/=2\,h/=2;var $=3\,u=20;function b(){let e=t(".entry-header.header")\,a=parseInt(e.attr("data-id"));return a}function m(t\,e\,a\,n\,r){return CryptoJSAesJson.decrypt(t\,e+a+n+r)}function f(t\,e){return CryptoJSAesJson.decrypt(t\,e)}function l(t\,e){return parseInt(t.toString()+e.toString())}function k(t\,e\,a){return t.toString()+e.toString()+a.toString()}$*=2\,u=u-2-2\,i="03"\,o++\,r++\,n=n/4-2\,a++\,a*=4\,n++\,n++\,n++\,a-=5\,r++\,i="07"\,t(".reading-content .page-break img").each(function(){var e\,g=t(this)\,c=f(g.attr("id").toString()\,(e=parseInt((b()+l(r\,i))*a-t(".reading-content .page-break img").length)\,e=l(2*n+1\,e)).toString());g.attr("id"\,c)})\,r=0\,n=0\,a=0\,i=0\,t(".reading-content .page-break img").each(function(){var e=t(this)\,a=parseInt(e.attr("id").replace(/image-(\d+)[a-z]+/i\,"$1"));t(".reading-content .page-break").eq(a).append(e)})\,t(".reading-content .page-break img").each(function(){var e=t(this).attr("id");g+=e.substr(-1)\,t(this).attr("id"\,e.slice(0\,-1))})\,d++\,$++\,$++\,u/=4\,u*=2\,o*=2\,p-=3\,p++\,t(".reading-content .page-break img").each(function(){var e\,a=t(this)\,n=f(a.attr("dta").toString()\,(e=parseInt((b()+l($\,u))*(2*d)-t(".reading-content .page-break img").length-(4*d+1))\,e=k(2*o+p+p+1\,g\,e)).toString());a.attr("dta"\,n)})\,d=0\,$=0\,u=0\,o=0\,p=0\,t(".reading-content .page-break img").each(function(){var e=t(this).attr("dta").substr(-2);c+=e\,t(this).removeAttr("dta")})\,s*=s\,s++\,h-=25\,h++\,h++\,t(".reading-content .page-break img").each(function(){var e=t(this)\,a=f(e.attr("data-src").toString()\,(b()\,k(b()+4*s\,c\,t(".reading-content .page-break img").length*(2*h))).toString());e.attr("data-src"\,a)})\,s=0\,h=0\,t(".reading-content .page-break img").each(function(){t(this).addClass("wp-manga-chapter-img img-responsive lazyload effect-fade")})\,_0xabe6x4d=!0});)
 
 ! https://time.artjoey.com PH
 time.artjoey.com##.adsense:style(padding: 0 !important;)
@@ -2026,7 +2032,7 @@ thejakartapost.com##.tjp-single__content-ads:remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/24812#issuecomment-2289648269
 $frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|hianime.to|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#if env_firefox
-$frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru
+$frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|roselife.site
 !#endif
 euro2024direct.ru##+js(acs, document.createElement, break;case)
 ! https://github.com/uBlockOrigin/uAssets/issues/23689
@@ -3295,3 +3301,9 @@ x-video.tube##+js(acs, Math.floor, src_pop)
 x-video.tube##+js(rmnt, script, wpadmngr.com)
 ||salbraddrepilly.com^
 ||incomparable-pair.com^
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/189357
+roselife.site##a[href][onclick="this.remove()"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/25414
+||juneauempire.com/wp-content/plugins/incognito_dectector/

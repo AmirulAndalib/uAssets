@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Sun, 22 Sep 2024 17:12:49 +0000
+! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -19,7 +19,6 @@
 ! *** easylist:easyprivacy/easyprivacy_general.txt ***
 &action=js_stats&
 &ev=PageView&
-&event=view&
 &EventType=DataDealImpression&
 &EventType=Impression&
 &hitType=pageview&
@@ -3159,7 +3158,6 @@ omni.soundestlink.com$image
 ||cityrobotflower.com^
 ||ck123.io^
 ||ckies.net^
-||clanto.cloud^
 ||clarity.ms^
 ||clearbitscripts.com^
 ||click360.io^
@@ -3439,7 +3437,6 @@ omni.soundestlink.com$image
 ||test.vast^
 ||testingmetriksbre.ru^
 ||thatmonkeybites3.com^
-||the-ozone-project.com^
 ||thefontzone.com^
 ||tkrconnector.com^
 ||tncid.app^
@@ -10674,6 +10671,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mas.nth.ch^
 ||mashery.com/analytics/
 ||materiel.net/r/$image
+||mato.clanto.cloud^
+||matomo.clanto.cloud^
 ||maven.io/api/userEvent/
 ||mavencoalition.io/collect
 ||maxmind.com/app/$third-party

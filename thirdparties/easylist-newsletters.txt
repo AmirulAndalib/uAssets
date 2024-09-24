@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sun, 22 Sep 2024 17:12:49 +0000
+! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2035,6 +2035,7 @@ duckduckgo.com,duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion##.
 csswizardry.com##.band--highlight
 news.mongabay.com##.banner
 amnesty.org##.banner-fixed
+executivegov.com##.banner-mh
 balkangreenenergynews.com##.banner-text
 royalsocietypublishing.org##.banner-wrapper
 airtahitinui.com##.bannerleads

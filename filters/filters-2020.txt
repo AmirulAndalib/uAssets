@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2020)
-! Last modified: Sun, 22 Sep 2024 17:12:49 +0000
+! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -2704,13 +2704,7 @@ thepoorcoder.com##+js(aopr, adblockDetector)
 ! https://github.com/uBlockOrigin/uAssets/issues/7962
 ! https://www.reddit.com/r/uBlockOrigin/comments/15uh8g0/city_tv_being_blocked_again/
 @@||citytv.com^$ghide
-@@||citytv.com/wp-json/rsm-adutil/v1/get_ad_targets_by_url/$xhr,1p
-citytv.com##+js(json-prune, *, ad_unit_path)
-!#if ext_devbuild
-||citytv.com/wp-json/rsm-adutil/v1/get_ad_targets_by_url/$xhr,1p,important
-citytv.com#@#+js(json-prune, *, ad_unit_path)
 citytv.com##+js(no-xhr-if, wp-json/rsm-adutil, true)
-!#endif
 
 ! brave issue google funding
 globo.com,latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
@@ -4349,7 +4343,7 @@ songspk.*##+js(aost, Object, /(?=^(?!.*(https)))/)
 ! ##+js(acs, document.createElement, ;}}};break;case $.)
 moviesnation.*##+js(acs, document.createElement, ;}}};break;case $.)
 ! ##+js(acs, EventTarget.prototype.addEventListener, delete window)
-9animetv.to,advertisertape.com,animeunity.to,animeyabu.org,anitube.*,ate60vs7zcjhsjo5qgv8.com,file4go.*,lulustream.com,movieshubweb.com,player.smashy.stream,putlocker.*,sflix.*,soap2day.*,streamtape.*,swiftload.io,subtitlecat.com,vidsrc.*,viprow.*,vixcloud.co,ythd.org##+js(acs, EventTarget.prototype.addEventListener, delete window)
+9animetv.to,advertisertape.com,animeunity.to,animeyabu.org,anitube.*,ate60vs7zcjhsjo5qgv8.com,file4go.*,linkz.wiki,lulustream.com,movies4u.*,movieshubweb.com,player.smashy.stream,putlocker.*,sflix.*,soap2day.*,streamtape.*,swiftload.io,subtitlecat.com,vidsrc.*,viprow.*,vixcloud.co,ythd.org##+js(acs, EventTarget.prototype.addEventListener, delete window)
 atlaq.com,bolly4umovies.*,douploads.net,moalm-qudwa.blogspot.com,shurt.pw##+js(aopr, zfgformats)
 123movieshub.*,animeunity.*,bflix.*,cima-club.*,flixhq.*,hindilinks4u.*,mcloud.bz,t7meel.*,theflixer.tv,vidstream.pro##+js(aopr, zfgstorage)
 01fmovies.com,123moviesfun.is,bmovies.*,bolly4umovies.*,putlocker.*##+js(acs, Math, XMLHttpRequest)
@@ -4362,6 +4356,7 @@ filmywap.*##+js(acs, Object, XMLHttpRequest)
 coinfaucet.io##+js(acs, decodeURI, zfgloadedpopup)
 bitfly.io,pelisplus.*,pelisplus2.*##+js(aost, Math.random, /\st\.[a-zA-Z]*\sinlineScript/)
 shahiid-anime.net##+js(aost, Object,  /(?=^(?!.*(https)))/)
+nsw2u.*##+js(trusted-replace-argument, document.createElement, 0, "''", condition, iframe)
 ||flixhq.*/loadme/
 ! https://www.reddit.com/r/uBlockOrigin/comments/1feyh47/wwwanitubeus_detected/
 file4go.net##+js(no-xhr-if, outbrain)
