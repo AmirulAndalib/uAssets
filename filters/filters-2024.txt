@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
+! Last modified: Thu, 26 Sep 2024 21:24:40 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -707,6 +707,18 @@ fcportables.com##+js(set, adsClasses, undefined)
 fcportables.com##+js(set, gsecs, 0)
 fcportables.com##+js(rmnt, script, ai_adb)
 
+! https://github.com/uBlockOrigin/uAssets/issues/8719
+1001tracklists.com##+js(aopr, recoverLinks)
+1001tracklists.com##+js(ra, class, div.intAdX)
+1001tracklists.com##+js(ra, class, div[class^="img"][class$="ad"])
+@@||1001tracklists.com^$ghide
+@@||1001tracklists.com^$script,1p
+*$script,xhr,redirect-rule=noopjs,domain=1001tracklists.com
+1001tracklists.com##.adnginRight
+1001tracklists.com##div[class=""][style]
+1001tracklists.com##+js(alert-buster)
+1001tracklists.com##+js(no-fetch-if, method:HEAD)
+
 ! END: Rules from filters.txt
 
 ! START: Regional lists
@@ -759,6 +771,16 @@ megane.com.pl##+js(no-fetch-if, googlesyndication)
 ! https://github.com/uBlockOrigin/uAssets/issues/25384
 /^dizipal\d+\.com$/##.video-banner:style(display: block !important;)
 /^dizipal\d+\.com$/##.pre-player
+
+! <<<<< IndianList >>>>>
+! https://github.com/mediumkreation/IndianList/issues/10051
+||nagpurtoday.in/wp-content/uploads/*/*-adv.$image
+||nagpurtoday.in/wp-content/plugins/popup-builder/$script,1p
+nagpurtoday.in###header-sidebar
+nagpurtoday.in##aside[id^="custom_html-"][class*="widget"]:has(img + .popup)
+nagpurtoday.in##.shrcladv
+nagpurtoday.in##div[style^="text-align:"]:has(> video > source[src*="kukreja-video"])
+nagpurtoday.in##.middle-contbox
 
 ! END: Regional lists
 
@@ -826,10 +848,8 @@ tubereader.me##+js(nostif, /adblock/i)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/21777
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fblnh1/prevents_adsluarmornet_to_load/
-://ads.$~image,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
-! https://github.com/easylist/easylist/commit/2edb87958c982d030c5e5f56080a34f55f092fe5
-://ads.$~image,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
-://ads.$~image,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,to=~ads.remix.es
+://ads.$~image,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
+://ads.$~image,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,to=~ads.remix.es
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21775
 counterstrike-hack.leforum.eu,ajt.xooit.org##+js(aopr, document.body.style.backgroundPosition)
@@ -858,11 +878,11 @@ postermockup.com##+js(aost, setTimeout, adsBlocked)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165624
 ! https://github.com/uBlockOrigin/uAssets/issues/13594
-||check-host.net/images/rmondguarg$image,1p
-||check-host.net/images/rondguarg$image,1p
-||check-host.net/images/alexwhost.png$image,1p
-||check-host.net/images/aezawlogo.$image,1p
-check-host.net###hostacq, .hostavq, #antkeatvhaeaprivatealps, .specho, #antkeatvhaeaaeza-permnnt, #antkeatvhaqaalexhost, #antkeatvhaeapp-juiaryt, #antkeatvhaeapp-juiaryt2, .re-elative, [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://privatealps.net/"], [onclick*="https://aeza.net/"], a[href^="https://aeza.net/"]
+||check-host.net/images/rpndguarg$image,1p
+||check-host.net/images/rmpndguarg$image,1p
+||check-host.net/images/alexehost.png$image,1p
+||check-host.net/images/aezaelogo.svg$image,1p
+check-host.net###hostacq, .hostavq, #antkeatvhaeaprivatealps, .specho, #antkeatvhaeaaeza-permnnt, #antkeatvhaeaalexhost, #antkeatvhaeapp-juiaryt, #antkeatvhaeapp-juiaryt2, .rr-elative, [href*="?utm_"], a[href*="privatealps.net"], [onclick*="https://privatealps.net/"], [onclick*="https://aeza.net/"], [onclick*="https://alexhost.com"], a[href^="https://aeza.net/"]
 
 ! conceptartworld. com antiadb
 @@||conceptartworld.com^$ghide
@@ -1523,14 +1543,14 @@ daotranslate.*##+js(acs, document.getElementById, deblocker, /^data:text\/javasc
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/174393
 *$script,redirect-rule=noopjs,3p,domain=sfchronicle.com
-sfchronicle.com##+js(set-session-storage-item, realm.Oidc.3pc, $remove$)
+expressnews.com,sfchronicle.com##+js(set-session-storage-item, realm.Oidc.3pc, $remove$)
 ! https://github.com/uBlockOrigin/uAssets/issues/23190
 @@||realm.hearst3pcc.com^$script,3p,redirect-rule,from=sfchronicle.com|expressnews.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22821
-beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com###modals
-beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com##body:style(overflow: auto !important;)
-beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com##.mb32:has-text(Advertisement)
+beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com###modals
+beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com##body:style(overflow: auto !important;)
+beaumontenterprise.com,bigrapidsnews.com,ctinsider.com,ctpost.com,darientimes.com,expressnews.com,greenwichtime.com,houstonchronicle.com,lmtonline.com,manisteenews.com,michigansthumb.com,middletownpress.com,milfordmirror.com,mrt.com,myjournalcourier.com,ncadvertiser.com,newstimes.com,nhregister.com,ourmidland.com,registercitizen.com,sfchronicle.com,sheltonherald.com,stamfordadvocate.com,theheraldreview.com,thehour.com,theintelligencer.com,theridgefieldpress.com,thetelegraph.com,timesunion.com,trumbulltimes.com,wiltonbulletin.com,yourconroenews.com##.mb32:has-text(Advertisement)
 @@/sites/jquery.adx.js^$script,1p,domain=beaumontenterprise.com|bigrapidsnews.com|ctinsider.com|ctpost.com|darientimes.com|greenwichtime.com|houstonchronicle.com|lmtonline.com|manisteenews.com|michigansthumb.com|middletownpress.com|milfordmirror.com|mrt.com|myjournalcourier.com|ncadvertiser.com|newstimes.com|nhregister.com|ourmidland.com|registercitizen.com|sfchronicle.com|sheltonherald.com|stamfordadvocate.com|theheraldreview.com|thehour.com|theintelligencer.com|theridgefieldpress.com|thetelegraph.com|timesunion.com|trumbulltimes.com|wiltonbulletin.com|yourconroenews.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22847
@@ -2032,11 +2052,15 @@ thejakartapost.com##.tjp-single__content-ads:remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/24812#issuecomment-2289648269
 $frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|hianime.to|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#if env_firefox
-$frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|roselife.site
+$frame,csp=sandbox allow-downloads allow-forms allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|roselife.site|roshy.tv
 !#endif
 euro2024direct.ru##+js(acs, document.createElement, break;case)
 ! https://github.com/uBlockOrigin/uAssets/issues/23689
 ###video_player ~ div[id] div[style^="position:fixed;inset:0px;z-index:"]
+! https://github.com/uBlockOrigin/uAssets/issues/25417
+turtleviplay.xyz##+js(set, playID, 1)
+turtleviplay.xyz##+js(aost, document.createElement, openNewTab)
+turtleviplay.xyz##+js(nowoif)
 
 ! redecanais.dev & redecanaistv.dev popups on iframe
 xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b##+js(rmnt, script, ;}}};break;case $.)
@@ -2211,9 +2235,8 @@ porno-baguette.com##+js(set-cookie, ppndr, 1)
 soccerinhd.com##+js(set, checkAdsStatus, noopFunc)
 soccerinhd.com##+js(no-fetch-if, /doubleclick|googlesyndication/)
 soccerinhd.com##+js(acs, document.documentElement, break;case $.)
-soccerinhd.com##+js(aeld, DOMContentLoaded, /adb|fetch/i)
+soccerinhd.com##+js(rpnt, script, adblockDetected = true, adblockDetected = false)
 @@||soccerinhd.com^$ghide
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$xhr,domain=soccerinhd.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23905
 molbiotools.com##+js(nostif, inner-ad)
@@ -3307,3 +3330,16 @@ roselife.site##a[href][onclick="this.remove()"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25414
 ||juneauempire.com/wp-content/plugins/incognito_dectector/
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/189490
+uploadmall.com#@#.AdSense
+uploadmall.com##+js(set, navigator.brave, undefined)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25435
+app.involve.asia#@#.ads-banner
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fott8f/block_ads_in_preview_feed_on_redgifs/
+redgifs.com##+js(json-prune, gifs.[-].cta)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fpr48s/adblock_detected_on_smailpro/
+smailpro.com##+js(set, adsbygoogle_ama_fc_has_run, true)

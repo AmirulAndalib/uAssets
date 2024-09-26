@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
+! Last modified: Thu, 26 Sep 2024 21:24:40 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -408,6 +408,15 @@ buywholefoodsonline.co.uk##+js(trusted-set-cookie, cookiesSettingsData, '{"1":2,
 unka.bilecik.edu.tr##+js(set-cookie, .AspNet.Consent, yes, , reload, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/25362
 mediapart.fr##+js(trusted-set-cookie, cc, {%22disagreement%22:[%22ad%22%2C%22visit%22]%2C%22creation%22:$now$%2C%22update%22:$now$}, , , domain, mediapart.fr)
+! https://www.zus.pl/
+zus.pl##+js(trusted-set-cookie, COOKIE_CONSENT, %7B%22ANALYTICS%22%3Afalse%7D, , , domain, zus.pl)
+zus.pl##+js(trusted-set-cookie, COOKIE_CONSENT_EZUS, '{"FUNCTIONAL":true,"ANALYTICS":false}', , , domain, zus.pl)
+! https://www.ups.com/
+ups.com##+js(trusted-set-cookie, CONSENTMGR, consent:true%7Cts:$now$%7Cc1:0%7Cc3:0%7Cc5:1%7Cc6:0%7Cc7:0%7Cc8:0%7Cc9:1, , , domain, ups.com)
+ups.com##+js(trusted-set-cookie, HASSEENRECNOTICE, TRUE, , , domain, ups.com)
+! https://ai.meta.com/
+ai.meta.com##+js(trusted-click-element, button[data-cookiebanner="accept_only_essential_button"], , 1000)
+ai.meta.com##[data-testid="cookie-policy-manage-dialog"]:style(visibility: hidden !important;)
 
 
 !! Needs additional cookies
@@ -1594,12 +1603,14 @@ redbull.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$, , , d
 ! https://github.com/uBlockOrigin/uAssets/issues/24725
 ! https://github.com/uBlockOrigin/uAssets/pull/24840
 ! https://www.jeuxvideo.com/
+! https://github.com/uBlockOrigin/uAssets/issues/25416
+! https://kurier.at/video/aktuelle-videos/israel-bombardiert-weiter-hisbollah-ziele-im-libanon/402951598
 jeuxvideo.com##+js(trusted-click-element, button[onclick="Didomi.setUserAgreeToAll();"], , 1000)
 idnes.cz##+js(trusted-click-element, a[href="javascript:Didomi.setUserAgreeToAll();"], , 1000)
-20minutos.es,24sata.hr,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##+js(trusted-click-element, #didomi-notice-agree-button, , 1000)
-20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es###didomi-host:style(visibility: hidden !important;)
-20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##body.didomi-popup-open:style(overflow: auto !important;)
-@@||sdk.privacy-center.org^$script,domain=dnevnik.hr|actu.fr|ledauphine.com
+20minutos.es,24sata.hr,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,krone.at,kurier.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##+js(trusted-click-element, #didomi-notice-agree-button, , 1000)
+20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,kurier.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es###didomi-host:style(visibility: hidden !important;)
+20minutos.es,abc.es,actu.fr,actu.fr,autopista.es,belfasttelegraph.co.uk,bonduelle.it,bonniernews.se,cadenaser.com,ciclismoafondo.es,cnews.fr,cope.es,decathlon.nl,decathlon.pl,diepresse.com,dnevnik.hr,dumpert.nl,ebuyclub.com,edreams.de,edreams.net,elcomercio.es,elconfidencial.com,elconfidencial.com,eldesmarque.com,elespanol.com,elpais.com,elpais.es,euronews.com,expressen.se,france24.com,ghacks.net,gva.be,hbvl.be,jeuxvideo.com,krone.at,kurier.at,lalibre.be,ledauphine.com,lejdd.fr,libremercado.com,marmiton.org,metronieuws.nl,nicematin.com,nieuwsblad.be,numerama.com,radiofrance.fr,rankia.com,rfi.fr,rossmann.pl,rtbf.be,rtl.lu,rtl.lu,science-et-vie.com,sensacine.com,silicon.es,telegraaf.nl,trailrun.es##body.didomi-popup-open:style(overflow: auto !important;)
+@@||sdk.privacy-center.org^$script,domain=actu.fr|ledauphine.com
 
 ! didomi-continue-without-agreeing
 meteofrance.com##+js(trusted-click-element, span.didomi-continue-without-agreeing, , 1000)
@@ -1645,8 +1656,8 @@ utwente.nl##+js(trusted-set-cookie, utwente__avgconsent, '{"a":false,"c":true,"v
 speedtest.vodafone.de##+js(trusted-set-local-storage-item, speedtestUI.Consent, '{"analytics":false,"bugReports":false,"timestamp":"$currentISODate$"}')
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24823
-atresplayer.com,antena3.com,atresmedia.com,lasexta.com,melodia-fm.com,europafm.com,ondacero.es,atresmediastudios.com,atresmediapublicidad.com,antena3internacional.com,correryfitness.com##+js(trusted-click-element, #acceptAllMain, , 1000)
-atresplayer.com,antena3.com,atresmedia.com,lasexta.com,melodia-fm.com,europafm.com,ondacero.es,atresmediastudios.com,atresmediapublicidad.com,antena3internacional.com,correryfitness.com##sibbo-cmp-layout:style(visibility: hidden !important;)
+antena3.com,antena3internacional.com,atresmedia.com,atresmediapublicidad.com,atresmediastudios.com,atresplayer.com,correryfitness.com,europafm.com,flooxernow.com,lasexta.com,melodia-fm.com,ondacero.es##+js(trusted-click-element, #acceptAllMain, , 1000)
+antena3.com,antena3internacional.com,atresmedia.com,atresmediapublicidad.com,atresmediastudios.com,atresplayer.com,correryfitness.com,europafm.com,flooxernow.com,lasexta.com,melodia-fm.com,ondacero.es##sibbo-cmp-layout:style(visibility: hidden !important;)
 
 ! rtvc.es (accept)
 cdn.privacy-mgmt.com##+js(trusted-click-element, button[aria-label*="Aceptar"], , 1000)

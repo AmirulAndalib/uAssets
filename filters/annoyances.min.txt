@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Tue, 24 Sep 2024 05:02:11 +0000
+! Last modified: Thu, 26 Sep 2024 21:24:40 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -184,15 +184,11 @@ searchenginewatch.com##+js(acs, jQuery, #sign-up-popup)
 facebook.com,facebookcorewwwi.onion,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##.fbUserStory:has-text(Popular Across Facebook)
 facebook.com,facebookcorewwwi.onion,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##.userContentWrapper:has-text(Popular Across Facebook)
 !#if cap_html_filtering
-! ||facebook.com/api/graphql/$xhr,replace=/\{"brs_content_label":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/{}/g,domain=web.facebook.com|www.facebook.com
-! ||facebook.com/api/graphql/$xhr,replace=/\{"label_field_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/{}/g,domain=web.facebook.com|www.facebook.com
-! ||facebook.com/api/graphql/$xhr,replace=/\{"the_cnt_lbl_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/{}/g,domain=web.facebook.com|www.facebook.com
-||facebook.com/api/graphql/$xhr,replace=/\{"newest_lbl_for_brs"[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/{}/g,domain=web.facebook.com|www.facebook.com
+! ||facebook.com/api/graphql/$xhr,replace=/\{"newest_lbl_for_brs"[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/{}/g,domain=web.facebook.com|www.facebook.com
+||facebook.com/api/graphql/$xhr,1p,replace=/,"category_sensitive"[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/}/g,domain=web.facebook.com|www.facebook.com
 !#else
-! web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/\{"brs_content_label":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', {}, /api/graphql)
-! web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/\{"label_field_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', {}, /api/graphql)
-! web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/\{"the_cnt_lbl_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', {}, /api/graphql)
-web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/\{"newest_lbl_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', {}, /api/graphql)
+! web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/\{"newest_lbl_for_brs":[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', {}, /api/graphql)
+web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/,"category_sensitive"[^\n]+?"follow_button":\{"__typename":"CometFeedStoryFollowButtonStrategy"[^\n]+"cursor":"[^"]+"\}/g', }, /api/graphql)
 !#endif
 ! FB link redirection
 www.facebook.com##+js(json-prune, require.0.3.0.__bbox.define.[].2.is_linkshim_supported require.0.3.0.__bbox.define.[].2.click_ids)
@@ -3570,7 +3566,6 @@ ymovies.vip,aniwatch.to,aniwatchtv.to,megacloud.tv,hianime.*,putlocker.vip,rapid
 myflixerz.to##+js(nostif, 0x)
 movie4kto.net##+js(nosiif, /DevTools|_0x/)
 lethalpanda.com##+js(aopr, b2a)
-animenewsnetwork.com##+js(set, ANN.ads.adblocked, false)
 ||hackthebox.com/build/assets/just-detect-adblock-$script,1p
 amtraker.com##+js(no-fetch-if, cloudflareinsights.com)
 amtraker.com##.terrabanner
@@ -3846,6 +3841,8 @@ vidsrc.*##+js(acs, RegExp.prototype.toString, .join(""))
 vidsrc.*##+js(aeld, keydown, 123)
 vidsrc.*##+js(nosiif, devtool)
 vidsrc.*##+js(set, console.clear, trueFunc)
+vidsrc.*##+js(set, DisableDevtool, noopFunc)
+ate60vs7zcjhsjo5qgv8.com##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', abort)
 embtaku.pro##+js(aost, Promise, /isEnable|isOpen/)
 ! mrbenne. com anti select, right click, f-keys, print
 mrbenne.com##+js(rmnt, script, /Clipboard|oncontextmenu|wpcp|keyCode/)
