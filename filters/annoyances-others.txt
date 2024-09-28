@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Thu, 26 Sep 2024 21:24:40 +0000
+! Last modified: Sat, 28 Sep 2024 11:09:16 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -5178,7 +5178,8 @@ brainly.*##+js(set, jsData.hasVideoMeteringUnlogEnabled, undefined)
 ! https://github.com/uBlockOrigin/uAssets/issues/9632
 brainly.*##+js(set-local-storage-item, social-qa/machineId, $remove$)
 ! https://github.com/uBlockOrigin/uAssets/issues/24398
-brainly.*##+js(set-local-storage-item, simple-funnel-name, $remove$)
+! https://github.com/uBlockOrigin/uAssets/issues/25457
+brainly.*,nosdevoirs.fr##+js(set-local-storage-item, simple-funnel-name, $remove$)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12571
 ! enable context menu
@@ -7743,3 +7744,11 @@ lowfuelmotorsport.com##+js(set, Object.prototype.auth.redirectToLogin, noopFunc)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fnvf02/camspider_adblock_notice/
 camspider.com##+js(set-local-storage-item, adblockNoticePermaDismiss, true)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25442
+||jetv.xyz/assets/js/devtools-detector.js$script,1p
+jetv.xyz##+js(trusted-suppress-native-method, Function.prototype.constructor, '"debugger"', abort)
+jetv.xyz##+js(nosiif, devtoolsDetector)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25437
+html5.gamedistribution.com###gd__adblocker__overlay

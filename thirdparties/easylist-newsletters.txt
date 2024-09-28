@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 26 Sep 2024 21:24:40 +0000
+! Last modified: Sat, 28 Sep 2024 11:09:16 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2505,7 +2505,7 @@ publishersweekly.com##.home-promo-center-right-bottom
 nationaltoday.com##.home-section-register
 sojo.net##.home-sidebar-signup
 nomadicmatt.com##.home-signup
-thechunkychef.com,yesmagazine.org##.home-subscribe
+inc42.com,thechunkychef.com,yesmagazine.org##.home-subscribe
 washingtonengager.com##.home-subscribe-header
 democracynow.org##.home_daily_digest
 opencv.org##.homepage-email-icon
@@ -2942,6 +2942,7 @@ labiotech.eu##.pb-8
 nejm.org##.pb-house-message
 playbuzz.com##.pb-site-subscription
 popculture.com##.pc-newsletter-sidebar
+paydaythegame.com##.pdtgfooternewsletter
 bonappetit.com##.persistent-bottom
 reviewed.usatoday.com##.persistent-email-cta
 washingtontimes.com##.piano-fixed-footer-two
