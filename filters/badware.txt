@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Badware risks
-! Last modified: Sat, 28 Sep 2024 11:09:16 +0000
+! Last modified: Wed, 02 Oct 2024 03:04:49 +0000
 ! Expires: 5 days
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc.
 ! The purpose is to at least ensure a user is warned of the risks ahead.
@@ -801,32 +801,29 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||sharpfiledownload.com^$all
 ||one-click.cc^$all
 ||descarga.pw^$doc
-||soft-lab.pw^$doc
-||cheats.ink^$doc
-||cheat-world.site^$doc
 ||clc-link.me^$all
-||soft-portal.me^$doc
 ||app.mediafire.com/jjtzeom4qvvxb$doc
 ||app.mediafire.com/36culjifmas7b$doc
 ||app.mediafire.com/y0r8u9vyci2hy$doc
-||app.mediafire.com/v297jm400gsm5$doc
+||app.mediafire.com/rvq21oqy897t7$doc
 ||mediafire.com/folder/10ejpiwio2gfh/$doc
-||mediafire.com/folder/47ccu44v3b5sq/$doc
 ||mediafire.com/folder/n2cwlepl4zeov/$doc
 ||mediafire.com/folder/v6itahr4p07b1/$doc
 ||mediafire.com/folder/01t0gadw328j9/$doc
 ||mediafire.com/folder/h9o4dqf15amrc/$doc
 ||mediafire.com/folder/ofa1qju50ffaz/$doc
 ||mediafire.com/folder/9gwcg0g7moide/$doc
+||mediafire.com/folder/5mm90sz4nz0ui/$doc
+||mediafire.com/folder/e1ja1so1xldxz/$doc
 ||www.youtube.com/@pengwincheat/$doc
 ||www.youtube.com/channel/UCS9ql1ylQmDx7o_6v15X7mw/$doc
 ||www.youtube.com/channel/UCEMJ0wTeQgvyyvQTil7tteQ/$doc
 ||www.youtube.com/channel/UC0G6UimTOf4mIRvW11yPZXQ/$doc
 ||www.youtube.com/channel/UCNLgP9j7dK6tvEiZC2wZp5Q/$doc
-||sites.google.com/view/amamsoft|$doc
 ||sites.google.com/view/hubgames|$doc
 ||sites.google.com/view/ulpackmnn|$doc
 ||sites.google.com/view/zxcqq|$doc
+||sites.google.com/view/exlaunch3r/$doc
 ||gamefree.vip^$doc
 ||gocrazy.gg^$doc
 ||murhack.com^$doc
@@ -839,11 +836,11 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||yuqucheat.com^$doc
 ||games-blacksoft.com^$doc
 ||freefiles-upload.com^$doc
-||rgcatalyst.biz^$all
 ||arcanecheat.com^$doc
 ||projectglbl.lol^$doc
-||zensoft.club^$all
 ||evilmods.com^$doc
+||zencloud.life^$doc
+||exoduscheats.space^$doc
 ! https://cloud-folder.org/KRvjWueEcl/
 ! https://cloud-pack.org/yE2Kn04/
 ||cloud-folder.org^$doc
@@ -3376,7 +3373,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 
 ! https://github.com/uBlockOrigin/uAssets/pull/21539
 ||stalkforx.ru^$all
-||stalktoolss.ru^$all
 ||stalkanalysis.ru^$all
 
 ! Cryptocurrency Scams
@@ -3387,6 +3383,18 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||pepzk-community.xyz^$all
 ||earth-ling.org^$doc
 ||pacmoonn.icu^$doc
+||muskevent.info^$doc
+! https://github.com/uBlockOrigin/uAssets/issues/24296
+! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
+! https://www.urlvoid.com/scan/teslafond.io/
+||teslafond.io^$doc
+! https://github.com/uBlockOrigin/uAssets/issues/24590
+||teslacore.io^$doc
+! https://github.com/uBlockOrigin/uAssets/issues/24734
+||btc24.info^$doc
+||youtube.com/@tesla24official^$doc
+! https://www.reddit.com/r/Scams/comments/1fjggp3/deepfake_of_elon_musk_promoting_a_scam_qr_code/
+||usmusk.net^$doc
 
 ||arbitragebot.team^$all
 ||arbitrageinstruction.media^$all
@@ -3418,18 +3426,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||uniproject.substack.com^$all
 ||web3projects.substack.com^$all
 ||webpublic.substack.com^$all
-
-! https://github.com/uBlockOrigin/uAssets/issues/24296
-! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
-! https://www.urlvoid.com/scan/teslafond.io/
-||teslafond.io^$doc
-! https://github.com/uBlockOrigin/uAssets/issues/24590
-||teslacore.io^$doc
-! https://github.com/uBlockOrigin/uAssets/issues/24734
-||btc24.info^$doc
-||youtube.com/@tesla24official^$doc
-! https://www.reddit.com/r/Scams/comments/1fjggp3/deepfake_of_elon_musk_promoting_a_scam_qr_code/
-||usmusk.net^$doc
 
 ! Phishing - See https://bbs.kafan.cn/thread-2264505-1-1.html
 ! https://github.com/uBlockOrigin/uAssets/pull/21759
@@ -3539,6 +3535,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||clickhereecraigslist.tripod.com^$all
 ||unclepigva.com^$all,to=~chase.com
 ||mymokki.ru^$all,to=~hozblokspb.ru
+||lapmangsctv.com.vn^$doc,to=~sctv.com.vn
 ||testra*-covid.weebly.com^$all,to=~telstra.com.au
 ||final-ua.eu/vasilisa/votings$all
 ||flow.page/foxhills.co.uk^$all,to=~foxhills.co.uk
@@ -3829,6 +3826,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ! https://www.virustotal.com/gui/url/e03d3f2646d75cc8edd081a933cbeb5ff290770804c0ef39d6ee69fec22a4a61
 ||dailycontestportal.com/*/orange-reward-survey-1/$doc,to=~orange.fr
 
+! tiktok shop
+||tiktikshopvn.com^$doc
 ! amazon
 ||amazon-*.shop^$doc
 ||amazon-shopping.shop^$all
@@ -3936,6 +3935,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 
 ! gov phishing site
 ||thanhtrapcrt.online^$all,to=~thanhtra.gov.vn
+||chinhphu.hodancu.com^$all,to=~gov.vn
 ! https://www.virustotal.com/gui/url/19c07d4e7c627a1f83900c509ce73b828247b3bb932713383e5569e7e2671882
 ! https://www.virustotal.com/gui/url/3184ee7bcf4b3d443307b36cf33e2c1e078747f6618534fc944442ae1b323e4c
 ||pttgov*.top^$doc,to=top|~ptt.gov.tr
@@ -4005,11 +4005,11 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 
 ! bank
 ||chamsocthekhachhang-$doc,to=~edu|~gov|~edu.vn|~gov.vn
+||uudaikhachhangthe-$doc,to=~edu|~gov|~edu.vn|~gov.vn
 ||sotuyenvcb.vietcombanker.com^$all,to=~vietcombank.com.vn
 ||vdbank.com.vn^$all,to=~vdb.gov.vn
 ||conveyancingportal.com^$all
 ||canhantpb.com^$all,to=~tpb.vn
-||mbdk99.com^$all,to=~mbbank.com.vn
 ||bmoreferral.com^$all,to=~bmo.com
 ||personas.devbam.com^$all,to=~bam.com.gt
 ||negociebra.com.br^$all,to=~banco.bradesco
@@ -4064,6 +4064,10 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||wixsite.com/foliobanbajio$doc,to=~bb.com.mx
 ! https://www.virustotal.com/gui/url/edf4998723800812cbe1bd7d49bed085753340593415067ccb6d8b9d94e0508d
 ||shahidulislamaurko.com^$all,to=~vr.de
+
+! mbbank
+/^https:\/\/mbdk\d+\.com\//$doc,to=com|~mbbank.com.vn
+||mbdk99.com^$all,to=~mbbank.com.vn
 
 ! bbva
 ||bbvaar.zeabur.app^$all,to=~bbva.com
@@ -5049,6 +5053,13 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||govqp.com^$all
 ||org.govqp.com^$all,to=~vr.org.vn
 
+! https://khonggianmang.vn/uploads/2024_CBT_38_1dc220bba1.pdf
+||ebayu.top^$all
+||svgov.cc^$all,to=~gov.vn
+||bcavnvnvngov.com^$all,to=~bocongan.gov.vn
+||hangtietkiem.online^$all,to=~giaohangtietkiem.vn
+||giaohangtietkiemvietnam.com^$all,to=~giaohangtietkiem.vn
+
 ! https://social.immibis.com/notice/AjwiBkDIwtyORTzsAq
 ||msk.su^$all
 
@@ -5313,6 +5324,7 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||bloxstrapmenu.com^$doc
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24323
+||joannst.shop^$doc,to=~joann.com
 ! https://www.virustotal.com/gui/url/f355d4d12f50be515284fc97096bad1f093194efe21fd7420c4446ae20def74a
 ! https://transparencyreport.google.com/safe-browsing/search?url=joannclearances.com
 ! https://safeweb.norton.com/report/show?url=joannclearances.com
@@ -5534,3 +5546,10 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 
 ! https://www.proofpoint.com/us/blog/threat-insight/security-brief-actor-uses-compromised-accounts-customized-social-engineering
 ||live-samsaratrucking.com^$all,to=~samsara.com
+
+! malware spam
+||bit.ly/47P0Nvo$all
+
+! https://github.com/uBlockOrigin/uAssets/issues/25470
+||the-north-face.gr^$all
+||thenorthfacegreece.com^$all

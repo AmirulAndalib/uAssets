@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Sat, 28 Sep 2024 11:09:16 +0000
+! Last modified: Wed, 02 Oct 2024 03:04:49 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -684,32 +684,29 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||sharpfiledownload.com^$all
 ||one-click.cc^$all
 ||descarga.pw^$doc
-||soft-lab.pw^$doc
-||cheats.ink^$doc
-||cheat-world.site^$doc
 ||clc-link.me^$all
-||soft-portal.me^$doc
 ||app.mediafire.com/jjtzeom4qvvxb$doc
 ||app.mediafire.com/36culjifmas7b$doc
 ||app.mediafire.com/y0r8u9vyci2hy$doc
-||app.mediafire.com/v297jm400gsm5$doc
+||app.mediafire.com/rvq21oqy897t7$doc
 ||mediafire.com/folder/10ejpiwio2gfh/$doc
-||mediafire.com/folder/47ccu44v3b5sq/$doc
 ||mediafire.com/folder/n2cwlepl4zeov/$doc
 ||mediafire.com/folder/v6itahr4p07b1/$doc
 ||mediafire.com/folder/01t0gadw328j9/$doc
 ||mediafire.com/folder/h9o4dqf15amrc/$doc
 ||mediafire.com/folder/ofa1qju50ffaz/$doc
 ||mediafire.com/folder/9gwcg0g7moide/$doc
+||mediafire.com/folder/5mm90sz4nz0ui/$doc
+||mediafire.com/folder/e1ja1so1xldxz/$doc
 ||www.youtube.com/@pengwincheat/$doc
 ||www.youtube.com/channel/UCS9ql1ylQmDx7o_6v15X7mw/$doc
 ||www.youtube.com/channel/UCEMJ0wTeQgvyyvQTil7tteQ/$doc
 ||www.youtube.com/channel/UC0G6UimTOf4mIRvW11yPZXQ/$doc
 ||www.youtube.com/channel/UCNLgP9j7dK6tvEiZC2wZp5Q/$doc
-||sites.google.com/view/amamsoft|$doc
 ||sites.google.com/view/hubgames|$doc
 ||sites.google.com/view/ulpackmnn|$doc
 ||sites.google.com/view/zxcqq|$doc
+||sites.google.com/view/exlaunch3r/$doc
 ||gamefree.vip^$doc
 ||gocrazy.gg^$doc
 ||murhack.com^$doc
@@ -722,11 +719,11 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||yuqucheat.com^$doc
 ||games-blacksoft.com^$doc
 ||freefiles-upload.com^$doc
-||rgcatalyst.biz^$all
 ||arcanecheat.com^$doc
 ||projectglbl.lol^$doc
-||zensoft.club^$all
 ||evilmods.com^$doc
+||zencloud.life^$doc
+||exoduscheats.space^$doc
 ||cloud-folder.org^$doc
 ||cloud-pack.org^$doc
 ||cloud-deployments.org^$doc
@@ -2881,7 +2878,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||chromegoogle.cn^$all
 ||mk90.shop^$all
 ||stalkforx.ru^$all
-||stalktoolss.ru^$all
 ||stalkanalysis.ru^$all
 ! Cryptocurrency Scams
 ||mevtime.com^$all
@@ -2891,6 +2887,12 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||pepzk-community.xyz^$all
 ||earth-ling.org^$doc
 ||pacmoonn.icu^$doc
+||muskevent.info^$doc
+||teslafond.io^$doc
+||teslacore.io^$doc
+||btc24.info^$doc
+||youtube.com/@tesla24official^$doc
+||usmusk.net^$doc
 ||arbitragebot.team^$all
 ||arbitrageinstruction.media^$all
 ||arbitrageproject.blog^$all
@@ -2921,11 +2923,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||uniproject.substack.com^$all
 ||web3projects.substack.com^$all
 ||webpublic.substack.com^$all
-||teslafond.io^$doc
-||teslacore.io^$doc
-||btc24.info^$doc
-||youtube.com/@tesla24official^$doc
-||usmusk.net^$doc
 ! Phishing - See https://bbs.kafan.cn/thread-2264505-1-1.html
 ||counter-strike2-official.net^$all
 ||primeleech.com^$all
@@ -2990,6 +2987,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||clickhereecraigslist.tripod.com^$all
 ||unclepigva.com^$all,to=~chase.com
 ||mymokki.ru^$all,to=~hozblokspb.ru
+||lapmangsctv.com.vn^$doc,to=~sctv.com.vn
 ||testra*-covid.weebly.com^$all,to=~telstra.com.au
 ||final-ua.eu/vasilisa/votings$all
 ||flow.page/foxhills.co.uk^$all,to=~foxhills.co.uk
@@ -3166,6 +3164,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||messagerie*.wixsite.com^$doc
 ||messagerie*.yolasite.com^$doc
 ||dailycontestportal.com/*/orange-reward-survey-1/$doc,to=~orange.fr
+! tiktok shop
+||tiktikshopvn.com^$doc
 ! amazon
 ||amazon-*.shop^$doc
 ||amazon-shopping.shop^$all
@@ -3245,6 +3245,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||telegra.ph/BT-Business-Communications-$all,to=~bt.com
 ! gov phishing site
 ||thanhtrapcrt.online^$all,to=~thanhtra.gov.vn
+||chinhphu.hodancu.com^$all,to=~gov.vn
 ||pttgov*.top^$doc,to=top|~ptt.gov.tr
 ||irstaxrefunds.$doc,to=~irs.gov
 ! gov.au
@@ -3282,11 +3283,11 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 /12/3dsec.php^$doc,to=~amendes.gouv.fr
 ! bank
 ||chamsocthekhachhang-$doc,to=~edu|~gov|~edu.vn|~gov.vn
+||uudaikhachhangthe-$doc,to=~edu|~gov|~edu.vn|~gov.vn
 ||sotuyenvcb.vietcombanker.com^$all,to=~vietcombank.com.vn
 ||vdbank.com.vn^$all,to=~vdb.gov.vn
 ||conveyancingportal.com^$all
 ||canhantpb.com^$all,to=~tpb.vn
-||mbdk99.com^$all,to=~mbbank.com.vn
 ||bmoreferral.com^$all,to=~bmo.com
 ||personas.devbam.com^$all,to=~bam.com.gt
 ||negociebra.com.br^$all,to=~banco.bradesco
@@ -3321,6 +3322,9 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||ingresocancelacion.wixsite.com^$all,to=~bb.com.mx
 ||wixsite.com/foliobanbajio$doc,to=~bb.com.mx
 ||shahidulislamaurko.com^$all,to=~vr.de
+! mbbank
+/^https:\/\/mbdk\d+\.com\//$doc,to=com|~mbbank.com.vn
+||mbdk99.com^$all,to=~mbbank.com.vn
 ! bbva
 ||bbvaar.zeabur.app^$all,to=~bbva.com
 ||programajourney.com^$all,to=~bbva.pt
@@ -3962,6 +3966,11 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||tienichshiinhan.com^$all,to=~shinhan.com.vn
 ||govqp.com^$all
 ||org.govqp.com^$all,to=~vr.org.vn
+||ebayu.top^$all
+||svgov.cc^$all,to=~gov.vn
+||bcavnvnvngov.com^$all,to=~bocongan.gov.vn
+||hangtietkiem.online^$all,to=~giaohangtietkiem.vn
+||giaohangtietkiemvietnam.com^$all,to=~giaohangtietkiem.vn
 ||msk.su^$all
 ||bleyeare.com^$all
 ||hberify.com^$all
@@ -4122,6 +4131,7 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||get-express-vpn.online^$all,to=~expressvpn.com
 ||bloxstrap.*^$doc,domain=~bloxstrap.pizzaboxer.xyz,to=~bloxstrap.pizzaboxer.xyz
 ||bloxstrapmenu.com^$doc
+||joannst.shop^$doc,to=~joann.com
 ||joannclearances.com^$all,to=~joann.com
 ||joannstoressales.shop^$all,to=~joann.com
 ||joannmax.com^$doc,to=~joann.com
@@ -4253,3 +4263,7 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||belliniepecuniaimmobilisrl.*^$doc,to=belliniepecuniaimmobilisrl.*
 ||immobiliarebelliniepecunia.*^$doc,to=immobiliarebelliniepecunia.*
 ||live-samsaratrucking.com^$all,to=~samsara.com
+! malware spam
+||bit.ly/47P0Nvo$all
+||the-north-face.gr^$all
+||thenorthfacegreece.com^$all

@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2023)
-! Last modified: Sat, 28 Sep 2024 11:09:16 +0000
+! Last modified: Wed, 02 Oct 2024 03:04:49 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -474,18 +474,17 @@ techclips.net##+js(nostif, sadbl)
 
 ! AdSpyglass 0i0i0i0.com CNAME adserver
 /^https?:\/\/a\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
+/^https?:\/\/aa\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
 /^https?:\/\/asg\.[-0-9a-z]{4,21}\.[a-z]{2,5}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
-/^https?:\/\/pre\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
-/^https?:\/\/oi\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
-/^https?:\/\/dl\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.autos\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.beauty\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.lol\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.mom\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.name\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/[0-9a-z]{4,8}\.pro\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/(?:q\.)?[0-9a-z]{4,8}\.xyz\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,3p,match-case
-/^https?:\/\/(?=[a-z]{0,10}\d)[0-9a-z]{11}\.[-0-9a-z]{6,}\.com\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,1p,strict3p,match-case,to=com
+/^https?:\/\/pre\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
+/^https?:\/\/oi\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
+/^https?:\/\/dl\.[0-9a-z]{6,12}\.[a-z]{3,4}\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,match-case
+/^https?:\/\/[0-9a-z]{4,8}\.fun\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,3p,match-case
+/^https?:\/\/[0-9a-z]{4,8}\.lol\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,3p,match-case
+/^https?:\/\/[0-9a-z]{4,8}\.name\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,3p,match-case
+/^https?:\/\/[0-9a-z]{4,8}\.pro\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,3p,match-case
+/^https?:\/\/(?:q\.)?[0-9a-z]{4,8}\.xyz\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,3p,match-case
+/^https?:\/\/(?=[a-z]{0,10}\d)[0-9a-z]{11}\.[-0-9a-z]{6,}\.com\/(?=[a-z]*[0-9A-Z])[0-9a-zA-Z]{5,7}\.js$/$script,1p,strict3p,match-case,to=com
 /asg_embed.js
 /vast-im.js$script
 ://a.*/click/$image
@@ -1909,7 +1908,6 @@ money.pl##div[data-breakpoint] > div > div > main > div:first-child:has(a[href="
 money.pl##div:not([class], [id]):has(> div:not([class], [id]) > div:first-child > div:first-child > iframe[scrolling="no"][frameborder="0"])
 money.pl###app > div:first-child > div:not([class], [id]):has(> div:not([class^="sc-"]))
 money.pl##.adsize_content > div + div:has(> div > a img[loading="lazy"])
-money.pl###app > div > div:has(> div:only-child > div > a:first-child > div:empty)
 wp.pl,pysznosci.pl,autokult.pl,parenting.pl,o2.pl,abczdrowie.pl##div:has(> div > iframe[src^="https://v.wpimg.pl/"][frameborder="0"][scrolling="no"]:first-child)
 genialne.pl,jastrzabpost.pl##div[style="background: #ddd9d9; margin-bottom: 10px; width: 100%;"]
 wiadomosci.wp.pl##div:has(> div:first-child > img[src^="https://v.wpimg.pl/"][height="45"][width="56"])
@@ -2959,7 +2957,7 @@ androidauthority.com##aside > div > div:empty
 iis.net##.ad-300x250
 
 ! https://github.com/uBlockOrigin/uAssets/issues/18422
-||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=paramountnetwork.com,redirect-rule=noopjs
+||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=paramountnetwork.com,redirect=noopjs
 
 ! https://github.com/uBlockOrigin/uAssets/issues/18423
 freepublicporn.com##.before-list-boxes-mobile-singl
@@ -2997,7 +2995,7 @@ my.irancell.ir##+js(trusted-click-element, div[class^="css-"][style="transition-
 @@||71i.de/*/loader.js$script,domain=sportdeutschland.tv
 ! https://github.com/uBlockOrigin/uAssets/issues/14656
 sportdeutschland.tv##+js(set, google.ima.settings.setDisableFlashAds, noopFunc)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima.js,domain=sportdeutschland.tv
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=sportdeutschland.tv
 @@||relay-client-c03.iocnt.net^$script,domain=sportdeutschland.tv
 ! https://www.reddit.com/r/uBlockOrigin/comments/144r0f1/adblock_detected_site_sportdeutschlandtv/jnh4vvo/
 @@||data.sportdeutschland.tv/data.js$script,1p
@@ -4107,8 +4105,8 @@ audiotools.pro,audizine.com,blackenterprise.com,cheatsheet.com,cwtv.com,esportst
 familyminded.com,foxvalleyfoodie.com,merriam-webster.com,news.com.au,playstationlifestyle.net,sportsnaut.com,tempumail.com,toledoblade.com##+js(aopr, __cmpGdprAppliesGlobally)
 pc-builds.com,qtoptens.com,reuters.com,today.com,videogamer.com,wrestlinginc.com##+js(set, admiral, noopFunc)
 !#if cap_html_filtering
-abc17news.com,bailiwickexpress.com,barnsleychronicle.com,briefeguru.de##^script:has-text('"v4ac1eiZr0"')
-carmagazine.co.uk,cattime.com,cbr.com,celiacandthebeast.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##^script:has-text('"v4ac1eiZr0"')
+abc17news.com,bailiwickexpress.com,barnsleychronicle.com##^script:has-text('"v4ac1eiZr0"')
+chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##^script:has-text('"v4ac1eiZr0"')
 dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dustyoldthing.com##^script:has-text('"v4ac1eiZr0"')
 faithhub.net,femestella.com,footwearnews.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,fsm-media.com,funtasticlife.com,fwmadebycarli.com##^script:has-text('"v4ac1eiZr0"')
 gamerant.com,gfinityesports.com,givemesport.com,gulflive.com##^script:has-text('"v4ac1eiZr0"')
@@ -4127,10 +4125,11 @@ wannacomewith.com,wimp.com,windsorexpress.co.uk,woojr.com,worldoftravelswithkids
 cheatsheet.com,pwinsider.com##^script:has-text(admiral)
 ! https://github.com/uBlockOrigin/uAssets/issues/24721
 247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,awkward.com,awkwardmom.com##^script:has-text('"").split(",")[4]')
-bethcakes.com,betweenenglandandiowa.com,bgr.com,blogher.com,blu-ray.com,bluegraygal.com,cbsnews.com,cbssports.com,cleveland.com,dailykos.com,eater.com,eldiariony.com,inc.com,indiewire.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sheknows.com,sport-fm.gr,syracuse.com,themarysue.com,tvline.com,usmagazine.com,wimp.com##^script:has-text('"").split(",")[4]')
+bethcakes.com,betweenenglandandiowa.com,bgr.com,blogher.com,blu-ray.com,bluegraygal.com,briefeguru.de##^script:has-text('"").split(",")[4]')
+cbsnews.com,cbssports.com,celiacandthebeast.com,cleveland.com,dailykos.com,eater.com,eldiariony.com,inc.com,indiewire.com,inquisitr.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sheknows.com,sneakernews.com,sport-fm.gr,syracuse.com,themarysue.com,tvline.com,usmagazine.com,wimp.com##^script:has-text('"").split(",")[4]')
 !#else
-abc17news.com,bailiwickexpress.com,barnsleychronicle.com,briefeguru.de##+js(rmnt, script, '"v4ac1eiZr0"')
-carmagazine.co.uk,cattime.com,cbr.com,celiacandthebeast.com,chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##+js(rmnt, script, '"v4ac1eiZr0"')
+abc17news.com,bailiwickexpress.com,barnsleychronicle.com##+js(rmnt, script, '"v4ac1eiZr0"')
+chaptercheats.com,collider.com,comingsoon.net,commercialobserver.com,competentedigitale.ro,crafty.house##+js(rmnt, script, '"v4ac1eiZr0"')
 dailyvoice.com,decider.com,didyouknowfacts.com,dogtime.com,dustyoldthing.com##+js(rmnt, script, '"v4ac1eiZr0"')
 faithhub.net,femestella.com,footwearnews.com,freeconvert.com,frogsandsnailsandpuppydogtail.com,fsm-media.com,funtasticlife.com,fwmadebycarli.com##+js(rmnt, script, '"v4ac1eiZr0"')
 gamerant.com,gfinityesports.com,givemesport.com,gulflive.com##+js(rmnt, script, '"v4ac1eiZr0"')
@@ -4152,7 +4151,8 @@ cheatsheet.com,pwinsider.com##+js(rmnt, script, admiral)
 ! https://www.reddit.com/#reddit/r/uBlockOrigin/comments/1efcm93/247_sports_is_detecting_ubo/
 ! https://github.com/uBlockOrigin/uAssets/issues/24721
 247sports.com,agrodigital.com,al.com,aliontherunblog.com,allaboutthetea.com,allmovie.com,allmusic.com,allthingsthrifty.com,amessagewithabottle.com,artforum.com,artnews.com,awkward.com,awkwardmom.com##+js(rmnt, script, '"").split(",")[4]')
-bethcakes.com,betweenenglandandiowa.com,bgr.com,blogher.com,blu-ray.com,bluegraygal.com,cbsnews.com,cbssports.com,cleveland.com,dailykos.com,eater.com,eldiariony.com,inc.com,indiewire.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sheknows.com,sport-fm.gr,syracuse.com,themarysue.com,tvline.com,usmagazine.com,wimp.com##+js(rmnt, script, '"").split(",")[4]')
+bethcakes.com,betweenenglandandiowa.com,bgr.com,blogher.com,blu-ray.com,bluegraygal.com,briefeguru.de##+js(rmnt, script, '"").split(",")[4]')
+cbsnews.com,cbssports.com,celiacandthebeast.com,cleveland.com,dailykos.com,eater.com,eldiariony.com,inc.com,indiewire.com,inquisitr.com,kentucky.com,knowyourmeme.com,last.fm,masslive.com,mlive.com,nbcsports.com,news.com.au,nj.com,nypost.com,oregonlive.com,pagesix.com,pennlive.com,rollingstone.com,sbnation.com,sheknows.com,sneakernews.com,sport-fm.gr,syracuse.com,themarysue.com,tvline.com,usmagazine.com,wimp.com##+js(rmnt, script, '"").split(",")[4]')
 !#endif
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=givemesport.com,important
 superherohype.com##a.wp-block-button__link:is([href^="https://amzn.to/"], [href^="https://www.amazon.com/"])
