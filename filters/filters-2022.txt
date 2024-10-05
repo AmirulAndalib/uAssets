@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2022)
-! Last modified: Thu, 03 Oct 2024 06:32:45 +0000
+! Last modified: Sat, 05 Oct 2024 13:37:33 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -3049,8 +3049,9 @@ filemoon.*##+js(aopr, FMPoopS)
 filemooon.top##+js(noeval-if, popunder)
 embedmoon.*,filemoon.*,kerapoxy.*##+js(acs, document.querySelectorAll, popMagic)
 embedmoon.*,filemoon.*,kerapoxy.*##+js(acs, Math, /window\['(?:\\x[0-9a-f]{2}){2}/)
-filemoon-59t9ep5j.xyz,filemoon-nv2xl8an.xyz,filemoon-qm3chdkh.xyz##+js(acs, Math, localStorage['\x)
-filemoon-59t9ep5j.xyz,filemoon-nv2xl8an.xyz,filemoon-qm3chdkh.xyz##+js(nowoif)
+/^filemoon-.*\.xyz$/##+js(nowoif)
+/^filemoon-.*\.xyz$/##+js(acs, Math, localStorage['\x)
+*$xhr,1p,redirect-rule=nooptext,domain=/^filemoon-.*\.xyz$/
 filemoon-59t9ep5j.xyz,filemoon-nv2xl8an.xyz##+js(acs, Math.floor, urls.length)
 *$script,3p,denyallow=gstatic.com,domain=filemoon-59t9ep5j.xyz|filemoon-nv2xl8an.xyz 
 ||filemoon.nl/ad/imp?$xhr,redirect-rule=nooptext
@@ -5066,6 +5067,7 @@ tvtv.ca,tvtv.us##.css-1j9nufa:style(height: 1560px !important;)
 !#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/15856
+ipalibrary.me##+js(aost, fetch, checkDomain)
 ipalibrary.me##+js(nosiif, _0x)
 
 ! https://forums.lanik.us/viewtopic.php?t=47909-nsfw-igay69-com
@@ -5312,6 +5314,8 @@ emturbovid.com,findjav.com,mmtv01.xyz,stbturbo.xyz,streamsilk.com##+js(trusted-r
 ||emturbovid.com^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 !#endif
 ##.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
+! https://github.com/uBlockOrigin/uAssets/issues/25510
+streamsilk.com##+js(set, HTMLAnchorElement.prototype.click, noopFunc)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/138059
 ! https://github.com/AdguardTeam/AdguardFilters/issues/138060

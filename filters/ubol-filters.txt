@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Thu, 03 Oct 2024 06:32:45 +0000
+! Last modified: Sat, 05 Oct 2024 13:37:33 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -92,6 +92,19 @@ wnynewsnow.com##.ezoic-adpicker-ad
 saltspringexchange.com##ins.adsbygoogle[data-ad-slot]
 saltspringexchange.com##ins.adsbygoogle[data-ad-client]
 
+! https://github.com/uBlockOrigin/uAssets/issues/25512
+@@||rspro.xyz^$ghide
+rspro.xyz##div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
+rspro.xyz##[id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
+rspro.xyz##.wall-ads-right
+rspro.xyz##.wall-ads-left
+rspro.xyz##.wall-ads-control
+rspro.xyz##.custom-ad
+rspro.xyz##.footer-ads > a
+
+! https://github.com/uBlockOrigin/uAssets/issues/25515
+@@||letroso.com^$ghide
+
 ! END: Exceptions to generic cosmetic filters
 
 ! https://github.com/uBlockOrigin/uBOL-issues/issues/8
@@ -177,3 +190,10 @@ empire-anime.*,empire-stream.*,empire-streaming.*,empire-streamz.*##+js(nowoif, 
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25274
 ://ads.$object,redirect=noopframe,domain=rtl.hr
+
+! https://github.com/uBlockOrigin/uAssets/commit/594c135a92723d6cc364e5f667e0fa703921fc7c#commitcomment-147571257
+moon-fm43w1qv.com##+js(nowoif)
+moon-fm43w1qv.com##+js(acs, Math, localStorage['\x)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25518
+*$script,3p,denyallow=cloudfront.net|disqus.com|disquscdn.com|fastlylb.net|widgetlogic.org,domain=manganinja.com
