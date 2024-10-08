@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Sun, 06 Oct 2024 01:57:56 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -656,12 +656,7 @@ erogen.su##+js(aopr, document.dispatchEvent)
 @@||api.production.k8s.y3o.tv/*/video-ads$xhr,domain=yallo.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=yallo.tv
 ||adservice.google.com^$script,redirect-rule=noopjs,domain=yallo.tv
-!#if ext_devbuild
 imasdk.googleapis.com##+js(no-fetch-if, secure.adnxs.com/ptv, war:noop-vast4.xml)
-!#else
-@@||secure.adnxs.com/ptv$xhr,domain=imasdk.googleapis.com
-imasdk.googleapis.com##+js(xml-prune, VAST, , adnxs)
-!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2449
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147765
@@ -754,6 +749,13 @@ hianime.to##[href="https://1flix.to/"]
 ||i.ibb.co/wyDmK31/Banner.png^$image,3p
 ||psausoay.net^
 
+! https://forums.lanik.us/viewtopic.php?f=90&t=40441
+! https://github.com/uBlockOrigin/uAssets/issues/5223
+winfuture.de##+js(json-prune, adtagparameter, enabled)
+winfuture.de##[id$="_adContainer"]
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,from=winfuture.de
+@@||widget.spoods.io/loader.js$script,domain=winfuture.de
+
 ! END: Rules from filters.txt
 
 ! START: Regional lists
@@ -817,6 +819,18 @@ nagpurtoday.in##.shrcladv
 nagpurtoday.in##div[style^="text-align:"]:has(> video > source[src*="kukreja-video"])
 nagpurtoday.in##.middle-contbox
 
+! https://github.com/mediumkreation/IndianList/issues/10188
+sinhasannews.com##+js(rmnt, script, /Clipboard|oncontextmenu|wpcp|keyCode/)
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"]:is([alt^="Img "], [alt^="Fb img "]):not([width="1024"]))
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="1024"]:is([alt^="Img "], [alt^="Fb img "]))
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="682"]:not([alt^="Cm"]))
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="720"][height="706"])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="819"])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="646"][height="1024"][alt^="Screenshot "])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="785"][alt^="Screenshot "])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="770"][alt^="Screenshot "])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1022"][height="1024"][alt^="Screenshot "])
+sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="800"][alt^="Img "])
 ! END: Regional lists
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/169660
@@ -2081,9 +2095,11 @@ thejakartapost.com##.tjp-single__content-ads:remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/24013
 ! https://github.com/uBlockOrigin/uAssets/issues/24812#issuecomment-2289648269
 ! https://github.com/uBlockOrigin/uAssets/issues/25495
-$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|hianime.to|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|hianime.to|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
+! https://vidsrc.xyz/embed/movie/tt11315808
+! https://movie3k.net/movies/joker-folie-a-deux/
 !#if env_firefox
-$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|putlockers.*|roselife.site|roshy.tv
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=antennasports.ru|dlhd.so|euro2024direct.ru|hurawatch.art|movie3k.net|putlockers.*|roselife.site|roshy.tv|vidsrc.*
 !#endif
 euro2024direct.ru##+js(acs, document.createElement, break;case)
 ! https://github.com/uBlockOrigin/uAssets/issues/23689
@@ -3384,10 +3400,11 @@ autopareri.com##+js(acs, jQuery, adblock)
 ! https://koramaup.com/Up5
 ! https://github.com/AdguardTeam/AdguardFilters/commit/6d38642c12
 koramaup.com##+js(no-xhr-if, pagead2.googlesyndication.com)
-!#if !env_devbuild
+!#if !ext_devbuild
 koramaup.com##+js(rpnt, script, 200===r.status, 0===r.status, condition, getNextDownloadPageLink)
 !#endif
 koramaup.com##+js(rpnt, script, return r.responseText, return `a.getAttribute("data-ad-client")||""`, condition, getNextDownloadPageLink)
+koramaup.com##[href^="http://u87yuo9ojh.world/"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25464
 callofwar.com##+js(rmnt, script, Anzeige)
@@ -3432,6 +3449,16 @@ ruidrive.com##+js(no-fetch-if, method:GET)
 embed.hideiframe.com##+js(nowoif)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25537
-/gamatotv\.info/[a-z0-9]{32}.js/$script,domain=gamatotv.info|gmtcloud.best
+/\bgamatotv\.info\/[a-z0-9]{32}\.js\b/$script,domain=gamatotv.info|gmtcloud.best
 gamatotv.info,gmtcloud.best###ads5
 ||zqvee2re50mr.com^$all
+
+! https://vidsrc.xyz/embed/movie/tt11315808 popup
+ate60vs7zcjhsjo5qgv8.com##+js(nowoif, !vidsrc.)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/189518#issuecomment-2395510540
+blog.livedoor.jp##+js(acs, document.addEventListener, google_ad_client)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1fy1gjk/getting_ads_on_novelfull/
+||imagedelivery.net^$domain=novelfull.com
+novelfull.com##a[rel="nofollow noopener sponsored"]

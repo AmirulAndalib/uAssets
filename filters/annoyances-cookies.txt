@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Wed, 02 Oct 2024 03:04:49 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1497,7 +1497,9 @@ costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonConsent, groups=BG117
 costcobusinessdelivery.com##+js(trusted-set-cookie, OptanonAlertBoxClosed, $currentDate$)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23727
+! https://github.com/uBlockOrigin/uAssets/issues/25509
 seznam.cz##+js(trusted-set-cookie, euconsent-v2, CP-wiwAP-wiwAD3ACLCSA1EsAP_gAEPgAATIJVwQgAAwAKAAsACAAFQALgAZAA6ACAAFAAKgAWgAyABoADmAIgAigBHACSAEwAJwAVQAtgBfgDCAMUAgACEgEQARQAjoBOAE6AL4AaQA4gB3ADxAH6AQgAkwBOACegFIAKyAWYAuoBgQDTgG0APkAjUBHQCaQE2gJ0AVIAtQBbgC8wGMgMkAZcA0oBqYDugHfgQHAhcBGYCTQEqwQugRQAKAAsACoAFwAQAAyABoAEQAI4ATAAqgBiAD8AISARABEgCOAE4AMsAZoA7gB-gEIAIsAXUA2gCbQFSALUAW4AvMBggDJAGXANTAhcAA.YAAAAAAAAWAA, , , domain, seznam.cz)
+cmp.seznam.cz##+js(trusted-click-element, .szn-cmp-dialog-container >>> button[data-testid="cw-button-non-targeted-ad"], , 1000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23809 - multimedia player
 issue-council.robertsspaceindustries.com##+js(trusted-set-cookie, pleaseFix.privacy, {%22analyticsCookie%22:false%2C%22personalisationCookie%22:false%2C%22targetedAdvertisingCookie%22:false%2C%22multimediaPlayerCookie%22:true})
@@ -1758,9 +1760,28 @@ web.de##+js(trusted-click-element, button[data-id="save-all-pur"], , 1000)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25366
 ! https://www.linternaute.com/hightech/jeux-video/5995467-inzoi-quel-est-ce-jeu-aux-graphismes-hyper-realistes-qui-entend-concurrencer-les-sims/
-linternaute.com##+js(trusted-click-element, button.button__acceptAll)
-linternaute.com###appconsent:style(visibility: hidden !important;)
+linternaute.com##+js(trusted-click-element, button.button__skip)
+linternaute.com##+js(rpnt, script, typeof jQuery !==, '(()=>{window.addEventListener("load",(function(){if(window.localStorage.appconsent){const consents=window.JSON.parse(window.localStorage.appconsent);if(consents&&consents.consents&&consents.consents.vendors){for(vendor of consents.consents.vendors){if(vendor.name==="Facebook"&&vendor.status===1)return}}}let i=0;var intervalId=window.setInterval((function(){try{i+=1;if(typeof _gtm?.consent?.cm?.strategy?.updateExtraVendorStatus!=="function")return;["facebook","instagram","pinterest","twitter","youtube"].forEach((vendor=>{_gtm.consent.cm.strategy.updateExtraVendorStatus(vendor,!0)}))}catch(_){return}if(i===5)clearInterval(intervalId)}),1e3)}))})();typeof jQuery !==')
+linternaute.com##+js(set, _gtm.consent.cm.strategy.options.cmpay.enabled, false)
 linternaute.com##body.appconsent_noscroll:style(overflow: auto !important;)
+linternaute.com###appconsent:style(visibility: hidden !important;)
+linternaute.com##.ccminsert > .jEmbedTagPlaceholder.pending > .jEmbedTagPlaceholder__content
 
 ! essential only 
 visionapartments.com##+js(trusted-set-cookie, ota_ga_consent, eyJkYXRlIjoiMjAyNC0wOS0yOFQxODoyNToxMy40MjlaIiwibmVzY2Vzc2FyeSI6dHJ1ZSwicGVyZm9ybWFuY2UiOmZhbHNlLCJtYXJrZXRpbmciOmZhbHNlfQ==)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25544
+dw.com##+js(set, Object.prototype.hasConsent, trueFunc)
+dw.com##+js(set, cmp_autoreject, true)
+
+! https://winfuture.de/videos/Spiele/New-World-Aeternum-Der-Launch-Trailer-laeutet-eine-neue-Aera-ein-26728.html
+winfuture.de##+js(set, Object.prototype.hasConsent, trueFunc)
+winfuture.de##+js(set, cmp_autoreject, true)
+winfuture.de##+js(nostif, checkPURLayerMustBeShown)
+winfuture.de##.videop em:not([data-video-src]):remove()
+winfuture.de##.videop em[data-video-src]:style(display: block !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25568
+consent.caminteresse.fr##+js(trusted-click-element, button.accept-button)
+caminteresse.fr##[id^="sp_message_container"]:style(visibility: hidden !important;)
+caminteresse.fr##.sp-message-open body:style(overflow: auto !important;)

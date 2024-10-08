@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2021)
-! Last modified: Sat, 05 Oct 2024 13:37:33 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -303,6 +303,7 @@ jetpunk.com##+js(set-local-storage-item, PageCount, $remove$)
 jetpunk.com##+js(set, asc, 2)
 ! https://github.com/uBlockOrigin/uAssets/issues/25387
 jetpunk.com##+js(set, google_tag_manager, {})
+jetpunk.com##+js(set, google_tag_manager.G-Z8CH48V654, {})
 @@||jetpunk.com^$script,1p
 @@||jetpunk.com^$ghide
 jetpunk.com##.banner-ad-outer
@@ -1559,6 +1560,12 @@ files.fm##+js(aopr, canRunAds)
 ||cdn.flashtalking.com^$media,redirect=noopmp3-0.1s,domain=app.plex.tv
 ! https://github.com/uBlockOrigin/uAssets/issues/20357
 app.plex.tv##+js(json-prune, MediaContainer.Metadata.[].Ad)
+! https://www.reddit.com/r/uBlockOrigin/comments/1fwizi0/plex_free_tvmovies_ad_block/
+!#if env_firefox
+imasdk.googleapis.com##+js(no-xhr-if, vod.provider.plex.tv/ad?, war:noop-vast3.xml)
+!#else
+||vod.provider.plex.tv/ad?$xhr,redirect=noopvast-3.0
+!#endif
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78973
 ||neonime.*/wp-content/themes/grifus/images/donate/yunita/
@@ -3909,7 +3916,7 @@ ustream.click##^script:has-text(\'shift\')
 ! https://github.com/uBlockOrigin/uBlock-issues/discussions/3096#discussioncomment-8273443
 ! https://1cloudfile.com/I7
 1cloudfile.com##+js(no-xhr-if, pagead2.googlesyndication.com)
-!#if !env_devbuild
+!#if !ext_devbuild
 1cloudfile.com##+js(rpnt, script, 200===r.status, 0===r.status, condition, getNextDownloadPageLink)
 !#endif
 1cloudfile.com##+js(rpnt, script, return r.responseText, return `a.getAttribute("data-ad-client")||""`, condition, getNextDownloadPageLink)

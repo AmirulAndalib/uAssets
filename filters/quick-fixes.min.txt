@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Quick fixes
 ! Expires: 12 hours
-! Last modified: Sun, 06 Oct 2024 01:57:56 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Diff-Path: %diffpath%#ublock-quick-fixes
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -62,7 +62,7 @@ japscan.lol#@#+js(acs, addEventListener, String.fromCharCode)
 japscan.lol#@##blur-inter
 japscan.lol#@##interstitial
 japscan.lol##body > .container.text-center > div.mt-3[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][href^="https://www."][href*="/?utm_source=manga&utm_"]:not([href^="https://www.google"]):not([href^="https://www.japscan"]):not([href^="https://www.example"]) > img.img-fluid[src^="/imgs/onc/"]
-japscan.lol##+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{const .+\)\( \);\}catch\(/)
+japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{const .+\)\( \);\}catch\(/)
 japscan.lol##.navbar-nav > li#navpromo2.nav-item > a[href^="https://www.origoclick.com"]:style(clip-path: polygon(1px 1px, 1px 1px, 1px 1px ,1px 1px) !important;)
 japscan.lol#@#+js(rmnt, script, /statically\.|cdn\.stati/)
 japscan.lol#@#+js(rmnt, script, https://cdn.)
@@ -75,7 +75,13 @@ japscan.lol#@#+js(rmnt, script, /^\(function\(_0x|=\[(?:_0x[0-9a-f]{6}\(0x[0-9a-
 japscan.lol#@#+js(rmnt, script, /^\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6400\,6600}$/)
 japscan.lol#@#+js(rmnt, script, /^\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6400\,13000}$/)
 japscan.lol#@#+js(rmnt, script, /^\s*\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6200\,13000}\s*$/)
-japscan.lol##+js(rmnt, script, /^\s*(?:var [-$0-9A-Z_a-z]{1\,20}=[-$0-9A-Z_a-z]{1\,20};)?\s*\(function\([-$0-9A-Z_a-z]{1\,20}\,.{5000\,7000}\s*$/)
+japscan.lol#@#+js(rmnt, script, /^\s*(?:var [-$0-9A-Z_a-z]{1\,20}=[-$0-9A-Z_a-z]{1\,20};)?\s*\(function\([-$0-9A-Z_a-z]{1\,20}\,.{5000\,7000}\s*$/)
+japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{var .{400\,500}\);\}$/)
+japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{[a-z]{3\,5} .{400\,500}\);\}$/)
+japscan.lol##+js(aeld, DOMContentLoaded, (e)=>)
+japscan.lol#@#+js(rmnt, script, =document[\'createElement\'](\'img\');)
+japscan.lol##+js(acs, document.querySelectorAll, ('img)
+japscan.lol##+js(rmnt, script, un'+'de)
 /^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[a-z]{8,15}\.xyz\/$/$xhr,3p,to=xyz,method=head,header=x-traceid2,domain=japscan.lol,important
 /^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,to=com,method=head,header=x-traceid2,domain=japscan.lol,important
@@ -109,8 +115,8 @@ poophq.com,veev.to##+js(nowoif)
 poophq.com,veev.to##+js(set, fapit.check, noopFunc)
 !poophq.com,veev.to##+js(no-xhr-if, url:!/cdn\.plyr\.io|veev\.to|\/dl\?op=player_api/ method:GET)
 poophq.com,veev.to##+js(no-xhr-if, /vast.php?)
-poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000)
-poophq.com,veev.to##+js(no-xhr-if, /\/ad-provider\.js$/, length:35000)
+poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
+poophq.com,veev.to##+js(no-xhr-if, /\/ad-provider\.js$/, length:35000-40000)
 poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
@@ -119,6 +125,7 @@ veev.to#@#.avb-active
 @@||widgets.outbrain.com/outbrain.js$xhr,domain=animefire.info|animesonlinecc.us|animesup.info|animeyabu.net|animeyabu.org|anitube.us|anitube.vip|caroloportunidades.com.br|dattebayo-br.com|drstonebr.com|flyanimes.cloud|goanimes.vip|goyabu.us|hinatasoul.com|isekaibrasil.com|meuanime.info|otakuanimess.net
 animefire.info,animesonlinecc.us,animesup.info,animeyabu.net,animeyabu.org,anitube.us,anitube.vip,caroloportunidades.com.br,dattebayo-br.com,drstonebr.com,flyanimes.cloud,goanimes.vip,goyabu.us,hinatasoul.com,isekaibrasil.com,meuanime.info,otakuanimess.net##+js(trusted-prevent-xhr, outbrain.com, outbrain)
 coempregos.com.br##+js(nostif, hasAdblock)
+@@*$xhr,method=get|post,domain=anitube.vip
 @@*$script,3p,from=sonixgvn.net,to=flashvps.xyz|nya.pub
 infinityscans.xyz,infinityscans.net##+js(rpnt, script, / \(?function\(.*catch.* \$\.ajax\(\{/s, $.ajax({ , condition, throw)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$xhr,domain=infinityscans.xyz|infinityscans.net
@@ -133,16 +140,9 @@ sportnews.to##+js(aeld, DOMContentLoaded, adsSrc)
 *$script,redirect-rule=noopjs,domain=sportnews.to|sportshub.to
 1001tracklists.com##+js(rmnt, script, .className.indexOf)
 1001tracklists.com##+js(spoof-css, '[target="_blank"][rel="noopener noreferrer"]', display, block)
-||nakamasweb.com^$badfilter
-||dhlguestmanagement.com^$all,to=~dhl.com,badfilter
-@@||google-analytics.com/mp/collect?$xhr,domain=startse.com
-tver.jp##+js(json-prune, ads)
-tver.jp##+js(json-prune, data.adData)
-tver.jp##+js(nano-stb, /nrWrapper\(\)|n\.setTimeoutIds_\.has\(i\)/, 10000)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=tver.jp,important
-picrew.me##.play-Imagemaker:style(height: 100% !important;)
-/^file-.*-moon\.com$/##+js(nowoif)
-/^file-.*-moon\.com$/##+js(acs, Math, localStorage['\x)
+file-1bl9ruic-moon.com,file-sp32aoh8-moon.com##+js(nowoif)
+file-1bl9ruic-moon.com,file-sp32aoh8-moon.com##+js(acs, Math, localStorage['\x)
+||6gi0edui.xyz/js/sphinx.js$script
 jmzkzesy.xyz##+js(nowoif)
 jmzkzesy.xyz##+js(acs, Math, localStorage['\x)
 !#if env_firefox
@@ -150,10 +150,14 @@ jmzkzesy.xyz##+js(acs, Math, localStorage['\x)
 !#endif
 gunauc.net##+js(no-fetch-if, googlesyndication, , {"type":"cors"})
 gunauc.net#@#+js(prevent-fetch, pagead2.googlesyndication.com)
-wiki.yjsnpi.nu#@#.ad
-wiki.yjsnpi.nu##.ad:style(height: 0 !important;)
-@@||wiki.yjsnpi.nu/plugins/betube-ads/$xmlhttprequest,domain=wiki.yjsnpi.nu
+wiki.yjsnpi.nu#@#.ad:style(height: 0 !important;)
+@@||wiki.yjsnpi.nu^$image,xhr,1p
 @@||wiki.yjsnpi.nu^$ghide
 adacomi.com#@#body > div[style^="text-align:center;"]
 ibarakinews.jp#@#.l-grid-banner
 ibarakinews.jp#@#div[class^="l-ad"]
+kahoku.news#@#.vr2_pickup-main
+||s.yimg.com/ss/analytics$badfilter
+yahoo.com#@#+js(set, rapidInstance, {})
+yahoo.com#@#+js(set, rapidInstance.beaconLinkViews, noopFunc)
+yahoo.com#@#+js(set, rapidInstance.beaconClick, noopFunc)

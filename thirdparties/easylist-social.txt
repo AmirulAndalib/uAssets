@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Social Widgets
-! Last modified: Sun, 06 Oct 2024 01:57:56 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -9265,19 +9265,12 @@ _social_footer_
 ##.socialVisible
 ##.socialWidget
 ##.socialWidgetBottomBox
-##.socialWidgets-horizontalBar
 ##.socialWrap
 ##.socialWrapper
-##.social_300w
 ##.social_b
 ##.social_badges_above
 ##.social_bar
-##.social_bar_menu
-##.social_bar_sites
 ##.social_bind
-##.social_blk
-##.social_block--article
-##.social_block--overlay
 ##.social_block_content
 ##.social_bookmark
 ##.social_bookmarking_module
@@ -9450,7 +9443,6 @@ _social_footer_
 ##.socialicons
 ##.socialicons-header
 ##.socialicontd
-##.socialicr
 ##.socialimglink
 ##.socialink
 ##.socialinks
@@ -9458,11 +9450,7 @@ _social_footer_
 ##.socialite-widget
 ##.socialite-widget-item
 ##.socialitehover
-##.socialization_content
 ##.socialize-containter
-##.socialize-icon--facebook
-##.socialize-icon--linkedin
-##.socialize-icon--twitter
 ##.socialize-like
 ##.socialize-link
 ##.socialize-top
@@ -9475,8 +9463,6 @@ _social_footer_
 ##.sociallist
 ##.socially-btn
 ##.socialmain
-##.socialmedia--ArticleFacebook
-##.socialmedia--ArticleTwitter
 ##.socialmedia-article
 ##.socialmedia-buttons
 ##.socialmedia-container
@@ -9501,7 +9487,6 @@ _social_footer_
 ##.socialnavbar
 ##.socialnetworkbox
 ##.socialno
-##.socialnonsense-wide-articles
 ##.socialplugin
 ##.socialplugins
 ##.socialpop-container
@@ -9524,11 +9509,8 @@ _social_footer_
 ##.socialsbox
 ##.socialscroll
 ##.socialshare
-##.socialshare--floating
-##.socialshare-icons2
 ##.socialshare-wrapper
 ##.socialshare2
-##.socialshare_inside
 ##.socialsharebtm
 ##.socialsharep
 ##.socialsharer
@@ -9569,8 +9551,6 @@ _social_footer_
 ##.sosyalAglar
 ##.sotwitter
 ##.sow-social-media-button
-##.spIconLinkTwitter
-##.sqs-svg-icon--list
 ##.square-social
 ##.squareShareButtons
 ##.srg-share-icon
@@ -9651,11 +9631,7 @@ _social_footer_
 ##.sticky-social-icons-lg
 ##.sticky-social-inside
 ##.sticky-social-share
-##.sticky-wrapper--likegate
 ##.stickyNav-social
-##.stickyVerticalSocialContainer
-##.sticky_footer_social_facebook
-##.sticky_footer_social_google
 ##.sticky_sharing
 ##.sticky_social
 ##.sticky_socialbar
@@ -9695,7 +9671,6 @@ _social_footer_
 ##.story_share_blk
 ##.story_share_text
 ##.story_social_share
-##.story_tools_social_buttons_top
 ##.storypage-share
 ##.storyshare
 ##.storysharebottom
@@ -9713,64 +9688,22 @@ _social_footer_
 ##.subHeaderSocial
 ##.subNavSocial
 ##.subShare
-##.sub_fb
 ##.sub_jeu_social_facebook
 ##.sub_jeu_social_twitter
 ##.sub_sns
 ##.sub_socialMedia
-##.sub_twitter
 ##.subfooter-social
-##.submeta__share
-##.subnav-right__social
-##.subnav-share-news-alert
-##.subnav-share-news-alert__link
 ##.subpost_share
 ##.subscribe-follow
 ##.subscribeSocialTool
 ##.subscribe__follow
-##.subscribe__social-container
 ##.subscribe_ad
-##.subscribe_block
-##.subscribe_facebook
-##.subscribe_fb
-##.subscribe_followistic
-##.subscribe_gp
-##.subscribe_icons
-##.subscribe_tw
-##.subscribe_twitter
-##.subsubmenu__share
 ##.sucuri_social_icons_widget
 ##.sumome-image-sharer
 ##.sumome-share-client-wrapper
 ##.svp-share
-##.swf-sn-share-link
-##.swf-social-site
-##.switchShare
-##.swp-hover-pin-button
-##.swp_social_panel
 ##.syn-sharelist
 ##.synved-social-button
-##.szoSocialMediaShare
-##.t-a-info-share
-##.t-a-share-1
-##.t-abc-footer-share
-##.t-af-share-1
-##.t-af-share-2
-##.t-article-container_footer_share
-##.t-article-funcs-share-2
-##.t-article-media-share-toggle
-##.t-article-share-btn-1
-##.t-content__shares
-##.t-said-share
-##.t-share-more
-##.t-share-twitter
-##.t-site-share-1
-##.t-social-buttons
-##.tShare
-##.t_social
-##.t_twitter
-##.ta_followWidget
-##.tab-shareLinkButtons
 ##.tab_social
 ##.tafSocialButton
 ##.tag-line-social
@@ -10566,10 +10499,6 @@ _social_footer_
 ##.wpcw-widget-social
 ##.wpdev-bottom-single-social
 ##.wpdev-desktop-social
-##.wpdev-social-btn
-##.wpdev-social-fb
-##.wpdev-social-gp
-##.wpdev-social-tw
 ##.wpdev-top-share
 ##.wpdev-twitter
 ##.wpex-social-share
@@ -10584,9 +10513,7 @@ _social_footer_
 ##.wpsr-floatbar-white
 ##.wpusb-btn
 ##.wpusb-square-plus
-##.wpzoom-facebook-3
 ##.wrap-social
-##.wrapPin > .pin
 ##.wrapSocialHead
 ##.wrap__sns
 ##.wrapp-soc-icons
@@ -10601,56 +10528,22 @@ _social_footer_
 ##.wrapper_fb_share
 ##.wrapper_share_home
 ##.wrapper_social
-##.wri-share
-##.ws-c-social-slice__icons
-##.wsapp
 ##.wsite-social
 ##.wsite-social-item
 ##.wsj-amp-share
-##.wtv-social-hidden
-##.wtv-social-share
-##.wwn-share-top-wrapper
-##.www-m-social-buttons
-##.wx-fb-activity
-##.wx-local-tweets-hdr
-##.wx-overview-twitter-module-wrap
-##.wx-social-share-ls-wrapper
-##.wx-social-share-story-facebook
-##.wx-social-share-story-pinterest
-##.wx-social-share-story-twitter
-##.wx-social-share-story-wrapper
-##.wysiwygContent-social
-##.wz-footer-sidebar__social
 ##.x-entry-share
-##.x-facebook
 ##.x-item-share-wrapper
 ##.x-social-facebook
 ##.x-social-global
 ##.x-social-item
 ##.x-social-twitter
 ##.x-social-youtube
-##.x-tmblr
 ##.xenfocus-social
-##.xplayer-share-control
 ##.xreboo-social-share
 ##.xs_social_counter_widget
 ##.ya-share2
-##.yeniShare
 ##.ymsb-facebook-module
 ##.ymsb-retweet-module
-##.yn-share-social
-##.yom-fb-like
-##.yom-follow-fb
-##.yom-free-html-facebook
-##.yom-twitter
-##.yom-twittertimeline
-##.youtube-follow-bar
-##.youtube-follow-us
-##.youtube_follower
-##.youtube_footer
-##.yr-social-list
-##.yt-social-sharing
-##.ytp-share-button
 ##.yui3-socialbutton-content
 ##.z-share-belt
 ##.zalo-share-button
@@ -10791,19 +10684,11 @@ _social_footer_
 ! element specific
 ##div.c-socialShare
 ##div.sticky-shares
-! manworldmedia sites
-##.h-fixed-footer
 ! intel.com (and regional sites)
 ##.social.footer-links
-! Tag names
-##FB-LIKE-FLYOUT
 ! Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
 ##div[class^="SocialIcons_"]
 ##div[class^="style__social"]
-! Google share icon
-##KNO-SHARE-BUTTON
-! Amazon sites
-##.feature > #tell-a-friend
 !-------------------------Third-party blocking rules--------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_thirdparty.txt ***
 ||addnow.com^$third-party
@@ -11031,6 +10916,7 @@ philosophynow.org###header_right_top_right
 qoshe.com###hit
 beautifuldecay.com,celebdirtylaundry.com###icons
 irishnews.com###irish-header-social-wrapper
+dayton247now.com###js-Social-Share-0
 businesslawreview.uchicago.edu###js-pub-share
 medicalxpress.com,phys.org###js-soc-panel
 newser.com###lightbox
@@ -11231,6 +11117,7 @@ thenewhumanitarian.org##.article__post-share
 ecowatch.com##.article__share-buttons
 wnep.com##.article__sharing
 greenbuildingadvisor.com##.article__social
+americanscientist.org##.article__socialmedia
 news18.com##.article_bnow
 news.tvbs.com.tw##.article_community_box
 messengernews.net,salemnews.net##.article_details_icons
@@ -11247,7 +11134,7 @@ news.artnet.com##.author-links
 secretchicago.com,secretldn.com##.author-share-buttons
 proprivacy.com##.author-social-icons
 adweek.com##.aw-social-share-container
-bnnbloomberg.ca,irishnews.com##.b-share-bar
+bnnbloomberg.ca,cp24.com,irishnews.com##.b-share-bar
 protos.com##.b-sharers
 spokesman.com##.ba
 dutchnews.nl##.badge-social
@@ -11556,6 +11443,7 @@ auto.hindustantimes.com##.googlenewfollowidget
 kick.com##.group.flex.w-40.items-center.space-x-2.text-xs.font-bold.text-gray-400.hover\:text-primary
 gadgets360.com##.gsocialbar
 atlanticcouncil.org##.gta-hover-share-container
+egotastic.com,egotasticsports.com##.h-fixed-footer
 jam-news.net##.has-medium-font-size.has-background
 hard-drive.net##.hd-discord
 gmanetwork.com##.hdr-social-links
@@ -11642,7 +11530,7 @@ hsbc.com,peoplesweather.com,project-syndicate.org,screendaily.com##.linkedin
 wheelsage.org##.links
 cybernews.com##.links-bar
 exchange4media.com##.list-group
-exchangerates.org.uk,idownloadblog.com,kyivpost.com##.list-inline
+exchangerates.org.uk,idownloadblog.com,kyivpost.com,thedrinksbusiness.com##.list-inline
 soundcloud.com##.listenDetails__login
 listenmoneymatters.com##.lmm_external_footer
 analyticsinsight.net##.loftocean-social-share-icon
@@ -11790,7 +11678,7 @@ dermatologytimes.com,drive.com.au##.react-share__ShareButton
 realtor.com##.realtor-social-icons
 tasteofhome.com##.recipe-social-share
 fleischmannsyeast.com##.recipe__social
-outdoorlife.com,popsci.com,taskandpurpose.com,thedrive.com##.recurrent-share
+outdoorlife.com,popsci.com,taskandpurpose.com,thedrive.com,twz.com##.recurrent-share
 teamcoco.com,tomshardware.com##.reddit
 onegreenplanet.org##.reveal-modal-bg
 businesstoday.in##.rhs-fixwhtsapp
@@ -11987,6 +11875,7 @@ thenationalnews.com##.social-share-rail__sticky
 arnnet.com.au,csoonline.com,infoworld.com,networkworld.com##.social-share-sticky-menu__wrapper
 rappler.com##.social-share__actions
 officialcharts.com##.social-sharing-bar
+newmobility.com##.social-sharing-links
 trip101.com##.social-sharing-sidebar
 thehardtimes.net##.social-sharing-wrapper
 hawaiitribune-herald.com##.social-side
@@ -12097,6 +11986,7 @@ dcrainmaker.com##.swp_floating_horizontal_wrapper
 elements.visualcapitalist.com,marktechpost.com,podwatch.io##.swp_social_panel
 targettrend.com##.sws_supernormalaction
 dailyboulder.com,echonewshub.com,jugomobile.com,thartribune.com##.t-shared-sec
+toucharcade.com##.ta_followWidget
 okgoals.com##.tabrow
 gamingbolt.com##.tag-social-media
 notthebee.com##.take-shareables
@@ -12202,6 +12092,7 @@ cnbdaily.com##.wpjankari-social-wrapper
 budgetbytes.com,butterwithasideofbread.com,handletheheat.com,therecipecritic.com##.wprm-call-to-action
 thecookierookie.com##.wprm-social
 frommybowl.com##.wprm-template-fmb-footer
+toucharcade.com##.wpusb-buttons
 manhwatop.com##.wrap_social_account
 coinspeaker.com##.wrapp_aside-share
 90min.com##.wrapperBase_1ietptp-o_O-wrapperDefault_dlcy9n
@@ -12242,6 +12133,7 @@ eteknix.com##[href^="http://bit.ly/"]
 webfail.com##[href^="http://twitter.com/intent/tweet"]
 psypost.org##[href^="https://news.google.com/publications/"]
 goodyfeed.com##[href^="https://t.me/"]
+irishnews.com##[href^="https://whatsapp.com/channel/"]
 colourlovers.com##a.mr-10.left > [src]
 telekom.com##a[title="Share"]
 lonelyplanet.com##button[data-taggyid]

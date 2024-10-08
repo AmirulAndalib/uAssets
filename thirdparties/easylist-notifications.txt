@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Notifications
-! Last modified: Thu, 03 Oct 2024 06:32:45 +0000
+! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -750,6 +750,7 @@ livenation.co.nz###push-notifications-popup
 bigislandnow.com###pushNotifications
 google.com###pushdown
 newnoisemagazine.com###snppopup-welcome
+pewresearch.org###survey-5-trust
 nrl.com###vue-prompt-toast
 live.erinn.biz###win_appinstallhint
 alarabiya.net,indiatimes.com###wzrk_wrapper
@@ -793,6 +794,7 @@ gamingbible.com,ladbible.com,sportbible.com,tyla.com,unilad.com,uniladtech.com##
 themonthly.com.au##.subscriber-push-end
 indiatoday.in##.tapBoxCls
 ghpage.com##.tds-call-to-action1
+aljazeera.com##.user-accounts-tooltip.closable
 johnsoncitypress.com##.web-promo-designer
 gptoday.net##.webpush_popup
 waze.com##.wz-downloadbar
@@ -1281,6 +1283,7 @@ google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,
 weatherbug.net##smart-app-banner
 fedex.com##trk-shared-smart-app-banner
 voicy.jp##v-sp-download
+reddit.com##xpromo-app-selector
 reddit.com##xpromo-top-button
 ! :has
 gemini.google.com##.cdk-overlay-container:has(.get-app-mobile-dialog)
