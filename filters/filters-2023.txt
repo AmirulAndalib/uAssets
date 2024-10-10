@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2023)
-! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
+! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1889,6 +1889,7 @@ www.wp.pl##div[data-st-area] + div > div > div:has(> div > div > div[id^="div-gp
 www.wp.pl##aside > div > div[data-st-area="Wiadomosci"] ~ div[class]:has(div[style^="transform:"] > a[style="text-decoration: none;"])
 www.wp.pl,pudelek.pl,o2.pl##body > div[class]:has(> div + div + div > .spinner)
 !#if env_mobile
+www.wp.pl##.max-w-mobile > div[class]:has(> div > div > iframe)
 www.wp.pl##.max-w-mobile > div:has(> div:first-child > div:only-child > div > span:has-text(Przewijaj w dół, by kontynuować))
 www.wp.pl##div[data-bdc="section-celebrities"] > .wp-inner-content > div:has(> div:first-child > a[href^="https://www.wp.pl/"]:only-child > img:only-child)
 www.wp.pl##div[class*=" "]:has(> div > div:first-child > div:first-child > a[href^="https://www.wp.pl/"]:first-child):matches-css(max-width: 420px):remove()
@@ -2315,7 +2316,7 @@ fakaza.*,fakaza2018.com,fakazavibes.com,hiphopde.com##a[data-wpel-link="external
 fakaza.*,fakaza2018.com,fakazahouse.com,fakazamusic.co,samsonghiphop.org,zamusic.org##[href*="//bit.ly/"], [href*="//thaudray.com/"], [href*="//tinkerwidth.com/"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/17909
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rtl.be,redirect-rule=google-ima.js
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rtl.be,redirect=google-ima.js
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21458
 reshare.pm#@#.showads
@@ -2323,7 +2324,7 @@ reshare.pm##+js(nowoif)
 @@||a.magsrv.com/ad-provider.js$script,domain=reshare.pm
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/149922
-||googlesyndication.com^$script,redirect-rule=noopjs,domain=flysas.com
+||googlesyndication.com^$script,redirect=noopjs,domain=flysas.com
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137898
 maxt.church##+js(no-xhr-if, googletagmanager)

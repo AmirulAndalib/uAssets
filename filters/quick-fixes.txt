@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
+! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -146,7 +146,7 @@ poophq.com,veev.to##+js(set, fapit.check, noopFunc)
 !poophq.com,veev.to##+js(no-xhr-if, url:!/cdn\.plyr\.io|veev\.to|\/dl\?op=player_api/ method:GET)
 poophq.com,veev.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
-poophq.com,veev.to##+js(no-xhr-if, /\/ad-provider\.js$/, length:35000-200000)
+poophq.com,veev.to##+js(trusted-set, __abburim, {"value": "import"})
 poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
@@ -203,6 +203,7 @@ gunauc.net#@#+js(prevent-fetch, pagead2.googlesyndication.com)
 wiki.yjsnpi.nu#@#.ad:style(height: 0 !important;)
 @@||wiki.yjsnpi.nu^$image,xhr,1p
 @@||wiki.yjsnpi.nu^$ghide
+wiki.yjsnpi.nu##.mw-file-element, .lazy-image-placeholder:style(visibility: visible !important;)
 
 ! https://github.com/AdguardTeam/AdguardFilters/commit/2ff33624c53737968a93974c6568c17e8d9f3a3d#commitcomment-147572799
 adacomi.com#@#body > div[style^="text-align:center;"]
@@ -219,3 +220,6 @@ kahoku.news#@#.vr2_pickup-main
 yahoo.com#@#+js(set, rapidInstance, {})
 yahoo.com#@#+js(set, rapidInstance.beaconLinkViews, noopFunc)
 yahoo.com#@#+js(set, rapidInstance.beaconClick, noopFunc)
+
+! https://github.com/uBlockOrigin/uAssets/issues/21578#issuecomment-2404243121
+iwb.jp##+js(nostif, getComputedStyle(a).height)

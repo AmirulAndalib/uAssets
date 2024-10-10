@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
+! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -687,22 +687,18 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||clc-link.me^$all
 ||app.mediafire.com/jjtzeom4qvvxb$doc
 ||app.mediafire.com/36culjifmas7b$doc
-||app.mediafire.com/y0r8u9vyci2hy$doc
-||app.mediafire.com/rvq21oqy897t7$doc
 ||mediafire.com/folder/10ejpiwio2gfh/$doc
-||mediafire.com/folder/n2cwlepl4zeov/$doc
 ||mediafire.com/folder/v6itahr4p07b1/$doc
 ||mediafire.com/folder/01t0gadw328j9/$doc
 ||mediafire.com/folder/h9o4dqf15amrc/$doc
 ||mediafire.com/folder/ofa1qju50ffaz/$doc
 ||mediafire.com/folder/9gwcg0g7moide/$doc
 ||mediafire.com/folder/5mm90sz4nz0ui/$doc
-||mediafire.com/folder/e1ja1so1xldxz/$doc
 ||www.youtube.com/@pengwincheat/$doc
 ||www.youtube.com/channel/UCS9ql1ylQmDx7o_6v15X7mw/$doc
 ||www.youtube.com/channel/UCEMJ0wTeQgvyyvQTil7tteQ/$doc
-||www.youtube.com/channel/UC0G6UimTOf4mIRvW11yPZXQ/$doc
 ||www.youtube.com/channel/UCNLgP9j7dK6tvEiZC2wZp5Q/$doc
+||www.youtube.com/channel/UCwmnsubfOCTN_xMhg4czo5A/$doc
 ||sites.google.com/view/hubgames|$doc
 ||sites.google.com/view/ulpackmnn|$doc
 ||sites.google.com/view/zxcqq|$doc
@@ -723,7 +719,7 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||projectglbl.lol^$doc
 ||evilmods.com^$doc
 ||zencloud.life^$doc
-||exoduscheats.space^$doc
+||veruscheats.space^$all
 ||cloud-folder.org^$doc
 ||cloud-pack.org^$doc
 ||cloud-deployments.org^$doc
@@ -2866,7 +2862,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||cloudflarebros.com^$all
 ||brcknkblue.com^$all
 ||sxmbs.com^$all
-||dhotelzao.com^$all
 ||tamilislamgate.com^$all
 ||adblock1.com^$all
 ||newupdatesnow.com^$all
@@ -3102,6 +3097,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||socalthesyndicate.com/*/adobefud/$all,to=~adobe.com
 ||pub-*.r2.dev/adobe2024.html^$doc,to=~adobe.com
 ||adobepd*.glitch.me^$doc,to=~adobe.com
+||facture-free.com/Adobeverapdf/$all
 ! gazprom
 /^https:\/\/[a-z0-9]{5,15}\.shop\/l\/gaz\//$1p,strict1p,match-case,to=shop
 /^https:\/\/[a-z0-9]{5,15}\.shop\/uniq$/$xhr,1p,strict1p,match-case,method=get,to=shop
@@ -3332,6 +3328,9 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||codeanyapp.com/*/DKB_new/$doc,to=~dkb.de
 ||correopackvia.freewebhostmost.com^$all,to=~hype.it
 ||freewebhostmost.com/DARKSIDE/hype/$doc,to=~hype.it
+! hypovereinsbank.de
+||gohvb-d634f.web.app^$all,to=~hypovereinsbank.de
+||gohvb-*.web.app^$doc,to=~hypovereinsbank.de
 ! mbbank
 /^https:\/\/mbdk\d+\.com\//$doc,to=com|~mbbank.com.vn
 ||mbdk99.com^$all,to=~mbbank.com.vn
@@ -3379,6 +3378,7 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 /tracking/fV5EjH/*.php^$doc,to=~dhl.com
 ||delivery-globaldhlauth.github.io^$all,to=~dhl.com
 ||github.io/samedaydelivery/$doc,to=~dhl.com
+||myjobdhl.earcu.com^$all,to=~dhl.com
 ! whatsapp
 ||ann.tess1.top^$all
 ||whats.met-esm.top^$all
@@ -3833,6 +3833,7 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||auth-llbc.elementfx.com^$all,to=~leboncoin.fr
 ||dc.tensgpt.com^$all,to=~discord.com
 ||mol-finance.top^$all,to=~mol.co.jp
+||carrefour-enbacktoschool4.pages.dev^$all,to=~carrefour.com
 ||beluxrepm.followme.fr/FolloWMe$all,to=~realestate.bnpparibas.com
 ||mybluehost.me/Cope346/$all
 ||tesakom.com/aa/index.html^$all,to=~ebestsec.co.kr
