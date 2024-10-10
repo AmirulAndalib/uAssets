@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
+! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2902,6 +2902,7 @@ cryptonomist.ch,globalguideline.com,iogames.onl,isanek.com##.scrollup
 tiktok.com##.show-top
 pbtech.co.nz,pbtech.com##.showUp
 grundig.com##.site-footer__up
+niwa.co.nz##.site__footer__back-to-top
 bay.com.mt,tennesseestar.com,themichiganstar.com,theminnesotasun.com,theohiostar.com##.sm-up-container
 motoringnz.com##.sp-back-to-top
 fiftytwo.in##.story__arrow

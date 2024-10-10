@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
+! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -4082,8 +4082,17 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||grahurgum.com^$all
 ||liverun0.com^$all
 ||ephemeral9.com^$all
+||hocklahro.ru^$all
+||tinjudish.ru^$all
 ! google
 ||arciansi.su^$all
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.com\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=com|~google.com|~microsoft.com,from=com|ru|su
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.ru\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=ru,from=com|ru|su
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.su\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=su,from=com|ru|su
+|https://*.favoripirlanta.com^$doc
+||amernamproa.com^$all
+||tivorica.su^$all
+||xylentura.su^$all
 ||puttyconnect.info^$all
 ||astrosphere.world^$all
 ||marketplace-item-*.000.pe^$doc
@@ -4360,3 +4369,10 @@ adrissa.com.co,americansoda.co.uk,casteloforte.com.br,centerfabril.com.br,forque
 ||whyareyouherewho.ru^
 ||last-blink.com^
 ||orcaslicer.net^$doc
+||comodozeropoint.com^$all,to=~comodo.com
+||avatrade-services.com^$all,to=~avatrade.com
+||ailurophilestealer.shop^$all
+##html#html[sti][vic][lang] > body#allbody
+/\/m\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p
+/\/n\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p
+/\/o\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p

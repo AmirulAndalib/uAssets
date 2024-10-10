@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Badware risks
-! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
+! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
 ! Expires: 5 days
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc.
 ! The purpose is to at least ensure a user is warned of the risks ahead.
@@ -5218,8 +5218,19 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||grahurgum.com^$all
 ||liverun0.com^$all
 ||ephemeral9.com^$all
+||hocklahro.ru^$all
+||tinjudish.ru^$all
 ! google
 ||arciansi.su^$all
+
+! https://www.reddit.com/r/phishing/comments/1fxvrn0/boys_girls_clubs_of_southeast_virginia_proposal/
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.com\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=com|~google.com|~microsoft.com,from=com|ru|su
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.ru\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=ru,from=com|ru|su
+/^https:\/\/[a-z0-9]{50,}\.[a-z0-9]{4,11}\.su\/[a-zA-Z0-9]{50,}$/$xhr,3p,method=get,to=su,from=com|ru|su
+|https://*.favoripirlanta.com^$doc
+||amernamproa.com^$all
+||tivorica.su^$all
+||xylentura.su^$all
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
 ! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
@@ -5668,3 +5679,15 @@ adrissa.com.co,americansoda.co.uk,casteloforte.com.br,centerfabril.com.br,forque
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25519
 ||orcaslicer.net^$doc
+
+! https://github.com/uBlockOrigin/uAssets/issues/25583
+! https://www.virustotal.com/gui/url/da347b9b68b517c0a828f127ce9675ce47ed7277f16ace2673cdc835ded5a85c
+||comodozeropoint.com^$all,to=~comodo.com
+||avatrade-services.com^$all,to=~avatrade.com
+||ailurophilestealer.shop^$all
+
+! https://blog.sekoia.io/mamba-2fa-a-new-contender-in-the-aitm-phishing-ecosystem/
+##html#html[sti][vic][lang] > body#allbody
+/\/m\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p
+/\/n\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p
+/\/o\/js(?:drive|nom|sp|v)\.js\b/$script,1p,strict1p

@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
+! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -428,6 +428,10 @@ linasmatkasse.se##+js(trusted-set-local-storage-item, reduxStore, '{"tracking":{
 ! https://gamearena.pl/
 gamearena.pl##+js(trusted-set-cookie, cookieOptions, '{"analitics":false,"marketing":false}')
 gamearena.pl##+js(set-cookie, cookieVer, 1, , reload, 1)
+! https://github.com/uBlockOrigin/uAssets/issues/25596
+publicsenat.fr##+js(trusted-click-element, ':is(.didomi-continue-without-agreeing, #didomi-notice-disagree-button)', , 2000)
+publicsenat.fr###didomi-host:style(opacity: 0 !important;)
+publicsenat.fr##body.didomi-popup-open:style(overflow: auto !important;)
 
 
 !! Needs additional cookies

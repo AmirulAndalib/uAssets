@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList
 ! Expires: 6 days (update frequency)
-! Last modified: Tue, 08 Oct 2024 18:57:37 +0000
+! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
 ! Diff-Path: %diffpath%#easylist
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -1568,6 +1568,7 @@ _800x80_
 ###Ads_BA_CAD2
 ###Ads_BA_FLB
 ###Ads_BA_SKY
+###Ads_BA_VID
 ###Ads_TFM_BS
 ###Ads_google_bottom_wide
 ###Adsense300x250
@@ -9021,6 +9022,7 @@ _800x80_
 ##.ads_amazon
 ##.ads_area
 ##.ads_article
+##.ads_ba_cad
 ##.ads_banner
 ##.ads_bar
 ##.ads_before
@@ -19241,6 +19243,7 @@ browsershots.org#@#.advert_area
 ||asylumclogunaccustomed.com^
 ||atableofcup.com^
 ||atacticserena.top^
+||ataiyalstrays.com^
 ||atala-apw.com^
 ||atamansdockize.com^
 ||atampharosom.com^
@@ -19743,6 +19746,7 @@ browsershots.org#@#.advert_area
 ||azwkjjkmbqvye.top^
 ||azxdkucizr.com^
 ||azxhlzxmrqc.com^
+||azygotesonless.com^
 ||azyyyeyeqeazj.top^
 ||b-5-shield.com^
 ||b-m.xyz^
@@ -19862,6 +19866,7 @@ browsershots.org#@#.advert_area
 ||bailoaso.xyz^
 ||bailonushe.com^
 ||bainushe.com^
+||baipahanoop.net^
 ||bairnsvibrion.top^
 ||baiseesh.net^
 ||baithoph.net^
@@ -21301,6 +21306,7 @@ browsershots.org#@#.advert_area
 ||bropu2.com^
 ||broredir1s.site^
 ||brothersparklingresolve.com^
+||brottpyric.com^
 ||broughtalienshear.com^
 ||broughtenragesince.com^
 ||broughtincompatiblewasp.com^
@@ -24724,6 +24730,7 @@ browsershots.org#@#.advert_area
 ||dilruwha.net^
 ||dilutegulpedshirt.com^
 ||dilutemylodon.top^
+||diluterocciput.click^
 ||dilutesnoopzap.com^
 ||dilutionavailstoker.com^
 ||dimedoncywydd.com^
@@ -26281,6 +26288,7 @@ browsershots.org#@#.advert_area
 ||endingmedication.com^
 ||endingrude.com^
 ||endjigsur.com^
+||endlessgoes.com^
 ||endlesslyalwaysbeset.com^
 ||endlessvow.com^
 ||endorsecontinuefabric.com^
@@ -29296,6 +29304,7 @@ browsershots.org#@#.advert_area
 ||gorillatraffic.xyz^
 ||gorillatrk.com^
 ||gorillatrking.com^
+||goschenelect.com^
 ||goshbiopsy.com^
 ||gositego.live^
 ||gosoftwarenow.com^
@@ -29351,6 +29360,7 @@ browsershots.org#@#.advert_area
 ||gqaecrxbj.com^
 ||gqagmovxyk.com^
 ||gqalqi656.com^
+||gqcdxkrst.com^
 ||gqckjiewg.com^
 ||gqcmqihonrx.com^
 ||gqdvbkmnkox.com^
@@ -29829,6 +29839,7 @@ browsershots.org#@#.advert_area
 ||habovethecity.info^
 ||habutaeirisate.com^
 ||habutaeunroost.com^
+||hackeestrict.click^
 ||hadajvqpha.com^
 ||hadfrizzprofitable.com^
 ||hadmiredinde.info^
@@ -32017,6 +32028,7 @@ browsershots.org#@#.advert_area
 ||irvato.com^
 ||irvingreeds.com^
 ||isaacsolanum.top^
+||isabellagodpointy.com^
 ||isabellahopepancake.com^
 ||isawthenews.com^
 ||isbnrs.com^
@@ -34887,6 +34899,7 @@ browsershots.org#@#.advert_area
 ||mabdkggqleseuhj.com^
 ||mabelasateens.com^
 ||mabolmvcuo.com^
+||mabolocorrive.com^
 ||mabtcaraqdho.com^
 ||mabyerwaxand.click^
 ||macacosmarline.top^
@@ -35122,6 +35135,7 @@ browsershots.org#@#.advert_area
 ||mareswimming.com^
 ||margaritaimmense.com^
 ||margaritapowerclang.com^
+||marginshache.com^
 ||mariadock.com^
 ||marial.pro^
 ||marianneflog.com^
@@ -37723,6 +37737,7 @@ browsershots.org#@#.advert_area
 ||ocflkcgwjem.com^
 ||ocheebou.xyz^
 ||ochoawhou.com^
+||ochoovoajaw.xyz^
 ||ocjdmjxm.com^
 ||ocjmbhy.com^
 ||ockerfisher.top^
@@ -38361,6 +38376,7 @@ browsershots.org#@#.advert_area
 ||oqkucsxfrcjtho.xyz^
 ||oqnabsatfn.com^
 ||oqpahlskaqal.com^
+||oqprjunocooluy.com^
 ||oqsttfy.com^
 ||oqxehynxtckgha.com^
 ||orabsola.com^
@@ -41016,6 +41032,7 @@ browsershots.org#@#.advert_area
 ||ptoaltie.com^
 ||ptoangir.com^
 ||ptoapouk.com^
+||ptoavibsaron.net^
 ||ptobsagn.com^
 ||ptochair.xyz^
 ||ptoftaupsift.com^
@@ -41962,6 +41979,7 @@ browsershots.org#@#.advert_area
 ||rar-vpn.com^
 ||rareghoa.net^
 ||rarestkhatin.top^
+||rarrwcfe.com^
 ||rasalasgobangs.top^
 ||rascalbygone.com^
 ||rashbarnabas.com^
@@ -42647,6 +42665,7 @@ browsershots.org#@#.advert_area
 ||rethinkwrinkle.com^
 ||reticencecarefully.com^
 ||retillbicycle.top^
+||retingexylogen.com^
 ||retintsmillion.com^
 ||retinueabash.com^
 ||retinuegigoh.com^
@@ -42916,6 +42935,7 @@ browsershots.org#@#.advert_area
 ||rknwwtg.com^
 ||rkomf.com^
 ||rkskillsombineukd.com^
+||rkulukhwuoc.com^
 ||rkvyhuyab.com^
 ||rkwithcatuk.org^
 ||rkymfevzeq.com^
@@ -48624,6 +48644,7 @@ browsershots.org#@#.advert_area
 ||upskittyan.com^
 ||upspewsafener.com^
 ||upspinarakor.com^
+||upstairswellnewest.com^
 ||upstandingmoscow.com^
 ||upsups.click^
 ||uptafashib.com^
@@ -49473,6 +49494,7 @@ browsershots.org#@#.advert_area
 ||vodjnqarncm.com^
 ||vodlpsf.com^
 ||vodobyve.pro^
+||voguesmaison.com^
 ||vohqpgsdn.xyz^
 ||voicebeddingtaint.com^
 ||voicedstart.com^
@@ -54350,6 +54372,7 @@ browsershots.org#@#.advert_area
 ||605efe.xyz^$document,popup
 ||634369.xyz^$document,popup
 ||6471e7f7.xyz^$document,popup
+||65035033.xyz^$document,popup
 ||656f1ba3.xyz^$document,popup
 ||657475b7-0095-478d-90d4-96ce440604f9.online^$document,popup
 ||68646f.xyz^$document,popup
@@ -56362,6 +56385,7 @@ browsershots.org#@#.advert_area
 ||ironweaver.top^$popup
 ||irresponsibilityhookup.com^$popup
 ||irtya.com^$popup
+||isabellagodpointy.com^$popup
 ||isawthenews.com^$popup
 ||ismlks.com^$popup
 ||isohuntx.com/vpn/$popup
@@ -59279,12 +59303,14 @@ browsershots.org#@#.advert_area
 ||1080872514.rsc.cdn77.org^
 ||10945-2.s.cdn15.com^
 ||10945-5.s.cdn15.com^
+||1176731452.rsc.cdn77.org^
 ||1187531871.rsc.cdn77.org^
 ||1192349565.rsc.cdn77.org^
 ||1208344341.rsc.cdn77.org^
 ||123-stream.org^
 ||1380804958.rsc.cdn77.org^
 ||1437953666.rsc.cdn77.org^
+||1457037562.rsc.cdn77.org^
 ||1529462937.rsc.cdn77.org^
 ||1548164934.rsc.cdn77.org^
 ||1675450967.rsc.cdn77.org^
@@ -64638,7 +64664,7 @@ wordfind.com##.adbl
 dataversity.net,ippmedia.com,sakshi.com,songlyrics.com,yallamotor.com##.adblock
 bookriot.com##.adblock-content
 darkreader.org##.adblock-pro
-carcomplaints.com,entrepreneur.com,interglot.com,pricespy.co.nz,shared.com,sourcedigit.com,telegraphindia.com##.adbox
+carcomplaints.com,entrepreneur.com,interglot.com,news18.com,pricespy.co.nz,shared.com,sourcedigit.com,telegraphindia.com##.adbox
 moviechat.org##.adc
 boards.4channel.org##.adc-resp
 boards.4channel.org##.adc-resp-bg
@@ -67630,6 +67656,7 @@ salixos.org##.sponsors-container
 libhunt.com##.sponsors-list-content
 petri.com##.sponsorsInline
 newswiretoday.com,przoom.com##.sponsortd
+news18.com##.sponswrp
 alexandriagazette.com,arlingtonconnection.com,burkeconnection.com,centre-view.com,coincost.net,connection-sports.com,fairfaxconnection.com,fairfaxstationconnection.com,greatfallsconnection.com,herndonconnection.com,mcleanconnection.com,mountvernongazette.com,phonearena.com,potomacalmanac.com,reston-connection.com,springfieldconnection.com,viennaconnection.com##.spot
 phonearena.com##.spot-sticky-container
 freepik.com##.spr-adblock
@@ -71761,6 +71788,7 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 @@||centro.co.il^$generichide
 @@||coinmarketcap.com/static/addetect/$script,~third-party
 @@||dlh.net^$script,subdocument,domain=dlh.net
+@@||dragontea.ink^$generichide
 @@||exponential.com^*/tags.js$domain=yellowbridge.com
 @@||games.pch.com^$generichide
 @@||maxstream.video^$generichide
@@ -71782,7 +71810,7 @@ redtube.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com,youporn.com,youp
 !! https://adssettings.google.com/anonymous?hl=en
 @@||googleads.g.doubleclick.net/ads/preferences/$domain=googleads.g.doubleclick.net
 !! imasdk.googleapis.com/js/sdkloader/ima3_dai.js
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|embed.comicbook.com|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|embed.comicbook.com|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
 !! pubads.g.doubleclick.net/ondemand/hls/
 @@||pubads.g.doubleclick.net/ondemand/hls/$domain=history.com
 !! ||imasdk.googleapis.com/js/core/bridge
