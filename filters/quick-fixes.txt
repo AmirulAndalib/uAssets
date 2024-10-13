@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
+! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -62,9 +62,9 @@ web.facebook.com,www.facebook.com##+js(rpnt, script, '/null,"category_sensitive"
 
 ! https://github.com/uBlockOrigin/uAssets/issues/18476
 ! VOE sites
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=evelynthankregion.com|lorimuchbenefit.com|susanhavekeep.com|thomasalthoughhear.com,important
-evelynthankregion.com,lorimuchbenefit.com,susanhavekeep.com,thomasalthoughhear.com##+js(nowoif)
-evelynthankregion.com,lorimuchbenefit.com,susanhavekeep.com,thomasalthoughhear.com##+js(set, console.clear, undefined)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=evelynthankregion.com|lorimuchbenefit.com|susanhavekeep.com|thomasalthoughhear.com|zacharycollectionmight.com,important
+evelynthankregion.com,lorimuchbenefit.com,susanhavekeep.com,thomasalthoughhear.com,zacharycollectionmight.com##+js(nowoif)
+evelynthankregion.com,lorimuchbenefit.com,susanhavekeep.com,thomasalthoughhear.com,zacharycollectionmight.com##+js(set, console.clear, undefined)
 
 ! next-episode .net
 !next-episode.net##+js(rmnt, script, '/[\s\S]{0,}head[\s\S]{1900,}/')
@@ -78,24 +78,7 @@ download.megaup.net##+js(rpnt, script, /for\s*\(\s*(const|let|var).*?;return;\}\
 ! https://github.com/uBlockOrigin/uAssets/issues/23806
 japscan.lol##+js(aost, onload, inlineScript)
 japscan.lol#@#+js(acs, addEventListener, String.fromCharCode)
-@@||japscan.lol^$ghide
 *$image,redirect-rule=1x1.gif,domain=japscan.lol
-japscan.lol#@##blur-inter
-japscan.lol#@##interstitial
-japscan.lol##body > .container.text-center > div.mt-3[style="margin: 0px auto; display: block;"] > a.Aikoi.donate[target="_blank"][href^="https://www."][href*="/?utm_source=manga&utm_"]:not([href^="https://www.google"]):not([href^="https://www.japscan"]):not([href^="https://www.example"]) > img.img-fluid[src^="/imgs/onc/"]
-japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{const .+\)\( \);\}catch\(/)
-japscan.lol##.navbar-nav > li#navpromo2.nav-item > a[href^="https://www.origoclick.com"]:style(clip-path: polygon(1px 1px, 1px 1px, 1px 1px ,1px 1px) !important;)
-japscan.lol#@#+js(rmnt, script, /statically\.|cdn\.stati/)
-japscan.lol#@#+js(rmnt, script, https://cdn.)
-japscan.lol#@#+js(rmnt, script, Japscan/Test)
-japscan.lol#@#+js(rmnt, script, /2050Rhjynm|Test\/main|^function .{7000\,7500}eval\(.{10\,20}$|\,setTimeout\(function\(\)\{/)
-japscan.lol#@#+js(rmnt, script, /\);\}\}\}$|\)\]\(\'div\'\)\,|^\(function\([A-Z].{6200\,6300}|catch\(.{20}=window;\}const /)
-japscan.lol#@#+js(rmnt, script, /^var [A-z]{1\\, 20};\(function\(\)\{var .{2500\\, 2700}$|return \d{4}\}\)\(\)$|\(\'[a-z]{37}\'\)\.substr/)
-japscan.lol#@#+js(rmnt, script, '/^var [A-z]{1,20};\(function\(\)\{.{1500,2000}$|document\(\)\.querySelectorAll|\._\.style\.height= |\}\}\)\(\)$/')
-japscan.lol#@#+js(rmnt, script, /^\(function\(_0x|=\[(?:_0x[0-9a-f]{6}\(0x[0-9a-f]{2}\)\,){20}|\(\);\}$/)
-japscan.lol#@#+js(rmnt, script, /^\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6400\,6600}$/)
-japscan.lol#@#+js(rmnt, script, /^\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6400\,13000}$/)
-japscan.lol#@#+js(rmnt, script, /^\s*\(function\([-$0-9A-Z_a-z]{1\,20}\,.{6200\,13000}\s*$/)
 japscan.lol#@#+js(rmnt, script, /^\s*(?:var [-$0-9A-Z_a-z]{1\,20}=[-$0-9A-Z_a-z]{1\,20};)?\s*\(function\([-$0-9A-Z_a-z]{1\,20}\,.{5000\,7000}\s*$/)
 japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{var .{400\,500}\);\}$/)
 japscan.lol#@#+js(aeld, DOMContentLoaded, /^[-$0-9A-Z_a-z]+=>\{[a-z]{3\,5} .{400\,500}\);\}$/)
@@ -103,7 +86,10 @@ japscan.lol##+js(aeld, DOMContentLoaded, (e)=>)
 japscan.lol#@#+js(rmnt, script, =document[\'createElement\'](\'img\');)
 japscan.lol#@#+js(rmnt, script, un\'+\'de)
 japscan.lol#@#+js(acs, document.querySelectorAll, (\'img)
-japscan.lol##+js(rmnt, script, ;}else{if(typeof )
+japscan.lol#@#+js(rmnt, script, ;}else{if(typeof )
+japscan.lol#@#+js(rmnt, script, \'fined)
+japscan.lol#@#+js(rmnt, script, NeSi!)
+japscan.lol##+js(rmnt, script, /NeSi./)
 /^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[a-z]{8,15}\.xyz\/$/$xhr,3p,to=xyz,method=head,header=x-traceid2,domain=japscan.lol,important
 /^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,to=com,method=head,header=x-traceid2,domain=japscan.lol,important
@@ -116,8 +102,6 @@ japscan.lol##+js(rmnt, script, ;}else{if(typeof )
 /^https?:\/\/[a-z]{8,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+)?$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[a-z]{5,7}\.com\/script\/[-_0-9A-Za-z]+(\.min)?\.js$/$script,3p,match-case,header=x-guploader-uploadid,domain=japscan.lol,important
-! ads
-||japscan.lol^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2320
 @@||freemcserver.net^$ghide
@@ -146,7 +130,7 @@ poophq.com,veev.to##+js(set, fapit.check, noopFunc)
 !poophq.com,veev.to##+js(no-xhr-if, url:!/cdn\.plyr\.io|veev\.to|\/dl\?op=player_api/ method:GET)
 poophq.com,veev.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
-poophq.com,veev.to##+js(trusted-set, __abburim, {"value": "import"})
+poophq.com,veev.to##+js(rpnt, script, window.__abburi, /\(function\(\)\{\s*'use strict';\s*const handler=\{\s*apply:function\(target\,thisArg\,argumentsList\)\{\s*if\(argumentsList\[0\]&&argumentsList\[0\]\.html\?\.\detected===null&&typeof argumentsList\[0\]\.html\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.env\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.http\?\.\instance\?\.\start==='function'\)\{\s*const customStartFunction=function\(\)\{\s*if\(typeof this\._hsz==='boolean'\)\{\s*this\._hsz=false;\s*\}\};\s*\['html'\,'env'\,'http'\]\.forEach\(\(key\)=>\{\s*argumentsList\[0\]\[key\]\.instance\.start=customStartFunction;\s*if\(typeof argumentsList\[0\]\[key\]\.instance\._hsz==='boolean'\)\{\s*argumentsList\[0\]\[key\]\.instance\._hsz=true;\s*\}\};\s*\}\s*return Reflect\.apply\(target\,thisArg\,argumentsList\);\s*\}\};\s*window\.Object\.keys=new Proxy\(window\.Object\.keys\,handler\);\s*\}\)\(\);/)
 poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
@@ -154,10 +138,9 @@ poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 veev.to#@#.avb-active
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24575
-@@||widgets.outbrain.com/outbrain.js$xhr,domain=animefire.info|animesonlinecc.us|animesup.info|animeyabu.net|animeyabu.org|anitube.us|anitube.vip|caroloportunidades.com.br|dattebayo-br.com|drstonebr.com|flyanimes.cloud|goanimes.vip|goyabu.us|hinatasoul.com|isekaibrasil.com|meuanime.info|otakuanimess.net
-animefire.info,animesonlinecc.us,animesup.info,animeyabu.net,animeyabu.org,anitube.us,anitube.vip,caroloportunidades.com.br,dattebayo-br.com,drstonebr.com,flyanimes.cloud,goanimes.vip,goyabu.us,hinatasoul.com,isekaibrasil.com,meuanime.info,otakuanimess.net##+js(trusted-prevent-xhr, outbrain.com, outbrain)
+@@||widgets.outbrain.com/outbrain.js$xhr,domain=animefire.info|animesonlinecc.us|animesonliner4.com|animesup.info|animeyabu.net|animeyabu.org|anitube.us|anitube.vip|caroloportunidades.com.br|dattebayo-br.com|drstonebr.com|flyanimes.cloud|goanimes.vip|goyabu.us|hinatasoul.com|isekaibrasil.com|meuanime.info|otakuanimess.net|superanimes.in
+animefire.info,animesonlinecc.us,animesonliner4.com,animesup.info,animeyabu.net,animeyabu.org,anitube.us,anitube.vip,caroloportunidades.com.br,dattebayo-br.com,drstonebr.com,flyanimes.cloud,goanimes.vip,goyabu.us,hinatasoul.com,isekaibrasil.com,meuanime.info,otakuanimess.net,superanimes.in##+js(trusted-prevent-xhr, outbrain.com, outbrain)
 coempregos.com.br##+js(nostif, hasAdblock)
-@@*$xhr,method=get|post,domain=anitube.vip
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22648
 @@*$script,3p,from=sonixgvn.net,to=flashvps.xyz|nya.pub
@@ -172,9 +155,6 @@ infinityscans.xyz,infinityscans.net##+js(rpnt, script, /"\\x68\\x74\\x74\\x70.*?
 infinityscans.xyz,infinityscans.net##+js(rpnt, script, ==0xc8, ==0, condition, throw)
 ||enigmaswhereas.com^$all
 
-! https://www.youtube.com/ - page constantly reloading
-youtube.com#@#+js(trusted-set-cookie, SOCS, CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwODI5LjA3X3AxGgJlbiADGgYIgJnPpwY, , , reload, 1, domain, youtube.com)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/19935
 sportnews.to##+js(aeld, DOMContentLoaded, adsSrc)
 *$script,redirect-rule=noopjs,domain=sportnews.to|sportshub.to
@@ -185,8 +165,8 @@ sportnews.to##+js(aeld, DOMContentLoaded, adsSrc)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190044
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fuaaw5/asblock_detected_in_ask4porncc
-file-1bl9ruic-moon.com,file-sp32aoh8-moon.com##+js(nowoif)
-file-1bl9ruic-moon.com,file-sp32aoh8-moon.com##+js(acs, Math, localStorage['\x)
+file-1bl9ruic-moon.com,file-sp32aoh8-moon.com,moon-kg83docx.com##+js(nowoif)
+file-1bl9ruic-moon.com,file-sp32aoh8-moon.com,moon-kg83docx.com##+js(acs, Math, localStorage['\x)
 ||6gi0edui.xyz/js/sphinx.js$script
 ! https://github.com/uBlockOrigin/uAssets/issues/25538
 jmzkzesy.xyz##+js(nowoif)
@@ -195,22 +175,10 @@ jmzkzesy.xyz##+js(acs, Math, localStorage['\x)
 *$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,from=filemoon.*
 !#endif
 
-! https://github.com/AdguardTeam/AdguardFilters/issues/190021
-gunauc.net##+js(no-fetch-if, googlesyndication, , {"type":"cors"})
-gunauc.net#@#+js(prevent-fetch, pagead2.googlesyndication.com)
-
 ! https://github.com/AdguardTeam/AdguardFilters/commit/337aaa82e68d2aeae140b46d5d234a86e2f0cde3
-wiki.yjsnpi.nu#@#.ad:style(height: 0 !important;)
 @@||wiki.yjsnpi.nu^$image,xhr,1p
 @@||wiki.yjsnpi.nu^$ghide
-wiki.yjsnpi.nu##.mw-file-element, .lazy-image-placeholder:style(visibility: visible !important;)
-
-! https://github.com/AdguardTeam/AdguardFilters/commit/2ff33624c53737968a93974c6568c17e8d9f3a3d#commitcomment-147572799
-adacomi.com#@#body > div[style^="text-align:center;"]
-
-! https://github.com/AdguardTeam/AdguardFilters/commit/84fd4bab474adc6c0412335a5ebc2e197e00569d#r147573717
-ibarakinews.jp#@#.l-grid-banner
-ibarakinews.jp#@#div[class^="l-ad"]
+wiki.yjsnpi.nu##+js(aost, document.querySelector, tampered)
 
 ! https://github.com/AdguardTeam/AdguardFilters/commit/56183cc80ce1e10c8c09810f6832d20ae64d87c5
 kahoku.news#@#.vr2_pickup-main
@@ -223,3 +191,16 @@ yahoo.com#@#+js(set, rapidInstance.beaconClick, noopFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21578#issuecomment-2404243121
 iwb.jp##+js(nostif, getComputedStyle(a).height)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25614
+pinterest.*#@#div[data-test-id="pin"]:has(div[title^="Promoted"])
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/190368
+/^https:\/\/[0-9a-z]{8}\.[A-z0-9-]+\.[A-z]{2,3}\/[a-z]+\/[a-z0-9]{10}\.html$/$match-case,doc,badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1g2g56h/important_banking_website_issue/
+@@||ebanking.meezanbank.com/AmbitRetailFrontEnd/js/fingerprint2.min.js$1p
+
+! https://github.com/uBlockOrigin/uAssets/commit/360f0115688625e65e7f8b3e3cd3093c4994bfac
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js,to=com,badfilter
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js,to=com

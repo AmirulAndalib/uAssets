@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
+! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -124,6 +124,9 @@ hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com###taboola-below
 hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com###insticator-container
 hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##[id^="div-insticator-ad-"]
 
+! https://github.com/uBlockOrigin/uAssets/issues/25615
+@@||uploadmall.com^$ghide
+
 ! END: Exceptions to generic cosmetic filters
 
 ! https://github.com/uBlockOrigin/uBOL-issues/issues/8
@@ -217,3 +220,6 @@ moon-fm43w1qv.com##+js(acs, Math, localStorage['\x)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25602
 *$script,3p,domain=komikindo.lol,denyallow=cloudfront.net|disqus.com|disquscdn.com|fastlylb.net|googleapis.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1g1uqng/adblock_detected_on_two_sites/
+@@||seirsanduk.*?loader.js^$script,domain=seirsanduk.com|seirsanduk.online

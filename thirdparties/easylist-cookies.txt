@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
+! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18563,6 +18563,7 @@
 ||cmp.lavie.fr^
 ||cmp.lemonde.fr^
 ||cmp.lepoint.fr^
+||cmp.meteored.com^$domain=motor.es
 ||cmp.nature.com^
 ||cmp.netzwelt.de^
 ||cmp.nouvelobs.com^
@@ -18911,6 +18912,7 @@ givingwhatwecan.org###cookie-consent-modal
 laspalmerasapartments.com###cookie-consent-notification
 amnesty.org###cookie-consent__modal
 autism-unlimited.org###cookie-cover
+cpac.ca###cookie-law-bar-holder
 ecigarettedirect.co.uk###cookie-message-slide-in
 dirsyncpro.org###cookie-notice-modal
 energylivenews.com###cookie-notification-mask
@@ -20790,6 +20792,7 @@ genesis.com##.privacy-dialog
 araviscapital.com##.privacy-holder
 businessinsider.com##.privacy-link
 petalmaps.com##.privacy-menu
+curiosum.com##.privacy-notice
 uniprot.org##.privacy-panel
 tribalwars2.com##.privacy-policty-bar
 naukri.com##.privacy-policy-container
@@ -21329,6 +21332,7 @@ globalsolaratlas.info##gsa-cookie-banner
 my.games##header > .gdpr
 ingwb.com##ingwb-cookiebar
 international.pagseguro.com##le-cookies-consent
+mythos.foundation##mf-cookies-consent
 material.io##mio-cookie-notice
 beatstars.com##mp-snackbar-info-messages
 moovitapp.com##mv-cookie-banner
@@ -21667,7 +21671,7 @@ bungie.net,certik.com,etonshirts.com,footshop.com,forzafootball.com,get-in-engin
 !! .consent-banner
 twitch.tv##.consent-banner
 !! .dialog-lightbox-message
-1800runaway.org,aceprensa.com,ak-asya.com.tr,alivia.org.pl,almeidastextile.pt,ancon.io,caltex.co.za,cerre.eu,cofense.com,cronycle.com,detonated.com,direct-carpets.com,experiorfinancial.com,fermedelinciaux.be,fft.mt,getspace.us,gilmoreglobal.com,ingeniamc.com,janninebarron.com,lsisoftware.pl,lucerna-chem.ch,luukku.com,lwab.se,maltaconsulting.mt,marathonhr.com,marshfieldpre-school.co.uk,medyascope.tv,mitreprinting.co.uk,realvnc.com,ritchy.com,rwi.se,shotam.info,smackcoders.com,takeoff.org.mt,terracreta.gr,terveyskauneus.fi,tvpop.com.br,tzumi.com,vrxdb.com,webdesignspecialistamsterdam.nl,webdesignspecialistdenhaag.nl,whatcounts.com##.dialog-lightbox-message
+1800runaway.org,aceprensa.com,ak-asya.com.tr,alivia.org.pl,almeidastextile.pt,ancon.io,caltex.co.za,cerre.eu,cofense.com,cronycle.com,detonated.com,direct-carpets.com,experiorfinancial.com,fermedelinciaux.be,fft.mt,getspace.us,gilmoreglobal.com,ingeniamc.com,janninebarron.com,lsisoftware.pl,lucerna-chem.ch,luukku.com,lwab.se,maltaconsulting.mt,marathonhr.com,marshfieldpre-school.co.uk,medyascope.tv,mitreprinting.co.uk,polutowani.pl,realvnc.com,ritchy.com,rwi.se,shotam.info,smackcoders.com,takeoff.org.mt,terracreta.gr,terveyskauneus.fi,tvpop.com.br,tzumi.com,vrxdb.com,webdesignspecialistamsterdam.nl,webdesignspecialistdenhaag.nl,whatcounts.com##.dialog-lightbox-message
 !! .amgdprcookie-modal-container
 american-heritage.de,discoland.fi,kedo.de,shop.lecoqporcelaine.it##.amgdprcookie-modal-container
 !! .dialog-lightbox-widget
@@ -22026,7 +22030,7 @@ bellaffair.com,colop.com,computerwelt.at,cornelsen-experimenta.de,der-metronom.d
 !! .avada-footer-scripts
 atalmedial.nl,avanhost.com,bioneer.dk,conferencetech.com,designengineerconstruct.com,dgob.de,domuslaundry.com,geniessertouren.org,institutomarketing.es,karwendelhaus.com,response.gr,santeria.milano.it,sindastra.de,specim.fi,tisak.hr,turkishbank.co.uk##.avada-footer-scripts
 !! .modal-cacsp-position
-0mas000.com,3-be.se,aardeboerconsument.nl,acib.es,adler-wolfspark.de,almaqua.com,archon.im,atass.org,beno-zilina.sk,bet-duberseuil.com,bielypotok.com,biometricvox.com,bretislavka.cz,budos.fr,but-konto.de,cealicante.org,cekantour.sk,ceoma.org,cero.cz,clg.cz,condohotele.eu,creativeworks.com.mx,cs3marketing.com,delogica.com,derkundschafter.de,digim.pl,dsd-dostal.cz,eisbratislava.org,enredadios.com,epoplast.sk,escolasagrera.cat,eurocentra.cz,eworks.sk,femsinspace.com,fiebach-minninger.com,flordeesgueva.es,fmpack.com,funtechadventures.com,gamacisa.com,gemeinde-nordharz.de,grandhotelgarden.com,growzer.com,grupoicsolutions.com,helsingborg.se,hop-shop.hr,hotelbeverlypark.com,hotelcalina.com,hotelpimar.com,hotelstatt.se,hotelstraznice.cz,ihka.be,imrvere.com,intertechnic.sk,iwareprint.pl,klinikakrasyandel.cz,lasalita.org,lerroux.com,limoncomunicacion.com,lineten.com,lofbergs.fi,macla.eu,mapalomo.com,metaling-jajce.com,nordicmedtest.se,odbpaderno.it,orientalysbeaute.com,pallejabcn.com,parimeo.de,productosdieteticos.es,profile.es,proske-sanitaer.de,psicologia-estrategica.com,rbbeautycenter.com,reprogir.cat,ruvztv.sk,sagobygden.se,schweintaal.sk,sgfinanciera.com,signframing.nl,soloducha.es,sortirahaguenau.fr,sosfinance.cz,tendermedia.es,totalmar.com,totimpressio.com,veclaicene.lv,vins-loupiac.com,visitaluksne.lv##.modal-cacsp-position
+0mas000.com,3-be.se,aardeboerconsument.nl,acib.es,adler-wolfspark.de,almaqua.com,archon.im,atass.org,beno-zilina.sk,bet-duberseuil.com,bielypotok.com,biometricvox.com,bretislavka.cz,budos.fr,but-konto.de,cealicante.org,cekantour.sk,ceoma.org,cero.cz,clg.cz,condohotele.eu,creativeworks.com.mx,cs3marketing.com,delogica.com,derkundschafter.de,digim.pl,dsd-dostal.cz,eisbratislava.org,enredadios.com,epoplast.sk,escolasagrera.cat,eurocentra.cz,eworks.sk,femsinspace.com,fiebach-minninger.com,flordeesgueva.es,fmpack.com,funtechadventures.com,gamacisa.com,gemeinde-nordharz.de,grandhotelgarden.com,growzer.com,grupoicsolutions.com,helsingborg.se,hop-shop.hr,hotelbeverlypark.com,hotelcalina.com,hotelpimar.com,hotelstatt.se,hotelstraznice.cz,ihka.be,imrvere.com,intertechnic.sk,iwareprint.pl,klinikakrasyandel.cz,lasalita.org,lerroux.com,limoncomunicacion.com,lineten.com,lofbergs.fi,macla.eu,mapalomo.com,metaling-jajce.com,nordicmedtest.se,odbpaderno.it,orientalysbeaute.com,pallejabcn.com,parimeo.de,productosdieteticos.es,profile.es,proske-sanitaer.de,psicologia-estrategica.com,rbbeautycenter.com,reprogir.cat,ruvztv.sk,sagobygden.se,schweintaal.sk,sgfinanciera.com,signframing.nl,soloducha.es,sortirahaguenau.fr,sosfinance.cz,tendermedia.es,thequantuminsider.com,totalmar.com,totimpressio.com,veclaicene.lv,vins-loupiac.com,visitaluksne.lv##.modal-cacsp-position
 !! .modal-backdrop (only)
 airnewzealand.eu,aluminiosbrinas.com,arlingtoncemetery.mil,arthrex.com,aueb.gr,axminster.co.uk,cfdbetting.com,ctbrand.store,daf.be,daf.co.uk,daf.com,daf.fr,daf.global,daf.nl,daf.ru,daf.se,daftrucks.de,daftrucks.dk,daftrucks.it,daftrucks.pl,daftrucks.sk,denmans.co.uk,digiwallet.com,easy-menu.io,ecostal.fr,epiphone.com,ferratum.co.uk,fiveguys.co.uk,flaine.com,flipsnack.com,gibson.com,globalfamilydoctor.com,happypenguin.altervista.org,interactivebrokers.co.uk,interactivebrokers.com.au,interactivebrokers.ie,kon-boot.com,lam.co.mz,likewize.com,maestroelectronics.com,mapquest.co.uk,mecaniculanului.ro,medtronic.com,missprint.co.uk,myshopi.com,nuri.com,primaresearch.org,pristupy.com,promptamcs.com,qv.co.nz,regro.at,rexel.co.uk,rexel.de,rexel.fr,rexel.nl,rexel.se,riddle.com,schaecke.at,spectranet.com.ng,spezialcycle.it,thefoodmaker.com,toshiba-tv.com,ventilationland.co.uk,whatismymovie.com,zeleris.com##.modal-backdrop
 !! .bottom_notice
@@ -22452,8 +22456,10 @@ mbanc.com##+js(rc, ccpa-banner, , stay)
 toppy.be##+js(set-cookie, __toppy_consent, 1)
 uhrzeit123.de##+js(set-cookie, _u123_cc, yes)
 uhrzeit123.de##+js(set-cookie, ga-disable, true)
+billetterie.auditorium-lyon.com##+js(set-cookie, ga_consentement, 0)
 marinelink.com##+js(set-cookie, GDPR, 9)
 againstdata.com##+js(set-cookie, dad_consent, true)
+inspections.vcha.ca##+js(set-cookie, agreedToCookiesanon, 1)
 spuntinoheathrow.com##+js(set-cookie, essential_cookies_enabled, true)
 spuntinoheathrow.com##+js(set-cookie, google_cookies_enabled, false)
 pzw.org.pl##+js(set-cookie, cookiepolicyinfo_new2, true)
@@ -23476,6 +23482,7 @@ nhnieuws.nl##+js(set-local-storage-item, psh:cookies-seen, true)
 nhnieuws.nl##+js(set-local-storage-item, psh:cookies-social, true)
 posthog.com##+js(set-local-storage-item, cookie_consent, no)
 mobilefuse.com##+js(set-local-storage-item, cookies_policy_acceptance, denied)
+data.carbonmapper.org##+js(set-local-storage-item, termsOfUseAccepted, true)
 avica.link##+js(set-local-storage-item, agreeCookie, true)
 madeiramadeira.com.br##+js(set-local-storage-item, lgpd-agree, 1)
 sberdisk.ru##+js(set-local-storage-item, cookieIsAccepted, true)
@@ -28450,6 +28457,7 @@ mnogo.ru##.cook_LFPnK
 propb.ru##.cooke
 shate-m.kz##.cookie-alert-show
 supersamsev.ru##.cookie-consent-container-wrap
+prostokvashino.ru##.cookie-notification
 domclick.ru##.cookie-root--3-0-3
 sponsr.ru##.cookie-site-alert
 korusconsulting.ru##.cookieConfirm
@@ -29051,6 +29059,7 @@ m.censor.net###usage-notice-message
 i.ua##.Disclaimer
 casers.org##._2vwI89r3xy1E9vUpxC1-q
 casers.org##._3k10c1fUHhHZWUjcCu09Ve
+sport.ua##.adl_cmp_consent-dialog-module_backdrop
 volia.com##.agreeCookie\.component__cookieWrapper
 kurs.com.ua##.background-popup
 ire.com.ua##.block
@@ -29322,7 +29331,7 @@ ants.vn##.sg-popup-content
 !---------------------------------Allowlists----------------------------------!
 ! *** easylist:easylist_cookie/easylist_cookie_allowlist_general_hide.txt ***
 cera.coop#@##CookieBanner
-fdm-travel.dk,power.no,skousen.dk,skousen.no,whiteaway.com,whiteaway.no,whiteaway.se#@##CookieConsent
+fdm-travel.dk,landkreis-kelheim.de,power.no,skousen.dk,skousen.no,whiteaway.com,whiteaway.no,whiteaway.se#@##CookieConsent
 smooth-on.com#@##CookieNotice
 finanzmarktwelt.de#@##CybotCookiebotDialogBodyUnderlay
 online.no,telenor.no#@##__tealiumGDPRcpPrefs
@@ -29425,6 +29434,7 @@ icims.com#@##gdpr_container
 ing.jobs#@##gdprconsent
 meteored.com.py,tameteo.nl#@##gpdr:not(body):not(html)
 ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,weliketuscany.it#@##js-cookie-notice
+landkreis-kelheim.de#@##modalCookieConsent
 shop.garten-bienen.at#@##modal_cookie
 christianconcern.com#@##moove_gdpr_cookie_info_bar
 microsoft.com#@##ms-cookie-banner

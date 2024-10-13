@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Thu, 10 Oct 2024 23:01:52 +0000
+! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -126,12 +126,12 @@
 /a8c-analytics.js
 /aap/stats
 /abc.gif?
-/acc/acctag.js
 /access.php?referrer=
 /accessanalyzer/tracker?
 /AccessCounter/index.cgi?
 /accesstracking/*
 /acclog.cgi?
+/acctag.js
 /acecounter/*
 /acecounter_
 /acounter.php?
@@ -3131,6 +3131,7 @@ omni.soundestlink.com$image
 ||apharponloun.com^
 ||apxl.io^
 ||as3.io^
+||aseads.com^
 ||australiarevival.com^
 ||avads.net^
 ||awmonitor.com^
@@ -11131,6 +11132,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rltd.io/tags/
 ||roadster.com/roadster_dealer_analytics
 ||rodale.com/ga/
+||roomvo.com/services/event/
 ||route.com/collect
 ||routeapp.io/route-analytics/
 ||rs.sinajs.cn^
@@ -13218,6 +13220,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||statistics.daktilo.com^
 ||stats.vidyome.com^
 ||traffic.wdc.center^
+||web.tv/analytics/
 ! Ukranian
 ||informers.sinoptik.ua^
 ||top.zp.ua/counter/
@@ -13370,6 +13373,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.slashdotmedia.com^
 ||analytics.synchrony.com^
 ||analytics.ticketmaster.
+||analytics.tomato.gg^
 ||analytics.tradedoubler.com^
 ||analytics.vedantu.com^
 ||analytics.wavebox.io^
@@ -52509,6 +52513,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
 @@||api.vk.com/method/statEvents.$~third-party
+@@||assets.fyers.in/Lib/analytics/Analytics.js$~third-party
 @@||assets.msn.com/staticsb/statics/latest/adboxes/$script,~third-party
 @@||att.com/scripts/adobe/prod/$script,~third-party
 @@||att.com/scripts/adobe/virtual/detm-container-hdr.js$~third-party
@@ -52586,6 +52591,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||dz9qn8fh4jznm.cloudfront.net/script.js$script,domain=bostonglobe.com
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
+@@||ebanking.meezanbank.com/AmbitRetailFrontEnd/js/fingerprint2.min.js$~third-party
 @@||ec.europa.eu/eurostat/databrowser/assets/analytics/piwik.js$script,~third-party
 @@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|ba.com|bestbuy.com|britishairways.com|capitalone.com|caranddriver.com|cart.autodesk.com|citi.com|citigold.com.sg|citizensbank.com|dell.com|fidelity.com|france24.com|hp.com|norton.com|rfi.fr|sbs.com.au|sfgate.com|staples.com|target.com|verizonwireless.com|williamhill.com|womenshealthmag.com|zales.com
 @@||ensighten.com^*/code/$script
@@ -52642,6 +52648,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||kilimall.com*/js/sensorsdata.min.js$script,domain=kilimall.co.ke
 @@||kohls.com/ecustservice/js/sitecatalyst.js$script,~third-party
 @@||lacoste.com^*/click-analytics.js$~third-party
+@@||lamycosphere.com/cdn/shop/*/assets/pixel.gif$image,~third-party
 @@||languagecloud.sdl.com/node_modules/fingerprintjs2/dist/fingerprint2.min.js$~third-party
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
 @@||leanplum.com^$domain=arkadium.com

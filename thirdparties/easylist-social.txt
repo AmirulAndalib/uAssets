@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Social Widgets
-! Last modified: Thu, 10 Oct 2024 07:09:40 +0000
+! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -13483,6 +13483,7 @@ nvidia.pl#@#.social-newsletter
 tuba.pl#@#.social-popup
 kingjamesbibleonline.org#@#.social-sec
 nerdist.com#@#.social-share-box
+crn.com#@#.social-share-container
 lupus.org#@#.social-share-wrapper
 medialeaks.ru#@#.social-widgets
 keepa.com#@#.socialButtons
