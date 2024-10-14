@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2021)
-! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
+! Last modified: Mon, 14 Oct 2024 15:32:29 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1307,6 +1307,7 @@ divyabhaskar.co.in##[id^="Ad"]:upward([style])
 
 ! propeller crap/ads
 livesport24.net##+js(acs, setTimeout, admc)
+livesport24.net##+js(aopr, Adcash)
 livesport24.net##[href^="https://b-partner.xyz/"]
 123moviesme.*##+js(aopr, decodeURI)
 jattmate.com,saveshared.com,simpledownload.net##+js(aopr, String.fromCharCode)
@@ -4797,9 +4798,6 @@ casamireasa.biz##+js(acs, document.write, Adb)
 
 ! fembed-hd. com popups
 fembed-hd.com##+js(aopr, __Y)
-
-! https://github.com/uBlockOrigin/uAssets/issues/10779
-mconverter.eu##+js(nostif, offsetHeight)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/10793
 joomlabeginner.com##+js(nostif, eb)
