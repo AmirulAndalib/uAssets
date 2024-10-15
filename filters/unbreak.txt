@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Unbreak
-! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
+! Last modified: Tue, 15 Oct 2024 22:57:57 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock Origin, to unbreak sites broken as a result of 3rd-party filter lists enabled by default.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -726,9 +726,6 @@ go.com#@#.has-ad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4275
 riderplanet-usa.com#@##ad_1
-
-! https://github.com/uBlockOrigin/uAssets/issues/4268#issuecomment-445490940
-adproceed.com#@#.single-ad
 
 ! https://www.winboard.org/threads/interaktion-auf-website-nicht-moeglich-wwm-trainigslager.250843/
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wwm.rtl.de
@@ -5720,3 +5717,9 @@ pruefernavi.de##+js(set, elasticApm.init, noopFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25626
 ||lamycosphere.com/cdn/shop/*/assets/pixel.gif$image,1p,redirect=1x1.gif,important
+
+! https://github.com/uBlockOrigin/uAssets/issues/25661
+!#if !env_mobile
+steamidfinder.com###nn_bfa_wrapper + .container:style(margin-top: 50px !important;)
+!#endif
+steamidfinder.com##.section-advert-banner--top:remove()

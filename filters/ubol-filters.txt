@@ -1,5 +1,5 @@
 ! Title: uBO Lite filters
-! Last modified: Sun, 13 Oct 2024 09:09:28 +0000
+! Last modified: Tue, 15 Oct 2024 22:57:57 +0000
 ! Expires: 4 days
 ! Description: Filters optimized for uBO Lite
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -126,6 +126,14 @@ hawaiitribune-herald.com,thegardenisland.com,westhawaiitoday.com##[id^="div-inst
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25615
 @@||uploadmall.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/25662
+@@||kanald.com.tr^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/4275
+@@||riderplanet-usa.com^$ghide
+riderplanet-usa.com##ins.adsbygoogle[data-ad-slot]
+riderplanet-usa.com##ins.adsbygoogle[data-ad-client]
 
 ! END: Exceptions to generic cosmetic filters
 
