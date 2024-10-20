@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Sat, 19 Oct 2024 16:33:11 +0000
+! Last modified: Sun, 20 Oct 2024 00:30:08 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -2230,7 +2230,8 @@ downev.com##+js(no-fetch-if, googlesyndication)
 uiiumovie.*##+js(acs, document.readyState, callbackAdsBlocked)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23784
-dizikral.com##+js(trusted-rpnt, script, /(function playVideo\(\) \{[\s\S]*?\.remove\(\);[\s\S]*?\})/, $1 playVideo();)
+! https://github.com/uBlockOrigin/uAssets/issues/25710
+dizikral.com,dizikral1.pro,dizikral2.pro,dizikral3.pro,dizikral4.pro,dizikral5.pro##+js(trusted-rpnt, script, /(function playVideo\(\) \{[\s\S]*?\.remove\(\);[\s\S]*?\})/, $1 playVideo();)
 dizikral.com##+js(trusted-rpnt, script, video_urls.length != activeItem, !1)
 
 ! https://dlhd.so/stream/stream-51.php anti iframe sandbox
@@ -3587,3 +3588,7 @@ nohost.one##+js(rmnt, script, HTMLAllCollection)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/19143
 ddwloclawek.pl,ki24.info##+js(aeld, load, adb)
+
+! https://zzcointv.xyz/canales/espn/op5.php - popups
+tutlehd5.com###overlay
+||swarm.video/tutelehd.js
