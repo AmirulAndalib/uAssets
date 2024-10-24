@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Sun, 20 Oct 2024 16:51:14 +0000
+! Last modified: Thu, 24 Oct 2024 06:32:37 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1237,9 +1237,6 @@ theintercept.com##.Post-body--truncated:style(max-height: unset !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5282
 salary.com###sgpb-popup-dialog-main-div-wrapper, .sgpb-theme-1-overlay
-
-! https://github.com/uBlockOrigin/uAssets/issues/5284
-mlbshop.com##.modal, .modal-backdrop, .modal-wrapper
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5285
 fearlesssalarynegotiation.com##.seva-overlay
@@ -6066,7 +6063,8 @@ wallpaperaccess.com##+js(aeld, mousedown, dispatch)
 ! https://fc.freestreams-live1.tv/espn-sur/ 
 ! https://fc.freestreams-live1.tv/bein-sports-en/
 ! https://daddylivehd.sx/embed/stream-345.php
-/blast.js^$to=4kwebplay.xyz|claplivehdplay.ru|coolcast2.com|esportivos.fun|hocast4.com|lewblivehdplay.ru|ntuplay.xyz|qqwebplay.xyz|streamservicehd.click|stylisheleg4nt.com|tutlehd4.com|viwlivehdplay.ru|vodkapr3mium.com
+/blast.js^$to=4kwebplay.xyz|claplivehdplay.ru|coolcast2.com|esportivos.fun|hocast4.com|ilovetoplay.xyz|lewblivehdplay.ru|ntuplay.xyz|qqwebplay.xyz|streamservicehd.click|stylisheleg4nt.com|tutlehd4.com|viwlivehdplay.ru|vodkapr3mium.com
+ilovetoplay.xyz##+js(rmnt, script, debugger)
 ntuplay.xyz##^script:has-text(_0x)
 ntuplay.xyz##+js(acs, document.onkeypress)
 ntuplay.xyz##body[oncontextmenu="return false"]:remove-attr(oncontextmenu)
@@ -7139,11 +7137,18 @@ guidingliterature.com##+js(acs, document.oncontextmenu)
 guidingliterature.com##style:has-text(@media print):remove()
 guidingliterature.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important; -webkit-tap-highlight-color: revert !important; cursor: revert !important;)
 
+! https://www.reddit.com/r/uBlockOrigin/comments/1g87lnd/404_not_found_if_i_open_the_devtools_in_this_site/
+!#if cap_html_filtering
+asumanaksoy.com,freshlifecircle.com##^script:has-text(devtoolsDetector)
+!#else
+asumanaksoy.com,freshlifecircle.com##+js(rmnt, script, devtoolsDetector)
+!#endif
+
 ! devtools detection scripts
 ! https://github.com/uBlockOrigin/uAssets/issues/21716
 ! https://github.com/uBlockOrigin/uAssets/issues/21320
 ||cdn.jsdelivr.net/npm/disable-devtool$script,3p
-||cdn.jsdelivr.net/npm/devtools-detector$script,domain=comedyshow.to|superembeds.com
+||cdn.jsdelivr.net/npm/devtools-detector$script,domain=asumanaksoy.com|comedyshow.to|freshlifecircle.com|superembeds.com
 ||hentaihd.cyou/assets/js/devtools-detector.js$script
 ||bhplay.me/player/assets/devtools-detector/$script,1p
 ! https://github.com/uBlockOrigin/uAssets/issues/23689
@@ -7731,3 +7736,15 @@ indahonline.com##+js(aost, $, /mainseto.js:286:1)
 
 ! videocardz.com anti select
 videocardz.com##*:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+
+! tinyhouse-baluchon.fr anti right click
+tinyhouse-baluchon.fr##+js(acs, document.oncontextmenu)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25695
+perplexity.ai##+js(trusted-replace-argument, Array.prototype.includes, 0, undefined, condition, visitor-gate)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1g9j479/restoring_scrolling/
+openanesthesia.org##+js(nostif, .LoginSection)
+
+! https://www.reddit.com/r/firefox/comments/1g95mb7/websites_adding_stuff_you_didnt_copy_to_your/
+tweaktown.com##+js(aost, document.getSelection, inlineScript)

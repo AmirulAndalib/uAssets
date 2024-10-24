@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Notifications
-! Last modified: Fri, 18 Oct 2024 20:50:03 +0000
+! Last modified: Thu, 24 Oct 2024 06:32:37 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -751,6 +751,7 @@ livenation.co.nz###push-notifications-popup
 bigislandnow.com###pushNotifications
 google.com###pushdown
 newnoisemagazine.com###snppopup-welcome
+newsclick.in###spb-block-pushnotificationpopup-2
 pewresearch.org###survey-5-trust
 nrl.com###vue-prompt-toast
 live.erinn.biz###win_appinstallhint
@@ -1291,6 +1292,7 @@ google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,
 weatherbug.com##smart-app-banner
 fedex.com##trk-shared-smart-app-banner
 voicy.jp##v-sp-download
+msn.com##views-chrome-extension
 reddit.com##xpromo-app-selector
 reddit.com##xpromo-top-button
 ! :has
