@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Privacy
 ! Expires: 7 days
-! Last modified: Thu, 24 Oct 2024 06:32:37 +0000
+! Last modified: Fri, 25 Oct 2024 10:19:51 +0000
 ! Diff-Path: %diffpath%#ublock-privacy
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -307,11 +307,14 @@ bikesales.com.au##^html > head > :is([name="canonical"], [rel="canonical"]):not(
 ! Bounce/Click trackers
 @@||track.adtraction.com/*&url=https://www.gog.com/$popup
 ||track.adtraction.com/*^url=https://www.gog.com/$doc,urlskip=?url
-/c/*^u=http$doc,urlskip=?u,to=goto.target.com|goto.walmart.com|bn5x.net|e9jo.net|fziv.net|qflm.net|pxf.io|sjv.io|tkjf.net|xovt.net
+/^https:\/\/(?:[^.]+\.){2}(?:com|io|net)\/c(?:\/\d+){3}\?.+?&u=http/$doc,to=com|io|net,urlskip=?u
+/click-*^url=http$doc,urlskip=?url,to=dpbolvw.net|jdoqocy.com|kqzyfj.com
 ||clicks.trx-hub.com/*^q=http$doc,urlskip=?q
-||kqzyfj.com/click-*^url=http$doc,urlskip=?url
 ||shop-links.co/link/?url=http$doc,urlskip=?url
 ||buy.geni.us/Proxy.ashx*^GR_URL=http$urlskip=?GR_URL
+||go.skimresources.com/*^url=http$doc,urlskip=?url
+||shareasale.com/r.cfm*^urllink=$doc,urlskip=/urllink=(\w+\.[^\/]+)/ +https -uricomponent
+||prf.hn/click/*/destination:http$doc,urlskip=/\/destination:([^\/]+)/ -uricomponent
 ||cc.mashable.com/v1/*^url=http$doc,urlskip=?url
 ||click.pstmrk.it/*/$doc,urlskip=/\.pstmrk\.it\/[23][mst]{0,2}\/(.+)/ +https -uricomponent
 ||howl.me/link?url=http$doc,urlskip=?url
@@ -319,12 +322,15 @@ bikesales.com.au##^html > head > :is([name="canonical"], [rel="canonical"]):not(
 ||go.redirectingat.com/*^url=http$doc,urlskip=?url
 ||track.flexlinks.com/a.ashx*^url=http$doc,urlskip=?url
 /t/*^url=http$doc,urlskip=?url,to=gopjn.com|pjatr.com|pjtra.com|pntra.com|pntrac.com|pntrs.com
+||wordseed.com/go/*^url=http$doc,urlskip=?url
+||visit.ws/visit/*^url=http$doc,urlskip=?url
+||go.uncrate.com/*^url=http$doc,urlskip=?url
+||llo.to/e/*^url=http$doc,urlskip=?url
+||events.laylo.com/r/redirect*^link=http$urlskip=?link
 ! Click Trackers
 html.duckduckgo.com,lite.duckduckgo.com##+js(href-sanitizer, a[href^="//duckduckgo.com/l/?uddg="], ?uddg)
 androidauthority.com##+js(href-sanitizer, a[href^="https://androidauth.wpengine.com/wp-json/api/advanced_redirect?ref="], ?ref)
 ||androidauthority.com/api/locate/
-pcgamingwiki.com##+js(href-sanitizer, a[href^="https://www.dpbolvw.net/click-"][href*="?url="], ?url)
-pcgamingwiki.com##+js(href-sanitizer, a[href^="https://greenmangaming.sjv.io/c/"][href*="?u="], ?u)
 starstyle.com##+js(href-sanitizer, a[href^="https://go.skimresources.com/"][href*="&url=http"], ?url)
 insidehook.com##+js(href-sanitizer, a[href^="https://click.linksynergy.com/deeplink?id="][href*="&murl="], ?murl)
 insidehook.com##+js(href-sanitizer, a[href*="?"][href*="&url=http"], ?url)
@@ -360,11 +366,10 @@ dk.pcpartpicker.com##+js(href-sanitizer, a[href^="https://online.adservicemedia.
 justwatch.com##+js(href-sanitizer, 'a:is([href^="https://click.justwatch.com/"],[href^="https://d.justwatch.com/"])[href*="r=http"]:not([href*=".pxf.io"])', ?r)
 justwatch.com##+js(href-sanitizer, 'a:is([href^="https://click.justwatch.com/"],[href^="https://d.justwatch.com/"])[href*="r=http"][href*=".pxf.io"]', ?r?u)
 variety.com##+js(href-sanitizer, a[href^="https://clicks.trx-hub.com/"][href*="bn5x.net"], ?q?u)
-otherweb.com##+js(href-sanitizer, a[href^="https://cc.mashable.com/v1/"][href*="url=http"], ?url)
 engadget.com##+js(href-sanitizer, a[href^="https://shopping.yahoo.com/rdlw?"][href*="gcReferrer=http"], ?gcReferrer)
 cnet.com##+js(set, Object.prototype.updateModifiedCommerceUrl, noopFunc)
-cnet.com##+js(href-sanitizer, 'a[href*="url=http"]:is([href^="https://shop-links.co/link/?url=http"],[href^="https://www.kqzyfj.com/click-"])', ?url)
-cnet.com,sheknows.com,streetinsider.com##+js(href-sanitizer, 'a[href*="&u=http"]:is([href*=".com/c/"],[href*=".io/c/"],[href*=".net/c/"])', ?u)
+cnet.com,hunker.com,pcgamingwiki.com,sheknows.com,streetinsider.com##+js(href-sanitizer, 'a[href*="u=http"]:is([href*=".com/c/"],[href*=".io/c/"],[href*=".net/c/"])', ?u)
+cnet.com,hunker.com,otherweb.com,pcgamingwiki.com##+js(href-sanitizer, 'a[href*="url=http"]:is([href^="https://cc.mashable.com/v1/"],[href^="https://go.skimresources.com?"],href^="https://shop-links.co/link/?url=http"],[href*=".com/click-"],[href*=".net/click-"])', ?url)
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
 /detroitchicago/dpv.gif?$image
 /detroitchicago/imp.gif$ping
@@ -738,3 +743,4 @@ study.com##+js(no-xhr-if, /eventLog.ajax)
 loom.com##+js(no-fetch-if, loom.com/insights-api/graphql)
 wayfair.com##+js(no-xhr-if, t.wayfair.com/b.php?)
 wayfair.com##+js(set, navigator.sendBeacon, noopFunc)
+pandadoc.com##+js(no-fetch-if, segment.io)
