@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Fri, 25 Oct 2024 10:19:51 +0000
+! Last modified: Sat, 26 Oct 2024 01:18:01 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -76,22 +76,12 @@ evelynthankregion.com,lorimuchbenefit.com,richardstorehalf.com,susanhavekeep.com
 download.megaup.net##+js(rpnt, script, /for\s*\(\s*(const|let|var).*?;return;\}\}.*?;return;.*?;return;\}/g, , condition, attribute)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23806
+!#if false
 japscan.lol##+js(aost, onload, inlineScript)
 *$image,redirect-rule=1x1.gif,domain=japscan.lol
-japscan.lol#@#+js(rmnt, script, nApB!)
-japscan.lol#@#+js(rmnt, script, oDD+lDC+lDA+lDD)
-japscan.lol#@#+js(rmnt, script, nApB)
-japscan.lol#@#+js(rmnt, script, \'n.{0\,3}A.{0\,3}p.{0\,3}B\')
-japscan.lol#@#+js(rmnt, script, /nApC|lpZ=/)
-japscan.lol#@#+js(rmnt, script, /nAp[A-z]\(\)/)
-japscan.lol#@#+js(aeld, load, promo)
-japscan.lol#@#+js(rmnt, script, nBpD())
-japscan.lol#@#+js(rmnt, script, nNaQ)
-japscan.lol#@#+js(nostif, innerHTML)
-japscan.lol#@#+js(rmnt, script, /new RegExp|QooE|RzA1588/)
 japscan.lol##+js(aeld, load, setTimeout)
 japscan.lol##+js(nostif, getElementById)
-japscan.lol##+js(aeld, DOMContentLoaded, nCzE)
+japscan.lol##+js(aeld, DOMContentLoaded, HoLa)
 japscan.lol##+js(rmnt, script, /\}\);\}\}\}\(\)\)\)\);|\]\(\)\);\}\}\}\(/)
 japscan.lol##body > style + .container > .row > #main.col-md-9 > .card > #chapters.tab-content > .row.justify-content-center.align-items-center > a.image-box.donate[href^="http"][target="_blank"][rel="noopener noreferrer nofollow"]:not([href^="http://japscan.lol"]) > img
 japscan.lol##body > style + .container > .row > #main + #sidebar.col-md-3 > .card.mt-1 > .card[style="margin: 0px auto; display: block;"] > a.aikoi.donate[href^="http"][target="_blank"][rel="noopener noreferrer nofollow"]:not([href^="http://japscan.lol"]) > img
@@ -108,6 +98,15 @@ japscan.lol##body > .container.text-center > .mb-2.mt-2[style="margin: 0px auto;
 /^https?:\/\/[a-z]{8,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+)?$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$script,3p,domain=japscan.lol,important
 /^https?:\/\/[a-z]{5,7}\.com\/script\/[-_0-9A-Za-z]+(\.min)?\.js$/$script,3p,match-case,header=x-guploader-uploadid,domain=japscan.lol,important
+!#endif
+@@||japscan.lol^$xhr,script,image,1p
+@@||googletagmanager.com/gtag/js?$script,domain=japscan.lol
+@@||statically.io^$script,domain=japscan.lol
+@@||static.cloudflareinsights.com/beacon.min.js$script,domain=japscan.lol
+@@||iili.io^$xhr,domain=japscan.lol
+||japscan.lol/cdn-cgi/rum?|$xhr,1p,important
+japscan.lol##a[href^="http://www.toueapo.shop/"], a[href^="https://www.longosto.shop/"], a[href*="&utm_"]
+japscan.lol###blur-inter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2320
 @@||freemcserver.net^$ghide
@@ -136,7 +135,7 @@ poophq.com,veev.to##+js(set, fapit.check, noopFunc)
 !poophq.com,veev.to##+js(no-xhr-if, url:!/cdn\.plyr\.io|veev\.to|\/dl\?op=player_api/ method:GET)
 poophq.com,veev.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
-poophq.com,veev.to##+js(rpnt, script, /[\'"]?h[^\/]*:\/\/[\'"]?a[\'"]?\.?[\'"]?o[\'"]?[^\/]*v[\'"]?\.?[\'"]?c[\'"]?[^\/]*\/ad-provider\.js/, "/\(function\(\)\{\s*'use strict';\s*const handler=\{\s*apply:function\(target,thisArg,argumentsList\)\{\s*if\(argumentsList\[0\]&&argumentsList\[0\]\.html\?\.\detected===null&&typeof argumentsList\[0\]\.html\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.env\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.http\?\.\instance\?\.\start==='function'\)\{\s*const customStartFunction=function\(\)\{\s*if\(typeof this\._hsz==='boolean'\)\{\s*this\._hsz=false;\s*\}\};\s*\['html','env','http'\]\.forEach\(\(key\)=>\{\s*argumentsList\[0\]\[key\]\.instance\.start=customStartFunction;\s*if\(typeof argumentsList\[0\]\[key\]\.instance\._hsz==='boolean'\)\{\s*argumentsList\[0\]\[key\]\.instance\._hsz=true;\s*\}\};\s*\}\s*return Reflect\.apply\(target,thisArg,argumentsList\);\s*\}\};\s*window\.Object\.keys=new Proxy\(window\.Object\.keys,handler\);\s*\}\)\(\);/")
+poophq.com,veev.to##+js(rpnt, script, /['"]?h[^\/]*:\/\/['"]?a\.o[^\/]*v\.c[^\/]*\/['"]?a[^\/]*p[^\/]*\.['"]?j['"]?s['"]?/, "/\(function\(\)\{\s*'use strict';\s*const handler=\{\s*apply:function\(target,thisArg,argumentsList\)\{\s*if\(argumentsList\[0\]&&argumentsList\[0\]\.html\?\.\detected===null&&typeof argumentsList\[0\]\.html\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.env\?\.\instance\?\.\start==='function'&&typeof argumentsList\[0\]\.http\?\.\instance\?\.\start==='function'\)\{\s*const customStartFunction=function\(\)\{\s*if\(typeof this\._hsz==='boolean'\)\{\s*this\._hsz=false;\s*\}\};\s*\['html','env','http'\]\.forEach\(\(key\)=>\{\s*argumentsList\[0\]\[key\]\.instance\.start=customStartFunction;\s*if\(typeof argumentsList\[0\]\[key\]\.instance\._hsz==='boolean'\)\{\s*argumentsList\[0\]\[key\]\.instance\._hsz=true;\s*\}\};\s*\}\s*return Reflect\.apply\(target,thisArg,argumentsList\);\s*\}\};\s*window\.Object\.keys=new Proxy\(window\.Object\.keys,handler\);\s*\}\)\(\);/")
 poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
@@ -165,8 +164,13 @@ sportnews.to,soccershoes.blog##+js(aeld, DOMContentLoaded, adsSrc)
 *$script,redirect-rule=noopjs,domain=sportnews.to|sportshub.to
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8719
-1001tracklists.com##+js(rmnt, script, .className.indexOf)
-1001tracklists.com##+js(spoof-css, '[target="_blank"][rel="noopener noreferrer"]', display, block)
+1001tracklists.com#@#a[onclick]
+1001tracklists.com#@#[target="_blank"][rel="noopener noreferrer"]
+1001tracklists.com##[target="_blank"][rel^="noopener noreferrer"]:has(> img[src^="/images/artworks/"])
+1001tracklists.com##div[style^="text-align: center; margin-bottom: 10px;"]:has(a img[src^="/images/artworks/"])
+1001tracklists.com##div[id]:has(> [data-freestar-ad])
+1001tracklists.com###left > div:not(div[id="artworkLeft"][class="c bgArt"], div[class="fTab"], div[class="aMenu"], [id="lSt"].border)
+1001tracklists.com##+js(spoof-css, '[target="_blank"][rel^="noopener noreferrer"]:has(> img[src^="/images/artworks/"]', display, block)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/190044
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fuaaw5/asblock_detected_in_ask4porncc
@@ -193,7 +197,8 @@ wiki.yjsnpi.nu#@#+js(nostif, /^\(\)=>\{function .+0x/)
 wiki.yjsnpi.nu#@#+js(nostif, /^\(\)=>\{const .+0x/)
 wiki.yjsnpi.nu#@#+js(nostif, document[)
 wiki.yjsnpi.nu#@#+js(nostif, /^\(\)=>\{const .{2000\,2500}/)
-wiki.yjsnpi.nu##+js(aopr, console)
+wiki.yjsnpi.nu#@#+js(aopr, console)
+wiki.yjsnpi.nu##+js(aost, Function.prototype.toString, ar)
 wiki.yjsnpi.nu#@#body img, body .Inmbox, body .lazy-image-placeholder:style(width: auto !important; height: auto !important; opacity: 1 !important; visibility: visible !important; display: block !important; color: unset !important; background: none !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25614
@@ -210,3 +215,21 @@ flickr.com#@#.sub-photo-right-view [href^="/account/upgrade"]:upward(.sub-photo-
 
 ! https://github.com/easylist/easylist/commit/13d5492249d57e090598a32aaa047524055f3059
 @@||cdn.kaizenplatform.net^$script,domain=navi.onamae.com
+
+! Ad-Shield
+||ad-shield.cc^$xhr,ping,popup,doc
+||79180284.xyz^$xhr,ping,popup,doc
+||05454674.xyz^$xhr,ping,popup,doc
+||78b78ff8.xyz^$xhr,ping,popup,doc
+||f33d11b5.xyz^$xhr,ping,popup,doc
+html-load.com##html
+content-loader.com##html
+css-load.com##html
+img-load.com##html
+##a[href*=".html-load.com/fl1hrrg"]
+##a[href*=".content-loader.com/fl1hrrg"]
+##a[href*=".css-load.com/fl1hrrg"]
+##a[href*=".img-load.com/fl1hrrg"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/25769
+@@||consent-api.onetrust.com/v1/preferences^$xhr,domain=paramountplus.com
