@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: Sat, 26 Oct 2024 01:18:01 +0000
+! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -2977,18 +2977,6 @@ mejortorrent.*,mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*#
 mejortorrento.*,mejortorrents.*,mejortorrents1.*,mejortorrentt.*##iframe[src^="publi"]
 ||mejortorrent.*/bannner
 
-! https://github.com/uBlockOrigin/uAssets/issues/1549
-! https://www.reddit.com/r/uBlockOrigin/comments/x289uk
-*$popunder,domain=xfreehd.com,3p
-xfreehd.com##.nvheader > span:has-text(Advertisement)
-*$frame,redirect-rule=noopframe,domain=xfreehd.com
-xfreehd.com##.ad-body:remove()
-!#if cap_html_filtering
-xfreehd.com##^script:has-text(/nativeads|navigator\.brave|goodDay/)
-!#else
-xfreehd.com##+js(rmnt, script, /nativeads|navigator\.brave|goodDay/)
-!#endif
-
 ! https://github.com/uBlockOrigin/uAssets/issues/1550
 ! https://forums.lanik.us/viewtopic.php?f=62&t=42535
 ||downloadfullfree.com^$xhr,redirect=nooptext
@@ -3172,7 +3160,9 @@ focus.de##.clearfix.branding > .surftipp:has-text(Anzeige)
 focus.de##[href^="https://www.cyberport.de"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1644
+! https://github.com/uBlockOrigin/uAssets/issues/25812
 @@||ariva.de^$ghide
+*$script,domain=ariva.de,redirect-rule=noopjs
 ||ariva.de/js/fcm-sw.js$script,1p
 ariva.de##.werb_textlink
 ariva.de###iqd_mainAd
@@ -9089,12 +9079,6 @@ siouxcityjournal.com##.tnt-ads-container
 
 ||wicket.pw/embeds/icc-cwc.png$image
 
-! https://github.com/uBlockOrigin/uAssets/issues/5761
-nsw2u.*##[href^="https://bit.ly/"]
-! https://www.reddit.com/r/uBlockOrigin/comments/126iwtj/
-nsw2u.*##+js(acs, eval, replace)
-nsw2u.*##+js(no-xhr-if, googlesyndication)
-
 ! filesharing.io anti adb
 filesharing.io##+js(aopw, showMsgAb)
 @@||filesharing.io^$ghide
@@ -12588,10 +12572,6 @@ allkaicerteam.com##ins.adsbygoogle
 
 ! https://github.com/NanoMeow/QuickReports/issues/3050
 rbxoffers.com##+js(nostif, adblock)
-
-! https://github.com/uBlockOrigin/uAssets/issues/6955
-tvn24.pl##+js(json-prune, playlist.movie.advertising.ad_server)
-@@||cdntvn.pl/*/advert.js$xhr,domain=tvn24.pl
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/f45bvt/stop_ublock_from_creating_new_tabs/
 gomoviesfree.*##+js(aopr, glxopen)

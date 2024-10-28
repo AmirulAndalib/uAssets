@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Thu, 24 Oct 2024 06:32:37 +0000
+! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -3516,6 +3516,7 @@ photopea.com##.confirm:has-text(AdBlocker)
 ||photopea.com/img/pp_wide.png^$image,1p
 ||photopea.com/img/pp_tall.png^$image,1p
 photopea.com##+js(set, console.clear, noopFunc)
+photopea.com##.bnotify
 deccanherald.com##+js(aopr, document.oncopy)
 /js/content-protector.min.js$script
 !#if cap_html_filtering
@@ -4026,3 +4027,4 @@ tinyhouse-baluchon.fr##+js(acs, document.oncontextmenu)
 perplexity.ai##+js(trusted-replace-argument, Array.prototype.includes, 0, undefined, condition, visitor-gate)
 openanesthesia.org##+js(nostif, .LoginSection)
 tweaktown.com##+js(aost, document.getSelection, inlineScript)
+||sndcdn.com/assets/*.js^$script,domain=soundcloud.com,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/

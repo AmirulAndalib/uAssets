@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Sat, 26 Oct 2024 01:18:01 +0000
+! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -754,6 +754,20 @@ winfuture.de##[id$="_adContainer"]
 ! https://github.com/uBlockOrigin/uAssets/issues/18099
 emurom.net##+js(set, dvsize, 52)
 emurom.net##+js(aost, jQuery, removeDLElements)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1549
+! https://www.reddit.com/r/uBlockOrigin/comments/x289uk
+! https://github.com/uBlockOrigin/uAssets/issues/25809
+*$popunder,domain=xfreehd.com,3p
+xfreehd.com##.nvheader > span:has-text(Advertisement)
+*$frame,redirect-rule=noopframe,domain=xfreehd.com
+xfreehd.com##.ad-body:remove()
+!#if cap_html_filtering
+xfreehd.com##^script:has-text(/popMagic|nativeads|navigator\.brave|\.abk_msg|\.innerHTML|adestt01_c/)
+!#else
+xfreehd.com##+js(rmnt, script, /popMagic|nativeads|navigator\.brave|\.abk_msg|\.innerHTML|adestt01_c/)
+!#endif
+xfreehd.com##+js(nostif, .innerHTML)
 
 ! END: Rules from filters.txt
 
@@ -3540,7 +3554,9 @@ technewsworld.com##+js(aopr, pum_popups)
 adictox.com##+js(aopr, popns)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25420
+nexdrive.*,vegamovies3.org##+js(nowoif)
 nexdrive.*##.code-block
+||jeestauglahity.net^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25677
 ||conicsfizzles.com^
@@ -3649,3 +3665,56 @@ play1.kirastream.my.id##[href="https://t.me/Crypto_Journey_WITH_DOGS"]
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1gblu58/adblock_detection_on_ronorpnet/
 ronorp.net##+js(aeld, load, detect)
+
+! https://github.com/uBlockOrigin/uAssets/issues/10046
+||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=cnet.com,important
+
+! https://github.com/uBlockOrigin/uAssets/issues/8706
+send.cm##+js(aopr, LieDetector)
+send.cm##+js(nowoif)
+||freedom.send.cm/s.js$script,1p
+
+! https://vinovo.to/d/kg2v0nqwbk0nn5 - popups
+vinovo.to##+js(nowoif)
+||ad.optimads.info^
+
+! https://github.com/uBlockOrigin/uAssets/issues/25421
+! gecmisi.com.tr##+js(trusted-replace-argument, document.querySelector, 0, json:".adsbygoogle", condition, .adsbygoogle.adsbygoogle-noablate)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25807
+schnittberichte.com##.branding
+schnittberichte.com##.section__adbanner
+schnittberichte.com##[href^="/goto.php?ID="]
+schnittberichte.com##body::after:style(background: unset !important;)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25797
+gdflix.*##+js(aeld, DOMContentLoaded, history.pushState)
+gdflix.*##^script:has-text(/history\.pushState/)
+gdflix.*##^script:has-text(/\{delete window\[/)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25813
+10gb.vn##+js(set, detectedAdblock, noopFunc)
+
+! uupbom.com popups
+uupbom.com##+js(nowoif)
+||clunkyentirelinked.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/25814
+3rooodnews.net##+js(rmnt, script, advads)
+
+! jattfilms. store popups
+jattfilms.*###clickfakeplayer[href]:remove-attr(href)
+||baseballletters.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/25818
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=aleklasa.pl
+
+! https://github.com/uBlockOrigin/uAssets/issues/6955
+tvn24.pl##+js(json-prune, playlist.movie.advertising.ad_server)
+@@||cdntvn.pl/*/advert.js$xhr,domain=tvn24.pl
+! https://github.com/uBlockOrigin/uAssets/issues/25820
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=tvn24.pl
+
+! https://github.com/uBlockOrigin/uAssets/issues/25824
+a1movies.*##+js(aeld, DOMContentLoaded, showPopup)
+a1movies.*##+js(nowoif)

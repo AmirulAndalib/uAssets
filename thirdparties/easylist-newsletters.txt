@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 25 Oct 2024 10:19:51 +0000
+! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1317,6 +1317,7 @@
 ||outpostpublishingcoop.com/assets/v2/js/outpost-pub.js
 ||pico.tools/load/build.js
 ||popupsmart.com^$third-party
+||powr.io/popup/u/
 ||promio-connect.com/register/
 ||sample.dragonforms.com^$subdocument,third-party
 ||secondstreetapp.com/audience_signup_widgets/
@@ -1387,6 +1388,7 @@ lawfaremedia.org###Main_C010_Col00
 audiofilemagazine.com###NewsletterModal
 beautycrew.com.au###NewsletterSignUpSideHero
 gayemagazine.com###POPUPS_ROOT
+globalchinapulse.net###SUBSCRIBE
 cnnsofake.news,health.news,trump.news###SubscribeForm
 cnnsofake.news,collapse.news,health.news,newstarget.com,trump.news,veteranstoday.news###Widget15
 yoncu.com###YncLightBox
@@ -1539,7 +1541,7 @@ motherjones.com###homepage-newsletter-promo
 motherjones.com###homepage-subscription-promo
 wikihow.com###hp_newsletter
 blog.plerion.com,zaui.com###hs-web-interactives-bottom-anchor
-collato.com,phillymag.com###hs-web-interactives-top-anchor
+collato.com,karryon.com.au,phillymag.com###hs-web-interactives-top-anchor
 entrepreneur.com###hsNewletterFooterSub-container
 thehustle.co###hs_cos_wrapper_blog_post_simple_sticky_cta
 insider-gaming.com###ig-newsletter-holder
@@ -1565,6 +1567,7 @@ modernretail.co###lead_newsletter
 sportsbusinessjournal.com###leaveSiteContainer
 rhino.com###lightboxWrapper
 chorus.fm###liner-notes
+unherd.com###login-form
 victorpest.com###ltkpopup-overlay
 audioholics.com###mail-list-button
 steamdeckhq.com###mailerlite-form_1
@@ -1595,6 +1598,8 @@ foodandwaterwatch.org###newsletter-block-bottom
 governing.com###newsletter-bottom-box
 austinchronicle.com###newsletter-box
 azoai.com,azobuild.com,azocleantech.com,azolifesciences.com,azom.com,azomining.com,azonano.com,azooptics.com,azoquantum.com,azorobotics.com,azosensors.com###newsletter-content-wrap
+hagerty.com###newsletter-custom-container
+hagerty.com###newsletter-custom-form-toast
 sltrib.com###newsletter-embed
 theamericanscholar.org###newsletter-homepage-right
 lapresse.ca###newsletter-hub-promo-box
@@ -1736,7 +1741,7 @@ musictimes.com###subscription
 ted.com###talk-marketing-banner
 theplaylist.net###text-10
 steakschool.com###text-11
-otakuusamagazine.com,powerlineblog.com###text-12
+news.stonybrook.edu,otakuusamagazine.com,powerlineblog.com###text-12
 christiannews.net,independent.com,sportsspectrum.com###text-15
 worthynews.com###text-19
 christiesrealestate.com,glutenfreecuppatea.co.uk,guides.wp-bullet.com,publicbooks.org,slightnorth.com###text-2
@@ -2275,6 +2280,7 @@ thegatewaypundit.com##.email-list-subscribe
 rte.ie##.email-marketing-embed
 www.psu.edu##.email-newsletter_outer__7vgF9
 autodidacts.io##.email-optin-widget
+karryon.com.au##.email-popup-container
 nfcw.com##.email-sidebar-signup
 thoughtbot.com##.email-sign-up
 alexcityoutlook.com,crooksandliars.com,drewberquist.com,heartlandalliance.org,kentuckytoday.com,keysnews.com,ktbs.com,kulr8.com,lifezette.com,msmagazine.com,newsmirror.net,newsnow.co.uk,northcentralpa.com,novaramedia.com,redvoicemedia.com,trueachievements.com,truetrophies.com,urbanmilwaukee.com,zarar.dev##.email-signup
@@ -2559,6 +2565,7 @@ usafacts.org##.js-newsletter--expand
 gamespot.com##.js-nlsub
 squaremeal.co.uk##.js-rewards-promo-float
 creditcards.com##.js-signup-visibility
+fashionmagazine.com##.js-sjmnmm-root
 highya.com##.js-swimingBlock-stoper
 qz.com##.js_qz_newsletter_signup_placeholder
 draxe.com##.ju_Con
@@ -3181,6 +3188,7 @@ fansided.com,lastnighton.com,netflixlife.com,stormininnorman.com,winteriscoming.
 salon.com##.sub_promo
 magnetomagazine.com##.subcribe-banner
 bolavip.com##.subs-block
+unherd.com##.subs-modal
 holyrood.com##.subs-popup
 live-adexchanger.pantheonsite.io##.subsciption
 3dprint.com##.subscribe--sidebar
@@ -3213,7 +3221,7 @@ spaceref.com##.subscribe-line-link
 media4growth.com##.subscribe-ltr
 techpout.com##.subscribe-medium
 ia.acs.org.au,meetup.com##.subscribe-modal
-gizmodo.com.au,kotaku.com.au,lifehacker.com.au##.subscribe-newsletter
+gizmodo.com.au,golem.de,kotaku.com.au,lifehacker.com.au##.subscribe-newsletter
 hawaiitribune-herald.com,wccftech.com,westhawaiitoday.com##.subscribe-now
 longislandpress.com,metro.us##.subscribe-now-box
 thecanary.co##.subscribe-panel
@@ -3553,8 +3561,10 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! theprovince.com/winnipegsun.com/canoe.com/o.canada.com/financialpost.com/nationalpost.com
 ##.newsletter-widget__new-story-page
 ! :has
+foxnews.com##.advanced.embed-media:has-text(Get a daily look)
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
 calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thestarphoenix.com##.callout:has-text(inbox)
+cjr.org##.row > .entry-content > p:has-text(daily newsletter)
 interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 polygon.com##[class]:has(> .duet--cta--newsletter)
 advancedsciencenews.com#?#.et_pb_row_1_tb_body:-abp-contains(Sign up for our weekly newsletter)
@@ -3661,7 +3671,7 @@ ccm.net,commentcamarche.net,hugolescargot.com,journaldesfemmes.fr,journaldunet.c
 !! .nl-block
 francetvinfo.fr,orizzontescuola.it##.nl-block
 !! .dialog-lightbox-widget
-brownstone.org,coincodecap.com,diarioelregionaldelzulia.com,homesteading.com,innotechtoday.com,jewishjournal.com,shapeways.com,theglossarymagazine.com##.dialog-lightbox-widget
+brownstone.org,coincodecap.com,diarioelregionaldelzulia.com,homesteading.com,innotechtoday.com,jewishjournal.com,news.stonybrook.edu,shapeways.com,theglossarymagazine.com##.dialog-lightbox-widget
 !! #mailsignup
 techzine.eu,techzine.nl###mailsignup
 !! .suscribe
@@ -5070,6 +5080,7 @@ freedert.online,rtde.tech##.Subscription-isReact
 studysmarter.de##.ab-feature-popup
 finom.co##.blog-subscribe-banner
 sn.at##.box-emarsys
+welt.de##.c-oembed
 bluray-disc.de##.daily-newsletter-anmeldung_r
 elektroauto-news.net##.elementor-element-b0ed665
 it-daily.net##.itd-nl-box
