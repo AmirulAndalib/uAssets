@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
+! Last modified: Tue, 29 Oct 2024 17:56:15 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -42,6 +42,8 @@ socialblade.com##.cas-wide-container
 socialblade.com##div[style^="width: 300px; height: 250px;"][style*="background: #fff;"]
 socialblade.com##div[style^="width: 860px; min-height: 90px"]
 socialblade.com###bottomAd:style(position: absolute !important; left: -4000px !important;)
+sportsnet.ca##+js(aopr, uxGuid)
+realcleardefense.com##+js(set, warning_widget.check_ad_block_status, noopFunc)
 ! END: Anti-adblock
 ||holyclock.com^$3p
 ||shomershabes.com^$3p
@@ -55,11 +57,6 @@ pinterest.*##div[class="Closeup__wrapper"] > div > div[style^="cursor: default"]
 pinterest.*##div[class="GrowthUnauthPinImage__imageDim"]
 pinterest.*##.GrowthUnauthPinImage > a > div[class^="Jea"]:has(button[class^="noButtonStyles "])
 pinterest.*##.Hsu.iyn.zI7:nth-of-type(2) > div > .FullPageModal__scroller
-sportsnet.ca##+js(aopr, uxGuid)
-evworld.com##+js(nostif, ads, 2000)
-@@||windguru.cz^$ghide
-windguru.cz##.reklama
-realcleardefense.com##+js(set, warning_widget.check_ad_block_status, noopFunc)
 flickr.com##.spaceball
 ! evz.ro right click - select
 evz.ro##body:style(-moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
@@ -4009,7 +4006,7 @@ html5.gamedistribution.com###gd__adblocker__overlay
 nullforums.net##+js(rmnt, script, contextmenu)
 mangareader.to##+js(aeld, contextmenu, _0x)
 ! hansa-online.de anti right click, select
-hansa-online.de##.td-post-content, .td-post-title:style(background: unset !important; user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+hansa-online.de##.td-post-content, .td-post-title:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 hansa-online.de##+js(ra, oncontextmenu, body, complete)
 zonatmo.com##+js(nostif, adb-enabled)
 ! anicrush.to anti-devtools
@@ -4017,7 +4014,6 @@ southcloud.tv##+js(set, console.clear, undefined)
 ! yugenanime.sx anti-devtools
 yugenanime.sx##+js(set, devtoolsDetector, {})
 cu.tbs.co.jp##+js(trusted-set-local-storage-item, lastViewTime, $currentDate$)
-/dp/*/ref=$document,uritransform=/\/ref=[^\/?]+//,to=www.amazon.com
 ||indahonline.com/js/disable-devtool.js$script,1p
 indahonline.com##+js(aost, $, /mainseto.js:286:1)
 ! videocardz.com anti select
@@ -4028,3 +4024,6 @@ perplexity.ai##+js(trusted-replace-argument, Array.prototype.includes, 0, undefi
 openanesthesia.org##+js(nostif, .LoginSection)
 tweaktown.com##+js(aost, document.getSelection, inlineScript)
 ||sndcdn.com/assets/*.js^$script,domain=soundcloud.com,replace=/shouldBlockScrubbing\(\w\.getMediaDuration\(\)\)/shouldBlockScrubbing(false)/
+volokit2.com##+js(aopw, document.oncontextmenu)
+volokit2.com##+js(aopw, document.ondragstart)
+volokit2.com##html:style(user-select: text !important; -ms-user-select: text !important; -moz-user-select: text !important; -khtml-user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)

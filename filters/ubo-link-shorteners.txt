@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Link shorteners
-! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
+! Last modified: Tue, 29 Oct 2024 17:56:15 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -1369,6 +1369,9 @@ fuckingfast.co##+js(rpnt, script, !seen && ad, false)
 ||senditfast.cloud^$doc
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1g59yxn/adblock_detection_on_streamelementscom/ (https://strms .net/callofdragons_zelderler)
-streamelements.com##+js(set, google_srt, 0)
+streamelements.com##+js(set, google_srt, 1)
 streamelements.com##+js(set, sensorsDataAnalytic201505, {})
 ||validate.strms.net/*adblock%3Dtrue$doc,uritransform=/adblock%3Dtrue/adblock%3Dfalse/
+
+! shortylink. store popup
+shortylink.store##+js(aopr, open)

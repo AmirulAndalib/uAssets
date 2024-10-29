@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Mon, 28 Oct 2024 06:12:44 +0000
+! Last modified: Tue, 29 Oct 2024 17:56:15 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -758,16 +758,9 @@ emurom.net##+js(aost, jQuery, removeDLElements)
 ! https://github.com/uBlockOrigin/uAssets/issues/1549
 ! https://www.reddit.com/r/uBlockOrigin/comments/x289uk
 ! https://github.com/uBlockOrigin/uAssets/issues/25809
-*$popunder,domain=xfreehd.com,3p
 xfreehd.com##.nvheader > span:has-text(Advertisement)
 *$frame,redirect-rule=noopframe,domain=xfreehd.com
 xfreehd.com##.ad-body:remove()
-!#if cap_html_filtering
-xfreehd.com##^script:has-text(/popMagic|nativeads|navigator\.brave|\.abk_msg|\.innerHTML|adestt01_c/)
-!#else
-xfreehd.com##+js(rmnt, script, /popMagic|nativeads|navigator\.brave|\.abk_msg|\.innerHTML|adestt01_c/)
-!#endif
-xfreehd.com##+js(nostif, .innerHTML)
 
 ! END: Rules from filters.txt
 
@@ -842,6 +835,12 @@ sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-im
 sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="770"][alt^="Screenshot "])
 sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1022"][height="1024"][alt^="Screenshot "])
 sinhasannews.com##.entry-content > figure.wp-block-image:has(> img[class^="wp-image-"][src^="https://www.sinhasannews.com/"][width="1024"][height="800"][alt^="Img "])
+
+! https://github.com/uBlockOrigin/uAssets/issues/25806
+||hdfilmcehennemi1.net/rekla/$media
+hdfilmcehennemi1.net##.money-child
+hdfilmcehennemi1.net##.money-text
+
 ! END: Regional lists
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/169660
@@ -908,8 +907,8 @@ tubereader.me##+js(nostif, /adblock/i)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/21777
 ! https://www.reddit.com/r/uBlockOrigin/comments/1fblnh1/prevents_adsluarmornet_to_load/
-://ads.$~image,~xhr,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
-://ads.$~image,~xhr,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,to=~ads.remix.es
+://ads.$~image,~xhr,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,badfilter
+://ads.$~image,~xhr,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.red|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.x.com|~ads.yandex|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com,to=~ads.remix.es
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21775
 counterstrike-hack.leforum.eu,ajt.xooit.org##+js(aopr, document.body.style.backgroundPosition)
@@ -1942,17 +1941,11 @@ pandadevelopment.net##+js(no-fetch-if, adsbygoogle)
 megacanais.com##+js(aopr, Adcash)
 
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/790#discussioncomment-10316655
-! /^https:\/\/[a-z]{5,12}\.com\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{200,2000}$/$xhr,3p,match-case,to=com,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.click\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=click,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.icu\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=icu,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.online\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=online,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.site\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=site,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.space\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=space,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.tech\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=tech,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.today\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=today,method=get,header=via:2.0 nginx
-! /^https:\/\/[-a-z]{5,12}\.xyz\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,to=xyz,method=get,header=via:2.0 nginx
-/^https:\/\/[-a-z]{5,12}\.[a-z]{3,}\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,method=get,header=via:2.0 nginx,to=~com|~dev|~net|~org|~edu|~gov|~tv
+! http://volokit2.com/lives/ufc-308-topuria-vs-holloway-main/
+/^https?:\/\/[-a-z]{5,12}\.[a-z]{3,}\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d?)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,method=get,header=via:2.0 nginx,to=~com|~dev|~net|~org|~edu|~gov|~tv
+/^https?:\/\/[-a-z]{5,12}\.[a-z]{3,}\/[0-9a-z]{1,20}\?(?=[A-Za-z]{0,21}\d?)(?=[0-9a-z]{0,21}[A-Z])[0-9A-Za-z]{15,22}=(?=[%a-z]*[0-9A-Z])[%0-9A-Za-z]{35,2000}$/$xhr,3p,match-case,method=get,header=Via:2.0 nginx,to=~com|~dev|~net|~org|~edu|~gov|~tv
 ||nfgxadlbfzuy.click^
+||ginsaitchosheer.net^
 
 ! https://cracksports.me/ - popups
 ! https://soccerworldcup.me/ - popups
@@ -2916,7 +2909,11 @@ filmizlehdizle.com,fullfilmizlesene.net##+js(rpnt, script,this.ads.length > this
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24778
 sportsurge.net##+js(acs, document.documentElement, break;case $.)
-sportsurge.net##+js(rmnt, script, adserverDomain)
+!#if cap_html_filtering
+sportsurge.net,volokit2.com##^script:has-text(/adserverDomain|\);break;case /)
+!#else
+sportsurge.net,volokit2.com##+js(rmnt, script, /adserverDomain|\);break;case /)
+!#endif
 antenasport.online,dudestream.com,embedstreams.me,ilovetoplay.xyz,joyousplay.xyz,sportsurge.net,streameast.*,techcabal.net,volokit2.com##+js(aopr, Adcash)
 
 ! https://wuxia.click/chapter/alchemy-emperor-of-the-divine-dao-1 ads
@@ -3511,7 +3508,8 @@ komikindo.lol##^script[data-cfasync][data-rocket-src]:not([data-rocket-src*="kom
 vidlink.pro##+js(aopw, Adcash)
 vidlink.pro##+js(aopr, aclib)
 ||eyewondermedia.com^$all
-^clickid=*&sourceid=$doc
+! https://www.walmart.com/ip/Apple-Watch-SE-2nd-Gen-GPS-40mm-Starlight-Aluminum-Case-Sport-Band-S-M-Fitness-Sleep-Tracker-Crash-Detection-Heart-Rate-Monitor/5033741510?classType=VARIANT&clickid=SkzWZTVCbxyPT7YTPl3ahWrPUkC1I02xuzdpWU0&irgwc=1&sourceid=imp_SkzWZTVCbxyPT7YTPl3ahWrPUkC1I02xuzdpWU0&veh=aff&wmlspartner=imp_159047&affiliates_ad_id=565706&campaign_id=9383&sharedid=cnet
+! ^clickid=*&sourceid=$doc
 *$script,3p,denyallow=jwplatform.com,domain=vidlink.pro
 
 ! https://www.ilgazzettino.it/nordest/rovigo/rissa_minorenni_bottiglia_faccia-8407348.html - waiting time for ads
@@ -3593,11 +3591,11 @@ lover937.net##+js(acs, setTimeout, document.getElementById)
 ! Prefer specific to generic (benefits Optimal in uBOL)
 arstechnica.com##.ad-wrapper
 
-! tamilprint29. art antiadb
-tamilprint29.*##+js(no-fetch-if, googlesyndication)
+! tamilprint etc antiadb
+tamilprint29.*,tamilprint30.*##+js(no-fetch-if, googlesyndication)
 
 ! address popups
-rajtamil.org,vikingf1le.us.to##+js(nowoif, _blank)
+rajtamil.org,vik1ngfile.uk.to,vikingf1le.us.to##+js(nowoif, _blank)
 luxmovies.*,nohost.one,southfreak.*##+js(nowoif)
 nohost.one##+js(rmnt, script, HTMLAllCollection)
 
@@ -3718,3 +3716,28 @@ tvn24.pl##+js(json-prune, playlist.movie.advertising.ad_server)
 ! https://github.com/uBlockOrigin/uAssets/issues/25824
 a1movies.*##+js(aeld, DOMContentLoaded, showPopup)
 a1movies.*##+js(nowoif)
+
+! https://github.com/uBlockOrigin/uAssets/issues/25825
+moviedokan.*##+js(acs, document.addEventListener, popunder)
+moviedokan.*##+js(nowoif, _blank)
+fastdokan.top,moviedokan.*##.resp
+fastdokan.top,moviedokan.*##.resps
+||moviedokan.*/wp-content/plugins/popup-builder/public/js/Popup.js
+||jayabaji3.com/bn-bd?aff=$doc
+||unequaledchair.com^
+||lnk2.cfd^
+
+! https://github.com/uBlockOrigin/uAssets/issues/25826
+videovak.com##+js(aeld, click, PopUnder)
+
+! linkupload. pro ads
+||linkupload.pro^$csp=script-src 'self' *.googleapis.com google.com gstatic.com
+||cyberblitzdown.click^
+||volopi.cfd^
+
+! jattfilms. store popup
+jattfilms.*###clickfakeplayer[href]:remove-attr(href)
+||baseballletters.com^
+
+! govtportal. org antiadb(file hosting)
+govtportal.org##+js(no-fetch-if, ads)
