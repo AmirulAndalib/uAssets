@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Tue, 29 Oct 2024 17:56:15 +0000
+! Last modified: Fri, 15 Nov 2024 08:47:35 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -717,7 +717,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ##.go2top
 ##.goBackTop
 ##.goToTop
-##.goTop
 ##.goTopButton
 ##.go_to_top
 ##.go_top_scroll
@@ -1119,11 +1118,9 @@ dashboard.razorpay.com#@##credential_picker_container
 ||jsdelivr.net/npm/devtools-detector
 ||jsdelivr.net/npm/disable-devtool
 ||judge.me^$third-party
-||jugglu.com^$third-party
 ||justbaat.org^$third-party
 ||kaango.com/feCustomWidgetDisplay/$third-party
 ||ko-fi.com/cdn/widget/$third-party
-||leadacity.net^$third-party
 ||leadfamly.com^$third-party
 ||leadpages.co^$third-party
 ||letreach.com^$third-party
@@ -1187,7 +1184,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||placehold.it^$third-party
 ||placeholder.com^$third-party,domain=~astrobin.com
 ||platform.loyaltylion.com^
-||plaxo.com^$third-party
 ||player.anyclip.com^$script,third-party,domain=~click2houston.com|~clickondetroit.com|~clickorlando.com|~ksat.com|~news4jax.com|~wsls.com
 ||plista.com^$third-party
 ||plugin.me2day.net^$third-party
@@ -1204,7 +1200,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||prooffactor.com^$third-party
 ||publisher.monster.com^$third-party
 ||purch.com^$script,third-party
-||pushnotifications.click^$third-party
 ||qeryz.com^$third-party
 ||qrius.me^$third-party
 ||quote.fm/services/button/$third-party
@@ -1234,7 +1229,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||scorespro.com^$third-party
 ||scoutle.com^$third-party
 ||screenpopper.com^$third-party
-||scribol.com^$third-party
 ||scrolltotop.com^$third-party
 ||sendsay.ru^$third-party
 ||senzari.com^$third-party
@@ -1250,7 +1244,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||smi.pp.ua^$third-party
 ||smi.today^$third-party
 ||smi2.ru^$third-party
-||smiinformeri.online^$third-party
 ||snapwidget.com^$third-party
 ||sociallist.org^$third-party
 ||socialoomph.com^$third-party
@@ -1269,13 +1262,11 @@ dashboard.razorpay.com#@##credential_picker_container
 ||survey.constantcontact.com^$third-party
 ||survey.io^$third-party
 ||swiftypecdn.com^$third-party,domain=~swiftype.com
-||swishu.com^$third-party
 ||synapsys.us^$third-party
 ||systeme.io^$third-party
 ||tapcdn.com/mosaic/tap_button.js
 ||teamautofollow.com/modules/mod_jtwitter/
 ||techbeat.com/wp-content/custom-php/$third-party
-||theechosystem.com^$third-party
 ||thelovebucks.com^$third-party
 ||theoutplay.com^$third-party
 ||tinker.com^$third-party
@@ -1313,7 +1304,6 @@ dashboard.razorpay.com#@##credential_picker_container
 ||widget.clipix.com^$third-party
 ||widget.clutch.co^$third-party
 ||widget.gleamjs.io^$script,third-party,domain=~gleam.io
-||widget.gyde.one^$third-party
 ||widget.justwatch.com^
 ||widget.pico.tools^$third-party
 ||widget.trustpilot.com^$third-party
@@ -1372,6 +1362,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||channel.io/plugin/$media
 ||chat.octadesk.services/embed/static/media/$media
 ||chatango.com/pcache/sounds/
+||chatbot.denizbank.com/Content/media/$media
 ||chatplus.jp/app/s/sound/
 ||cleversite.ru/client/default/sound/
 ||cliengo.com^$media
@@ -1475,6 +1466,7 @@ dashboard.razorpay.com#@##credential_picker_container
 e-reader-info.com,foreignpolicy.com,seatguru.com###TB_overlay
 e-reader-info.com,foreignpolicy.com,seatguru.com###TB_window
 beautyhigh.com,thevivant.com###acquisition-bar-wrapper
+stash.clash.gg###ad-scroll-banner
 econotimes.com###adPopup
 neowin.net###ajax-spinner
 jobisjob.co.uk###alert-footer-box
@@ -1665,8 +1657,7 @@ indexwp.com##.fancybox-overlay
 indexwp.com##.fancybox-wrap
 7is7.com,criosweb.ro##.feed
 computingunleashed.com##.feeds
-istreamy.com##.fixed-nav
-anandtech.com,citytv.com,games.on.net,slantmagazine.com,superbooyah.com,twitchy.com,unhearit.com##.follow
+anandtech.com,citytv.com,slantmagazine.com,superbooyah.com,twitchy.com##.follow
 wisebread.com##.follow-block
 pcpro.co.uk##.foobar-wrapper
 egoallstars.com,egotastic.com,washingtonian.com,wwtdd.com##.footer
@@ -1747,7 +1738,7 @@ southfloridagaynews.com##.pagenav
 clevelandjewishnews.com,kmov.com,kptv.com##.paging-link
 atheistrepublic.com##.pane-aweber-webform
 playbuzz.com##.pb-page-overlay
-latestgadgets.tech,rebooti.com##.popnav
+latestgadgets.tech##.popnav
 pastebin.com##.popup-container
 okmagazine.com##.popupad-base
 rap-up.com,wellnessmama.com##.post-nav
@@ -1923,6 +1914,8 @@ theglobeandmail.com###subscription-pencil-area
 slideserve.com###suggestion
 spiked-online.com###support-banner
 austinchronicle.com###support-bar
+huffpost.com###support-huffpost-entry
+yalereview.org###support-pop-up
 wedistribute.org###support-us
 scroll.in###supportStrap
 the74million.org###support_box
@@ -1994,6 +1987,7 @@ thenewhumanitarian.org##.addendum
 whowhatwhy.org##.ads
 scrippsnews.com##.ads-container
 thejakartapost.com##.ads-large-leaderboard
+stash.clash.gg##.adv-desktop-left
 universetoday.com##.adv-link
 hindawi.com##.advWrapper
 adexchanger.com##.adx-membership
@@ -2111,6 +2105,7 @@ tsn.ca##.cta-element
 carsauce.com##.cta46_card
 fark.com##.custombox-content
 fark.com##.custombox-overlay
+sleepfoundation.org##.data-mon-block
 texastribune.org##.db-frame-pinned
 theguardian.com##.dcr-nv35qx
 dailysignal.com##.dear_reader
@@ -2133,6 +2128,7 @@ democracynow.org##.donate_banner
 peoplesworld.org##.donate_strip
 audubon.org##.donation
 catholicnewsagency.com##.donation-box
+crooksandliars.com##.donation-drive
 revolver.news##.donation-header
 972mag.com##.donation-module
 jam-news.net##.donation-popup-box
@@ -2174,6 +2170,7 @@ pbs.org##.footer__donate
 jotform.us##.formFooter-wrapper
 publicdomainreview.org##.fundraiser-banner
 allsides.com##.fundraising-block-flex
+propublica.org##.fundraising-letter-inline
 spotlightpa.org##.ga\:component\:main\:inline\:support
 thewalrus.ca##.gala_banner
 housefresh.com##.gb-container-eda5dcfe
@@ -2330,6 +2327,7 @@ designboom.com##.publish-your-work
 thenationalpulse.com##.pulse__ad-wrapper
 thenationalpulse.com##.pulse_poster
 metager.org##.quicktip[type="spendenaufruf"]
+advocate.com##.reader-revenue
 abovethelaw.com##.recent-jobs-widget
 4kdownload.com##.recommend
 nzherald.co.nz##.recommended-articles__heading
@@ -2374,6 +2372,7 @@ loom.com##.signup-overlay_isCentered_2Al
 investopedia.com##.sim-promo
 finallyfocused.org##.simple-banner
 creativefabrica.com##.single-banner-tier
+propublica.org##.site-header__banner
 theguardian.com##.site-message--banner
 newsnow.co.uk##.site-ribbon
 escoffier.edu##.sitewide-quiz-banner
@@ -2408,6 +2407,7 @@ codastory.com##.support
 artstation.com##.support-artstation
 gbnews.com##.support-banner
 novaramedia.com##.support-bar
+cepr.net##.support-cepr-sec
 thecanary.co##.support-img
 poynter.org##.support-message
 islamchannel.tv##.support-popup-section
@@ -2447,6 +2447,8 @@ techopedia.com##.trust_desktop
 truthout.org##.truth-hellobar-placement
 truthout.org##.truth-post-content-after
 thebulletin.org##.uabb-infobox
+cdispatch.com##.ui-dialog
+cdispatch.com##.ui-widget-overlay
 kyivindependent.com##.ukraine-daily-side-banner
 flightradar24.com##.upgrade-button
 app.fastmail.com##.v-ReferralsSource
@@ -2530,6 +2532,7 @@ uberhumor.com###bluenext
 uberhumor.com###blueprevious
 euractiv.com###bsf_rt_progress_bar_container
 conservativedailynews.com,laprensalatina.com,voxelmatters.com,xboxera.com###check-also-box
+cyberark.com###default-next-button-wrapper
 sabcnews.com###floating-nextprev
 dailymail.co.uk###next-story
 thecourier.com###nextStoryTitle
@@ -2550,8 +2553,8 @@ thepost.co.nz,thepress.co.nz,waikatotimes.co.nz##.article-navbar
 thepress.co.nz##.article-navigation-buttons
 thespinoff.co.nz##.article-peep
 1news.co.nz##.articleSuggestStories
-niagarafallsreview.ca,ozemandailychronicle.com,tcatharinesstandard.ca,thepeterboroughexaminer.com,thespec.com##.asset-paging
-berkshireeagle.com,bgdailynews.com,bramptonguardian.com,captimes.com,chronicle-tribune.com,citizentribune.com,clintonherald.com,coloradopolitics.com,crossroadstoday.com,csindy.com,dailygazette.com,dailyitem.com,dentonrc.com,denvergazette.com,gazette.com,guelphmercury.com,herald-dispatch.com,hjnews.com,homenewshere.com,insidenova.com,insideottawavalley.com,insightnews.com,jhnewsandguide.com,kentuckytoday.com,keysnews.com,khq.com,kilgorenewsherald.com,kmaland.com,kmzu.com,komu.com,ktbs.com,kulr8.com,lufkindailynews.com,mdjonline.com,mtdemocrat.com,nashvillescene.com,nbcrightnow.com,news-gazette.com,newsmirror.net,niagarathisweek.com,northcentralpa.com,ottumwacourier.com,phillytrib.com,postandcourier.com,pulaskicountyweekly.com,sfexaminer.com,sfweekly.com,sharonherald.com,starlocalmedia.com,swiowanewssource.com,thecanadianpressnews.ca,thecentersquare.com,themountaineer.com,thenewsenterprise.com,therecord.com,thesuburban.com,thetimestribune.com,unionleader.com,wdel.com,wdrb.com,wellandtribune.ca,wfmz.com,wvgazettemail.com,wvnews.com,wyomingnewsnow.tv##.asset-paging-container
+bozemandailychronicle.com,niagarafallsreview.ca,thepeterboroughexaminer.com,thespec.com##.asset-paging
+berkshireeagle.com,bgdailynews.com,bramptonguardian.com,captimes.com,chronicle-tribune.com,citizentribune.com,clintonherald.com,coloradopolitics.com,crossroadstoday.com,csindy.com,dailygazette.com,dailyitem.com,dentonrc.com,denvergazette.com,gazette.com,guelphmercury.com,herald-dispatch.com,hjnews.com,homenewshere.com,insidenova.com,insideottawavalley.com,insightnews.com,jhnewsandguide.com,kentuckytoday.com,keysnews.com,khq.com,kilgorenewsherald.com,kmaland.com,kmzu.com,komu.com,ktbs.com,kulr8.com,lufkindailynews.com,mdjonline.com,mtdemocrat.com,nashvillescene.com,nbcrightnow.com,news-gazette.com,newsmirror.net,niagarathisweek.com,northcentralpa.com,ottumwacourier.com,phillytrib.com,postandcourier.com,pulaskicountyweekly.com,reformer.com,sfexaminer.com,sfweekly.com,sharonherald.com,starlocalmedia.com,swiowanewssource.com,thecanadianpressnews.ca,thecentersquare.com,themountaineer.com,thenewsenterprise.com,therecord.com,thesuburban.com,thetimestribune.com,unionleader.com,wdel.com,wdrb.com,wellandtribune.ca,wfmz.com,wvgazettemail.com,wvnews.com,wyomingnewsnow.tv##.asset-paging-container
 emergingrisks.co.uk##.avia-post-nav
 dailyvoice.com##.b-scroll-to-next-article
 wltreport.com##.bb-fixed-pagination
@@ -2583,6 +2586,7 @@ bizcommunity.com##.next-navigation-container
 gmanetwork.com##.nxt-content-wrapper
 oneindia.com##.oi-footer-bottom-ad-btns
 msn.com##.paddle
+history.state.gov##.page-nav
 alligator-sunglasses.com,bucketlistseekers.com##.pagination
 deadline.com##.pmc-u-background-white.pmc-u-margin-b-0
 theprp.com##.post-preview-next
@@ -2701,16 +2705,17 @@ shameless.com###b2t
 news.tvbs.com.tw,whtop.com###back
 accessnow.org,al-watan.com,appdate.lk,brevzin.github.io,coinedcuisine.com,duhuliye.com,krdb.com,leakedzone.com,neue-impulse-verlag.de,qatar-tribune.com,sandordargo.com,sfu.ca,slocounty.ca.gov,tfn.scot###back-to-top
 stoneberry.com###backTo
-bigislandnow.com,mmoga.co.uk,mmoga.com,mmoga.de,mmoga.es,mmoga.fr,mmoga.se,toplegal.it,tsc.ca,vov.vn###backToTop
+bigislandnow.com,med.stanford.edu,mmoga.co.uk,mmoga.com,mmoga.de,mmoga.es,mmoga.fr,mmoga.se,toplegal.it,tsc.ca,vov.vn###backToTop
 cdw.com###backToTopWrapper
 medicinenet.com,mega4upload.com###backTop
-circuitbasics.com,foodstuffsa.co.za,hardwarezone.com.sg,holidayswithkids.com.au,milwaukeeindependent.com,panoramapolitico.co,vgleaks.com###back_to_top
+circuitbasics.com,foodstuffsa.co.za,hardwarezone.com.sg,holidayswithkids.com.au,milwaukeeindependent.com,panoramapolitico.co,thegrio.com,vgleaks.com###back_to_top
 investigativepost.org###backtoTop
 crazysales.com.au###backtop
 adl.org,coreight.com,cosedicasa.com,gamepro.de,gamestar.de,lleida.com,news.ki.se,oantagonista.com,philstar.com,soundonsound.com,theepochtimes.com###backtotop
 blaauwbergbeachhotel.co.za###btTop
 qatarairways.com,symbolica.io###btn-back-to-top
 tv-asahi.co.jp###btn-pagetop
+fda.gov###btn-top
 azernews.az,mmegi.bw###btn-up
 boomlive.in###button
 tasvideos.org###button-scrolltop
@@ -2720,7 +2725,7 @@ lamborghini-tractors.com###floatArrowUp
 informer.com###float_top
 mydeal.com.au###floatingScrollBtn
 softroboticstoolkit.com###footer
-casinodelavallee.com,cryptobizmagazine.com,ideaandcreativity.com,ijn.com,nationwideradiojm.com,stanfordmag.org,tv360nigeria.com,weeklyrecess.com###go-top
+casinodelavallee.com,cryptobizmagazine.com,ijn.com,nationwideradiojm.com,stanfordmag.org,tv360nigeria.com,weeklyrecess.com###go-top
 erome.com###goTop
 fanfreegames.com###go_to_top
 aorus.com,insidebitcoins.com###gotop
@@ -2740,7 +2745,7 @@ delanceyplace.com###nekoToTop
 kohls.com,samsclub.com###oo_tab
 kyodo.co.jp###page-top
 macromill.com,mhi.com,smth.jp###pageTop
-census.gov,chugai-pharm.co.jp,daiichi-kamotsu.co.jp,nhk.or.jp,nyk.com,webtsc.com###pagetop
+census.gov,chugai-pharm.co.jp,daiichi-kamotsu.co.jp,nyk.com,webtsc.com###pagetop
 bingplaces.com###pagination_Arrow
 nouvelles.umontreal.ca###retour-haut
 accessoires-asus.com###retourHaut
@@ -2753,7 +2758,7 @@ advister.it,aeromalls.com,coinmarketcap.com,ecrater.com,gadgetstouse.com,gipa.ge
 dihi.org,trutone.ca###scroll-top
 aptnnews.ca,gatewayhispanic.com,morbidology.com,rivanimation.com,spuf.org,theoverclocker.com,uska.ch,wdet.org###scroll-up
 alldomains.hosting,capital.com,permanentstyle.com,vodacomsoccer.com###scrollToTop
-indiatimes.com,knowledge.wharton.upenn.edu,marketbusinessnews.com,moniteurautomobile.be,philstar.com,timesnownews.com,xiachufang.com###scrollTop
+ebookrenta.com,indiatimes.com,knowledge.wharton.upenn.edu,marketbusinessnews.com,moniteurautomobile.be,philstar.com,timesnownews.com,xiachufang.com###scrollTop
 123ink.ca,americanmusical.com,cinemo.hu,itdevices.ca,joemonster.org,kingofcocaine.com,labusa.info,primecables.ca###scrollUp
 hasznaltauto.hu,koreaboo.com,myfaith.tv,szalonauto.hu,vipcars.com###scroll_top
 astrofame.com###scrolling-top
@@ -2763,10 +2768,10 @@ papermtn.co.uk###si-scroll-top
 homemark.co.za,winzzguitars.com###site-scroll
 irusa.org###slide_top
 ugreen.com###t4s-backToTop
-699pic.com,al-akhbar.com,classicbid.de,finallyfocused.org,mariahcarey.com,omannews.gov.om,osgamers.com,powvideo.net###to-top
+699pic.com,al-akhbar.com,classicbid.de,finallyfocused.org,mariahcarey.com,omannews.gov.om,osgamers.com,powvideo.net,tageblatt.de###to-top
 thegamecrater.com###to-top-wrap
 amiventures.net,arigatojapan.co.jp,blog.westerndigital.com,ebar.com,farooqkperogi.com,jqueryscript.net,mieuxvivresante.fr,popmythology.com,pourquoidocteur.fr,stuttgarter-zeitung.de,theapplepost.com###toTop
-bd.com,isocellitalia.it,livelaw.in,nation-news.ru,vpnranks.com###top
+bd.com,isocellitalia.it,livelaw.in,vpnranks.com###top
 staradvertiser.com###top-anchor
 cricbuzz.com###top-btn
 dollartree.com###top-button-block
@@ -2781,7 +2786,6 @@ routard.com###topscroll
 alalam.ir,aniwatch.to,aniwatchtv.to,consorzioautolinee.it,eboblack.com,ixosofficial.com,kapook.com,maxcasa.com,murripatrizia.it,nilox.com,nomisma.it,publish0x.com,rstore.it,scarpescarpestore.com,teenxy.com###totop
 torrentgalaxy.to###totopbutton
 altoadigelatte.com,cine974.com,europeanjournalists.org###up
-vesti.ua###up-page
 g2a.com###upPageToolbar
 fboomporn.com,xcafe.com###upper
 reinsurancene.ws###upprev_box
@@ -2842,7 +2846,7 @@ kimcilonly.top##.gmr-ontop
 duo.com##.go-to-top-btn
 aorus.com##.go-top-div
 ciiradio.com,reverso.net,smutr.com##.go-up
-34travel.me,porngsstube.com##.goUp
+34travel.me##.goUp
 medibang.com##.go_top
 4399.cn,cna.com.tw,cts.com.tw,dailypioneer.com,digitimes.com,digitimes.com.tw,mmm100.com,moneycontrol.com,rti.org.tw,sport-express.ru,weather.com.cn##.gotop
 cardekho.com##.gsst_scroll-btn
@@ -2883,8 +2887,8 @@ simpleflying.com##.pk-icon-up
 hackread.com##.pk-scroll-to-top
 bingehulu.com##.progress-wrap
 agenciasinc.es##.pujar_adalt
-ca.gov,muslimshop.fr##.return-top
-pronouns.page##.scroll-btn
+ca.gov,medlineplus.gov,muslimshop.fr##.return-top
+magazine.medlineplus.gov,pronouns.page##.scroll-btn
 eatsmarter.com##.scroll-button
 timesofmalta.com##.scroll-notification-container
 50languages.com,advgazeta.ru,boredpanda.com,business-standard.com,cnevpost.com,gulftoday.ae,hsn.com,ingolstadt-today.de,iol.co.za,labouroutlook.org,leadingrestaurants.co.uk,lessknownfacts.com,malighting.com,multiup.eu,multiup.org,nostalgica.cl,origo.hu,pandasecurity.com,pbteen.com,peoplematters.in##.scroll-to-top
@@ -2899,7 +2903,7 @@ khronos.org,kyivpost.com##.scroll_to
 koreatimes.co.kr,rogor.ge,ukranews.com##.scroll_top
 sfbayca.com##.scrolled
 peekyou.com##.scrollmeup
-frameboxxindore.com,host-tools.com,hostelworld.com,news9live.com,paramorefans.com,spacetourismguide.com,tribuneindia.com##.scrolltop
+host-tools.com,hostelworld.com,news9live.com,paramorefans.com,spacetourismguide.com,tribuneindia.com##.scrolltop
 nsfw.xxx##.scrolltop-button
 microchip.com##.scrolltotop
 cryptonomist.ch,globalguideline.com,iogames.onl,isanek.com##.scrollup
@@ -2914,7 +2918,7 @@ sears.com##.tap-top
 nasilemaktech.com##.td-read-down
 nme.com##.td-scroll-up
 adguard.com##.theme-back-to-top-button
-ansa.it,cacm.acm.org,californiacitynews.org,cnbctv18.com,consolecreatures.com,ekathimerini.com,gbnews.com,gunsandammo.com,hreedots.tech,linuxlookup.com,porngem.com##.to-top
+ansa.it,cacm.acm.org,californiacitynews.org,cnbctv18.com,consolecreatures.com,ekathimerini.com,gbnews.com,gunsandammo.com,justapack.com,linuxlookup.com,porngem.com##.to-top
 radaris.com##.toTop
 maghrebemergent.net##.to_top
 abitare-in-altoadige.it,automobilismo.it,bostonherald.com,ciclismo.it,cosmosup.com,cyclistmagazine.it,dailysignal.com,foxnews.com,freeviewnz.tv,germany.travel,haier.com,motociclismo.it,nrc.nl,shopperplus.ca,sivtimes.com,svp.eu,thefappening.wiki,velaemotore.it,visitnsw.com,wikiway.com,wohnen-in-suedtirol.it##.top
@@ -2933,6 +2937,7 @@ nftplazas.com##.trx_addons_scroll_to_top
 repuestosportatiles.es##.tvbottom-to-top
 nippon.com##.u-pagetop
 news.arizona.edu##.ua-zen-back-to-top
+unige.ch##.unige-topnav
 atramentowka.com,latuaitalia.ru,link11.com,oil-land.pl,picardirebel.co.za,sklep-art-meb.pl,subscribe.ru,tv-soyuz.ru##.up
 xhaccess.com,xhamster.com,xhamster.desi##.up-arrow
 epicgames.com,wapbold.net##.up-button
@@ -3049,17 +3054,22 @@ dailynewshungary.com##+js(set-local-storage-item, wp_dark_mode_active, 1)
 linux.do##.custom-gated-topic-container
 linux.do##body.topic-in-gated-category:remove-class(topic-in-gated-category)
 linux.do##.topic-in-gated-category .container.posts::before:style(background: transparent !important;)
+! ground.news
+ground.news##.react-responsive-modal-root:has-text(Get Started)
+ground.news##.z-1000:has-text(Get Started)
+ground.news##body:style(position: static !important; overflow: auto !important; width: auto !important;)
 ! cnn.com reg/login nag
 cnn.com##+js(set-local-storage-item, perm_cnn_regwall_v1, $remove$)
 cnn.com##+js(set-local-storage-item, REG_WALL_METER, $remove$)
 ! irishnews.com reg/login nag
 irishnews.com##+js(set-local-storage-item, ArcP, $remove$)
+! reason.com 
+reason.com##.widget-placed:style(top:0 !important)
 ! nautil.us
 nautil.us##+js(cookie-remover, arc)
 ! commondreams.org
-commondreams.org###XZAEUNZG
-commondreams.org##.fun-widget-backdrop-holder
-commondreams.org##body,html:style(overflow: auto !important; position: initial !important;)
+commondreams.org##.breaking-news-top-wrapper
+commondreams.org##.sticky__blackbar:style(top:0 !important)
 ! reuters.com (page view counter)
 reuters.com##+js(set-local-storage-item, ArcP, $remove$)
 ! theweek.com
@@ -3301,7 +3311,6 @@ derbund.ch##div[class^="BackToTop_"]
 stol.it##div[class^="UpScroll_"]
 ||images.provenexpert.com^$domain=boerse-global.de
 ||logo.haendlerbund.de/logo.php?$third-party
-||mdsngpush.finanzen.net^
 ||trustedshops.com/bewertung/widget/$third-party
 ! ---------- French Site Specific Blocking Rules ----------
 ||auto-moto.com^*/iframe-box-article.html
@@ -3678,19 +3687,23 @@ nativecamp.net##.hey-nc-bottom-link-banner
 nativecamp.net##.hey-nc-top-banner
 plus.nhk.jp##.hls-player_message
 media.moneyforward.com##.home-ranking
+mastory.jp##.l-fixed
 gazoo.com##.mailmag_link
 media.moneyforward.com##.mp-popin-analytics
 media.moneyforward.com##.mp-recommends
 video.fc2.com,video.laxd.com##.noLoginSticker
 ntv.co.jp##.ntv-pageTop
 realtime-chart.info##.osn_base
+mastory.jp##.p-article__banners
 gamespark.jp,response.jp##.page-top
 mobilenews.jp##.pagetop
 dandy-house.co.jp##.post_content > a[href*="?utm_source"] > img
+mastory.jp##.qualvaBtn
 sp.nicovideo.jp##.searchResult-nicoadNicodicItem
 sofmap.com##.side_bnr
 sports.yahoo.co.jp##.topPage
 video.fc2.com##div[style^="position: fixed; transition: right 1s ease-out 0s; bottom: 165px; padding: 0px; margin: 0px; border: none; z-index: 999;"]
+||amazonaws.com/cdn.ma-site.com/common/chatbots.js$domain=mastory.jp
 ||api.popin.cc^$third-party
 ||bot.agerun.jp^$third-party
 ||img.mixi.net^$third-party,domain=~mixi.jp
@@ -3789,7 +3802,6 @@ ria.ru##.b-scroller-up
 traveller-eu.ru##.btn-btt
 bancaintesa.ru##.cb-goup
 5-tv.ru##.gttt
-ubr.ua##.job-block
 nededik.com##.kosehbr
 autowp.ru##.links
 interfax.ru##.matNav
@@ -3798,7 +3810,6 @@ ntv.ru##.popup_overlay
 rambler.ru##.scrollback
 kp.ru##.seti
 uralpress.ru##.sticker
-ubr.ua##.story-nav
 vz.ru##.up
 forbes.ru##.up-button-page
 vz.ru##.up-page
@@ -3865,6 +3876,7 @@ milliyet.com.tr##.sticky
 @@||s.swiftypecdn.com/install/$script,domain=docs.ansible.com
 @@||s.swiftypecdn.com^$stylesheet,xmlhttprequest,domain=docs.ansible.com
 @@||tv-asahi.co.jp/ch/js/scrolltopcontrol.js$script,~third-party
+@@||wurfl.io/wurfl.js$script,domain=smartcharts.net
 @@||zdassets.com/ekr/snippet.js$domain=app.buidlbox.io|bitsacard.com|consumercellular.com|creative.com|help.textnow.com|investopedia.com|jeedoo.com|meundies.com|myurbanjungle.com|nvidia.eu|pionex.com|portal.afterpay.com|skroutz.gr|streamelements.com|superbet.pl|support.zonealarm.com|xjuggler.de
 
 ! *** easylist:fanboy-addon/fanboy_annoyance_allowlist_general_hide.txt ***

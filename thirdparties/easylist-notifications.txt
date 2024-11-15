@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Notifications
-! Last modified: Tue, 29 Oct 2024 17:56:15 +0000
+! Last modified: Fri, 15 Nov 2024 08:47:35 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -113,6 +113,7 @@
 /js/jquery.smartbanner.js|
 /js/jquery.smartbanner.min.js|
 /mobile-welcome-overlay/*$script
+/MobileDownloadBanner.js
 /smart-app-banner.js
 !------------------------General element hiding rules-------------------------!
 ! *** easylist:fanboy-addon/fanboy_notifications_general_hide.txt ***
@@ -333,6 +334,7 @@
 ###smartbanner-desktop
 ###smartbanner.android
 ###smartbanner.ios
+###tapcart-web-banner
 ###xm_app_stickyHeader
 ##.app-ad-container-desktop
 ##.app-banner-container
@@ -400,14 +402,12 @@
 ||cdn.qgr.ph^$third-party
 ||cdn.qgraph.io^$third-party
 ||centrnotify.com^$third-party
-||checke.biz^$third-party
 ||confirmit.com^$third-party
 ||conforama-push.com^$third-party
 ||contentsitesrv.com/js/push/$third-party
 ||css.xjsx.lol^$third-party
 ||digipush.io^$third-party
 ||dpns-notifications.com^$third-party
-||easyfeeed.com^$third-party
 ||evolok.net^$third-party
 ||farteniuson.com^$third-party
 ||getnotification.me^$third-party
@@ -418,7 +418,6 @@
 ||medallia.com^*/onsite/embed.js
 ||neopush.io^$third-party
 ||news2day.me^$third-party
-||notification-time.com^$third-party
 ||notification.tubecup.net^
 ||notifications.ltd^$third-party
 ||notifikuj.cz^$third-party
@@ -431,11 +430,8 @@
 ||propush.net^$third-party
 ||pt.appirits.com^$third-party
 ||puscomosca.com^$third-party
-||push-centr.com^$third-party
-||push-centr.net^$third-party
 ||push-engage.com^$third-party
 ||push-notifications.top^$third-party
-||push-pro.net^$third-party
 ||push.asahiinteractive.com^
 ||push.bytesignal.com^
 ||push.daksham.in^$third-party
@@ -455,7 +451,6 @@
 ||pushbaza.com^$third-party
 ||pushbots.com^$third-party
 ||pushbox.info^$third-party
-||pushcentr.com^$third-party
 ||pushchev.info^$third-party
 ||pushcrew.com^$third-party
 ||pushdealer.com^$third-party
@@ -505,7 +500,6 @@
 ||webpush.jp^$third-party
 ||webpushr.com^$third-party
 ||webpushs.com^$third-party
-||whitepush.biz^$third-party
 ||worldpush.co^$third-party
 ||wps.relateddigital.com^$third-party
 ||wpush.biz^$third-party
@@ -513,7 +507,6 @@
 ||xedo.me^$third-party
 ||youlead.pl/webpushprompt.js
 ! Stand-alone, in Easyprivacy
-||accengage.net^$third-party
 ||actirinius.com^$third-party
 ||aimtell.com^$third-party
 ||alertme.news^$third-party
@@ -565,7 +558,6 @@
 ||pushbird.com^$third-party
 ||pushbullet.com^$third-party
 ||pushengage.com^$third-party
-||pushex.io^$third-party
 ||pushible.com^$third-party
 ||pushify.com^$third-party
 ||pushwoosh.com^$third-party
@@ -573,7 +565,6 @@
 ||sendpulse.com^$third-party
 ||setrowid.com^$third-party
 ||shroughtened.com^$third-party
-||sm-epsilon.com^$third-party
 ||snd.tc^$third-party
 ||subscribers.com^$third-party
 ||truenat.bid^$third-party
@@ -599,6 +590,7 @@
 ||app.chatwoot.com/audio/
 ||app.onlim.com/app/assets/audios/
 ||appspot.com/sounds/chatmsg.mp3
+||assets.chaport.com/sounds/
 ||azureedge.neti^$media,domain=oct8ne.com
 ||bac-assets.com/chat/spa-assets/$media,domain=bankofamerica.com
 ||bac-assets.com/spa/widgets/www-chat/$media,domain=bankofamerica.com
@@ -609,6 +601,7 @@
 ||channel.io/plugin/$media
 ||chat.octadesk.services/embed/static/media/$media
 ||chatango.com/pcache/sounds/
+||chatbot.denizbank.com/Content/media/$media
 ||chatplus.jp/app/s/sound/
 ||cleversite.ru/client/default/sound/
 ||cliengo.com^$media
@@ -803,9 +796,11 @@ wallapop.com##div[class^="app-smart-banner_"]
 !! International
 segre.com###body_modal_5bNRsFSmILUgICbhc8pp
 diarimes.com###body_modal_mLuzd6bcGWwnVCvfwvBU
+ecuavisa.com###modalNotification
 toy-people.com###notification_alert_container
 hesport.com###notification_pp
 animefire.net###page-mask
+voetbalkrant.com###requestNotificationPermission
 dn.pt###sk-notifications-container
 !aerzteblatt.de###pushy
 valoraanalitik.com###spopup
@@ -907,6 +902,7 @@ playbite.com###pb-cta
 linkedin.com###protip-capsule
 cookpad.com###ru-promotion-banner
 mail.google.com###sdppromo
+kraken.com###smart-app-banner
 cbsnews.com,yelp.com###smart-banner
 m.jpost.com,tandem.net###smartBanner
 deviantart.com,dw.com,eurosport.com,nzherald.co.nz,photobucket.com,spiegel.de,tvnz.co.nz###smartbanner
@@ -1002,6 +998,7 @@ gibiru.com##.banner-button
 animeanime.global##.banner-click-app
 m.yelp.com##.banner__09f24__A12gg
 coinpaprika.com##.banners-wrapper
+heimat-info.de##.bg-\[url\(\'\~\/assets\/images\/backgrounds\/divider-gray\.svg\'\)\].bg-no-repeat.bg-center.bg-cover.flex.flex-row.justify-center.py-20.w-full
 deepl.com##.bg-deepl-blue
 canberratimes.com.au##.bg-gray-100.block
 breakingnews.ie##.bg-gray-900
@@ -1019,9 +1016,10 @@ ixigo.com##.bottom-sheet
 m.facebook.com##.bottom.fixed-container[data-actual-height="66"]
 cityam.com##.breaking-news_liveblog
 smocca.jp##.c-box-app_banner
-warbyparker.com##.c-hYggeK
+warbyparker.com##.c-gCMvLL-dXDTjd-animation-open
 filmarks.com##.c-header-download-banner
 flypgs.com##.c-pgs-app
+tsn.ca##.c-smartbanner
 ctvnews.ca##.c-text > ul > li
 cricbuzz.com##.cbz-leaderboard-banner
 apkpure.com,apkpure.net##.chrome-install-pop
@@ -1045,12 +1043,10 @@ supercluster.com##.doormat__overlay
 m.webtoons.com##.downapp_area2
 diariolasamericas.com,express.co.uk##.download-app
 student.com##.download-banner
-m.bilibilicomics.com##.download-btn
 coincodex.com##.download-coincodex-app
 podbean.com##.download-dialog
 bisnis.com##.download-disini
 metar-taf.com##.download-info
-m.bilibilicomics.com##.download-popup
 caixinglobal.com##.downloadAPP
 foundit.com.ph##.downloadApp
 aibit.com##.download_float
@@ -1172,10 +1168,7 @@ shazam.com##.phones
 onlineradiobox.com##.playmarket
 pocketnet.app##.popup
 muragon.com##.popup-app
-m.bilibilicomics.com##.popup-wrapper
 teller.jp##.pos_sticky.z_header.backface_hidden > div.lgDown\:d_flex.bg_surface_secondary.h_44px
-m.bilibilicomics.com##.primary.action-bar
-paveldogreat.github.io##.promo
 citynews.ca##.promo-module
 newson.us##.promoHeader
 pizzahut.co.nz##.promote-app
@@ -1213,7 +1206,7 @@ airtel.com##.sticky-section-top
 radios.com.br##.store-badge
 www.google.com##.tCroyc
 m.tribunnews.com##.tapp-banner
-cncpts.com##.tc-mobile-download-banner-container
+alpakagear.com,cncpts.com##.tc-mobile-download-banner-container
 trip.com##.tcp-h5-install-banner
 trip.com##.tcp-h5-install-popup
 techgenyz.com##.td-fix-index.tds-button
@@ -1258,6 +1251,7 @@ duckduckgo.com##[data-testid="serp-popover-promotion"]
 myhome.nifty.com##[data-tracking-selfmade-smart-app-banner]
 weatherbug.com##[href="/appdownload"]
 wpxi.com##[href="/mobile-apps/"]
+my-best.com##[href="https://mybest.go.link/dW75E"]
 ctvnews.ca##[href="https://www.ctvnews.ca/app"]
 theapplepost.com##[href^="https://apps.apple.com/app/"]
 sherbrookerecord.com##[href^="https://apps.apple.com/ca/app/the-record-news/"]
@@ -1313,6 +1307,8 @@ puuilo.fi##body:style(overflow: auto !important)
 ! autoevolution.com
 autoevolution.com###notif_asker_div
 autoevolution.com##body,html:style(height: auto !important; overflow: auto !important)
+! threads.net
+threads.net##+js(set-session-storage-item, barcelona_mobile_upsell_state, 1)
 ! phonearena.com
 phonearena.com###pa-survey-modal
 phonearena.com##.pa-modal-backdrop
