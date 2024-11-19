@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Sat, 16 Nov 2024 05:25:44 +0000
+! Last modified: Tue, 19 Nov 2024 01:14:28 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1430,7 +1430,7 @@ newsroom.co.nz###block-24
 minnpost.com###block-33
 breathedreamgo.com###block-4
 wyofile.com###block-6
-newsroom.co.nz###block-60
+hongkongfp.com,newsroom.co.nz###block-60
 decode39.com###block-8
 unofficialnetworks.com###block-9
 biztechmagazine.com###block-cdwregistertimedmodal
@@ -2254,6 +2254,7 @@ eco-business.com##.eb-promotions--subscribe
 namelymarly.com##.ebook
 christiantoday.com##.ebookbox
 crash.net##.echobox-subscribe-1
+gurufocus.com##.el-dialog__wrapper
 thequantuminsider.com##.elementor-element-16c138b
 geneticliteracyproject.org##.elementor-element-1922719
 geneticliteracyproject.org##.elementor-element-241f781c
@@ -2326,7 +2327,7 @@ factinate.com##.f-ssw
 factinate.com##.f-ssw-subscribe-hook
 edition.cnn.com##.factbox_inline-small
 zmescience.com##.fb-inst
-eazypeazymealz.com,familystylefood.com,helloadamsfamily.com,herwholesomekitchen.com,mallorynikolaus.com,mommyshomecooking.com,splashoftaste.com,thesuburbanmom.com,tosimplyinspire.com,withspice.com##.fd-focus-visible-applied
+eazypeazymealz.com,familystylefood.com,helloadamsfamily.com,herwholesomekitchen.com,lanternlanedesigns.com,mallorynikolaus.com,mommyshomecooking.com,splashoftaste.com,thesuburbanmom.com,tosimplyinspire.com,withspice.com##.fd-focus-visible-applied
 cookienameddesire.com##.fd-form-popup
 barefootuniverse.com,bestbeefrecipes.com,herwholesomekitchen.com,laurenslatest.com##.fd-modal
 damndelicious.net,sdxcentral.com##.featured-subscribe
@@ -3007,6 +3008,7 @@ holyrood.com##.rc-subs
 rcrwireless.com##.rcrwi-hubspot-article-form
 news.yahoo.com##.react-wafer-Featurebar
 adage.com##.recirculationCTA
+thedrive.com##.recurrent-newsletter-block
 twz.com##.recurrent-sidebar-newsletter-block
 moneysavingexpert.com##.reference-email-tip-box
 takimag.com##.regcta
@@ -3045,6 +3047,7 @@ sainsburysmagazine.co.uk##.section--blue.section
 backstage.com##.section--newsletter
 mygenefood.com##.section--optin
 usrtk.org##.section-callout-newsletter
+crowdsupply.com##.section-email-signup
 247wallst.com##.section-email-sub
 findlaw.com,topgear.nl##.section-newsletter
 billyparisi.com,davidlebovitz.com,kimpetras.com##.section-subscribe
@@ -3213,7 +3216,7 @@ stereogum.com##.subscribe-article
 lovefoodnotcooking.com,rabble.ca,spectator.org##.subscribe-bar
 greenbiz.com##.subscribe-block-container
 mamamia.com.au##.subscribe-border-bottom
-christiantoday.co.nz,christiantoday.com.au,faithpot.com,heatmap.news,infoq.com,mamamia.com.au,onmilwaukee.com,oversixty.co.nz,paloaltonetworks.com,save.ca,theenergymix.com##.subscribe-box
+blog.oup.com,christiantoday.co.nz,christiantoday.com.au,faithpot.com,heatmap.news,infoq.com,mamamia.com.au,onmilwaukee.com,oversixty.co.nz,paloaltonetworks.com,save.ca,theenergymix.com##.subscribe-box
 albawaba.com,sport360.com##.subscribe-btn
 972mag.com,sfist.com##.subscribe-button
 unsw.edu.au##.subscribe-callout
@@ -3314,7 +3317,7 @@ artificialintelligence-news.com##.techforge-subscribe-widget
 fangoria.com##.terror-teletype
 turningleftforless.com##.text-2
 jpl.nasa.gov##.text-center.bg-gray-light
-nymag.com,thecut.com##.text-form-wrapper
+nymag.com,thecut.com,vulture.com##.text-form-wrapper
 nodejs.libhunt.com##.text-strong-invite
 realtor.com##.textbanner_link
 thefiscaltimes.com##.tft-subs-block
@@ -3371,6 +3374,7 @@ vice.com##.user-newsletter-signup
 nscale.com##.uui-blogpost05_newsletter
 aarp.org##.uxdia-c-widget--newsletter
 itweb.co.za##.v-alert
+gurufocus.com##.v-modal
 techguide.com.au##.vc_single_image-wrapper
 techguide.com.au##.vc_wp_text
 minimalistbaker.com##.vertical-subscribe
@@ -3384,7 +3388,7 @@ elpais.com##.w-cta.w
 inferless.com##.w-form
 railmarket.com##.w-md-100
 revolvermag.com##.w-newsletter-form
-backyardboss.net,givemesport.com,pocket-lint.com,simpleflying.com,thethings.com##.w-newsletter-in_article
+backyardboss.net,givemesport.com,pocket-lint.com,thethings.com##.w-newsletter-in_article
 revolvermag.com##.w-newsletter-right-rail
 bodybuilding.com##.w21_middle-bar__newsletter
 elpais.com##.w_tx
@@ -3433,6 +3437,7 @@ railtech.com##.widget_ymlp
 commandlinewizardry.com##.wixui-column-strip__column
 ethostimes.com,madelinekopp.com##.wixui-form
 madelinekopp.com##.wixui-lightbox
+politik.co.nz##.wkwp-login-block
 worth.com##.worth-newsletter-section
 merriam-webster.com##.wotd-side__subscribe
 creepycatalog.com##.wp-block-cata-newsletter
@@ -3464,7 +3469,7 @@ visualcapitalist.com##.wpforms-ajax-form
 addapinch.com,budgetbytes.com,eatyourselfskinny.com,kristineskitchenblog.com,thestayathomechef.com,vacationstravel.com##.wpforms-container
 vegrecipesofindia.com##.wpforms-location-newsletter
 autocar.co.nz,health-e.org.za##.wpforms-widget
-nintendosoup.com,thehappyfoodie.co.uk##.wppopups-whole
+nintendosoup.com,politik.co.nz,thehappyfoodie.co.uk##.wppopups-whole
 tastesbetterfromscratch.com##.wprm-custom-cta
 amazingribs.com##.wpsta-ar-newsletter-1st-page-view
 expressvpn.com##.wrap-subscribe
@@ -3582,6 +3587,7 @@ polygon.com,theverge.com##.duet--cta--newsletter
 ! :has
 dailygalaxy.com###home-section3:has-text(Newsletter)
 foxnews.com##.advanced.embed-media:has-text(Get a daily look)
+marketbeat.com##.align-items-center.py-2:has-text(Sign Up)
 us500.com##.bg-gray-600:has-text(Read the latest business news)
 balls.ie##.bg-left.bg-cover:has-text(Subscribe)
 businesstimes.com.sg##.border-gray-175:has-text(BT in your inbox)
@@ -3591,12 +3597,14 @@ calgaryherald.com,edmontonjournal.com,montrealgazette.com,ottawacitizen.com,thes
 ffrfaction.org##.elementor-button-link:has-text(Sign Up)
 linuxiac.com##.has-border-color.wp-block-columns:has-text(NEWSLETTER)
 comicbook.com##.has-primary-dark-background-color:has-text(Sign up)
+mensjournal.com##.m-detail--body > p:has-text(Sign up for the)
 rd.com##.p1:has-text(newsletter)
 aarp.org##.recommendationSection:has-text(Newsletter)
 cjr.org##.row > .entry-content > p:has-text(daily newsletter)
 interestingengineering.com##.t-bg-surface-zero.t-p-6:has-text(Newsletter)
 ensemblemagazine.co.nz##.w-embed:has-text(Sign up now)
 systemsapproach.org##.wp-block-column > .is-layout-flow.wp-block-group:has-text(Subscribe)
+lemonblossoms.com##.wp-block-group-is-layout-flow.has-background.has-base-background-color:has-text(Email Me This For Later)
 historiccity.com##.wp-block-group-is-layout-flow:has-text(Subscribe)
 polygon.com##[class]:has(> .duet--cta--newsletter)
 advancedsciencenews.com#?#.et_pb_row_1_tb_body:-abp-contains(Sign up for our weekly newsletter)
@@ -3615,6 +3623,7 @@ countryandtownhouse.com#?#strong > .link--button:-abp-contains(newsletter)
 crunchydata.com#?#.bg-primary-dark:-abp-contains(newsletter)
 ctpost.com#?#.px20.pb32:-abp-contains(Sign up for)
 politicalwire.com#?##custom_html-12:-abp-contains(newsletters)
+cheknews.ca##div.wp-block-cover:has-text(Be the first to know)
 dlnews.com#?#.bottom-0.fixed:-abp-contains(weekly newsletters)
 dlnews.com#?#.lg\:p-\[16px\]:-abp-contains(newsletters)
 entrepreneur.com#?#.p-6.justify-center:-abp-contains(Daily newsletter)
@@ -3734,7 +3743,7 @@ exchangerates.org.uk,vozpopuli.com##.form-newsletter
 !! .newsletter-container
 advocate.com,avclub.com,jezebel.com,nextplz.fr,out.com,pastemagazine.com,popsci.com,san.com,spendless.com.au,splinter.com,weeklyrecess.com##.newsletter-container
 !! .newsletter-modal
-exceptional.com,knowablemagazine.org,louderwithcrowder.com,lung.org,monitor.co.ug,san.com,swissinfo.ch,the-line-up.com,theportalist.com,tokmanni.fi,zeta.nu##.newsletter-modal
+exceptional.com,louderwithcrowder.com,lung.org,monitor.co.ug,san.com,swissinfo.ch,the-line-up.com,theportalist.com,tokmanni.fi,zeta.nu##.newsletter-modal
 !! .newsletterSignup
 chemistryworld.com,flightglobal.com,fruitnet.com,lawgazette.co.uk,screendaily.com,thegrocer.co.uk##.newsletterSignup
 !! NewsletterSignup
@@ -4471,10 +4480,6 @@ racketsandrunners.ca##.popUp-overlay
 racketsandrunners.ca##body,html:style(overflow: auto !important; position: initial !important;)
 ! saucerco.com
 saucerco.com##+js(set-cookie, newsletter-newsletter-popup, true)
-! backcountry.com
-backcountry.com##.chakra-modal__content-container
-backcountry.com##.chakra-portal
-backcountry.com##body,html:style(overflow: auto !important; position: initial !important;)
 ! modesens.com
 modesens.com###signmd___BV_modal_outer_
 modesens.com##body,html:style(overflow: auto !important; position: initial !important;)
@@ -5471,6 +5476,7 @@ donpatriot.news##.news__subscribe
 ! *** easylist:fanboy-addon/fanboy_newsletter_allowlist.txt ***
 @@||e24.no/cnp-assets/components-NewsletterWidget.$~third-party
 @@||el-vidas.nl^*/phpcuong_newsletter/$script
+@@||klaviyo.com/media/js/public/klaviyo_subscribe.js$domain=burner.pro
 @@||lightboxcdn.com/vendor/$script,domain=rydercup.com
 @@||list-manage.com/subscribe/post-json?
 @@||lumingerie.com/min/$script,~third-party

@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Chat Widgets
 ! Expires: 9 days
-! Last modified: Wed, 02 Oct 2024 03:04:49 +0000
+! Last modified: Tue, 19 Nov 2024 01:14:28 +0000
 ! *** easylist:template_header.txt ***
 !
 ! Please report any unblocked adverts or problems
@@ -40,6 +40,7 @@ healthshots.com##.chatbotSection
 healthshots.com##.chatbotSlider
 healthshots.com##.chatbotentrybtn
 healthshots.com##.healthshotsChannels
+amazon.com##.rufus-panel-container
 healthshots.com##.secBannerWidget
 therealdeal.com##.woot-widget-bubble
 ||today.com/oli/

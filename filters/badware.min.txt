@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Sat, 16 Nov 2024 05:25:44 +0000
+! Last modified: Tue, 19 Nov 2024 01:14:28 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -627,6 +627,8 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||sweet-hot-lady.top^$all
 ||ntfck.com^$all
 ||malenirt.site^$all
+||repostponing.cfd^$all
+/post/FileRotator_ID*/download.php?subid=$xhr
 ||mikkim.top^$all
 ||discordvip.createsocialcard.top^$all
 ||whatsapp-32w.pages.dev^$all
@@ -752,6 +754,7 @@ tech4yougadgets.com##+js(aopr, Notification)
 ||msgsafe.net^$all
 ||best4fuck.com^$all
 ||bamboairways.com.vn^$all,to=~bambooairways.com
+||purplexity.ai^$doc,to=~perplexity.ai
 ||kuaizip.com^$all
 ! ||zhuangjizhuli.com^$all
 ! ||zhuangjizhuli.net^$all
@@ -959,7 +962,6 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||99box.com^$all
 ||ezadblocker.com^$all
 ||watchadsfree.com^$all
-||discordoauthverification.onrender.com^$all
 ||barlear.ru^$all
 ||kaminarisubs.net^$all
 ||galeden.cn^$all
@@ -2412,6 +2414,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||e95nfjld.com^$doc
 ||orga29.com^$doc
 ||the-latest-version.com^$doc
+||book234h.fun^$doc
+||litlink.site^$doc
 ||apkmirror.co^$all
 ||webogram.org^$all
 ||webogram.ru^$all
@@ -3901,6 +3905,19 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||tb88789.com^$all,to=~shopee.vn
 ||tikione.vip^$all,to=~tiki.vn
 ||tikifreeship.$all,to=~tiki.vn
+||tiktok-svip*.com^$all,to=~tiktok.com
+||evaluatetravels.com^$all,to=~traveloka.com
+||ocbcccreonline.com^$all,to=~ocb.com.vn
+||khachhangcnvib.com^$all,to=~vib.com.vn
+||vimoney.credit^$all,to=~mbbank.com.vn
+||ungdung6buoc.com^$all,to=~mbbank.com.vn
+||evnsp.com^$all,to=~evn.com.vn
+||evnsspc.com^$all,to=~evn.com.vn
+||sellings-global.com^$all
+||ebayve.com^$all
+||zvogo.com^$all
+||wrgov.com^$all,to=~gov.vn
+||vn-chinhphu.com^$all,to=~dichvucong.gov.vn
 ||msk.su^$all
 ||bleyeare.com^$all
 ||hberify.com^$all
@@ -4205,8 +4222,6 @@ app##center#yangchen > iframe#external-frame[src="https://im136.mom/"]:not([clas
 ||bpecuniaimmobili.*^$doc,to=bpecuniaimmobili.*
 ||belliniepecuniaimmobilisrl.*^$doc,to=belliniepecuniaimmobilisrl.*
 ||immobiliarebelliniepecunia.*^$doc,to=immobiliarebelliniepecunia.*
-! malware spam
-||bit.ly/47P0Nvo$all
 ||the-north-face.gr^$all
 ||thenorthfacegreece.com^$all
 ||forimg.net^$all
@@ -4410,3 +4425,8 @@ webflow.io##html.w-mod-js:not(.wf-active) > body:not([class]):not([id]) > a[clas
 ||airupromania.ro^$doc,to=~air-up.com
 ||airupitaly.it^$doc,to=~air-up.com
 ||airupfrance.fr^$doc,to=~air-up.com
+||ftuapps.io^$doc
+||ftuapps.dev^$doc
+||geekupdates.notion.site/Ultra-Security$doc
+||uobretailcreditmanagement.$doc
+||blockfiupdates.$doc
