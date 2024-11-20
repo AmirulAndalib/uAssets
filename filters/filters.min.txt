@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 20 Nov 2024 03:07:22 +0000
+! Last modified: Wed, 20 Nov 2024 11:07:23 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -8605,6 +8605,8 @@ bing.com##.b_restorableLink:remove()
 bing.com##.tob_calcontainer > .slide:has(.rtb_ad_caritem_mvtr)
 bing.com##.b_ans:has([class^="xm_"][class*="_ansCont"])
 ||assets.msn.com/service/news/feed/pages/binghp?$xhr,3p,removeparam=wpopageid,domain=www.bing.com
+bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
+bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 ville-ideale.fr##+js(nostif, contrformpub)
 @@||crackle.com^$cname
 *.mp4$media,domain=crackle.com
@@ -10269,8 +10271,8 @@ sexwebvideo.com,sexwebvideo.net##+js(rmnt, script, detectAdBlock)
 sexwebvideo.com,sexwebvideo.net##+js(set, flashvars.popunder_url, '')
 javsek.net##+js(nosiif, pop)
 $script,3p,denyallow=facebook.net|fbcdn.net,domain=javsek.net
-melaniezettofrais.online##+js(nostif, sandbox)
-1jour1film.cyou###fakeplayer
+melaniezettofrais.online,player.jeansaispasplus.homes##+js(nostif, sandbox)
+1jour1film.*##+js(ra, href, a[href]#clickfakeplayer, stay)
 jokerscores.com,jokersportshd.org,tennis.stream##+js(nowoif, /aff|jump/)
 @@||101soundboards.com^$ghide
 101soundboards.com##[id^="rewarded_ad_"]:not(#rewarded_ad_blocker):style(display: block !important; visibility: visible !important;)
@@ -10401,8 +10403,8 @@ littlebigsnake.com##+js(set, ADS.isBannersEnabled, false)
 @@||knightlobby.com/js/$script,1p
 multi.xxx##+js(set, flashvars.video_click_url, '')
 animesaturn.cx##+js(acs, globalThis, break;case)
-streamtape.*##.play-overlay
-streamtape.*##+js(rpnt, script, /\$\(['"]\.play-overlay['"]\)\.click.+/s, document.getElementById("mainvideo").src=srclink;player.currentTrack=0;})}), condition, srclink)
+streamtape.*,watchadsontape.com##.play-overlay
+streamtape.*,watchadsontape.com##+js(rpnt, script, /\$\(['"]\.play-overlay['"]\)\.click.+/s, document.getElementById("mainvideo").src=srclink;player.currentTrack=0;})}), condition, srclink)
 ilforumdeibrutti.is##+js(nostif, AdBlock)
 ttsfree.com##+js(acs, document.getElementById, adblock)
 !#if cap_html_filtering
@@ -19550,7 +19552,7 @@ canale.live##+js(nosiif, href)
 !#if cap_html_filtering
 ||07c225f3.online^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 ||content-loader.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
-||css-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
+! ||css-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 ! ||html-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 ||img-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 @@/loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
@@ -19559,9 +19561,9 @@ canale.live##+js(nosiif, href)
 /loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud,replace=/\{var [a-z]{1,2}=[a-z]{1,2}\;try\{console\[.*?\)\}\}function /{} function /g
 ||thestar.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
 ||yorkshirepost.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$script,xhr,domain=etoday.co.kr|dogdrip.net|infinityfree.com|smsonline.cloud
-@@||static.criteo.net/js/ld/publishertag.prebid.js|$xhr,domain=dogdrip.net|infinityfree.com|smsonline.cloud
-@@*$ghide,domain=dogdrip.net|infinityfree.com|smsonline.cloud
+://css-load.com/loader.min.js$important,domain=dogdrip.net
+||html-load.com/loader.min.js|$important,domain=infinityfree.com|smsonline.cloud
+infinityfree.com##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, json:"https://html-load.com/loader.min.js#", condition, /-load\.com\/loader\.min\.js$/)
 !#else
 *$doc,csp=script-src-attr 'none',to=badmouth1.com|freemcserver.net
 ||html-load.com/loader.min.js$domain=badmouth1.com|freemcserver.net
@@ -19571,9 +19573,9 @@ dogdrip.net##+js(no-fetch-if, /ad\.doubleclick\.net|static\.dable\.io/)
 @@||static.criteo.net/js/ld/publishertag.prebid.js|$xhr,domain=dogdrip.net|infinityfree.com|smsonline.cloud
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js|$script,domain=dogdrip.net|infinityfree.com|smsonline.cloud
 @@*$ghide,domain=dogdrip.net|infinityfree.com|smsonline.cloud
-||html-load.com^$redirect=noopjs,domain=carscoops.com|dziennik.pl|eurointegration.com.ua|flatpanelshd.com|fourfourtwo.co.kr|issuya.com|iusm.co.kr|logicieleducatif.fr|mydaily.co.kr|mynet.com|onlinegdb.com|picrew.me|pravda.com.ua|reportera.co.kr|sportsrec.com|sportsseoul.com|taxguru.in|text-compare.com|thesaurus.net|thestar.co.uk|tweaksforgeeks.com|videogamemods.com|wfmz.com|winfuture.de|worldhistory.org|yorkshirepost.co.uk|automobile-catalog.com|motorbikecatalog.com|maketecheasier.com|etnews.com|wort-suchen.de|word-grabber.com|palabr.as|motscroises.fr|cruciverba.it|oradesibiu.ro|w.grapps.me|gazetaprawna.pl|pressian.com
+||html-load.com^$redirect=noopjs,domain=carscoops.com|dziennik.pl|eurointegration.com.ua|flatpanelshd.com|fourfourtwo.co.kr|hoyme.jp|issuya.com|iusm.co.kr|logicieleducatif.fr|mydaily.co.kr|mynet.com|onlinegdb.com|picrew.me|pravda.com.ua|reportera.co.kr|sportsrec.com|sportsseoul.com|taxguru.in|text-compare.com|thesaurus.net|thestar.co.uk|tweaksforgeeks.com|videogamemods.com|wfmz.com|winfuture.de|worldhistory.org|yorkshirepost.co.uk|automobile-catalog.com|motorbikecatalog.com|maketecheasier.com|etnews.com|wort-suchen.de|word-grabber.com|palabr.as|motscroises.fr|cruciverba.it|oradesibiu.ro|w.grapps.me|gazetaprawna.pl|pressian.com
 ||07c225f3.online^$redirect=noopjs,domain=jjang0u.com
-blog.esuteru.com,blog.livedoor.jp,carscoops.com,dziennik.pl,eurointegration.com.ua,flatpanelshd.com,fourfourtwo.co.kr,issuya.com,itainews.com,iusm.co.kr,logicieleducatif.fr,mydaily.co.kr,mynet.com,onlinegdb.com,picrew.me,pravda.com.ua,reportera.co.kr,sportsrec.com,sportsseoul.com,taxguru.in,text-compare.com,thestar.co.uk,tweaksforgeeks.com,videogamemods.com,wfmz.com,winfuture.de,worldhistory.org,yorkshirepost.co.uk,etnews.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,oradesibiu.ro,w.grapps.me,gazetaprawna.pl,pressian.com##+js(nostif, error-report.com)
+blog.esuteru.com,blog.livedoor.jp,carscoops.com,dziennik.pl,eurointegration.com.ua,flatpanelshd.com,fourfourtwo.co.kr,hoyme.jp,issuya.com,itainews.com,iusm.co.kr,logicieleducatif.fr,mydaily.co.kr,mynet.com,onlinegdb.com,picrew.me,pravda.com.ua,reportera.co.kr,sportsrec.com,sportsseoul.com,taxguru.in,text-compare.com,thestar.co.uk,tweaksforgeeks.com,videogamemods.com,wfmz.com,winfuture.de,worldhistory.org,yorkshirepost.co.uk,etnews.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,oradesibiu.ro,w.grapps.me,gazetaprawna.pl,pressian.com##+js(nostif, error-report.com)
 thesaurus.net,automobile-catalog.com,motorbikecatalog.com,maketecheasier.com##+js(nostif, loader.min.js)
 mlbpark.donga.com##+js(nostif, content-loader.com)
 jjang0u.com##+js(nostif, ()=>, 5000)
@@ -19592,7 +19594,7 @@ dogdrip.net,infinityfree.com##ins.adsbygoogle:style(height: 1px !important; visi
 ||css-load.com^$font,ping,media
 ||img-load.com^$font,ping,media
 ||html-load.com^$font,ping,media
-||html-load.com^$script,xhr,domain=blog.esuteru.com|blog.livedoor.jp|itainews.com|hoyme.jp|jin115.com|lamire.jp|picrew.me|ndtvprofit.com|crosswordsolver.com|cruciverba.it|demotywatory.pl|dnevno.hr|gloria.hr|heureka.cz|javatpoint.com|joemonster.org|laleggepertutti.it|m.economictimes.com|meeco.kr|mirrored.to|mistrzowie.org|motscroises.fr|oeffnungszeitenbuch.de|ondemandkorea.com|oraridiapertura24.it|palabr.as|persoenlich.com|petitfute.com|rabitsokuhou.2chblog.jp|rostercon.com|sourceforge.net|suzusoku.blog.jp|the-crossword-solver.com|thestockmarketwatch.com|word-grabber.com|wort-suchen.de|woxikon.*|yutura.net|zagreb.info|golf-live.at|motherlyvisions.com|kreuzwortraetsel.de|raetsel-hilfe.de|verkaufsoffener-sonntag.com|horairesdouverture24.fr|nyitvatartas24.hu|modhub.us|ff14net.2chblog.jp|news4vip.livedoor.biz|onecall2ch.com|yugioh-starlight.com|winfuture.de|automobile-catalog.com|motorbikecatalog.com|talkwithstranger.com|apkmirror.com
+||html-load.com^$script,xhr,domain=blog.esuteru.com|blog.livedoor.jp|itainews.com|jin115.com|lamire.jp|picrew.me|ndtvprofit.com|crosswordsolver.com|cruciverba.it|demotywatory.pl|dnevno.hr|gloria.hr|heureka.cz|javatpoint.com|joemonster.org|laleggepertutti.it|m.economictimes.com|meeco.kr|mirrored.to|mistrzowie.org|motscroises.fr|oeffnungszeitenbuch.de|ondemandkorea.com|oraridiapertura24.it|palabr.as|persoenlich.com|petitfute.com|rabitsokuhou.2chblog.jp|rostercon.com|sourceforge.net|suzusoku.blog.jp|the-crossword-solver.com|thestockmarketwatch.com|word-grabber.com|wort-suchen.de|woxikon.*|yutura.net|zagreb.info|golf-live.at|motherlyvisions.com|kreuzwortraetsel.de|raetsel-hilfe.de|verkaufsoffener-sonntag.com|horairesdouverture24.fr|nyitvatartas24.hu|modhub.us|ff14net.2chblog.jp|news4vip.livedoor.biz|onecall2ch.com|yugioh-starlight.com|winfuture.de|automobile-catalog.com|motorbikecatalog.com|talkwithstranger.com|apkmirror.com
 ||css-load.com^$domain=ygosu.com|loawa.com|bamgosu.site|thestockmarketwatch.com
 ||css-load.com^$redirect=noopjs,domain=honkailab.com
 ||07c225f3.online^$domain=economist.co.kr|hometownstation.com|sportalkorea.com|edaily.co.kr|isplus.com|tenasia.hankyung.com|etoday.co.kr
@@ -19633,7 +19635,7 @@ worldhistory.org##+js(rmnt, script, adShield)
 lovelive-petitsoku.com,pravda.com.ua##+js(rmnt, script, Ad-Shield)
 slobodnadalmacija.hr##+js(rmnt, script, adrecover.com)
 persoenlich.com##+js(rmnt, script, html-load.com)
-winfuture.de##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.insertAdjacentElement, '"beforebegin"', abort)
+winfuture.de##+js(aeld, load, error-report.com)
 !#endif
 ||asset.ad-shield.cc/images$image,3p,redirect=32x32.png
 ||thesaurus.net/public/desktop/images/*grammarly$image,1p
