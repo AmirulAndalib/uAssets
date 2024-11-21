@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Wed, 20 Nov 2024 19:07:26 +0000
+! Last modified: Thu, 21 Nov 2024 03:07:22 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -4006,7 +4006,7 @@ flix-wave.lol##+js(nostif, offsetHeight)
 flix-wave.lol##+js(aopr, Adcash)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1gsowvk/adblock_detection_on_edumailicu_already_tried/
-@@||edumail.icu/storage/js/frontend_loader.js^$script,1p
+@@||edumail.icu/storage/js/*.js^$script,1p
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26068
 live-sport.duktek.pro##+js(nowoif)
@@ -4056,3 +4056,7 @@ canela.tv##+js(trusted-replace-fetch-response, /#EXT-X-KEY:METHOD=NONE\n#EXT(?:I
 
 ! viprow.nu => reliabletv.me frame => allow brave browser
 reliabletv.me##+js(set, window.navigator.brave, undefined)
+
+! https://github.com/uBlockOrigin/uAssets/issues/26123
+viralxxxporn.com##+js(set, flashvars.adv_pre_src, '')
+viralxxxporn.com##+js(set, flashvars.mlogo, '')
