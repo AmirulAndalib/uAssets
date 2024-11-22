@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Fri, 22 Nov 2024 08:49:24 +0000
+! Last modified: Fri, 22 Nov 2024 14:50:12 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2674,6 +2674,7 @@ support.microsoft.com##.supStickyFeedback
 itmunch.com##.td-header-top-menu-full
 thejakartapost.com##.tjp-feedback
 ebay.com##.vi-feedback
+devblogs.microsoft.com##.vscom-usabilla-button
 msn.com##footer[role="contentinfo"][part="footer"]
 msn.com##social-star-rating
 ! ---------- RSS Buttons ----------
