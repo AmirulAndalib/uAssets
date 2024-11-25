@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Mon, 25 Nov 2024 08:49:24 +0000
+! Last modified: Mon, 25 Nov 2024 14:49:28 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9041,6 +9041,7 @@ megane.com.pl##+js(no-fetch-if, googlesyndication)
 ! <<<<< AdGuard Turkish >>>>>
 /^dizipal\d+\.com$/##.video-banner:style(display: block !important;)
 /^dizipal\d+\.com$/##.pre-player
+dcdlplayer8a06f4.xyz##+js(set, document.referrer, )
 ! <<<<< IndianList >>>>>
 ||nagpurtoday.in/wp-content/uploads/*-adv.$image
 ||nagpurtoday.in/wp-content/plugins/popup-builder/$script,1p
@@ -10780,6 +10781,8 @@ giphy.com##.cNDPHQ, .fKCJyZ:style(top: 0px !important; transform: unset !importa
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=cricbuzz.com
 updatewallah.in##+js(rmnt, script, adbl)
 drivers.plus##+js(aost, document.getElementsByTagName, adsBlocked)
+! sssinstagram.com - popups
+sssinstagram.com##+js(nowoif)
 ! Link shortener filters go into their own dedicated list
 ! *** filters/ubo-link-shorteners.txt ***
 ! gplinks all domains (gplinks.co/EWu8)
@@ -18520,8 +18523,8 @@ beststremo.com##+js(nostif, 0x)
 ! mypornhere.com popup, ads
 mypornhere.com##+js(set, flashvars.adv_start_html, '')
 mypornhere.com##.item[style="text-align:center !important;"]
-welt.de##[id^="outbrain_widget_"].OUTBRAIN[data-src] > .ob-widget > .ob-cards > [id^="outbrain_widget_"].OUTBRAIN[data-src]
-welt.de##[id^="outbrain_widget_"].OUTBRAIN[data-src] > .ob-widget > .ob-widget-header:has(> span.ob-widget-text:has-text(MEHR AUS DEM NETZ))
+welt.de##[id^="outbrain_widget_"].OUTBRAIN[data-src]:has(> .ob-widget > .ob-widget-header > span.ob-grid-header-text:has-text(/^MEHR AUS DEM WEB|MEHR AUS DEM NETZ|AUCH INTERESSANT$/))
+welt.de##[id^="outbrain_widget_"].OUTBRAIN[data-src]:has(> .ob-widget > .ob-widget-items-container > .ob-dynamic-rec-container > a[data-adv-id][rel*="sponsored"])
 welt.de##.c-ad-container
 welt.de##+js(ra, onmousedown, .ob-dynamic-rec-link, stay)
 welt.de##.q-advertisement-banner
@@ -20486,7 +20489,7 @@ www.chip.de##body[class="l-DownloadListing is-sticky"] .wrapper-safe.mt-sm > .fb
 www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > [class="wrapper-safe"] > [class^="fb mt-"] > section[class="fb-col-12 fb-col-lg-8"] > [class]:not(.ButtonAuswahl):has(> a[href^="https://www.chip.de/downloads/"])
 www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > [class="wrapper-safe"] > .mt-md > section [class]:has(> div > ul.is-separated a img[src^="data:image"])
 www.chip.de###CR[class="Downloads-Detail"] > #G32 > #M1 > [class="wrapper-safe"] > [class="fb mt-lg"] > [class="fb-col-lg-4 is-hidden-sm is-hidden-md"] > *:has(img[src*="https://im.chip.de/ii/"]):not(section[class="mt-md"]:has(> h3:first-child + table:last-child))
-www.chip.de###CR[class="Downloads-Detail"] > #G32 > #M1 > div[class]:has(> [class] > [class="ar-1-1 bg-gray-l"] > a[title^="Zum Download: "] > img[src*="https://im.chip.de/ii/"])
+www.chip.de###CR[class="Downloads-Detail"] > #G32 > #M1 > div[class]:has(> [class="ar-1-1 bg-gray-l"] > a[title^="Zum Download: "] > img[src*="https://im.chip.de/ii/"])
 www.chip.de###CR[class="Downloads-Detail"] > #G32 > #M1 > div:not([class], [id]):has(> [class] > [class] > .bg-gray-l a img[src*="https://im.chip.de/ii/"])
 www.chip.de###CR[class="Downloads-Getfile"] > #G32 > #M1 > *:not(section[class="wrapper-safe mt-md ft-alts"]) a[href^="https://www.chip.de/downloads/"][title]:has(img[src*="https://im.chip.de/ii/"][alt][width][data-was-processed])
 www.chip.de###CR[class="Downloads-Select"] > #G32 > #M1 > div:not([class], [id]):has(> [class] > .bg-gray-l a img[src*="https://im.chip.de/ii/"])
