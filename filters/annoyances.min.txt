@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Tue, 26 Nov 2024 08:49:34 +0000
+! Last modified: Tue, 26 Nov 2024 20:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -3992,3 +3992,4 @@ rds.live##*:style(user-select: text !important; -ms-user-select: text !important
 @@||autoweek.nl^$script,1p
 /gp/search/ref=$doc,uritransform=/\/ref=[^\/?#]+//,to=www.amazon.*
 /gp/product/*/ref=$doc,uritransform=/\/ref=[^\/?#]+//,to=www.amazon.*
+coomer.su,kemono.su##[href="https://github.com/easylist/easylist/issues"]
