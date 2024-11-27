@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 27 Nov 2024 02:49:25 +0000
+! Last modified: Wed, 27 Nov 2024 08:49:39 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9743,7 +9743,7 @@ zee5.com##.vjs-control-bar:style(display: flex !important;)
 thejakartapost.com##.tjp-single__content-ads:remove()
 ||adconfig.ster.nl/adurl$xhr,3p,domain=nos.nl
 !#if env_firefox
-$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|anitaku.bz|antennasports.ru|bingemaster.netlify.app|bluphim.*|dailypudding.com|detodopeliculas.nu|dlhd.so|euro2024direct.ru|freek.to|hurawatch.art|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|moflix-stream.day|movie3k.net|osteusfilmestuga.online|phimmoifhd.com|popcornmovies.to|putlockers.*|roselife.site|roshy.tv|seriescultes.store|smashystream.com|soccerinhd.com|vidsrc.*|visualnewshub.com|xsportbox.com
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|anitaku.bz|antennasports.ru|bingemaster.netlify.app|bluphim.*|dailypudding.com|detodopeliculas.nu|dlhd.so|euro2024direct.ru|freek.to|hurawatch.art|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|moflix-stream.day|movie3k.net|osteusfilmestuga.online|phimmoifhd.com|popcornmovies.to|putlockers.*|roselife.site|roshy.tv|seriescultes.store|smashystream.com|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#else
 $frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~dood.*|~edgecastcdn.net|~embed.su|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~topembed.pw|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#endif
@@ -9755,6 +9755,10 @@ turtleviplay.xyz##+js(nowoif)
 ||gonakedowing.com^
 ||1winpb.com^$all
 ?key=*&sub_id_1=$doc
+||hamantaipei.com^
+||amentsmodder.com^
+||hoarsecoupons.top^
+||knackedphoned.com^
 ! redecanais.dev & redecanaistv.dev popups on iframe
 xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b##+js(rmnt, script, ;}}};break;case $.)
 xn-----0b4asja7ccgu2b4b0gd0edbjm2jpa1b1e9zva7a0347s4da2797e8qri.xn--1ck2e1b##[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
@@ -10055,6 +10059,7 @@ questloops.com##+js(aopr, b2a)
 ||instacart.ca/graphql?operationName=DisplayAdPlacement^$xhr,1p
 onlybabes.site##+js(acs, $, btoa)
 coomer.su,kemono.su##+js(acs, String.fromCharCode, \x)
+coomer.su,kemono.su##+js(trusted-replace-argument, Range.prototype.createContextualFragment, 0, , condition, WebAssembly)
 audiobookbay.lu##:matches-path(/^\/($|abss\/)/) .postContent a[href^="/"]:not([href*="/forum/"]):matches-attr(href=/^\/[-a-z]+\?[a-z]{2,}=/)
 audiobookbay.lu##:matches-path(/^\/($|abss\/)/) a:is([href^="/"],[href*="audiobookbay.lu/"]):matches-attr(href=/(^|audiobookbay\.lu)\/[-a-z0-9]+$/) img
 bong.ink##+js(no-fetch-if, googlesyndication)
@@ -10504,12 +10509,13 @@ playtube.tv##+js(acs, EventTarget.prototype.addEventListener, delete window)
 ||hentalk.pw/public/hentalk-loader.js
 ||85po.com/player/stats.php?$1p,image,redirect=1x1.gif
 komikindo.lol##^script[data-cfasync][data-rocket-src]:not([data-rocket-src*="komikindo.lol"])
-||vidlink.pro/api/adcash
+||vidlink.pro/api/*cash
 vidlink.pro##+js(aopw, Adcash)
 vidlink.pro##+js(aopr, aclib)
+vidlink.pro##+js(acs, clearTimeout, popundersPerIP)
 ||eyewondermedia.com^$all
-! ^clickid=*&sourceid=$doc
 *$script,3p,denyallow=jwplatform.com,domain=vidlink.pro
+! ^clickid=*&sourceid=$doc
 ilgazzettino.it,ilmessaggero.it##+js(set, jwDefaults.advertising, {})
 !#if cap_html_filtering
 secondhandsongs.com##^script:has-text(ad_block)
@@ -19222,6 +19228,7 @@ streamingcommunity.*##^script:has-text(/adblock/i)
 ||googletagmanager.com^$xhr,domain=streamingcommunity.*,redirect-rule=noop.js
 !#endif
 streamingcommunity.*##.slide-banner:has(> .slide-banner__container)
+streamingcommunity.*##+js(set, importFAB.onload, undefined)
 streamingcommunity.*##+js(aeld, click, popName)
 streamingcommunity.*##+js(nowoif, _blank)
 ||streamingcommunity.*/slide-banner/$all
@@ -22191,8 +22198,8 @@ momondo.*##div[data-resultid$="-sponsored"]
 lvturbo.com##+js(set, isadb, false)
 @@*$ghide,domain=now.gg|now.us
 @@||dn0qt3r0xannq.cloudfront.net/nowgg-$script
-now.gg,now.us,skibiditoilet.yourmom.eu.org,xn--31byd1i.net##+js(no-fetch-if, googlesyndication)
-||fundingchoicesmessages.google.com/i/pub$script,redirect=noopjs,domain=now.gg|now.us|skibiditoilet.yourmom.eu.org|xn--31byd1i.net
+now.gg,now.us,nowgg.lol,skibiditoilet.yourmom.eu.org,xn--31byd1i.net##+js(no-fetch-if, googlesyndication)
+||fundingchoicesmessages.google.com/i/pub$script,redirect=noopjs,domain=now.gg|now.us|nowgg.lol|skibiditoilet.yourmom.eu.org|xn--31byd1i.net
 iptv-list.live##+js(noeval-if, isFairAdBlocker)
 qcheng.cc##+js(aopr, killAdKiller)
 @@||busuu.com^$ghide
