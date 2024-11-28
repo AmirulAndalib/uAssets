@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Wed, 27 Nov 2024 08:49:39 +0000
+! Last modified: Thu, 28 Nov 2024 08:49:24 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -609,6 +609,8 @@ hentaihaven.xxx##+js(no-fetch-if, ads-twitter.com)
 hentaihaven.xxx##+js(json-prune, *, all)
 hentaihaven.xxx##.hhzt
 hentaihaven.xxx##.code-block
+hentaihaven.xxx##.popecrazy
+||havenclick.com^
 @@||hentaihaven.xxx^$script,1p
 @@||hentaihaven.xxx^$ghide
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=hentaihaven.xxx
@@ -847,6 +849,15 @@ onlineatlas.us#@#ins.adsbygoogle[data-ad-slot]
 onlineatlas.us#@#ins.adsbygoogle[data-ad-client]
 onlineatlas.us##+js(alert-buster)
 
+! https://github.com/uBlockOrigin/uAssets/issues/2615
+nekopoi.*##+js(acs, atob, tabunder)
+nekopoi.*##+js(aeld, , adsense)
+nekopoi.*##[href^="http://bit.ly/"]
+.gif$domain=nekopoi.*,image
+! https://github.com/uBlockOrigin/uAssets/issues/26213
+nekopoi.*##+js(rmnt, script, wpadmngr.com)
+nekopoi.*##.leftarea
+
 ! END: Rules from filters.txt
 
 ! START: Regional lists
@@ -867,6 +878,9 @@ bydleni.cz###clickLeft
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24614
 wiflix-catalogue.*##.btnnew
+
+! https://github.com/uBlockOrigin/uAssets/issues/26187
+codepromo.ouest-france.fr##t1-ad-side-bars
 
 ! <<<<< Oficjalne polskie filtry przeciwko alertom o Adblocku >>>>>
 ! https://www.reddit.com/r/uBlockOrigin/comments/1e6cknh/website_slow_my_down/
@@ -2222,9 +2236,9 @@ thejakartapost.com##.tjp-single__content-ads:remove()
 ! https://www.reddit.com/r/uBlockOrigin/comments/1glppet/how_to_block_invisible_ads_over_videos/
 ! https://freek.to/watch/tv/94605
 !#if env_firefox
-$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|anitaku.bz|antennasports.ru|bingemaster.netlify.app|bluphim.*|dailypudding.com|detodopeliculas.nu|dlhd.so|euro2024direct.ru|freek.to|hurawatch.art|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|moflix-stream.day|movie3k.net|osteusfilmestuga.online|phimmoifhd.com|popcornmovies.to|putlockers.*|roselife.site|roshy.tv|seriescultes.store|smashystream.com|soccerinhd.com|visualnewshub.com|xsportbox.com
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~d21.team|~dailymotion.com|~discord.com|~disqus.com|~edgecastcdn.net|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=1jour1film.*|animefever.cc|animeunity.to|anitaku.bz|antennasports.ru|bingemaster.netlify.app|bluphim.*|dailypudding.com|detodopeliculas.nu|dlhd.so|euro2024direct.ru|freek.to|hurawatch.art|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|lk21official.pics|moflix-stream.day|movie3k.net|osteusfilmestuga.online|phimmoifhd.com|popcornmovies.to|putlockers.*|roselife.site|roshy.tv|seriescultes.store|smashystream.com|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#else
-$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~dailymotion.com|~discord.com|~disqus.com|~dood.*|~edgecastcdn.net|~embed.su|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~topembed.pw|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
+$frame,csp=sandbox allow-downloads allow-forms allow-modals allow-same-origin allow-scripts,to=~buymeacoffee.com|~cbox.ws|~chatango.com|~cloudflare.com|~d21.team|~dailymotion.com|~discord.com|~disqus.com|~dood.*|~edgecastcdn.net|~embed.su|~emturbovid.com|~facebook.com|~frembed.*|~google.*|~hcaptcha.com|~ko-fi.com|~mixdrop.*|~ok.ru|~recaptcha.net|~strcdn.org|~topembed.pw|~twitter.com|~vidbinge.*|~vidmoly.*|~vixcloud.co|~youtu.be|~youtube.com|~x.com,from=animefever.cc|animeunity.to|bluphim.*|dailypudding.com|detodopeliculas.nu|kaas.ro|kickassanime.*|kipflix.vercel.app|kissanime.*|phimmoifhd.com|seriescultes.store|soccerinhd.com|visualnewshub.com|xsportbox.com
 !#endif
 euro2024direct.ru##+js(acs, document.createElement, break;case)
 ! https://github.com/uBlockOrigin/uAssets/issues/23689
@@ -4133,7 +4147,7 @@ desi.upn.bio##+js(aeld, click, _blank)
 
 ! https://osteusfilmestuga.online/filmes/carros-toons-contos-de-radiador-springs-o-soluco/
 ||vidhidefast.com/assets/jquery/css.js
-||vidhidefast.com/player/jw8/vast.js
+/player/jw8/vast.js|$script,1p
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1gy7p7v/request_for_a_filter_to_block_top_banner_area_on/
 giphy.com##div[class^="sc-"]:has(> div[class^="sc-"] > div[class^="htlad-"][class$="top_leaderboard_detail"])
@@ -4170,3 +4184,17 @@ voz.vn##.p-pageWrapper:style(margin-bottom: 0px !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26191
 ||cdn.atf-tagmanager.de/config/$script,domain=yacht.de,redirect=noopjs
+
+! https://github.com/uBlockOrigin/uAssets/issues/26206
+lk21official.pics##+js(set-cookie, lk21-player-dona, 1)
+lk21official.pics###top-b
+iqksisgw.xyz##+js(nostif, "document['\x")
+/assets/jquery/p2anime.js?v=
+
+! https://github.com/uBlockOrigin/uAssets/issues/26208
+bestcam.tv##+js(rmnt, script, pre_roll_url)
+||ma3ion.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/26214
+streamruby.com##+js(rmnt, script, wpadmngr.com)
+||astirduller.com^
