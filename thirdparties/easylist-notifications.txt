@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Notifications
-! Last modified: Wed, 27 Nov 2024 14:49:26 +0000
+! Last modified: Fri, 29 Nov 2024 08:49:30 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -412,6 +412,7 @@
 ||irpush.com^$third-party
 ||jubi.ai/buttonbot/$script,third-party
 ||krakenoptimize.com^$third-party
+||linker.hr^$third-party
 ||luravius.com^$third-party
 ||medallia.com^*/onsite/embed.js
 ||neopush.io^$third-party

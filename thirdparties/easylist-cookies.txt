@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 29 Nov 2024 02:49:25 +0000
+! Last modified: Fri, 29 Nov 2024 08:49:30 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -18578,6 +18578,7 @@
 ||jacquelinewilson.co.uk/style/cookies.css$stylesheet
 ||jimmychoo.com^*/first-time-visitor-
 ||jobsite.co.uk/viewlets/consent/
+||joemonster.org/i/js/cmp.js
 ||js.shiksha.ws/pwa/public/js/GDPRCookieBannerWrapper.
 ||jzzo.com/jss/cp01.js
 ||kayak.*/privacy/
@@ -23486,6 +23487,7 @@ nhnieuws.nl##+js(set-local-storage-item, psh:cookies-social, true)
 posthog.com##+js(set-local-storage-item, cookie_consent, no)
 shop.ba.com##+js(set-local-storage-item, iag-targeting-consent, "no")
 shop.ba.com##+js(set-local-storage-item, iag-performance-consent, "no")
+uc.pt##+js(set-local-storage-item, userDeniedCookies, 1)
 greubelforsey.com##+js(set-local-storage-item, rgpd.consent, 1)
 lukify.app##+js(set-local-storage-item, _lukCookieAgree, 2)
 studiobookr.com##+js(set-local-storage-item, cookiesAllowed, false)
@@ -29297,6 +29299,7 @@ ants.vn##.sg-popup-content
 ||cookie.gazeta.pl^
 ||cookies.fakt.pl^
 ||cookies.forbes.pl^
+||demotywatory.pl/res/js/cmp.js
 ||gry-online.pl/js/cookie2.js
 ||interia.pl/rodo-iframe
 ||lubuskie.pl/themes/src/cookie.js
