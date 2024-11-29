@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Fri, 29 Nov 2024 02:49:25 +0000
+! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -157,9 +157,8 @@ infinityscans.xyz,infinityscans.net##+js(rpnt, script, /\(async function\(\)\{tr
 infinityscans.xyz,infinityscans.net##+js(trusted-replace-outbound-text, atob, window.matchMedia('(display-mode: standalone)').matches, true)
 infinityscans.xyz,infinityscans.net##+js(nowoif, _blank)
 infinityscans.xyz,infinityscans.net##div[class="alert alert-danger alert-dismissible fade show m-0 p-0"]:has-text(uBlock Origin)
-infinityscans.xyz,infinityscans.net##+js(rmnt, script, Detected)
 @@*$script,1p,domain=infinityscans.xyz|infinityscans.net
-@@||jsdelivr.net/gh/annon-coder/$script,domain=infinityscans.xyz|infinityscans.net
+@@||jsdelivr.net/gh/$script,domain=infinityscans.xyz|infinityscans.net
 @@||infinityscans.xyz^$script,domain=infinityscans.xyz|infinityscans.net
 
 ! https://github.com/uBlockOrigin/uAssets/issues/19935
@@ -247,4 +246,6 @@ startpage.com#@#[style]:has(path):has([href*="aff"])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22189
 /yzfdmoan.js$script,redirect=noop.js,badfilter
-/yzfdmoan.js$script,redirect-rule=noop.js
+
+!! https://github.com/AdguardTeam/AdguardFilters/commit/22885eaacf049b4188aaf28f997c38268154b357#commitcomment-149702237
+nicovideo.jp#@#div[class*="anim-n_slideFadeInFromBottom"]

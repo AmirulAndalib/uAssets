@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Other Annoyances
-! Last modified: Fri, 29 Nov 2024 08:49:30 +0000
+! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Other Annoyances" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -1235,15 +1235,9 @@ polygon.com##+js(nostif, adsBlocked)
 ! https://github.com/NanoMeow/QuickReports/issues/1071
 twinkietown.com##+js(nostif, adsBlocked)
 
-! devtools https://github.com/uBlockOrigin/uAssets/issues/5450
-javsubtitle.co##^script:has-text(debugger)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/5305#issuecomment-487302508
 statelibrary.us##+js(aopr, document.oncontextmenu)
 statelibrary.us##+js(aeld, keydown, disable_in_input)
-
-! https://forums.lanik.us/viewtopic.php?f=62&t=42960
-tv2.no###aabl-container
 
 ! https://github.com/NanoMeow/QuickReports/issues/1114
 @@||dcdirtylaundry.com^$ghide
@@ -1268,11 +1262,8 @@ tabonitobrasil.*##+js(aeld, keydown, preventDefault)
 tabonitobrasil.*##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5538
-tunovelaligera.com##+js(acs, document.addEventListener, copy)
-tunovelaligera.com##+js(acs, document.oncontextmenu)
-tunovelaligera.com##+js(aopr, mdp_appender)
-tunovelaligera.com##+js(aopw, disable_hot_keys)
-tunovelaligera.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+tunovelaligera.com##+js(rmnt, script, /wccp|contextmenu/)
+tunovelaligera.com##+js(rmnt, style, /wccp|user-select/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5489#issuecomment-489892660
 auepaisagismo.com,auepaisajismo.com##body:style(overflow: auto !important;)
@@ -1417,9 +1408,6 @@ hardware.info##.sidebar_right_top
 ! https://github.com/uBlockOrigin/uAssets/issues/5970
 med1.de##+js(aopr, _sp_._networkListenerData)
 
-! https://github.com/uBlockOrigin/uAssets/issues/5972
-m4ufree.tv##+js(aopr, document.oncontextmenu)
-
 ! https://github.com/NanoMeow/QuickReports/issues/1527
 @@||mentalmars.com^$ghide
 
@@ -1511,20 +1499,11 @@ portalwrc.pl##+js(aeld, contextmenu)
 answersafrica.com##+js(acs, document.oncontextmenu)
 answersafrica.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
 
-! https://github.com/uBlockOrigin/uAssets/issues/6273
-zerodot1.gitlab.io##+js(set-constant, document.oncontextmenu, undefined)
-zerodot1.gitlab.io##+js(ra, oncontextmenu|onselectstart|ondragstart)
-zerodot1.gitlab.io##+js(set-constant, alert, trueFunc)
-zerodot1.gitlab.io##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
-
 ! thewpclub .net right click, select, copy
 /wp-content/plugins/content-protector-pack/*
 
 ! https://github.com/NanoMeow/QuickReports/issues/1822
 tomsguide.com##+js(aopr, _sp_._networkListenerData)
-
-! https://github.com/NanoMeow/QuickReports/issues/1485#issuecomment-531303011
-pluspremieres.nz##+js(ra, oncontextmenu)
 
 ! https://github.com/NanoMeow/QuickReports/issues/1832
 @@||flightaware.com^$ghide
@@ -1646,12 +1625,6 @@ anisubindo.*##+js(aopw, disableSelection)
 ! mbahhanif .site select / copy
 mbahhanif.site##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
 
-! worldofbitco .in select - copy
-worldofbitco.in##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
-
-! https://github.com/uBlockOrigin/uAssets/issues/6471
-glitterphoto.net##.adBlocked
-
 ! https://github.com/NanoMeow/QuickReports/issues/2119
 @@||dumpert.nl^$ghide
 
@@ -1738,8 +1711,8 @@ skidrowreloaded.com##+js(rmnt, script, copyprotect)
 adevarul.ro##+js(aopr, addLink)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6659
-hindipix.*,hqq.tv##+js(set, console.debug, trueFunc)
-hindipix.*,hqq.tv##+js(set, console.clear, trueFunc)
+hindipix.*##+js(set, console.debug, trueFunc)
+hindipix.*##+js(set, console.clear, trueFunc)
 
 ! https://github.com/NanoMeow/QuickReports/issues/2476
 kusonime.com##+js(acs, document.oncontextmenu)

@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Fri, 29 Nov 2024 08:49:30 +0000
+! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -605,11 +605,8 @@ husseinezzat.com##+js(aeld, keydown)
 wired.co.uk##+js(set, ads_not_blocked, true)
 polygon.com##+js(nostif, adsBlocked)
 twinkietown.com##+js(nostif, adsBlocked)
-! devtools https://github.com/uBlockOrigin/uAssets/issues/5450
-javsubtitle.co##^script:has-text(debugger)
 statelibrary.us##+js(aopr, document.oncontextmenu)
 statelibrary.us##+js(aeld, keydown, disable_in_input)
-tv2.no###aabl-container
 @@||dcdirtylaundry.com^$ghide
 @@||sostariffe.it^$ghide
 amlesson.ru##+js(aopw, disable_keystrokes)
@@ -620,11 +617,8 @@ tabonitobrasil.*##+js(aopr, disableSelection)
 tabonitobrasil.*##+js(aopw, document.oncontextmenu)
 tabonitobrasil.*##+js(aeld, keydown, preventDefault)
 tabonitobrasil.*##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-tunovelaligera.com##+js(acs, document.addEventListener, copy)
-tunovelaligera.com##+js(acs, document.oncontextmenu)
-tunovelaligera.com##+js(aopr, mdp_appender)
-tunovelaligera.com##+js(aopw, disable_hot_keys)
-tunovelaligera.com##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
+tunovelaligera.com##+js(rmnt, script, /wccp|contextmenu/)
+tunovelaligera.com##+js(rmnt, style, /wccp|user-select/)
 auepaisagismo.com,auepaisajismo.com##body:style(overflow: auto !important;)
 zdnet.de##+js(aopr, can_i_run_ads)
 cinemablend.com##+js(aopr, __cmpGdprAppliesGlobally)
@@ -692,7 +686,6 @@ hardware.info##body > div:nth-of-type(1) > div:has-text(adblocker)
 hardware.info##.sidebar_right_bottom
 hardware.info##.sidebar_right_top
 med1.de##+js(aopr, _sp_._networkListenerData)
-m4ufree.tv##+js(aopr, document.oncontextmenu)
 @@||mentalmars.com^$ghide
 neowin.net##+js(aopr, _sp_.mms.startMsg)
 neowin.net##[class^="sp_veil"]
@@ -737,14 +730,9 @@ portalwrc.pl##+js(aeld, contextmenu)
 @@||belfasttelegraph.co.uk^$ghide
 answersafrica.com##+js(acs, document.oncontextmenu)
 answersafrica.com##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
-zerodot1.gitlab.io##+js(set-constant, document.oncontextmenu, undefined)
-zerodot1.gitlab.io##+js(ra, oncontextmenu|onselectstart|ondragstart)
-zerodot1.gitlab.io##+js(set-constant, alert, trueFunc)
-zerodot1.gitlab.io##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
 ! thewpclub .net right click, select, copy
 /wp-content/plugins/content-protector-pack/*
 tomsguide.com##+js(aopr, _sp_._networkListenerData)
-pluspremieres.nz##+js(ra, oncontextmenu)
 @@||flightaware.com^$ghide
 lesoir.be##+js(aopr, abStyle)
 xe.gr##+js(nostif, modal)
@@ -808,9 +796,6 @@ anisubindo.*##+js(aopr, document.oncontextmenu)
 anisubindo.*##+js(aopw, disableSelection)
 ! mbahhanif .site select / copy
 mbahhanif.site##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
-! worldofbitco .in select - copy
-worldofbitco.in##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;)
-glitterphoto.net##.adBlocked
 @@||dumpert.nl^$ghide
 @@||beinsports.com^$ghide
 @@||mizonatv.com^$ghide
@@ -854,8 +839,8 @@ skidrowreloaded.com##+js(rmnt, script, copyprotect)
 !#endif
 ! adevarul .ro tricky copy text
 adevarul.ro##+js(aopr, addLink)
-hindipix.*,hqq.tv##+js(set, console.debug, trueFunc)
-hindipix.*,hqq.tv##+js(set, console.clear, trueFunc)
+hindipix.*##+js(set, console.debug, trueFunc)
+hindipix.*##+js(set, console.clear, trueFunc)
 kusonime.com##+js(acs, document.oncontextmenu)
 kusonime.com##+js(acs, document.onkeydown)
 kusonime.com##+js(acs, addEventListener, which)

@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 29 Nov 2024 08:49:30 +0000
+! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2170,6 +2170,7 @@ classicsdujour.com##.cdj-vip
 sputnikglobe.com##.cell-subscribe
 thenextweb.com##.channel-cta
 arcamax.com##.channel-subscribe
+childrenshealthdefense.org##.chd-defender__sign-up
 androidpcreview.com,raptitude.com,thelittlekitchen.net##.ck_form_container
 iliketomakestuff.com##.ck_vertical_subscription_form
 aseannow.com##.cl-dialog
@@ -2470,7 +2471,7 @@ lacolon.com##.gf_form_mail_wrapper
 thegadgetflow.com##.gfl-blogpost-daily-digest
 albertafarmexpress.ca,canadiancattlemen.ca,country-guide.ca,grainews.ca,manitobacooperator.ca,producer.com##.gfm-subscriptions-in-content
 socialistworker.co.uk##.gform_fields
-businessinsider.nl,catholicherald.co.uk,centralmaine.com,kusc.org,mondoweiss.net,motoring.com.au,navyhistory.au,pv-magazine-usa.com,sumptuousliving.net,sunjournal.com,thecollegefix.com,threatpost.com,trendingpolitics.com,tylerwoodgroup.com,whoprofits.org,womensagenda.com.au,wvexplorer.com,yellowhammernews.com##.gform_widget
+businessinsider.nl,catholicherald.co.uk,centralmaine.com,childrenshealthdefense.org,kusc.org,mondoweiss.net,motoring.com.au,navyhistory.au,pv-magazine-usa.com,sumptuousliving.net,sunjournal.com,thecollegefix.com,threatpost.com,trendingpolitics.com,tylerwoodgroup.com,whoprofits.org,womensagenda.com.au,wvexplorer.com,yellowhammernews.com##.gform_widget
 atlanticcouncil.org,dictionary.com,eiwittrends.nl,pressherald.com,pv-magazine.com,reason.com,revolvermag.com,thefinancialbrand.com,trendingpolitics.com,undark.org,vtdigger.org##.gform_wrapper
 platformer.news,therage.co##.gh-cta
 broadbandbreakfast.com,disconnect.blog,platformer.news,therage.co##.gh-footer-signup
@@ -2735,12 +2736,13 @@ metro.co.uk##.metro-email-signup-mpu
 misinforeview.hks.harvard.edu##.misinfo-banner
 motherjones.com##.mj-text-cta
 heartfm.co.za##.mk-subscribe-link
-findingtheuniverse.com,levittownnow.com,serenabakessimplyfromscratch.com,techpolicy.press,thegazette.com##.ml-form-embedContainer
+chaser.com.au,findingtheuniverse.com,levittownnow.com,serenabakessimplyfromscratch.com,techpolicy.press,thegazette.com##.ml-form-embedContainer
 pymnts.com##.ml-subscribe-form-5774674
 thebestcakerecipes.com##.ml-vertical-align-center
 lizzomusic.com##.mlform
 thestreet.com##.mm-navigation--multiple-menus
 travelandleisure.com##.mntl-footer__newsletter
+stopmandatoryvaccination.com##.moOptinForm
 lung.org##.modaal-overlay
 abc15.com##.modal--content
 unknowncomicbooks.com##.modal--newsletter
@@ -4157,11 +4159,15 @@ money.com##+js(rc, open-pw, body, stay)
 plantpowercouple.com##+js(set-cookie, awpopup_450030403, 1)
 ! commondreams.org newsletter pop
 commondreams.org##+js(set-cookie, popupShown, true)
+! pagamentidigitali.it
+pagamentidigitali.it###hs-interactives-modal-overlay
+pagamentidigitali.it###hs-web-interactives-top-anchor
+pagamentidigitali.it##body,html:style(overflow: auto !important; position: initial !important;)
 ! oled-info.com
 oled-info.com##+js(set-cookie, awpopup_501941328, 1)
 ! .pum
-alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##.pum
-alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##html:style(overflow:auto !important)
+childrenshealthdefense.org,alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##.pum
+childrenshealthdefense.org,alexandracooks.com,australiangolfdigest.com.au,matomo.org,coloradotimesrecorder.com,artificialintelligence-news.com,thurrott.com,hypebot.com,fatgirlskinny.net,moneymagpie.com,verdadeiroolhar.pt,thecanary.co##html:style(overflow:auto !important)
 ! pum + overlay
 capx.co##.pum
 capx.co##div#wrapper:style(filter: none !important)
@@ -5172,7 +5178,6 @@ olimpstore.f##div[style*="position: fixed; width: 100%;"]
 ||link.sportal.blikk.hu/join/
 ! Italian
 ||newsletter.beautydea.it^
-||pagamentidigitali.it^*/newsletter.jpg
 ! Japanese
 ||nikkei.com/edit/topic/briefing_newsletter_
 ! Spanish
@@ -5383,6 +5388,7 @@ dilei.it,quifinanza.it###box_newsletter
 diritto.it,leggioggi.it,rollingstone.it###exitpopup-modal
 financecommunity.it###footernews
 ilfattoalimentare.it###frm-mltchnl
+pagamentidigitali.it###hs-web-interactives-bottom-anchor
 mag1861.it###newsletter-footer-form
 frankmerenda.com###ppsPopupBgOverlay
 fides.org###subcribe-nl
