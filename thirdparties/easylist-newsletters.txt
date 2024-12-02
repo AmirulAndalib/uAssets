@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
+! Last modified: Mon, 02 Dec 2024 16:22:00 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -1593,8 +1593,8 @@ thestar.com###modal-dialog-dismiss
 guidedoc.com###modal-overlay
 chatelaine.com###modalAnchor
 nationalobserver.com###modalBackdrop
-rebelnews.com###module_form
 metalsucks.net###ms-newsletter-2
+metalsucks.net###ms-newsletter-3
 consumerreports.org###mtExitModalPopup
 nationalgeographic.com###natgeo-marketing-inline-email-footer-frame1-module2
 nascar.ca###ndms-newsletter_widget
@@ -1847,7 +1847,7 @@ aeon.co,psyche.co##.NLFormInsertFromCMS
 jagranjosh.com##.NewsLetterInlineHome
 earth.com##.NewsSubscribeLg_main__QWMpm
 thefinancialdiet.com##.NewslBanner
-governing.com,govtech.com,i-d.vice.com,who.com.au##.Newsletter
+clarin.com,governing.com,govtech.com,i-d.vice.com,who.com.au##.Newsletter
 cbssports.com##.Newsletter-container
 axial.acs.org##.NewsletterCTA_inner__8UZPJ
 aleteia.org##.NewsletterForm_container__CWjyJ
@@ -1925,6 +1925,7 @@ getyourguide.com##.activity__newsletter-signup
 developingtelecoms.com##.acymailing_module
 walletinvestor.com##.ad-align-center
 crn.com##.ad-imu-sticky
+independent.com##.ads-container
 drugtargetreview.com##.advads-background
 oled-info.com##.af-form
 bucketlistjourney.net,goodnewsnetwork.org,guru99.com,melaniecooks.com##.af-form-wrapper
@@ -2147,7 +2148,6 @@ theamericanconservative.com##.c-subscribe-email__wrap
 globalnews.ca##.c-textSignup
 arrowheadpride.com,badlefthook.com,barcablaugranes.com,bavarianfootballworks.com,bleedinggreennation.com,bloggingtheboys.com,bloodyelbow.com,brightsideofthesun.com,cagesideseats.com,celticsblog.com,eater.com,goldenstateofmind.com,libertyballers.com,managingmadrid.com,mmafighting.com,mmamania.com,polygon.com,silverscreenandroll.com,sounderatheart.com##.c-toaster
 securelist.com##.c-widget-subscribe
-sportsline.com##.cWZgjA
 yahoo.com##.caas-figure-with-pb[style="max-height: 192px"]
 benzinga.com##.call-to-action-container
 eurasianet.org,vancouversun.com##.callout
@@ -2428,12 +2428,12 @@ righto.com##.form-preview
 tech.co##.form-simple
 mychicagosteak.com##.form-version-cid-1
 flotrack.org##.form-view
-rebelnews.com##.form-wrap
 shenandoahah.com##.form__container
 thechurchnews.com##.form__wrapper
 cnevpost.com,prettysimplesweet.com,saabplanet.com,valuewalk.com##.formkit-form
 notthathardtohomeschool.com##.formkit-sticky-bar
 algemeiner.com##.formnews
+labrujulaverde.com##.formulariosuscripcion
 neurologyadvisor.com,ophthalmologyadvisor.com,optometryadvisor.com##.fr-dialogmodal
 prodvana.io##.framer-2ydke7-container
 wholesomeyum.com##.free-food-bar
@@ -2493,6 +2493,7 @@ browserstack.com##.guide-newsletter
 globalvoices.org##.gv-mailchimp-form-container
 news.bitcoin.com##.gyHIup
 trip.com##.h5-subscribe-card-con
+thehill.com##.hardwall
 aclu.org##.has-background-yellow
 voiceofsandiego.org##.has-background.homepage-posts__style-7
 forkast.news##.has-blue-grey-very-light-background-color
@@ -2869,6 +2870,7 @@ frontofficesports.com##.newsletter-sticky-bar
 peoplematters.in##.newsletter-sub-fixed
 neh.gov##.newsletter-subscribe-block-container
 theasianparent.com##.newsletter-subscribe-card-warp
+itnews.com.au##.newsletter-subscribe-container
 newyorker.com##.newsletter-subscribe-form
 essence.com##.newsletter-subscribe-inline
 youcouldtravel.com##.newsletter-subscription-block
@@ -2930,6 +2932,7 @@ maketecheasier.com##.newsub-box
 worldcrunch.com##.nl-container
 wtatennis.com##.nl-footer__inner
 searchengineland.com##.nl-inline-form
+newyorkhauntedhouses.com##.nl-modal
 theadvocate.com##.nl-right-rail-module
 hilltimes.com##.nl-signup-container
 investigativepost.org##.nl-small-cta
@@ -3592,7 +3595,7 @@ foreignpolicy.com##[data-shortcode-newsletter]
 theguardian.com##[data-spacefinder-type="model.dotcomrendering.pageElements.NewsletterSignupBlockElement"]
 topgear.com##[data-testid="NewsletterFooter"]
 sifted.eu##[data-testid="in-house-ad-climatetech"]
-theinfatuation.com##[data-testid="newsletter"]
+sportsline.com,theinfatuation.com##[data-testid="newsletter"]
 thurrott.com##[data-thurrott-layout-section-footer-section="newsletter"]
 thurrott.com##[data-thurrott-section="inline-form"]
 cosmosmagazine.com##[height="154"]
@@ -4058,10 +4061,6 @@ thebaffler.com##html,body:style(overflow: auto !important; position: initial !im
 ! travelcaffeine.com
 travelcaffeine.com##.featherlight
 travelcaffeine.com##body,html:style(overflow: auto !important; position: initial !important;)
-! rebelnews.com
-rebelnews.com##html:style(overflow: auto !important)
-rebelnews.com##.remodal-wrapper
-rebelnews.com##.remodal-overlay
 ! freshbooks.com
 freshbooks.com##.trackingSection-modal
 freshbooks.com##.modal-backdrop
@@ -4173,6 +4172,8 @@ capx.co##.pum
 capx.co##div#wrapper:style(filter: none !important)
 ! newsletter popup
 lowpass.cc,readergrev.com,objectivebayesian.com,monopoly.marketecture.tv,jointhefollowup.com##+js(set-cookie, popup_closed, true)
+! streamily.com
+streamily.com##+js(set-cookie, email_modal, true)
 ! revolvermag.com
 revolvermag.com##.emma-show
 revolvermag.com##body,html:style(height: auto !important; overflow: auto !important)
@@ -5351,11 +5352,13 @@ eurocampings.nl,weerplaza.nl##.newsletter-subscribe
 gezondheidsnet.nl##.nieuwsbrief
 gva.be,nieuwsblad.be##.optinboxWrapper
 micazu.nl##.rh-footer-newsletter
+ct.nl##.sidebar-basedriver
 eurogamer.nl##.signup-promo
 israeltoday.nl##.single_post_sub_form
 mejudice.nl##.widget-news-letter-subscribe
 shespot.nl##.widget_budgetmailer_widget_subscribe
 automobielmanagement.nl,carwashpro.nl,fleet-mobility.nl,infrasite.nl,mobiliteit.nl,rijschoolpro.nl,schuttevaer.nl,spoorpro.nl,tankpro.nl,taxipro.nl,zelfrijdendvervoer.nl##.widget_ymlp
+ct.nl##.wpbd-form
 deondernemer.nl##[id^="newsletter_"]
 id.nl##div[class*="newsletter_content-side_"]
 ! Finnish

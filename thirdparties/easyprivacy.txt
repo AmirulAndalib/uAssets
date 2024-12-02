@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
+! Last modified: Mon, 02 Dec 2024 16:22:00 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -3097,6 +3097,8 @@ _WebVitalsReporter_
 /znsrc.com/c/*$image
 ://2ip.*/member_photo/$third-party
 ://cl.melonbooks.co.jp/c/$image
+://click.revolut.com/q/$image
+://e.email.*/open?$image
 ://email.*/e/o/
 ://email.*/o/$image
 ://parcel-api.delivery-status.*/open/$image
@@ -3125,6 +3127,7 @@ omni.soundestlink.com$image
 ||aaxwall.com^
 ||acsbapp.com^
 ||adcontroll.com^
+||aditude.cloud^
 ||admaxium.com^
 ||adnext.co^
 ||adrtx.net^
@@ -7690,6 +7693,7 @@ omni.soundestlink.com$image
 ||samesticks.com^
 ||samestretch.com^
 ||samplesamba.com^
+||samuraibots.com^
 ||sandstrophies.com^
 ||satisfycork.com^
 ||satisfyingshirt.com^
@@ -8245,6 +8249,7 @@ omni.soundestlink.com$image
 ||wigglyindustry.com^
 ||wildcommittee.com^
 ||wildernesscamera.com^
+||wildwoodavenue.com^
 ||wirecomic.com^
 ||wiredforcoffee.com^
 ||wirypaste.com^
@@ -10479,6 +10484,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||hub.reacti.co/index.js
 ||hubspot.com/analytics/
 ||hubspot.com/cs/loader-v2.js
+||hubspot.com/img/trackers/
 ||hubspot.com/tracking/
 ||hubspot.com/usage-logging/
 ||hushforms.com/visitorid?
@@ -11992,7 +11998,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d1t9uctetvi0tu.cloudfront.net^
 ||d1tbj6eaenapdy.cloudfront.net^
 ||d1vg5xiq7qffdj.cloudfront.net^
-||d1wix2gc2cgqis.cloudfront.net^
 ||d1xfq2052q7thw.cloudfront.net^
 ||d1z3r0i09bwium.cloudfront.net^
 ||d1z9vm58yath60.cloudfront.net^
@@ -14396,6 +14401,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||playvideohd.com/cdn-cgi/trace
 ||plenty.vidio.com^
 ||plushd.bio/cdn-cgi/trace
+||pluto.smallpdf.com^
 ||pm.dailykos.com^
 ||pm.geniusmonkey.com^
 ||pog.com^$ping
@@ -14501,6 +14507,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rvo-cohesion.healthline.com^
 ||s.gofile.io^
 ||s.infogram.com^
+||s.smallpdf.com/static/track-js-
 ||s.wayfair.com^
 ||sa.uswitch.com^
 ||saa.insideedition.com^
@@ -14552,7 +14559,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||slickdeals.net/ajax/stats/
 ||slideshare.net/frontend_tracking/
 ||slipstream.skyscanner.net^
-||smallpdf.com/build/track-js.js
 ||smartlink-api.amuse.io/api/analytics/
 ||smassets.net/assets/anonweb/anonweb-click-
 ||smetrics.couponcabin.com^

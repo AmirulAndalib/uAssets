@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Social Widgets
-! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
+! Last modified: Mon, 02 Dec 2024 16:22:00 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4779,7 +4779,6 @@ _social_footer_
 ##.fn-header-social-links
 ##.fn-social-followus
 ##.fnb-social
-##.fng-social
 ##.fo-Footer_Container_Social
 ##.fo-social-follow
 ##.foc-social-share
@@ -4802,10 +4801,6 @@ _social_footer_
 ##.follow-link-wrapper
 ##.follow-linkedin
 ##.follow-pinterest
-##.follow-property-facebook
-##.follow-property-flickr
-##.follow-property-pinterest
-##.follow-property-twitter
 ##.follow-recirc
 ##.follow-rs
 ##.follow-share
@@ -4924,7 +4919,6 @@ _social_footer_
 ##.footer-links-social
 ##.footer-logos--social
 ##.footer-ls-social
-##.footer-main-bottom-social
 ##.footer-main-standard-social-list
 ##.footer-main__socials
 ##.footer-nav-connect
@@ -5215,12 +5209,6 @@ _social_footer_
 ##.gtm_footer_facebook
 ##.gtm_footer_instagram
 ##.gtm_footer_twitter
-##.gtm_share_top_facebook
-##.gtm_share_top_google
-##.gtm_share_top_twitter
-##.gtv-mod9-share
-##.gtv-mod9-share-facebook
-##.gtv-mod9-share-twitter
 ##.gui-btn-sm-facebook
 ##.gui-btn-sm-google
 ##.gui-btn-sm-instagram
@@ -5228,7 +5216,6 @@ _social_footer_
 ##.gui-btn-sm-pinterest
 ##.gui-btn-sm-twitter
 ##.gui-btn-sm-youtube
-##.guides16-social-top
 ##.h-button-social
 ##.h-c-social
 ##.h-do-share
@@ -5236,13 +5223,10 @@ _social_footer_
 ##.h-social-fb
 ##.h-social-nl
 ##.h-social-yt
-##.h5ToggleShare
 ##.h5ab-print-button-container
 ##.haber-sosyal
 ##.haber_sosyal
-##.haberaltshare
 ##.has-button-share
-##.hat_social_tab
 ##.hatena-bookmark-button
 ##.hatena-btn-icon
 ##.hatenabutton
@@ -5260,27 +5244,14 @@ _social_footer_
 ##.head-post-share
 ##.head-share2
 ##.head-social-links
-##.head-twt
-##.headShare
 ##.headSocialBtnWrap
-##.headSocialLinksListFacebook
-##.headSocialLinksListTwitter
-##.head_nav_social_fb
-##.head_nav_social_tw
-##.header-banner-menu__social
 ##.header-bottom-share-button
-##.header-btn__facebook
-##.header-contact-link--facebook
-##.header-contact-link--twitter
-##.header-controls__share-toggle
 ##.header-facebook
 ##.header-fb-share
 ##.header-fixed-social-icon
 ##.header-follow-list
 ##.header-follow-social
 ##.header-follow-us
-##.header-g-plus-share
-##.header-google-plus
 ##.header-icon-instagram
 ##.header-interna-share
 ##.header-item-social
@@ -5333,17 +5304,12 @@ _social_footer_
 ##.header-top__social
 ##.header-twitter
 ##.headerFacebook
-##.headerGPlusIcon
 ##.headerShare
 ##.headerShareIconWrap
 ##.headerShareIcons
 ##.headerSocialIcons
 ##.headerSocialLink
 ##.headerSocialLinks
-##.headerSocial__socialLinks
-##.header__badge--app-share
-##.header__content__social
-##.header__nav-social
 ##.header__sharing-item
 ##.header__social
 ##.header__social-accounts
@@ -5373,9 +5339,7 @@ _social_footer_
 ##.headerfacebookicon
 ##.headersocial:not(body):not(html)
 ##.headersocials
-##.headersticky__share
 ##.headertwittericon
-##.headline-sns
 ##.headsocial
 ##.headsocial-wrapper
 ##.headsocialicons
@@ -5391,13 +5355,7 @@ _social_footer_
 ##.herald-share
 ##.herald-share-content
 ##.herald-soc-nav
-##.hero-player__share
 ##.hero-social
-##.hero-unit__share
-##.hero__share-title
-##.hf--facebook
-##.hf--linkedin
-##.hf--twitter
 ##.hh-facebook
 ##.hh-social-links
 ##.hh-socialmedia
@@ -5406,7 +5364,6 @@ _social_footer_
 ##.hidden-nav-share
 ##.hideSocial
 ##.hideshare-wrap
-##.highlight-menu-twitter
 ##.hld-social-media-component-wrapper
 ##.hls-share-button
 ##.hls-share-container
@@ -5453,9 +5410,7 @@ _social_footer_
 ##.hpshareico
 ##.hs-blog-social-share
 ##.hs-social-block
-##.hsaali-social
 ##.ht-share
-##.htIndexSocialButtons
 ##.ht_facebook_widget
 ##.ht_socials_widget
 ##.html5PlayerShare
@@ -5475,15 +5430,6 @@ _social_footer_
 ##.icn_follow_mobile
 ##.icn_follow_text
 ##.icn_follow_twitter
-##.icomoon-facebook
-##.icomoon-facebook2
-##.icomoon-google-plus
-##.icomoon-instagram
-##.icomoon-mail
-##.icomoon-pinterest
-##.icomoon-twitter
-##.icomoon-twitter2
-##.icomoon-youtube
 ##.icon--app-store
 ##.icon--dailymotion
 ##.icon--facebook
@@ -6530,6 +6476,7 @@ _social_footer_
 ##.nda-share-post
 ##.ndn_icon_share
 ##.ndn_toggleShare
+##.nectar-social
 ##.netPost_socialProfiles
 ##.network-social-box
 ##.new-bdsharebuttonbox
@@ -6598,6 +6545,7 @@ _social_footer_
 ##.node-social-media
 ##.node__social-links
 ##.normal_social
+##.noticia-social-share
 ##.noticias-single__share
 ##.noticon-facebook-alt
 ##.noticon-instagram
@@ -10866,7 +10814,6 @@ redice.tv###s1
 redice.tv###s2
 snowbrains.com###sb-footer-menu
 lelong.com.my###scan
-rebelnews.com###secondary-nav-bar-social
 colibriwp.com###sfsi-widget-2
 inlandvalleynews.com###sfsi_floater
 blogspot.com###share-box
@@ -11651,7 +11598,6 @@ crealitycloud.com##.right-share-box
 pulse.com.gh,pulse.ng##.ring-detail-social-share
 reviewjournal.com##.rj-story-social
 outlookindia.com##.rm-social-share
-rebelnews.com##.rn_widgets
 publicbooks.org##.rss
 magazine.artstation.com##.s-bar
 cryptodaily.co.uk##.s-video-h
@@ -11705,7 +11651,7 @@ thenewstack.io##.share-media
 fintech.tv,war.ukraine.ua##.share-news
 thehackernews.com##.share-open-modal
 bdnews24.com##.share-option
-ig.com.br,med.stanford.edu,rebelnews.com##.share-page
+ig.com.br,med.stanford.edu##.share-page
 advocate.com,bestlifeonline.com,comicsands.com,commondreams.org,gbnews.com,spectrum.ieee.org,theblaze.com,thefulcrum.us,upworthy.com##.share-panel
 forward.com##.share-post
 thenationalpulse.com##.share-post-button
@@ -12192,7 +12138,7 @@ alwatanvoice.com,atlantablackstar.com,binnews.com,blog.phylum.io,finurah.com,gul
 !! .share-links
 ansa.it,cryptopotato.com,eff.org,ewn.co.za,hannity.com,jurist.org,lagaceta.com.ec,menselijklichaam.nl,miragenews.com,mobilesyrup.com,mole24.it,newhumanist.org.uk,sampdoria.it,thecookscook.com,upcomingvinyl.com,vivercomsaude.site##.share-links
 !! .share-buttons
-accessonline.com,adressa.no,animecenterbr.com,apk4free.org,arenaev.com,assafirarabi.com,auto-moto.com,bank.gov.ua,canadaradiostations.com,canli-radyo-dinle.com,criminaljusticedegreehub.com,datingscammer.info,deseret.com,design-milk.com,diariolasamericas.com,diariouno.com.ar,emisoras-puertorico.com,emisorascolombianas.co,exputer.com,ff-bz.com,fmradiofree.com,formule1.nl,gamosaurus.com,gizmodo.com,globalconstructionreview.com,hardwaretimes.com,houstoniamag.com,informe360.com,internetradio-horen.de,internetradio-schweiz.ch,investigativepost.org,letrap.com.ar,mediaplaynews.com,metro.co.uk,nbcbayarea.com,nbcboston.com,nbcchicago.com,nbcconnecticut.com,nbcdfw.com,nbclosangeles.com,nbcmiami.com,nbcnewyork.com,nbcphiladelphia.com,nbcsandiego.com,nbcwashington.com,necn.com,olhardigital.com.br,pastebin.pl,psychologies.com,psychologytoday.com,radio-ao-vivo.com,radio-australia.org,radio-belgie.be,radio-danmark.dk,radio-dominicana.com,radio-ecuador.org,radio-en-ligne.fr,radio-en-vivo.mx,radio-espana.es,radio-hk.com,radio-hrvatska.com,radio-italiane.it,radio-korea.com,radio-maroc.org,radio-nederland.nl,radio-norge.org,radio-osterreich.at,radio-philippines.com,radio-polska.pl,radio-singapore.com,radio-south-africa.co.za,radio-stations.co.nz,radio-suomi.com,radio-sveriges.se,radio-thai.com,radio-ua.com,radio-uk.co.uk,radioindia.in,radioindonesia.org,radiojapan.org,radiomalaysia.org,radios-argentinas.org,radios-bolivia.com,radios-chilenas.com,radios-guatemala.com,radios-online.pt,radios-uruguay.com,radios-venezuela.com,radiosdelperu.pe,radiotaiwan.tw,robbreport.com,spy.com,techzine.nl,telemundo20.com,telemundo31.com,telemundo33.com,telemundo40.com,telemundo47.com,telemundo48elpaso.com,telemundo49.com,telemundo51.com,telemundo52.com,telemundo62.com,telemundoareadelabahia.com,telemundoarizona.com,telemundochicago.com,telemundodallas.com,telemundodenver.com,telemundofresno.com,telemundohouston.com,telemundolasvegas.com,telemundonuevainglaterra.com,telemundonuevomexico.com,telemundopr.com,telemundosanantonio.com,telemundoutah.com,telemundowashingtondc.com,tenor.com,thecradle.co,vlaamskijken.nl,wn.com##.share-buttons
+accessonline.com,adressa.no,ambito.com,animecenterbr.com,apk4free.org,arenaev.com,assafirarabi.com,auto-moto.com,bank.gov.ua,canadaradiostations.com,canli-radyo-dinle.com,criminaljusticedegreehub.com,datingscammer.info,deseret.com,design-milk.com,diariolasamericas.com,diariouno.com.ar,emisoras-puertorico.com,emisorascolombianas.co,exputer.com,ff-bz.com,fmradiofree.com,formule1.nl,gamosaurus.com,gizmodo.com,globalconstructionreview.com,hardwaretimes.com,houstoniamag.com,informe360.com,internetradio-horen.de,internetradio-schweiz.ch,investigativepost.org,letrap.com.ar,mediaplaynews.com,metro.co.uk,nbcbayarea.com,nbcboston.com,nbcchicago.com,nbcconnecticut.com,nbcdfw.com,nbclosangeles.com,nbcmiami.com,nbcnewyork.com,nbcphiladelphia.com,nbcsandiego.com,nbcwashington.com,necn.com,olhardigital.com.br,pastebin.pl,psychologies.com,psychologytoday.com,radio-ao-vivo.com,radio-australia.org,radio-belgie.be,radio-danmark.dk,radio-dominicana.com,radio-ecuador.org,radio-en-ligne.fr,radio-en-vivo.mx,radio-espana.es,radio-hk.com,radio-hrvatska.com,radio-italiane.it,radio-korea.com,radio-maroc.org,radio-nederland.nl,radio-norge.org,radio-osterreich.at,radio-philippines.com,radio-polska.pl,radio-singapore.com,radio-south-africa.co.za,radio-stations.co.nz,radio-suomi.com,radio-sveriges.se,radio-thai.com,radio-ua.com,radio-uk.co.uk,radioindia.in,radioindonesia.org,radiojapan.org,radiomalaysia.org,radios-argentinas.org,radios-bolivia.com,radios-chilenas.com,radios-guatemala.com,radios-online.pt,radios-uruguay.com,radios-venezuela.com,radiosdelperu.pe,radiotaiwan.tw,robbreport.com,spy.com,techzine.nl,telemundo20.com,telemundo31.com,telemundo33.com,telemundo40.com,telemundo47.com,telemundo48elpaso.com,telemundo49.com,telemundo51.com,telemundo52.com,telemundo62.com,telemundoareadelabahia.com,telemundoarizona.com,telemundochicago.com,telemundodallas.com,telemundodenver.com,telemundofresno.com,telemundohouston.com,telemundolasvegas.com,telemundonuevainglaterra.com,telemundonuevomexico.com,telemundopr.com,telemundosanantonio.com,telemundoutah.com,telemundowashingtondc.com,tenor.com,thecradle.co,vlaamskijken.nl,wn.com##.share-buttons
 !! .ActionBar
 10news.com,aboutamazon.co.uk,aboutamazon.com,aboutamazon.de,aboutamazon.it,adn40.mx,chronicle.com,deseret.com,iowapublicradio.org,kcur.org,ktvq.com,laist.com,nepm.org,suntimes.com,tvazteca.com,vanidades.com,washingtonexaminer.com,wgbh.org##.ActionBar
 !! .Social

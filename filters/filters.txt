@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: Fri, 29 Nov 2024 14:49:24 +0000
+! Last modified: Mon, 02 Dec 2024 16:22:00 +0000
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -229,9 +229,6 @@ onrpg.com##a[href*="mmo-it.com/"]
 onrpg.com##[href^="http://server.cpmstar.com/click.aspx"]
 onrpg.com###onrpg-hotbox-widget
 
-! https://github.com/gorhill/uBlock/issues/1340#issuecomment-191082824
-||gamingaffiliation.com^$3p
-
 ! https://github.com/uBlockOrigin/uAssets/issues/5156
 ||adnxs.com/*/sport1.js$script,redirect=noopjs,domain=sport1.de
 ||acdn.adnxs.com/as/1h/pages/sport1_mediathek.js$script,redirect=noopjs,domain=sport1.de
@@ -247,12 +244,6 @@ vaughn.live##+js(nosiif, header_menu_abvs, 10000)
 vaughn.live##.vs_v9_stream_content_abvs
 vaughn.live##.vs_v9_header_menu_abvs
 vaughn.live##div[id$="-ad"][id^="vs_v9_"]
-
-! https://github.com/uBlockOrigin/uAssets/issues/35
-||g9g.eu^*fa.js$script,redirect=fuckadblock.js-3.2.0
-||8s8.eu^*fa.js$script,redirect=fuckadblock.js-3.2.0
-||sprzedaz2.oczarjk.pl/img/ads/banner.gif$image,redirect=1x1.gif,domain=im9.eu
-g9g.eu##+js(aopr, adBlockDetected)
 
 ! Computers seizing thanks to these moronic scripts leading to system-wide out
 ! of memory condition
@@ -400,10 +391,6 @@ indiatoday.in,intoday.in##.adblockcontainer:style(display: block !important)
 ! https://github.com/uBlockOrigin/uAssets/issues/102#issuecomment-239625264
 ||zedo.com^$script,important,domain=indiatoday.in|intoday.in
 ||googlesyndication.com^$script,important,domain=indiatoday.in|intoday.in
-
-! https://forums.lanik.us/viewtopic.php?f=62&t=32109
-ndtv.com###ndtv-message-users
-ndtv.com###ins_videodetail:style(display: block !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/98
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###stream_pagelet div[id^="hyperfeed_story_id_"]:has(a.uiStreamSponsoredLink)
@@ -631,7 +618,6 @@ spiele.bild.de##div[id^="ad-landingpage-"]
 spiele.bild.de##div[id^="ad-gamepage-"]
 spiele.bild.de##.ad-vertical-box
 ||servedby.adbility-media.com^$3p
-||partners2.das-onlinespiel.de^$3p
 ! https://github.com/uBlockOrigin/uAssets/issues/9615
 bild.de##.main-nav .utilities > li:style(margin-left:-0.5px !important)
 
@@ -4021,7 +4007,7 @@ goafricaonline.com##+js(aopr, goafricaSplashScreenAd)
 *$script,redirect-rule=noopjs,domain=youmath.it
 youmath.it##+js(acs, document.getElementById, try)
 youmath.it##+js(nostif, adb)
-youmath.it##+js(no-xhr-if, /adnxs.com|onetag-sys.com|teads.tv|google-analytics.com/)
+youmath.it##+js(no-xhr-if, /adnxs.com|onetag-sys.com|teads.tv|google-analytics.com|rubiconproject.com|casalemedia.com/)
 youmath.it###D_1
 youmath.it###C_1
 
@@ -4475,8 +4461,10 @@ sbs.com.au##^script:has-text(NREUM)
 @@||dpm.demdex.net^$xhr,domain=sbs.com.au
 ! https://github.com/uBlockOrigin/uAssets/issues/24045
 sbs.com.au##+js(aopr, odabd)
-! https://www.reddit.com/r/uBlockOrigin/comments/1gr4410/adblocker_detected_on_sbs_on_demand/
-sbs.com.au##+js(set, od_abd, false)
+! https://www.reddit.com/r/uBlockOrigin/comments/1h4f5hp/sbs_on_demand_detects_ubo/
+sbs.com.au##+js(trusted-prevent-xhr, pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?ord=, b.google_reactive_tag_first)
+sbs.com.au##+js(trusted-prevent-xhr, sbs.demdex.net/dest5.html?d_nsid=0&ord=, Demdex.canSetThirdPartyCookies)
+sbs.com.au##+js(trusted-prevent-xhr, securepubads.g.doubleclick.net/pagead/ima_ppub_config?ippd=https%3A%2F%2Fwww.sbs.com.au%2Fondemand%2F&ord=, ["4117"])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2547
 neko-miku.com##+js(aeld, load, nextFunction)
@@ -6671,6 +6659,7 @@ youku.com##+js(nano-stb, , ,0)
 celebjihad.com##+js(aopr, dataPopUnder)
 ||celebjihad.live^$3p
 ||leojmp.com^
+celebjihad.com##.theme_article.sidebar_increase:style(height:0px !important)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4303
 ! https://github.com/easylist/easylist/issues/6200
@@ -8554,7 +8543,7 @@ fc.lc##+js(nowoif, /^/, 1)
 #@#.ad-area
 #@#.ads_container
 ##.ad-area:not(.text-ad)
-job.inshokuten.com,netmile.co.jp#@#.ad-area:not(.text-ad)
+job.inshokuten.com,kurukura.jp,netmile.co.jp#@#.ad-area:not(.text-ad)
 ##.ads_container:not(.text-ad)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5496
@@ -10231,7 +10220,8 @@ multiup.io,multiup.org,multiup.eu##+js(acs, decodeURI, decodeURIComponent)
 multiup.io,multiup.org,multiup.eu##+js(nosiif, .submit)
 multiup.io##+js(rpnt, script, setInterval)
 multiup.io,multiup.org,multiup.eu##.text-center.bg-info
-multiup.io,multiup.org,multiup.eu##div.col-md-4:has(> .panel > .panel-footer > a[href^="/download-fast/"][namehost^="UseNet"])
+multiup.io,multiup.org,multiup.eu##div.col-md-4:has(> .panel > .panel-footer > a[href^="/download-fast/"])
+multiup.io,multiup.org,multiup.eu##a[href^="/download-fast/"]
 multiup.io,multiup.org,multiup.eu##.mfp-ready
 multiup.io,multiup.org,multiup.eu##div.text-center:has(a[class="btn btn-success"][href^="abp:subscribe"])
 *$popunder,3p,domain=multiup.io|multiup.org|multiup.eu
