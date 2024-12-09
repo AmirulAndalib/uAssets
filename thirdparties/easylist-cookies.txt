@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Mon, 09 Dec 2024 02:50:10 +0000
+! Last modified: Mon, 09 Dec 2024 16:00:42 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -4633,8 +4633,6 @@
 ###cookiefmt
 ###cookiefoot
 ###cookiefooter
-###cookieform
-###cookieformdiv
 ###cookiefrage
 ###cookiefy_bar
 ###cookiegap
@@ -9674,7 +9672,6 @@
 ##.action-cookie
 ##.active-cookie-menu
 ##.active.cookie
-##.active.cookie-banner
 ##.active.rgpd-modal
 ##.activebar-container._privacy_fix
 ##.activity-cookie
@@ -11052,13 +11049,11 @@
 ##.cookie--bar-container
 ##.cookie--consent--root
 ##.cookie--desktop
-##.cookie--form
 ##.cookie--layer
 ##.cookie--notification
 ##.cookie--overlay
 ##.cookie--permission
 ##.cookie--polityka
-##.cookie--popup
 ##.cookie--section
 ##.cookie--top
 ##.cookie--unset
@@ -11130,7 +11125,6 @@
 ##.cookie-announcement
 ##.cookie-approval__wrapper
 ##.cookie-approvement
-##.cookie-area
 ##.cookie-arksigner
 ##.cookie-assistant
 ##.cookie-assistant-wrapper
@@ -11323,7 +11317,6 @@
 ##.cookie-consent-shadow-bg
 ##.cookie-consent-shadow-layer
 ##.cookie-consent-splash
-##.cookie-consent-v2
 ##.cookie-consent-wall-overlay
 ##.cookie-consent-widget
 ##.cookie-consent-wrap
@@ -11906,7 +11899,6 @@
 ##.cookie-uslovi
 ##.cookie-uzenet
 ##.cookie-verplicht-melding
-##.cookie-wall-container
 ##.cookie-wall-form
 ##.cookie-wall-wrapper
 ##.cookie-warn-modal
@@ -12702,7 +12694,6 @@
 ##.cookiemelding-container
 ##.cookiemelding:not(html):not(body)
 ##.cookiemeldung
-##.cookiemessage
 ##.cookiemessage-holder
 ##.cookiemessage__overlay
 ##.cookiemessageblock
@@ -15277,7 +15268,6 @@
 ##.message--cookie-warning
 ##.message--cookies
 ##.message-cockies
-##.message-cookie
 ##.message-cookie-banner
 ##.message-cookies
 ##.message-demande-cookies
@@ -17767,9 +17757,6 @@
 ##div#cookie-alert-container
 ##div#cookie-banner-container
 ##div#cookie-banner_container
-##div#cookie-bar
-##div#cookie-bar-container
-##div#cookie-bar-prompt
 ##div#cookie-check
 ##div#cookie-choice-container
 ##div#cookie-info-container
@@ -17848,7 +17835,6 @@
 ##div.app-cookies
 ##div.ask-cookie
 ##div.askcook
-##div.aviso-cookie
 ##div.aw-cookie-banner
 ##div.b--cookie
 ##div.b-cookie
@@ -17893,9 +17879,6 @@
 ##div.cookie-background
 ##div.cookie-banner
 ##div.cookie-banner-wrapper
-##div.cookie-bar
-##div.cookie-bar--is-visible
-##div.cookie-bar-visible
 ##div.cookie-black
 ##div.cookie-bloc
 ##div.cookie-choices
@@ -17910,11 +17893,9 @@
 ##div.cookie-consent-popup
 ##div.cookie-consent-show
 ##div.cookie-consent-window
-##div.cookie-container
 ##div.cookie-content
 ##div.cookie-details
 ##div.cookie-directive
-##div.cookie-disclaimer
 ##div.cookie-disclamer
 ##div.cookie-disclosure
 ##div.cookie-div
@@ -17925,7 +17906,6 @@
 ##div.cookie-hinweis
 ##div.cookie-hold
 ##div.cookie-info
-##div.cookie-layer
 ##div.cookie-msg
 ##div.cookie-notice
 ##div.cookie-notice-big
@@ -17947,21 +17927,18 @@
 ##div.cookie-policy-info
 ##div.cookie-policy-info--center
 ##div.cookie-policy-open
-##div.cookie-popup
 ##div.cookie-preferences-banner
 ##div.cookie-reminder
 ##div.cookie-show
 ##div.cookie-visible
 ##div.cookie-warn
 ##div.cookie-warning
-##div.cookie-wrapper
 ##div.cookieBackgaround
 ##div.cookieBanner
 ##div.cookieBar
 ##div.cookieConsent
 ##div.cookieDisclaimer
 ##div.cookieHolder
-##div.cookieInfo
 ##div.cookieMessage
 ##div.cookieMsg
 ##div.cookieNav
@@ -18004,7 +17981,6 @@
 ##div.cookies-cont
 ##div.cookies-fixed
 ##div.cookies-message
-##div.cookies-modal-container
 ##div.cookies-notice
 ##div.cookies-pan
 ##div.cookies-parent
@@ -22451,6 +22427,8 @@ uhrzeit123.de##+js(set-cookie, _u123_cc, yes)
 uhrzeit123.de##+js(set-cookie, ga-disable, true)
 billetterie.auditorium-lyon.com##+js(set-cookie, ga_consentement, 0)
 taiwantrade.com##+js(set-cookie, _cmsCookieaccept, Y)
+correosaduanas.es##+js(set-cookie, cookie_ADT_tecnica, true)
+correosaduanas.es##+js(set-cookie, msg_cookie_ADT, true)
 czapek.com##+js(set-cookie, website_cookies_bar, true)
 encord.com##+js(set-cookie, myAwesomeCookieName2, true) 
 streamily.com##+js(set-cookie, cookie-notice, true)
@@ -23426,6 +23404,7 @@ louwman.nl##+js(set-cookie, marketing_cookie_akkoord, 0)
 louwman.nl##+js(set-cookie, site_cookie_akkoord, 1)
 ratemyprofessors.com##+js(set-cookie, ccpa-notice-viewed-02, true)
 filen.io##+js(set-cookie, cookieConsent, yes, domain, .filen.io)
+shopping.copaair.com##+js(set-cookie, gdprcm, true)
 app.filen.io##+js(set-cookie, cookieConsent, accept, , domain, app.filen.io)
 leotrippi.com,restaurantclub.pl,context.news,queisser.de##+js(set-cookie, cookieConsent, true)
 grandprixradio.dk,grandprixradio.nl,grandprixradio.be##+js(set-cookie, analytics_cookies, 0)
@@ -23511,6 +23490,7 @@ shop.ba.com##+js(set-local-storage-item, iag-performance-consent, "no")
 uc.pt##+js(set-local-storage-item, userDeniedCookies, 1)
 tennessine.co.uk##+js(set-local-storage-item, cookies, 0)
 greubelforsey.com##+js(set-local-storage-item, rgpd.consent, 1)
+snipp.gg##+js(set-local-storage-item, hasConsent, false)
 lukify.app##+js(set-local-storage-item, _lukCookieAgree, 2)
 studiobookr.com##+js(set-local-storage-item, cookiesAllowed, false)
 getgrass.io##+js(set-local-storage-item, cookiePreference, 1)
@@ -24737,6 +24717,9 @@ core77.com###header_head:style(top: 0 !important)
 ! riceundspice.de 
 riceundspice.de##.cookie-wrapper
 riceundspice.de##+js(rc, disabled, body, stay)
+! budni.de
+budni.de##body:style(overflow:initial!important;position:initial!important)
+budni.de###grey-overlay
 ! ejobs.ro
 ejobs.ro##.CookiesPopup
 ejobs.ro##html,body:style(overflow: auto !important; position: initial !important;)
@@ -29540,15 +29523,12 @@ calameo.com#@#.cookie-alert-container
 kaputt.de#@#.cookie-backdrop
 boursorama.com,nuxeo.com,swedbank.se#@#.cookie-banner:not(body):not(html)
 chipkinspuratos.co.za,golnanpuratos.com,puratos.at,puratos.be,puratos.bg,puratos.ca,puratos.ch,puratos.cl,puratos.cn,puratos.co.cr,puratos.co.id,puratos.co.jp,puratos.co.kr,puratos.co.th,puratos.co.uk,puratos.com.ar,puratos.com.au,puratos.com.br,puratos.com.mx,puratos.com.my,puratos.com.ph,puratos.com.tr,puratos.com.ua,puratos.cz,puratos.de,puratos.dk,puratos.ee,puratos.es,puratos.fr,puratos.gr,puratos.hu,puratos.in,puratos.it,puratos.lt,puratos.lv,puratos.md,puratos.nl,puratos.pe,puratos.pl,puratos.pt,puratos.ro,puratos.rs,puratos.ru,puratos.us,puratos.uy,puratosgrandplace.com#@#.cookie-banner__wrapper
-janrain.com,moemax.de,xxxlshop.de#@#.cookie-bar
 dreher.it,withings.com#@#.cookie-body
 sundhed.dk#@#.cookie-box
-biblioteka.wroc.pl,evaair.com#@#.cookie-btn
 danica.no,danicapension.dk,danskebank.co.uk,danskebank.com,danskebank.dk,danskebank.fi,danskebank.no,danskebank.se,danskeci.com#@#.cookie-consent-banner
 keobeer.com.cy,winparts.be,winparts.eu,winparts.fr,winparts.ie,winparts.nl,winparts.se#@#.cookie-consent-box
 getaround.com#@#.cookie-consent-modal
 artyferia.pl#@#.cookie-consent-show
-berliner-volksbank.de,stickerapp.com,stickerapp.de#@#.cookie-consent-v2
 winparts.be,winparts.eu,winparts.fr,winparts.ie,winparts.nl,winparts.se#@#.cookie-consent-wrap
 boehringer.net#@#.cookie-consent-wrapper
 voetbal.nu#@#.cookie-consent.show
@@ -29617,7 +29597,6 @@ security.nl#@#.cookie_consent:not(body):not(html)
 withings.com#@#.cookie_container
 withings.com#@#.cookie_message
 mitsubishielectric.com#@#.cookie_policy
-sonyliv.com#@#.cookie_popup
 gardengirls.de#@#.cookie_section
 inkblot.art,marokko.nl#@#.cookiealert
 schleswig-holstein.de#@#.cookiebanner:not(body)
@@ -29626,8 +29605,6 @@ futterhaus.de#@#.cookiebox
 packeasy.ch#@#.cookieconsent-wrapper
 hardware.info#@#.cookiecontainer
 book-n-drive.de#@#.cookiedialog
-balay.es,bosch-home.at,bosch-home.be,bosch-home.com,bosch-home.dk,bosch-home.es,bosch-home.fi,bosch-home.fr,bosch-home.lt,bosch-home.lu,bosch-home.nl,bosch-home.no,bosch-home.ro,bosch-home.se,bsh-group.com,constructa.com,home-connect.com,neff-home.com#@#.cookielaw-setcookiepolicy-form
-gids.tv#@#.cookiemessage
 keobeer.com.cy#@#.cookienote
 asialadies.de,avladies.de,badeladies.de,behaarteladies.de,bizarrladies.de,busenladies.de,d-sport.cz,deutscheladies.de,devoteladies.de,dominanteladies.de,erfahreneladies.de,escorts24.de,exklusivladies.de,filmmusic.io,fkk24.de,grosseladies.de,hobbyladies.de,jungeladies.de,kollegin.de,kussladies.de,ladies.de,latinaladies.de,massierendeladies.de,mollyladies.de,nsladies.de,nymphomaneladies.de,orientladies.de,osteuropaladies.de,piercingladies.de,rasierteladies.de,schokoladies.de,tattooladies.de,tsladies.de,zaertlicheladies.de,zierlicheladies.de#@#.cookies-accept
 trading212.com#@#.cookies-consent-popup
@@ -29636,9 +29613,6 @@ poudouleveis.gr#@#.cookies-content
 bankmillennium.pl#@#.cookies-info
 tenaya.net#@#.cookies-info:not(html):not(body)
 mydealz.de#@#.cookies-message
-vtimes.io#@#.cookies-modal:not(body):not(html)
-vtimes.io#@#.cookies-modal__background
-hotspotty.net,little-clogs-holidays.co.uk#@#.cookies-not-set:not(body)
 diy.com#@#.cookies-policy
 abp.nl#@#.cookies-pop-up
 elrow.com#@#.cookies-popup
@@ -29734,8 +29708,6 @@ amp-lasexta-com.cdn.ampproject.org,amp.cnn.com#@#amp-consent
 ollca.com#@#app-cookie-warning
 frag.jetzt#@#app-cookies
 tumblr.com#@#div#cmp-app-container
-pneutiefpreis.ch#@#div#cookie-bar
-vrtranspoint.fi#@#div#cookie-popup
 proline-tools.com.pl#@#div#cookieConsentModal
 elmzell.se#@#div.c-cookies
 hertz.at,hertz.co.uk,hertz.de,hertz.es,hertz.fi,hertz.fr,hertz.ie,hertz.it,hertz.no,hertz.pt,hertz.se#@#div.cc-revoke
@@ -29744,27 +29716,20 @@ legifrance.gouv.fr#@#div.cnil
 baden-wuerttemberg.de,calameo.com#@#div.cookie-alert
 abw.by,autohaus24.de,cera.coop,channel4.com,chipkinspuratos.co.za,golnanpuratos.com,intersport.de,puratos.at,puratos.be,puratos.bg,puratos.ca,puratos.ch,puratos.cl,puratos.cn,puratos.co.cr,puratos.co.id,puratos.co.jp,puratos.co.kr,puratos.co.th,puratos.co.uk,puratos.com.ar,puratos.com.au,puratos.com.br,puratos.com.mx,puratos.com.my,puratos.com.ph,puratos.com.tr,puratos.com.ua,puratos.cz,puratos.de,puratos.dk,puratos.ee,puratos.es,puratos.fr,puratos.gr,puratos.hu,puratos.in,puratos.it,puratos.lt,puratos.lv,puratos.md,puratos.nl,puratos.pe,puratos.pl,puratos.pt,puratos.ro,puratos.rs,puratos.ru,puratos.us,puratos.uy,puratosgrandplace.com,trentapizza.ro#@#div.cookie-banner
 trentapizza.ro#@#div.cookie-banner-wrapper
-epochtimes.it,frankfurt-school.de,onnibus.com,stilord.com,stilord.de,stilord.fr,stilord.pl#@#div.cookie-bar
 praca.by#@#div.cookie-confirm
 booking.reederei-zingst.de,booking.weisse-flotte.de,booking2.reederei-hiddensee.de,dovoba.de,forcetools-kepmar.eu,k-einbruch.de,kund.bliwa.se,linkedin.com,moreincommon.de,portal.payment.eltax.lta.go.jp,voetbal.nu#@#div.cookie-consent
 solcom.de#@#div.cookie-consent-banner
 ieatfoodtours.co.uk,onceinrome.com,weliketuscany.it#@#div.cookie-consent-popup
-order.apexhotels.co.uk,webtrack.dhlecs.com,withings.com#@#div.cookie-container
 bensanitair.nl,calameo.com,order.apexhotels.co.uk,qatarairways.com#@#div.cookie-content
-okto.tv#@#div.cookie-disclaimer
-sverigesingenjorer.se#@#div.cookie-layer
 account.here.com,calvinklein.at,calvinklein.be,calvinklein.bg,calvinklein.ch,calvinklein.co.uk,calvinklein.com,calvinklein.cz,calvinklein.de,calvinklein.dk,calvinklein.ee,calvinklein.es,calvinklein.fi,calvinklein.fr,calvinklein.hr,calvinklein.hu,calvinklein.ie,calvinklein.it,calvinklein.lt,calvinklein.lu,calvinklein.lv,calvinklein.nl,calvinklein.pl,calvinklein.pt,calvinklein.ru,calvinklein.se,calvinklein.si,calvinklein.sk,caritas-international.de,ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,readly.com,shop.forster.at,tesa.com,uktv.co.uk,weliketuscany.it#@#div.cookie-notice
 gostanford.com,paychex.com#@#div.cookie-notification
 retterspitz.de#@#div.cookie-overlay
 finnair.com#@#div.cookie-policy
-squla.nl#@#div.cookie-popup
-bensanitair.nl,correosexpress.com,dreher.it,gov.lv,milesandbarr.co.uk,puzzels.ad.nl,puzzels.bd.nl,puzzels.bndestem.nl,puzzels.destentor.nl,puzzels.ed.nl,puzzels.gelderlander.nl,puzzels.parool.nl,puzzels.pzc.nl,puzzels.trouw.nl,puzzels.tubantia.nl,puzzels.volkskrant.nl,statestreet.com#@#div.cookie-wrapper
 altenberg-dom.de#@#div.cookieHolder
 sonyliv.com#@#div.cookie_popup
 gardengirls.de#@#div.cookiebanner
 azerty.nl,cnvinternationaal.nl,dt.mef.gov.it,vorwahlen-online.de#@#div.cookiebar
 emut.be,iledefrance-mobilites.fr#@#div.cookies-banner
-bazaar-online.gr,stergioufamily.gr#@#div.cookies-modal-container
 onas.org.pl#@#div.cookies-visible
 goape.co.uk,library.jhu.edu#@#div.eupopup
 ionity.eu#@#div.gdpr-cookieconsent-container
