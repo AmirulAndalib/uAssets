@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Quick fixes
 ! Expires: 12 hours
-! Last modified: Wed, 11 Dec 2024 14:49:32 +0000
+! Last modified: Wed, 11 Dec 2024 20:50:23 +0000
 ! Diff-Path: %diffpath%#ublock-quick-fixes
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -122,17 +122,17 @@ poophq.com,veev.to##+js(no-xhr-if, /\/preroll\.engine$/)
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
 @@*$ghide,domain=poophq.com|veev.to
 veev.to#@#.avb-active
-infinityscans.xyz,infinityscans.org##+js(no-fetch-if, infinityscans.net)
+infinityscans.xyz,infinityscans.org##+js(no-fetch-if, .infinityscans.net)
 infinityscans.xyz,infinityscans.net,infinityscans.org##+js(rpnt, script, /\}\)\;\s+\(function\(\)\{.*?\)\;\}\)\(\)\;\s+\$\.ajax\(\{/s, }); $.ajax({)
+infinityscans.xyz,infinityscans.net,infinityscans.org##+js(rpnt, script, /async function \(xhr\) \{\s+\(function\(\){var.*?\)\;\}\)\(\)\; /s, async function (xhr) {)
 infinityscans.xyz,infinityscans.net,infinityscans.org##+js(trusted-replace-outbound-text, atob, window.matchMedia('(display-mode: standalone)').matches, true)
 infinityscans.xyz,infinityscans.net,infinityscans.org##+js(nowoif, _blank)
-infinityscans.xyz,infinityscans.net,infinityscans.org##div[class="alert alert-danger fade show m-0 p-0"]:has-text(uBlock Origin)
+infinityscans.xyz,infinityscans.net,infinityscans.org##div[class="alert alert-danger fade show m-0 p-0"]:has-text(/uBlock|AdGuard|advertisments/i)
 @@*$script,denyallow=googletagmanager.com|bidgear.com|googlesyndication.com,domain=infinityscans.xyz|infinityscans.net|infinityscans.org
 ||b5rh0rt.infinityscans.net^$xhr,important
-1001tracklists.com##a[href^="https://"][target="_blank"][onclick*="challenge"]:has(> img[src*="/"][src*="_"][alt][title]):remove()
-1001tracklists.com###head + [id] > div:first-child > div:first-child:has(a img[src*="/"][src*="_"][alt][title])
-1001tracklists.com###head + [id] > div:first-child > [style]:has(a img[src*="/"][src*="_"][alt][title])
-1001tracklists.com##div[style^="margin: 10px 0;"]:has(a img[src*="/"][src*="_"])
+1001tracklists.com##a[href^="https://"][target="_blank"][onclick*="challenge"]:has(> img[src*="/"][src*="_"][alt]):remove()
+1001tracklists.com###head + [id] > div:first-child > div:first-child:has(a img[src*="/"][src*="_"][alt])
+1001tracklists.com###head + [id] > div:first-child > div:not([id="topLogo"], [id="pageTitle"], [id="hInfo"]):has(> a > img[src*="/"][src*="_"][alt])
 1001tracklists.com##div[id]:has(> [data-freestar-ad]):remove()
 ! filemoon
 file-1bl9ruic-moon.com,file-kg88oaak-embed.com,file-mi11ljwj-embed.com,file-sp32aoh8-moon.com,file-zz40pd56-embed.com,filemoon-j0l2wxjk.com,filemoon-t8c715ke.com,fle-2ggdmu8q-moo.com,fle-5r8dchma-moo.com,fle-rvd0i9o8-moo.com,moon-3uykdl2w-embed.com,moon-4uemks89-embed.com,moon-fm43w1qv.com,moon-kg83docx.com,moon-n9hp2onm-embed.com,moonfile-62es3l9z.com,moonfile-paxadnae.com##+js(nowoif)
@@ -173,7 +173,7 @@ img-load.com##html,body:style(height: 1px !important; overflow: hidden !importan
 karistudio.com##p.chapter_content:style(display: block !important; visibility: visible !important; opacity: 1 !important; transform: none !important;)
 cursomecanet.com##+js(no-fetch-if, https, , '{"statusText": "", "type": "cors"}')
 cursomecanet.com##+js(aost, fetch, .js?)
-cursomecanet.com##a[href][target="_blank"]:upward(div[id][style]):style(display: block !important;)
+cursomecanet.com##a[href][target="_blank"]:upward(div[style]):style(display: block !important;)
 bing.com##+js(trusted-replace-argument, HTMLLIElement.prototype.querySelector, 0, undefined, condition, /^a\.tilk$/)
 bing.com##li.b_algo:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 exploader.net#@#article > div[style="margin-left: -63px;width: 1120px;height: 450px;margin-bottom: 5px;display: flex;align-items: center;"]:style(position: absolute !important; clip:rect(1px,1px,1px,1px) !important;)
