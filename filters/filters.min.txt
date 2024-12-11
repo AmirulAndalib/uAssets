@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 11 Dec 2024 02:49:21 +0000
+! Last modified: Wed, 11 Dec 2024 08:49:23 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -10824,8 +10824,12 @@ animedao.com.ru##+js(no-xhr-if, googlesyndication)
 abs-cbn.com##div[style*="999999"]:has(div[style^="background-color:#ECEDEF;"] > p)
 abs-cbn.com##div[style*="2147483647"]:has(.imp-adSlot-0)
 abs-cbn.com##div[id^="div-articleOOP"] ~ div:has(.imp-adSlot-0)
-abs-cbn.com##.css-168qn5i, .css-1slfery, .css-xcd31q, .css-4dbdht:has(div[class^="imp-adSlot"])
+abs-cbn.com##:is(.css-168qn5i, .css-1slfery, .css-xcd31q, .css-4dbdht):has(div[class^="imp-adSlot"])
+abs-cbn.com##.MuiGrid-root.MuiGrid-item:not([data-testid="test-grid-item"]):has(> div.MuiBox-root > div[style] > div > div[style] > div[class^="imp-adSlot"])
 gmanetwork.com###leaderboard
+gmanetwork.com###mrect
+gmanetwork.com###theater_mobile_mrec
+gmanetwork.com##.grid_extras_holder
 gmanetwork.com##.mrec_ad
 gmanetwork.com##.mrec-add-container
 gmanetwork.com##.latest_mrec_ad
@@ -10888,6 +10892,7 @@ ebook-hell.to##+js(nowoif)
 ibooks.to##+js(rmnt, script, ai_adb)
 ||atf-tagmanager.de^$script,redirect=noopjs,domain=bike-magazin.de
 gpldose.com##+js(aopr, Dataffcecd)
+##.sharethis-inline-share-buttons.st-hidden
 ! Link shortener filters go into their own dedicated list
 ! *** filters/ubo-link-shorteners.txt ***
 ! gplinks all domains (gplinks.co/EWu8)
@@ -11339,7 +11344,8 @@ cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##^scr
 !#else
 cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##+js(rmnt, script, /popup/i)
 !#endif
-cety.app##+js(aeld, click, open)
+cety.app,cuty.me##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"][style])
+||datadropspot.pro^$all
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info###wpsafe-link:style(display: block !important;)
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info##+js(no-fetch-if, ads)
 adcrypto.net,admediaflex.com,aduzz.com,bitcrypto.info,cdrab.com,datacheap.io,hbz.us,savego.org,owsafe.com,sportweb.info##+js(aeld, load, bypass)
@@ -14462,9 +14468,9 @@ moviesnation.*##+js(acs, document.createElement, ;}}};break;case $.)
 10hitmovies.com,11xmovies.*,1tamilprint.art,2024tv.ru,720pflix.*,9animetv.to,9xmoovies.com,advertisertape.com,alphatron.tv,andyday.tv,animeflv.*,animeunity.to,animeyabu.org,anitube.*,apkship.shop,arc018.to,ask4movie.*,ate60vs7zcjhsjo5qgv8.com,avjosa.com,buffshub.stream,capo4play.com,checklinks.online,clickndownload.*,cookiewebplay.xyz,crackstreamsfree.com,daddylive1.ru,dlolcast.pro,embasic.pro,engstreams.shop,enorme.tv,fastdokan.*,file4go.*,flostreams.xyz,footballstreams.lol,footybite.to,foreverquote.xyz,freetvsports.com,freshwaterdell.com,fsportshd.net,gdflix.*,gdriveplayer.*,gdtot.*,hdfilme.*,hdhub4u.*,hdstream.one,hdstream.one,hexload.com,hoca2.com,hoca4u.xyz,joyousplay.xyz,jpopsingles.eu,kingstreamz.site,lato.sx,linkz.wiki,lulu.st,lulustream.com,luluvdo.com,messitv.org,movies4u.*,movieshubweb.com,moviezwap.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,pkembed.*,player.smashy.stream,pahe.*,poscitechs.lol,putlocker.*,reddit-streams.online,ripplestream4u.*,rojadirectaenhd.net,rojadirectaenvivo.la,rubyvid.com,s2watch.link,sflix.*,shazysport.pro,showflix.*,soap2day.*,soccerstreams.best,sportsgames.today,sportshub.stream,sportsloverz.xyz,sportsurge.best,sportzlive.shop,storynavigation.com,streamblasters.*,streameast.*,streamed.su,streamlivetv.site,streamruby.com,streamtape.*,subtitlecat.com,swiftload.io,tamilprint29.*,tamilprint30.*,tamilprint31.*,tarjetarojaenvivo.lat,thedaddy.to,thehesgoal.com,toonstream.*,topembed.pw,totalsportek.*,tvsportslive.fr,usgate.xyz,uqload.*,vidsrc.*,viprow.*,vixcloud.co,vodkapr3mium.com,volokit2.com,watchadsontape.com,weakstreams.online,worldstreamz.shop,xcloud.*,ythd.org##+js(acs, EventTarget.prototype.addEventListener, delete window)
 ! ##^script:has-text('{delete window[')
 !#if cap_html_filtering
-11xmovies.*,2024tv.ru,9xmoovies.com,1tamilprint.art,apkship.shop,ask4movie.*,avjosa.com,buffshub.stream,capo4play.com,checklinks.online,cinego.tv,clickndownload.*,cookiewebplay.xyz,crackstreamsfree.com,cricstream.me,dlolcast.pro,embasic.pro,engstreams.shop,footballstreams.lol,footybite.to,foreverquote.xyz,freetvsports.com,fstream365.com,fzmovies.*,gdtot.*,hdstream.one,hoca2.com,hoca4u.xyz,kingstreamz.site,lulustream.com,luluvdo.com,messitv.org,minoplres.xyz,mostream.us,movies4u.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,pahe.*,pkembed.*,poscitechs.lol,prmovies.*,reddit-streams.online,ripplestream4u.*,rojadirectaenhd.net,rojadirectaenvivo.la,rubyvid.com,s2watch.link,s3embtaku.pro,shazysport.pro,showflix.*,soccerstreams.best,sportshub.stream,sportsloverz.xyz,sportsurge.best,sportzlive.shop,streamblasters.*,streameast.*,streamed.su,streamingcommunity.*,streamlivetv.site,tarjetarojaenvivo.lat,thehesgoal.com,topcinema.cam,topembed.pw,totalsportek.*,usgate.xyz,uqload.*,vixcloud.co,weakstreams.online,worldstreamz.shop,xcloud.*##^script:has-text('{delete window[')
+11xmovies.*,2024tv.ru,9xmoovies.com,1tamilprint.art,apkship.shop,ask4movie.*,avjosa.com,buffshub.stream,capo4play.com,checklinks.online,cinego.tv,clickndownload.*,cookiewebplay.xyz,crackstreamsfree.com,cricstream.me,dlolcast.pro,embasic.pro,engstreams.shop,ev01.to,footballstreams.lol,footybite.to,foreverquote.xyz,freetvsports.com,fstream365.com,fzmovies.*,gdtot.*,hdstream.one,hoca2.com,hoca4u.xyz,kingstreamz.site,lulustream.com,luluvdo.com,messitv.org,minoplres.xyz,mostream.us,movies4u.*,nbabite.to,nexdrive.*,neymartv.net,nflbite.to,pahe.*,pkembed.*,poscitechs.lol,prmovies.*,reddit-streams.online,ripplestream4u.*,rojadirectaenhd.net,rojadirectaenvivo.la,rubyvid.com,s2watch.link,s3embtaku.pro,shazysport.pro,showflix.*,soccerstreams.best,sportshub.stream,sportsloverz.xyz,sportsurge.best,sportzlive.shop,streamblasters.*,streameast.*,streamed.su,streamingcommunity.*,streamlivetv.site,tarjetarojaenvivo.lat,thehesgoal.com,topcinema.cam,topembed.pw,totalsportek.*,usgate.xyz,uqload.*,vixcloud.co,weakstreams.online,worldstreamz.shop,xcloud.*##^script:has-text('{delete window[')
 !#else
-11xmovies.*,buffshub.stream,cinego.tv,fstream365.com,fzmovies.*,lulustream.com,minoplres.xyz,mostream.us,prmovies.*,s3embtaku.pro,sportshub.stream,streamblasters.*,streamingcommunity.*,topcinema.cam,topembed.pw##+js(rmnt, script, '{delete window[')
+11xmovies.*,buffshub.stream,cinego.tv,ev01.to,fstream365.com,fzmovies.*,lulustream.com,minoplres.xyz,mostream.us,prmovies.*,s3embtaku.pro,sportshub.stream,streamblasters.*,streamingcommunity.*,topcinema.cam,topembed.pw##+js(rmnt, script, '{delete window[')
 !#endif
 atlaq.com,bolly4umovies.*,douploads.net,moalm-qudwa.blogspot.com,shurt.pw##+js(aopr, zfgformats)
 123movieshub.*,animeunity.*,bflix.*,cima-club.*,flixhq.*,hindilinks4u.*,mcloud.bz,t7meel.*,theflixer.tv,vidstream.pro##+js(aopr, zfgstorage)
@@ -15407,7 +15413,8 @@ uploadshare.net##ins.adsbygoogle
 uploadshare.net##.advert-wrapper
 /js/static/header/sda/ppsuma*.js$script
 xnxx.com##.videoad-title
-xnxx.com##+js(aeld, DOMContentLoaded, /dyn\.ads|loadAdsDelayed/)
+xnxx.com,xvideos.*##+js(aeld, DOMContentLoaded, /dyn\.ads|loadAdsDelayed/)
+xnxx.com,xvideos.*##+js(set, xv.sda.pp.init, noopFunc)
 @@||cache.marieclaire.fr/media/videojs/videojs.ads.min.js$script,domain=marieclaire.fr
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=marieclaire.fr
 *$script,3p,denyallow=arc.io|cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|fastlylb.net|unpkg.com,domain=hatsukimanga.com
@@ -22275,7 +22282,6 @@ fakaza.*,fakaza2018.com,fakazahouse.com,fakazamusic.co,samsonghiphop.org,zamusic
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rtl.be,redirect=google-ima.js
 reshare.pm#@#.showads
 reshare.pm##+js(nowoif)
-@@||a.magsrv.com/ad-provider.js$script,domain=reshare.pm
 ||googlesyndication.com^$script,redirect=noopjs,domain=flysas.com
 maxt.church##+js(no-xhr-if, googletagmanager)
 gamedrive.org##+js(aost, document.querySelector, /showModal|chooseAction|doAction|callbackAdsBlocked/)
