@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Fri, 13 Dec 2024 08:49:35 +0000
+! Last modified: Fri, 13 Dec 2024 14:49:23 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -10747,6 +10747,8 @@ upns.*##+js(aeld, click, document.createElement)
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=upns.*,redirect=google-ima.js
 ! movielinkbd ads
 1movielinkbd.com,filecloud.*,gdfile.org,movieliinkbd.com##+js(nowoif)
+movielinkbd.me##+js(nowoif, _blank)
+neodrive.xyz##+js(rmnt, script, FingerprintJS)
 historicaerials.com##+js(aeld, load, detect)
 ||historicaerials.com/js/adblock-detection.js^
 ||historicaerials.com/js/testuserad.js^
@@ -10903,6 +10905,12 @@ peachprintable.com###popID
 gputrends.net##+js(set-local-storage-item, adWatched, true)
 vikatan.com##+js(nostif, /adblock|isblock/i)
 ||kryptografie.de/js/wb_dead.js
+! [NSFW] https://dhtpre.com/file/5qhvr18btje8 - detection
+!#if cap_html_filtering
+dhtpre.com##^script:has-text(setADBFlag)
+!#else
+dhtpre.com##+js(rmnt, script, setADBFlag)
+!#endif
 ! Link shortener filters go into their own dedicated list
 ! *** filters/ubo-link-shorteners.txt ***
 ! gplinks all domains (gplinks.co/EWu8)
@@ -11965,6 +11973,8 @@ upfiles-urls.com##+js(set, blurred, false)
 rentry.co##article:has(#download-your-archive-file)
 ||sharecube.pro^$all
 ||flyshare.cfd^$all
+! shortencash. click antiadb
+shortencash.click##+js(nostif, displayAdBlockerMessage)
 !#if env_mobile
 ! *** filters/filters-mobile.txt ***
 !----- 2020 -----
@@ -14063,7 +14073,7 @@ cryptowin.io##+js(acs, document.getElementById, 'body')
 @@||cryptowin.io^$ghide
 cryptowin.io##.panel-body > p[style=" color:#818181; background-color: #fffdc4; text-align: center; font-size: 14px; border-radius: 2px; width: 320px; max-width: 100%; margin: auto; margin-top: 15px; "]
 cryptowin.io##.hidden-xs
-0gomovies.*,cdnqq.net,cdn1.fastvid.co,movi.pk,ncdn22.xyz,netu.ac,player.msmini.*,player.sbnmp.*,netuplayer.*,vapley.*##+js(nowoif)
+cdnqq.net,cdn1.fastvid.co,movi.pk,ncdn22.xyz,netu.ac,player.msmini.*,player.sbnmp.*,netuplayer.*,vapley.*##+js(nowoif)
 0gogle.com##+js(aopr, __Y)
 movi.pk##+js(aeld, , vads)
 movi.pk##+js(acs, eval, replace)
@@ -14431,6 +14441,7 @@ moviezwap.*##[style^=" width: 305px;"][type^="button"][onclick^="window.location
 xcloud.*##+js(rpnt, script, /window.open.*/gms, window.open(url\, "_self");})
 xfile.*##+js(rpnt, script, /window\.location\.href.*?;/)
 xcloud.*##+js(noeval-if, window.open)
+xcloud.*##+js(aost, EventTarget.prototype.addEventListener, /(?=^(?!.*(challenge-platform|jquery|challenges\.cloudflare\.com)))/)
 xcloud.*##^script:has-text(/eval\(.+?RegExp/)
 *$script,3p,denyallow=accounts.google.com|cloudflare.net|fastly.net|jsdelivr.net,from=xfile.*
 xfile.*##.ads-btns
@@ -14442,8 +14453,10 @@ xcloud.*##.ads-btns
 ||43478y.online^
 ||addi809.buzz^
 ||chubbyfailure.com^
+||diligentcloset.com^
 ||impressexaltsculptor.com^
 ||tomarnamki.shop^
+||tributeparticle.com^
 ! pp_issues
 ! firefox html filtering
 ! ##^script:has-text(;}}};break;case $.)
@@ -19688,9 +19701,6 @@ ygosu.com,bamgosu.site##iframe[src^="https://cdn.nhnace.com/"]
 ygosu.com,bamgosu.site##div[style="text-align:center"]:has(> iframe[src])
 !#endif
 *$doc,csp=script-src-attr 'none',to=m.economictimes.com|ondemandkorea.com
-dogdrip.net,infinityfree.com,smsonline.cloud##+js(trusted-replace-argument, String.prototype.includes, 0, , condition, NAVER)
-dogdrip.net,infinityfree.com,smsonline.cloud##+js(trusted-replace-argument, String.prototype.indexOf, 0, , condition, NAVER)
-dogdrip.net,infinityfree.com,smsonline.cloud##+js(trusted-replace-argument, String.prototype.split, 0, , condition, NAVER)
 dogdrip.net,infinityfree.com##ins.adsbygoogle:style(height: 1px !important; visibility: hidden !important;)
 ||ad-shield.cc^
 ||html-load.cc^
