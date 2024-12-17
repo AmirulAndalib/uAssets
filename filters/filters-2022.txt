@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2022)
-! Last modified: Sun, 15 Dec 2024 20:49:24 +0000
+! Last modified: Tue, 17 Dec 2024 20:51:32 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -3506,7 +3506,7 @@ canale.live##+js(nosiif, href)
 ||html-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 ||img-load.com^$~css,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 @@/loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
-/loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud,replace=/function [\$]{1}\([a-z]{1,2},[a-z]{1,2},[a-z]{1,2}\)\{.*?\)\]\([a-z]{1,2}\)\}\}function /function /g
+/loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud,replace=/\)\)\)\;function [a-z]{1,2}\([a-z]{1,2},[a-z]{1,2},[a-z]{1,2}\){const [a-z]{1,2}=[a-z]{1,2};try\{console\[.*?\)\}\}function /))); function /
 ||thestar.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
 ||yorkshirepost.co.uk/_build/main.$script,1p,replace=/,adshield\:\w{2}//
 *$doc,to=dogdrip.net|infinityfree.com|smsonline.cloud,replace=/data-sdk/defer data-sdk/
@@ -3572,7 +3572,7 @@ badmouth1.com,blog.esuteru.com,blog.livedoor.jp,dziennik.pl,etnews.com,eurointeg
 apkmirror.com,automobile-catalog.com,motorbikecatalog.com,blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,dnevno.hr,dziennik.pl,ff14net.2chblog.jp,heureka.cz,indiatimes.com,lacuarta.com,laleggepertutti.it,meeco.kr,mirrored.to,motscroises.fr,news4vip.livedoor.biz,oeffnungszeitenbuch.de,onecall2ch.com,oraridiapertura24.it,palabr.as,petitfute.com,rabitsokuhou.2chblog.jp,rostercon.com,slashdot.org,sourceforge.net,suzusoku.blog.jp,the-crossword-solver.com,thestockmarketwatch.com,wfmz.com,word-grabber.com,wort-suchen.de,woxikon.*,yutura.net,zagreb.info,freemcserver.net,golf-live.at,kreuzwortraetsel.de,raetsel-hilfe.de,verkaufsoffener-sonntag.com,horairesdouverture24.fr,nyitvatartas24.hu,modhub.us,yugioh-starlight.com,winfuture.de,talkwithstranger.com##^script:has-text(error-report.com)
 worldhistory.org##^script:has-text(adShield)
 lovelive-petitsoku.com,pravda.com.ua##^script:has-text(Ad-Shield)
-cinema.com.my,dolldivine.com,jutarnji.hr,slobodnadalmacija.hr##^script:has-text(adrecover.com)
+ap7am.com,cinema.com.my,dolldivine.com,giornalone.it,jutarnji.hr,slobodnadalmacija.hr##^script:has-text(adrecover.com)
 lacuarta.com,persoenlich.com,syosetu.com##^script:has-text(html-load.com)
 autoby.jp,dziennik.pl,powerpyx.com,webdesignledger.com,wetteronline.de##^script:has-text(.slice(-2);return decodeURIComponent)
 !#else
@@ -3580,7 +3580,7 @@ interfootball.co.kr,a-ha.io,cboard.net,jjang0u.com,joongdo.co.kr,viva100.com,gam
 apkmirror.com,automobile-catalog.com,motorbikecatalog.com,blog.esuteru.com,blog.livedoor.jp,itainews.com,jin115.com,allthetests.com,javatpoint.com,globalrph.com,carscoops.com,crosswordsolver.com,cruciverba.it,dnevno.hr,dziennik.pl,ff14net.2chblog.jp,heureka.cz,indiatimes.com,lacuarta.com,laleggepertutti.it,meeco.kr,mirrored.to,motscroises.fr,news4vip.livedoor.biz,oeffnungszeitenbuch.de,onecall2ch.com,oraridiapertura24.it,palabr.as,petitfute.com,rabitsokuhou.2chblog.jp,rostercon.com,slashdot.org,sourceforge.net,suzusoku.blog.jp,the-crossword-solver.com,thestockmarketwatch.com,wfmz.com,word-grabber.com,wort-suchen.de,woxikon.*,yutura.net,zagreb.info,freemcserver.net,golf-live.at,kreuzwortraetsel.de,raetsel-hilfe.de,verkaufsoffener-sonntag.com,horairesdouverture24.fr,nyitvatartas24.hu,modhub.us,yugioh-starlight.com,winfuture.de,talkwithstranger.com##+js(rmnt, script, error-report.com)
 worldhistory.org##+js(rmnt, script, adShield)
 lovelive-petitsoku.com,pravda.com.ua##+js(rmnt, script, Ad-Shield)
-cinema.com.my,dolldivine.com,jutarnji.hr,slobodnadalmacija.hr##+js(rmnt, script, adrecover.com)
+ap7am.com,cinema.com.my,dolldivine.com,giornalone.it,jutarnji.hr,slobodnadalmacija.hr##+js(rmnt, script, adrecover.com)
 cinema.com.my##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"data-sdk"', abort)
 lacuarta.com,persoenlich.com,syosetu.com##+js(rmnt, script, html-load.com)
 winfuture.de##+js(aeld, load, error-report.com)
@@ -4576,9 +4576,6 @@ tpaste.io##+js(aopr, adBlockDetected)
 model-viewer.com##.adsbygoogle:style(width:11px;height:11px)
 model-viewer.com##.adsbygoogle:upward(1):style(min-height:11px!important;height:11px!important;opacity:0)
 
-! https://github.com/AdguardTeam/AdguardFilters/issues/133687
-mangapt.com##+js(nostif, show)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/15487
 onscreensvideo.com##+js(aopr, __Y)
 
@@ -5225,6 +5222,9 @@ emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,streamsilk.com
 ||emturbovid.com^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 !#endif
 ##.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
+!#if env_mobile
+emturbovid.com,hihihehe01.xyz,playm4u.xyz#@#.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
+!#endif
 ! https://github.com/uBlockOrigin/uAssets/issues/25510
 streamsilk.com##+js(rpnt, script, window.dataLayer =, 'window.HTMLAnchorElement.prototype.click=new Proxy(window.HTMLAnchorElement.prototype.click,{apply:(target,thisArg,args)=>{if(thisArg&&!thisArg.href.includes("streamsilk.com"))return;return Reflect.apply(target,thisArg,args)}});window.dataLayer =', sedCount, 1)
 
