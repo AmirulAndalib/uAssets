@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 18 Dec 2024 20:54:10 +0000
+! Last modified: Thu, 19 Dec 2024 08:49:27 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9043,6 +9043,7 @@ hdfilmcehennemi1.net##.money-child
 hdfilmcehennemi1.net##.money-text
 ! <<<<< AdGuard Spanish/Portuguese >>>>>
 *$script,3p,denyallow=cdn.jkdesu.com|disqus.com,from=jkanime.net,badfilter
+richtoscan.com##+js(noeval-if, /chp_?ad/)
 ! <<<<< List-KR >>>>>
 !#if cap_html_filtering
 x86.co.kr##^script:has-text(adBlockDetected)
@@ -10755,8 +10756,8 @@ upns.*##+js(aeld, click, document.createElement)
 movielinkbd.me##+js(nowoif, _blank)
 neodrive.xyz##+js(rmnt, script, FingerprintJS)
 historicaerials.com##+js(nosiif, data-google-query-id)
-||historicaerials.com/js/adblock-detection.js^
-||historicaerials.com/js/testuserad.js^
+historicaerials.com##+js(nostif, data-google-query-id)
+||historicaerials.com/js/checkuser.js^
 canela.tv##+js(json-prune-fetch-response, data.custom.bcAdMetadataUrl, , propsToMatch, /media/content)
 canela.tv##+js(trusted-replace-fetch-response, /#EXT-X-KEY:METHOD=NONE\n#EXT(?:INF:[^\n]+|-X-DISCONTINUITY)\n.+?(?=#EXT-X-KEY)/gms, , /media.m3u8)
 ! viprow.nu => reliabletv.me frame => allow brave browser
@@ -10961,6 +10962,10 @@ pornhoarder.*##^script:has-text(/wpadmngr|adserverDomain/)
 pornhoarder.*##+js(rmnt, script, /wpadmngr|adserverDomain/)
 !#endif
 ||misdeedtucked.shop^
+studwiz.com###KySENPmBUJDe
+wooflix.tv##+js(aopw, Adcash)
+||wooflix.tv/api/block^
+||getmagic.moe^
 ! Link shortener filters go into their own dedicated list
 ! *** filters/ubo-link-shorteners.txt ***
 ! gplinks all domains (gplinks.co/EWu8)
@@ -12008,7 +12013,7 @@ ikingfile.mooo.com##+js(nowoif)
 fuckingfast.co##+js(rpnt, script, !seen && ad, false)
 ||fuckingfast.co/f/*/dl^$xhr,1p
 ||senditfast.cloud^$doc
-streamelements.com##+js(set, google_srt, 1)
+streamelements.com##+js(trusted-set, google_srt, json:0.6)
 streamelements.com##+js(set, sensorsDataAnalytic201505, {})
 ||validate.strms.net/*adblock%3Dtrue$doc,uritransform=/adblock%3Dtrue/adblock%3Dfalse/
 ! shortylink. store popup
@@ -19740,7 +19745,7 @@ dogdrip.net##+js(no-fetch-if, /ad\.doubleclick\.net|static\.dable\.io/)
 @@||static.criteo.net/js/ld/publishertag.prebid.js|$xhr,domain=dogdrip.net|infinityfree.com|smsonline.cloud
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js|$script,domain=dogdrip.net|infinityfree.com|smsonline.cloud
 @@*$ghide,domain=dogdrip.net|infinityfree.com|smsonline.cloud
-||html-load.com^$redirect=noopjs,domain=carscoops.com|dziennik.pl|eurointegration.com.ua|flatpanelshd.com|fourfourtwo.co.kr|hoyme.jp|issuya.com|iusm.co.kr|logicieleducatif.fr|mydaily.co.kr|mynet.com|onlinegdb.com|picrew.me|pravda.com.ua|reportera.co.kr|sportsrec.com|sportsseoul.com|taxguru.in|text-compare.com|thesaurus.net|thestar.co.uk|tweaksforgeeks.com|videogamemods.com|wfmz.com|winfuture.de|worldhistory.org|yorkshirepost.co.uk|automobile-catalog.com|motorbikecatalog.com|maketecheasier.com|etnews.com|wort-suchen.de|word-grabber.com|palabr.as|motscroises.fr|cruciverba.it|oradesibiu.ro|w.grapps.me|gazetaprawna.pl|pressian.com
+||html-load.com^$redirect=noopjs,domain=carscoops.com|dziennik.pl|eurointegration.com.ua|flatpanelshd.com|fourfourtwo.co.kr|hoyme.jp|issuya.com|iusm.co.kr|logicieleducatif.fr|mydaily.co.kr|mynet.com|onlinegdb.com|pravda.com.ua|reportera.co.kr|sportsrec.com|sportsseoul.com|taxguru.in|text-compare.com|thesaurus.net|thestar.co.uk|tweaksforgeeks.com|videogamemods.com|wfmz.com|winfuture.de|worldhistory.org|yorkshirepost.co.uk|automobile-catalog.com|motorbikecatalog.com|maketecheasier.com|etnews.com|wort-suchen.de|word-grabber.com|palabr.as|motscroises.fr|cruciverba.it|oradesibiu.ro|w.grapps.me|gazetaprawna.pl|pressian.com
 ||07c225f3.online^$redirect=noopjs,domain=jjang0u.com
 blog.esuteru.com,blog.livedoor.jp,carscoops.com,dziennik.pl,eurointegration.com.ua,flatpanelshd.com,fourfourtwo.co.kr,hoyme.jp,issuya.com,itainews.com,iusm.co.kr,logicieleducatif.fr,mydaily.co.kr,mynet.com,onlinegdb.com,picrew.me,pravda.com.ua,reportera.co.kr,sportsrec.com,sportsseoul.com,taxguru.in,text-compare.com,thestar.co.uk,tweaksforgeeks.com,videogamemods.com,wfmz.com,winfuture.de,worldhistory.org,yorkshirepost.co.uk,etnews.com,wort-suchen.de,word-grabber.com,palabr.as,motscroises.fr,cruciverba.it,oradesibiu.ro,w.grapps.me,gazetaprawna.pl,pressian.com##+js(nostif, error-report.com)
 thesaurus.net,automobile-catalog.com,motorbikecatalog.com,maketecheasier.com##+js(nostif, loader.min.js)
@@ -19804,6 +19809,7 @@ ap7am.com,cinema.com.my,dolldivine.com,giornalone.it,jutarnji.hr,slobodnadalmaci
 cinema.com.my##+js(trusted-suppress-native-method, HTMLScriptElement.prototype.setAttribute, '"data-sdk"', abort)
 lacuarta.com,persoenlich.com,syosetu.com##+js(rmnt, script, html-load.com)
 winfuture.de##+js(aeld, load, error-report.com)
+winfuture.de##+js(trusted-replace-argument, HTMLScriptElement.prototype.setAttribute, 1, noopFunc, condition, error-report.com)
 autoby.jp,dziennik.pl,powerpyx.com,webdesignledger.com,wetteronline.de##+js(rmnt, script, .slice(-2);return decodeURIComponent)
 !#endif
 ||asset.ad-shield.cc/images$image,3p,redirect=32x32.png
