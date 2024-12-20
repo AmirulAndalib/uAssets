@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Fri, 20 Dec 2024 08:49:25 +0000
+! Last modified: Fri, 20 Dec 2024 14:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -32,6 +32,8 @@ youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container
 ||googlevideo.com/initplayback?source=youtube*&c=TVHTML5&oad=$xhr,domain=youtube.com
 ! Shorts Ad
 m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
+||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements.*?([A-Z]"\}|"\}{2\,4})\}\]\,//
+||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adSlots.*?\}\}\]\,"adBreakHeartbeatParams/"adBreakHeartbeatParams/
 ! AdDefend
 !#if env_chromium
 lablue.*##+js(nostif, push, 500)
@@ -10819,7 +10821,8 @@ stream.hownetwork.xyz##+js(disable-newtab-links)
 /assets/jquery/p2anime.js?v=
 streamruby.com##+js(rmnt, script, wpadmngr.com)
 ||astirduller.com^
-they.tube##+js(set, detectedAdblock, noopFunc)
+||ads.the.tube^
+||the.tube/js/simpleblocker.js^
 videocdnal24.xyz##+js(nowoif)
 filma24.band##.textwidget
 ! thenation.com anti-adb
@@ -11849,11 +11852,8 @@ kbconlinegame.com,hamrojaagir.com,odijob.com###my-btn, #pro-continue, #pro-link:
 kbconlinegame.com,hamrojaagir.com,odijob.com###my-btn, #pro-continue, #pro-link:others()
 kbconlinegame.com,hamrojaagir.com,odijob.com##+js(rmnt, script, /fetch|popupshow/)
 efhjd.com##+js(acs, navigator, FingerprintJS)
-buzzheavier.com###unlocker
-buzzheavier.com##.dl.disabled:remove-class(disabled)
 buzzheavier.com##+js(nowoif, !buzzheavier.com)
 buzzheavier.com###unclear2
-buzzheavier.com##button[onclick]
 jeuxenligne.xyz##form > [id][style="display: none;"]:style(display:block !important;)
 ||earnbitmoon.xyz/multiads/multiads.php
 edukaroo.com##+js(nano-sib, count, *, 0.001)
@@ -12041,6 +12041,8 @@ shortencash.click##+js(nostif, displayAdBlockerMessage)
 90fpsconfig.in,katdrive.link,kmhd.net##+js(aeld, , history.go)
 ! mobilejsr. com antiadb
 @@||mobilejsr.com^$ghide
+! bollydrive. rest adpopup redirection
+bollydrive.rest##+js(aeld, , history.go)
 !#if env_mobile
 ! *** filters/filters-mobile.txt ***
 !----- 2020 -----
