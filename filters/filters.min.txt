@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sun, 22 Dec 2024 20:49:39 +0000
+! Last modified: Mon, 23 Dec 2024 08:50:09 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -24003,10 +24003,8 @@ iqksisgw.xyz##+js(nostif, "document['\x")
 stream.hownetwork.xyz##+js(disable-newtab-links)
 /assets/jquery/p2anime.js?v=
 !#if cap_html_filtering
-favoyeurtube.net##^script:has-text(minBid)
 rubystm.com,streamruby.com##^script:has-text(wpadmngr.com)
 !#else
-favoyeurtube.net##+js(rmnt, script, minBid)
 rubystm.com,streamruby.com##+js(rmnt, script, wpadmngr.com)
 !#endif
 rubystm.com##+js(set, cRAds, false)
@@ -24029,7 +24027,8 @@ abs-cbn.com##div[style*="999999"]:has(div[style^="background-color:#ECEDEF;"] > 
 abs-cbn.com##div[style*="2147483647"]:has(> div[style$="z-index: 999;"])
 abs-cbn.com##div[style*="2147483647"]:has(.imp-adSlot-0)
 abs-cbn.com##div[id^="div-articleOOP"] ~ div:has(.imp-adSlot-0)
-abs-cbn.com##:is(.css-168qn5i, .css-1slfery, .css-xcd31q, .css-4dbdht, .css-1d3bbye):has(div[class^="imp-adSlot"])
+abs-cbn.com##:is(.css-168qn5i, .css-1slfery, .css-xcd31q, .css-4dbdht, .css-1d3bbye, .css-ob4cto):has(div[class^="imp-adSlot"])
+abs-cbn.com##.css-15j76c0:has(> div[style*="z-index: 99999"])
 abs-cbn.com##.MuiGrid-root.MuiGrid-item:not([data-testid="test-grid-item"]):has(> div.MuiBox-root > div[style] > div > div[style] > div[class^="imp-adSlot"])
 gmanetwork.com###leaderboard
 gmanetwork.com###mrect
@@ -24174,5 +24173,13 @@ javx.cc##+js(aeld, DOMContentLoaded, window.open)
 tab-maker.com##+js(no-fetch-if, googletagmanager, length:10)
 ||arabs.alarbda.com^
 netflix.com##+js(json-prune, result.adverts)
+!#if cap_html_filtering
+123animehub.cc##^script:has-text(shown_at)
+!#else
+123animehub.cc##+js(rmnt, script, shown_at)
+!#endif
+worldpopulationreview.com###top_ad_container + div:style(padding-top: 4rem !important;)
+gofirmware.com##+js(aeld, click, window.open)
+gofirmware.com##+js(nowoif, _blank)
 ! *** uAssets:filters/filters-2025.txt ***
 ! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
