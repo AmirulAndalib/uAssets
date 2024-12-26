@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Newsletter Notices
-! Last modified: Thu, 26 Dec 2024 02:49:24 +0000
+! Last modified: Thu, 26 Dec 2024 21:17:31 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3130,7 +3130,7 @@ mygenefood.com##.section--optin
 usrtk.org##.section-callout-newsletter
 crowdsupply.com##.section-email-signup
 247wallst.com##.section-email-sub
-findlaw.com,topgear.nl##.section-newsletter
+developer.mozilla.org,findlaw.com,topgear.nl##.section-newsletter
 magiclasso.co##.section-sign-up
 billyparisi.com,davidlebovitz.com,kimpetras.com,onceuponachef.com##.section-subscribe
 securityweek.com##.security-newsletter-container
