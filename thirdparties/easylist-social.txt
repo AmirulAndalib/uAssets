@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Social Widgets
-! Last modified: Tue, 24 Dec 2024 13:03:53 +0000
+! Last modified: Sat, 28 Dec 2024 08:49:24 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -10743,6 +10743,8 @@ kyivindependent.com##.c-share__wrapper
 theglobeandmail.com##.c-site-header__buttons
 theringer.com##.c-social-buttons
 cityoflondon.police.uk##.c-social-links
+coolmaterial.com##.c-socials-share-box
+coolmaterial.com##.c-socials-share-section
 marketplace.org##.c-story-meta__share
 chasingcars.com.au##.c-strap--youtube
 ctvnews.ca##.c-teaser
