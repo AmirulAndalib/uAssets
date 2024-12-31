@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2024)
-! Last modified: Mon, 30 Dec 2024 14:49:26 +0000
+! Last modified: Tue, 31 Dec 2024 08:49:33 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -4258,11 +4258,11 @@ stream.hownetwork.xyz##+js(disable-newtab-links)
 ! https://github.com/uBlockOrigin/uAssets/issues/26214
 ! https://github.com/uBlockOrigin/uAssets/issues/26582
 !#if cap_html_filtering
-rubystm.com,streamruby.com##^script:has-text(wpadmngr.com)
+rubystm.com,rubyvid.com,streamruby.com##^script:has-text(wpadmngr.com)
 !#else
-rubystm.com,streamruby.com##+js(rmnt, script, wpadmngr.com)
+rubystm.com,rubyvid.com,streamruby.com##+js(rmnt, script, wpadmngr.com)
 !#endif
-rubystm.com##+js(set, cRAds, false)
+rubystm.com,rubyvid.com##+js(set, cRAds, false)
 ||illinformed-imagination.com^
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/193664
@@ -4614,3 +4614,10 @@ chat.deepseek.com##+js(no-xhr-if, /api/v0/events)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26669
 flatai.org##+js(aeld, DOMContentLoaded, adblock)
+
+! https://github.com/uBlockOrigin/uAssets/issues/26671
+!#if cap_html_filtering
+windowsreport.com##^script:has-text(wpadmngr.com)
+!#else
+windowsreport.com##+js(rmnt, script, wpadmngr.com)
+!#endif
