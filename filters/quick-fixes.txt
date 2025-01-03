@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Fri, 03 Jan 2025 08:49:25 +0000
+! Last modified: Fri, 03 Jan 2025 14:49:32 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -84,11 +84,11 @@ sandratableother.com##+js(set, console.clear, undefined)
 ! https://github.com/uBlockOrigin/uAssets/issues/23806
 japscan.lol##+js(aost, onload, inlineScript)
 *$image,redirect-rule=1x1.gif,domain=japscan.lol
-japscan.lol##+js(aeld, DOMContentLoaded, /'Rb'|\+'10'\+/)
-japscan.lol##+js(trusted-suppress-native-method, Document.prototype.getElementsByClassName, '"FjZoRb"', abort)
+japscan.lol##+js(trusted-suppress-native-method, Document.prototype.querySelector, '"FjZoRb"', abort)
+japscan.lol##+js(trusted-suppress-native-method, Document.prototype.querySelectorAll, /navpromo/, abort)
 japscan.lol##.navbar-nav > li#navpromo2.nav-item > a:style(height: 0 !important;)
 japscan.lol##+js(norafif, /^/)
-japscan.lol##+js(spoof-css, .navbar-nav > li#navpromo2.nav-item > a, height, 40px)
+japscan.lol##+js(spoof-css, .navbar-nav > li#navpromo2.nav-item > a, height, 41px)
 ||japscan.lol/zjs/$script,replace=/function GoodDay\(\)\{.+?\}\}\}//
 japscan.lol##body > style + .container > .row > #main + #sidebar.col-md-3 > .card.mt-1 > .card[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 250px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
 japscan.lol##body > style + .container > .row > #main.col-md-9 > .card > .card-body[style="margin: 0px auto; display: block;"] > iframe[id^="__clb-"][id$="_container"][style^="display: inline-block; width: 300px; height: 100px;"][sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-scripts allow-top-navigation-to-custom-protocols"][scrolling="no"]
@@ -179,9 +179,9 @@ file-1bl9ruic-moon.com,file-kg88oaak-embed.com,file-mi11ljwj-embed.com,file-sp32
 *##body > a:only-child > div[id^="img_"][class^="img_"]:style(visibility: hidden !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/26487
 !#if env_firefox
-dogdrip.net,infinityfree.com,smsonline.cloud,webdesignledger.com##+js(trusted-set, navigator.userAgent, 'json:"Mozilla/5.0 (NAVER; rv:133.0) Gecko/20100101 Firefox/133.0"')
+dogdrip.net,infinityfree.com,smsonline.cloud##+js(trusted-set, navigator.userAgent, 'json:"Mozilla/5.0 (NAVER; rv:133.0) Gecko/20100101 Firefox/133.0"')
 !#else
-dogdrip.net,infinityfree.com,smsonline.cloud,webdesignledger.com##+js(trusted-set, navigator.userAgent, 'json:"Mozilla/5.0 (NAVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"')
+dogdrip.net,infinityfree.com,smsonline.cloud##+js(trusted-set, navigator.userAgent, 'json:"Mozilla/5.0 (NAVER) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"')
 !#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25344
@@ -195,6 +195,9 @@ bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://ww
 ! https://github.com/AdguardTeam/AdguardFilters/issues/183252
 exploader.net##+js(ra, href, a[style*="display:"][href^="https://al.dmm.co.jp"], stay)
 *$image,redirect-rule=32x32.png,domain=exploader.net
+||dmm.co.jp^$domain=exploader.net,badfilter
+exploader.net##article > div[style*="1120px"]:style(margin-left: -10000px !important;)
+exploader.net##+js(spoof-css, article > div[style*="1120px"]\, article > div[style*="1120px"] *, margin-left, 0px, _rectx, 1)
 
 ! https://github.com/easylist/easylistgermany/issues/216
 !#if cap_html_filtering
@@ -208,3 +211,6 @@ rekidai-info.github.io##+js(nostif, /aframe|querySelector/)
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/195216
 ||status.techtarget.itmedia.co.jp^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/20907
+@@||cursomecanet.com^$script,1p
