@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sat, 04 Jan 2025 14:52:56 +0000
+! Last modified: Sat, 04 Jan 2025 20:55:09 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -5967,9 +5967,11 @@ firefaucet.win##[class^="sticky-ad"]
 ||cpx-research.com^$3p
 ||adservice.google.*/adsid/integrator.js$xhr,redirect=nooptext,domain=tubia.com
 odkrywamyzakryte.com##+js(nofab)
-xtapes.to##+js(acs, jQuery, popunder)
-xtapes.to##+js(aopw, open)
+xtapes.to##+js(acs, document.write, unescape)
 74k.io##+js(set, cRAds, true)
+74k.io##+js(set, uas, [])
+88z.io##body > iframe[style^="left: 0px; bottom:"]
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=88z.io
 0xxx.ws##+js(acs, decodeURI, decodeURIComponent)
 0xxx.ws##+js(nowoif)
 ! gocolumbialions.com anti adb
@@ -17174,8 +17176,11 @@ thothd.com##.table
 /player/stats.php?$image,redirect=1x1.gif
 #@#.ads-iframe
 ##.ads-iframe:not([style="position: absolute; left: -10px; top: -10px;"])
-mafiatown.pl##+js(set, aLoad, noopFunc)
-mafiatown.pl##+js(set, mtCanRunAdsSoItCanStillBeOnTheWeb, true)
+!#if cap_html_filtering
+mafiatown.pl##^script:has-text(AreLoaded)
+!#else
+mafiatown.pl##+js(rmnt, script, AreLoaded)
+!#endif
 rtl.de##+js(nostif, null, 10)
 @@||iocnt.net^$script,domain=rtl.de
 @@||googletagmanager.com/gtm.js$script,domain=rtl.de
@@ -24079,3 +24084,4 @@ siamblockchain.com##.ai-viewport-1
 ! dotycat.com anti adblock
 dotycat.com##+js(set, runCheck, noopFunc)
 arcaxbydz.id##+js(set, detectAdBlock, noopFunc)
+rateyourmusic.com##+js(set, adsSlotRenderEndSeen, true)
