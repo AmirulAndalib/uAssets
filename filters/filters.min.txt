@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sun, 05 Jan 2025 08:49:22 +0000
+! Last modified: Sun, 05 Jan 2025 20:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -13542,22 +13542,20 @@ themosvagas.com.br##ins.adsbygoogle
 themosvagas.com.br##.ads300x600
 youtubemp3donusturucu.net##+js(aeld, click, t(a))
 novelmultiverse.com##+js(nostif, disableDeveloperTools)
-maxstream.video,maxlinks.online##+js(nostif, alert)
-maxstream.video,maxlinks.online##+js(nano-stb, .fadeIn(), 3000)
-maxstream.video,maxlinks.online##+js(nowoif)
-@@*$script,1p,domain=maxstream.video|maxlinks.online|maxstreams.site
-@@||linkonclick.com/*/display.php$script,frame,domain=maxstream.video|maxlinks.online|maxstreams.site
-@@||ads.host-cdn.net/*.js|$script,domain=maxstream.video|maxlinks.online|maxstreams.site|uprot.net
-@@/^https:\/\/ads\.host-cdn\.net\/\w+\.js\?\w+$/$script,3p,to=ads.host-cdn.net,from=maxstream.video|maxlinks.online|maxstreams.site|uprot.net
-host-cdn.net^$image,redirect-rule=32x32.png,domain=maxstream.video|maxlinks.online|maxstreams.site
-maxstream.video,maxlinks.online,maxstreams.site###adsads:style(height: 9px !important;)
-maxstream.video,maxlinks.online,maxstreams.site##h1:has-text(/adblock|supporter/)
-/*.php$doc,domain=maxstream.video|maxlinks.online|maxstreams.site
-! maxstream.video,maxlinks.online,maxstreams.site##^responseheader(location)
+maxstream.video##+js(nostif, alert)
+maxstream.video##+js(nano-stb, .fadeIn(), 3000)
+maxstream.video##+js(nowoif)
+@@*$script,1p,domain=maxstream.video
+@@||linkonclick.com/*/display.php$script,frame,domain=maxstream.video
+@@||ads.host-cdn.net/*.js|$script,domain=maxstream.video|uprot.net
+@@/^https:\/\/ads\.host-cdn\.net\/\w+\.js\?\w+$/$script,3p,to=ads.host-cdn.net,from=maxstream.video|uprot.net
+host-cdn.net^$image,redirect-rule=32x32.png,domain=maxstream.video
+maxstream.video###adsads:style(height: 9px !important;)
+maxstream.video##h1:has-text(/adblock|supporter/)
+/*.php$doc,domain=maxstream.video
 @@||uprot.net^$ghide
 uprot.net##*[style="display:none;"]:style(display:block !important)
-@@||ads.host-cdn.net/ads2.js$script,domain=maxstream.video|maxlinks.online|maxstreams.site|uprot.net
-@@||maxlinks.online^$ghide
+@@||ads.host-cdn.net/ads2.js$script,domain=maxstream.video|uprot.net
 videoseyred.in##+js(nowoif)
 !#if !cap_html_filtering
 listendata.com##+js(rmnt, script, AdBlocker)
@@ -23772,7 +23770,10 @@ akirabox.com##+js(nowoif, _blank)
 redvido.com##+js(acs, onload, open)
 redvido.com##+js(aopr, Adcash)
 upns.*##+js(aeld, click, document.createElement)
+upns.*##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"])
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=upns.*,redirect=google-ima.js
+upns.ink,upns.one,upns.xyz##div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01; cursor: pointer;"]
+||restedpealimagine.com^$popup,doc
 ! movielinkbd ads
 1movielinkbd.com,filecloud.*,gdfile.org,movieliinkbd.com##+js(nowoif)
 movielinkbd.me##+js(nowoif, _blank)
@@ -24090,3 +24091,6 @@ streamingnow.mov##+js(rmnt, script, popundersPerIP)
 streamingnow.mov##+js(rmnt, script, adserverDomain)
 player.vidbinge.com##+js(rmnt, script, HTMLAllCollection)
 *$script,3p,denyallow=gstatic.com,domain=vidbinge.com
+sportnews.to,thesciencetoday.com##+js(rmnt, script, =="])
+! popups https://github.com/uBlockOrigin/uAssets/issues/26737
+sumax43.autos##+js(trusted-set-cookie, lastClicked, 9999999999999)
