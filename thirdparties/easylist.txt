@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList
 ! Expires: 6 days (update frequency)
-! Last modified: Wed, 08 Jan 2025 14:50:46 +0000
+! Last modified: Wed, 08 Jan 2025 20:49:49 +0000
 ! Diff-Path: %diffpath%#easylist
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -20,7 +20,6 @@
 -ad-300x600-
 -ad-458x80.
 -ad-manager/$~stylesheet
--ad-right.
 -ad-sidebar.
 -ad-util.
 -ad.jpg.pagespeed.
@@ -37,7 +36,6 @@
 -footerads.
 -housead-
 -page-ad.
--page-peel/
 -PcmModule-Taboola-
 -popexit.
 -popunder.
@@ -47,7 +45,7 @@
 -sponsor-ad.
 -sticky-ad-
 -top-ads.
--web-advert-
+-web-advert-$image
 -Web-Advert.
 .adriver.$~object,domain=~adriver.co
 .adrotate.
@@ -55,14 +53,12 @@
 .ads-min.
 .ads.controller.
 .ads.css
-.ads.darla.
 .adsbox.
-.adserver.
 .advert.$domain=~advert.ae|~advert.ge|~advert.io|~advert.ly|~advert.media|~advert.org.pl
 .ar/ads/
 .ashx?AdID=
 .aspx?adid=
-.az/adv/
+.az/adv/$~xmlhttprequest
 .br/ads/
 .bz/ads/
 .ca/ads/
@@ -746,6 +742,7 @@
 /suurl5.php$third-party
 /suv4.js$third-party
 /suv5.js$third-party
+/Sw_commonAD.js$script
 /taboola-footer.js$script
 /taboola-header.js$script
 /taboola_8.9.1.js$script
@@ -856,8 +853,6 @@
 ?wpstealthadsjs=
 _ad_250.
 _ad_300.
-_ad_728_
-_ad_background.
 _ad_banner.
 _ad_bottom.
 _ad_box.
@@ -872,8 +867,6 @@ _ad_sidebar_
 _ad_skyscraper.
 _ad_wrapper.
 _adbanner_
-_adbanners.
-_adcall.
 _adchoice.
 _adchoices.
 _adhome.
@@ -885,12 +878,9 @@ _adright.
 _ads.cgi
 _ads.cms?
 _ads.php?
-_ads_reporting.
 _ads_updater-
 _adscommon.
-_adscript.
 _adserve.
-_adserver.
 _adskin.
 _adskin_
 _adtitle.
@@ -907,12 +897,9 @@ _banner_ad_
 _Banner_Ads_
 _bannerad.
 _BannerAd_
-_bannerads_
 _bottom_ads.
 _bottom_ads_
-_commonAD.
 _footer_ad_
-_google_ads.
 _gpt_ads.
 _header_ad.
 _header_ad_
@@ -925,7 +912,6 @@ _left_ad.
 _panel_ads.
 _partner_ad.
 _popunder_
-_popupunder.
 _pushads.
 _rectangle_ads.
 _reklama_$domain=~youtube.com
@@ -941,7 +927,6 @@ _square_ad.
 _sticky_ad.
 _StickyAd.
 _text_ads.
-_textads.
 _top_ad.
 _vertical_ad.
 _web-advert.
@@ -1077,7 +1062,7 @@ _widget_ad.
 /prebid_$script,third-party
 /prebidlink/*$script
 /tagman/*$domain=~abelssoft.de
-_prebid.js
+_prebid.js$script
 &sadbl=1&abtg=$third-party
 &sadbl=1&chu=$third-party
 ! linkbucks.com script
@@ -16539,6 +16524,7 @@ browsershots.org#@#.advert_area
 ||91cd3khn.de^
 ||91df02fe64.com^
 ||921b6384ac.com^
+||92888e5ff3.com^
 ||92e6136b5d.com^
 ||92e703f830.com^
 ||92f77b89a1b2df1b539ff2772282e19b.com^
@@ -16596,6 +16582,7 @@ browsershots.org#@#.advert_area
 ||a-waiting.com^
 ||a00s.net^
 ||a06bbd98194c252.com^
+||a08387be3d.com^
 ||a0905c77de.com^
 ||a11d3c1b4d.com^
 ||a11k.com^
@@ -17966,6 +17953,7 @@ browsershots.org#@#.advert_area
 ||alsdebaticalfelixsto.org^
 ||alsindustrate.info^
 ||alsindustratebil.com^
+||alsolrocktor.com^
 ||altaicpranava.shop^
 ||altairaquilae.top^
 ||altarrousebrows.com^
@@ -19026,6 +19014,7 @@ browsershots.org#@#.advert_area
 ||b21379380e.com^
 ||b21be0a0c8.com^
 ||b225.org^
+||b23010ff32.com^
 ||b3b4e76625.com^
 ||b3b526dee6.com^
 ||b3mccglf4zqz.shop^
@@ -23539,6 +23528,7 @@ browsershots.org#@#.advert_area
 ||droppingprofessionmarine.com^
 ||dropsclank.com^
 ||drownbossy.com^
+||drpggagxsz.com^
 ||drsmediaexchange.com^
 ||drtlgtrnqvnr.xyz^
 ||drubbersestia.com^
@@ -26844,6 +26834,7 @@ browsershots.org#@#.advert_area
 ||gypsitenevi.com^
 ||gypufahuyhov.xyz^
 ||gytlingpaint.top^
+||gyvwigvwqkm.com^
 ||gyxkmpf.com^
 ||gzglmoczfzf.com^
 ||gzifhovadhf.com^
@@ -30117,6 +30108,7 @@ browsershots.org#@#.advert_area
 ||loastees.net^
 ||loathecurvedrepress.com^
 ||loatheskeletonethic.com^
+||loavolougloatom.net^
 ||loazuptaice.net^
 ||lobatehellion.top^
 ||lobbiessurfman.top^
@@ -34380,6 +34372,7 @@ browsershots.org#@#.advert_area
 ||playvideoclub.com^
 ||playvideodirect.com^
 ||playwrightsovietcommentary.com^
+||plcubmiinxa.com^
 ||pleadsbox.com^
 ||pleasantlyknives.com^
 ||pleasantpaltryconnections.com^
@@ -36553,6 +36546,7 @@ browsershots.org#@#.advert_area
 ||rewakenreaware.top^
 ||rewardjav128.fun^
 ||rewardsaffiliates.com^
+||rewearoutwale.shop^
 ||rewindgills.com^
 ||rewindgranulatedspatter.com^
 ||rewinedropshop.info^
@@ -37085,6 +37079,7 @@ browsershots.org#@#.advert_area
 ||rvotdlvpwmynan.xyz^
 ||rvrpushserv.com^
 ||rvvmynjd.love^
+||rwoscaonf.com^
 ||rwpgtlurfllti.com^
 ||rwrkeqci.xyz^
 ||rwtrack.xyz^
@@ -39650,6 +39645,7 @@ browsershots.org#@#.advert_area
 ||telwrite.com^
 ||temgthropositea.com^
 ||temksrtd.net^
+||temperansar.top^
 ||temperaturemarvelcounter.com^
 ||tempergleefulvariability.com^
 ||temperickysmelly.com^
@@ -41140,6 +41136,7 @@ browsershots.org#@#.advert_area
 ||unskilfulwalkerpolitician.com^
 ||unskilledexamples.com^
 ||unsnareparroty.com^
+||unsoothippi.top^
 ||unspeakablefreezing.com^
 ||unspeakablepurebeings.com^
 ||unstantleran.com^
@@ -46713,6 +46710,7 @@ browsershots.org#@#.advert_area
 ||alpine-vpn.com^$popup
 ||alpinedrct.com^$popup
 ||alreadyballetrenting.com^$popup
+||alsolrocktor.com^$popup
 ||altairaquilae.top^$popup
 ||alternads.info^$popup
 ||alternativecpmgate.com^$popup
