@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Wed, 08 Jan 2025 08:49:27 +0000
+! Last modified: Wed, 08 Jan 2025 14:50:46 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -13626,7 +13626,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||change.org/api-proxy/-/et
 ||change.org/api-proxy/-/event_tracker
 ||channel.io/front/v*/channels/*/events
-||chat.deepseek.com/api/v0/events
 ||chatfuel.com/cf-analytics/
 ||chatgpt.com/ces/v1/t
 ||chatroll.com/t.gif
@@ -52777,6 +52776,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||metrics.bangbros.com/tk.js$~third-party
 @@||mlbstatic.com/mlb.com/adobe-analytics/$script,domain=mlb.com
 @@||mmstat.com/eg.js$script,domain=aliexpress.com
+@@||monkfieldreptile.com/nlrum/nlRUM.js$~third-party
 @@||mopar.com/moparsvc/mopar-analytics-state$~third-party
 @@||mozu.com^*/monetate.js$script,domain=acehardware.com
 @@||mparticle.com/js/v2/*/mparticle.js$script,domain=bk.com|bravotv.com|cnbc.com|gymshark.com|motortrendondemand.com|nbcsports.com
