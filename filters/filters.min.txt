@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Thu, 16 Jan 2025 08:49:25 +0000
+! Last modified: Thu, 16 Jan 2025 14:49:28 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7622,11 +7622,6 @@ naniplay.com##+js(nowoif)
 @@||3amid-url.blogspot.com^$ghide
 librospreuniversitariospdf.blogspot.com##+js(nostif, getComputedStyle)
 *$script,3p,denyallow=disqus.com|disquscdn.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|hcaptcha.com|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|googleusercontent.com|blogger.com|plyr.io,domain=librospreuniversitariospdf.blogspot.com
-@@||appnee.com^$ghide
-appnee.com##ins.adsbygoogle
-appnee.com###babasbmsgx
-appnee.com##[href^="https://appnee.com/advertising/"] > [src^="https://img.appnee.com/other/"][alt="Ads Place"]
-appnee.com##+js(rmnt, script, alert)
 ! wojtekczytawh40k.blogspot.com anti-adb
 wojtekczytawh40k.blogspot.com##+js(acs, addEventListener, ADBLOCK)
 ! atdhe .cc / sx popups, ads
@@ -19945,6 +19940,7 @@ megadrive-emulator.com##+js(nostif, biteDisplay)
 megadrive-emulator.com##+js(set, blext, true)
 megadrive-emulator.com##.generalgames_box_home ul > div
 eromanga-show.com,hentai-one.com,hentaipaw.com##+js(nostif, /[a-z]\(!0\)/, 800)
+*$script,3p,domain=eromanga-show.com|hentai-one.com|hentaipaw.com
 tvhay.*##+js(set, vidorev_jav_plugin_video_ads_object, {})
 tvhay.*##+js(set, vidorev_jav_plugin_video_ads_object_post, {})
 nasonga.co.ke##[id^="google_ads_iframe"]:remove()
@@ -23832,6 +23828,12 @@ sbs.com.au##+js(trusted-prevent-xhr, sbs.demdex.net/dest5.html?d_nsid=0&ord=, De
 sbs.com.au##+js(trusted-prevent-xhr, securepubads.g.doubleclick.net/pagead/ima_ppub_config?ippd=https%3A%2F%2Fwww.sbs.com.au%2Fondemand%2F&ord=, ["4117"])
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?ord=$xhr,domain=sbs.com.au
 @@||sbs.demdex.net/dest5.html?d_nsid=0&ord=$xhr,domain=sbs.com.au
+@@||appnee.com^$ghide
+appnee.com##ins.adsbygoogle
+appnee.com###babasbmsgx
+appnee.com##[href^="https://appnee.com/advertising/"] > [src^="https://img.appnee.com/other/"][alt="Ads Place"]
+appnee.com##+js(noeval-if, /chp_?ad/)
+||filletfiguredconstrain.com^
 ! END: Rules from filters.txt
 opentunnel.net##+js(no-xhr-if, ad.plus)
 @@||ad.plus/cdn-cgi/trace|$xhr,method=head,domain=opentunnel.net
@@ -23845,6 +23847,7 @@ sussytoons.site##+js(no-fetch-if, doubleclick)
 ! bitchute.com##.q-dialog__backdrop
 bitchute.com##body:style(overflow: auto !important)
 bitchute.com###advertisement-banner
+bitchute.com##.fit.no-shadow.q-card--flat.q-card:has(iframe[id="spoSide"])
 anonymfile.com,gofile.to##+js(set, countDown, 0)
 virtualdinerbot.com##+js(set, nitroAds.abp, true)
 ! siamblockchain. com detection
