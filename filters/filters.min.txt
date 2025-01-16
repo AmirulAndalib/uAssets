@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 15 Jan 2025 21:26:08 +0000
+! Last modified: Thu, 16 Jan 2025 02:49:27 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9306,7 +9306,7 @@ ikingfile.mooo.com##+js(nowoif)
 fuckingfast.co##+js(rpnt, script, !seen && ad, false)
 ||fuckingfast.co/f/*/dl^$xhr,1p
 ||senditfast.cloud^$doc
-streamelements.com##+js(trusted-set, google_srt, json:0.6)
+streamelements.com##+js(trusted-set, google_srt, json:0.612)
 streamelements.com##+js(set, sensorsDataAnalytic201505, {})
 ||validate.strms.net/*adblock%3Dtrue$doc,uritransform=/adblock%3Dtrue/adblock%3Dfalse/
 ! shortylink. store popup
@@ -23874,7 +23874,9 @@ express.co.uk###web-strip-banner
 unlimitedfiles.xyz##+js(nowoif)
 ||tronkwintun.com^
 ||conceivesaucerfalcon.com^
+||blearspellaea.shop^
 ||condemnfundraiserjune.com^
+||frankerreedits.com^
 ||uncotorture.com^
 ||publicrecords.netronline.com/js/checkuser.js$script,1p
 moviediskhd.cloud##+js(acs, document.createElement, warning)
@@ -23936,3 +23938,6 @@ incgrepacks.com##[href^="https://candy.ai"]
 incgrepacks.com##.incgr-before-content_2
 ! jattfilms. cfd ad redirect
 jattfilms.cfd###clickfakeplayer[href]:remove-attr(href)
+@@||earnvids.com/ad?type=$script
+bypass.link##+js(no-fetch-if, googlesyndication)
+tmail.sys64738.at##+js(no-fetch-if, googlesyndication)
