@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Sun, 26 Jan 2025 02:49:23 +0000
+! Last modified: Sun, 26 Jan 2025 14:49:26 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -2113,6 +2113,7 @@ rabble.ca,sciencenews.org,thedp.com##.donate-box
 lifesitenews.com##.donate-callout
 insideclimatenews.org##.donate-cta
 ourworldindata.org##.donate-footer
+dailyartmagazine.com##.donate-row
 mprnews.org##.donateAsk
 democracynow.org##.donate_banner
 peoplesworld.org##.donate_strip
