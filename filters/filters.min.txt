@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 29 Jan 2025 02:49:22 +0000
+! Last modified: Wed, 29 Jan 2025 08:49:28 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -6454,6 +6454,7 @@ imagetwist.com##+js(acs, document.getElementsByTagName, "script")
 imagehaha.com,imagenpic.com,imageshimage.com,imagetwist.com##+js(aeld, , checkTarget)
 imagehaha.com,imagenpic.com,imageshimage.com,imagetwist.com,picshick.com###rang2
 imagehaha.com,imagenpic.com,imageshimage.com,imagetwist.com##video
+imagehaha.com,imagenpic.com,imageshimage.com,imagetwist.com,picshick.com##a[href^="https://candy.ai/"]
 imagehaha.com##+js(nowoif)
 @@||watchsuitsonline.net^$ghide
 produsat.com##+js(set, adBlockDetected, true)
@@ -23832,7 +23833,8 @@ interfans.org##+js(aeld, DOMContentLoaded, adsBlocked)
 immoweb.be##[id^="adims_"]
 ! animez.org popups
 animez.org##+js(nowoif)
-abstream.to##+js(rmnt, script, /adblock/i)
+abstream.to##+js(rmnt, script, /adblock|Cuba/i)
+abstream.to##+js(nowoif)
 @@||aktuality.sk^$ghide
 ! earn.punjabworks.com detection
 earn.punjabworks.com##+js(rmnt, script, /adbl/i)
@@ -23878,3 +23880,5 @@ uns.bio##+js(nowoif)
 uns.bio###dynamic-overlay
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=uns.bio,redirect=google-ima.js
 pawastreams.pro##+js(rmnt, script, /adserverDomain|ai_cookie/)
+editor.plantuml.com##body:style(margin:0 !important)
+editor.plantuml.com##body>#external_container:style(height:100% !important)
