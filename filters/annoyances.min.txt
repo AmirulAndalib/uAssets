@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Annoyances
 ! Expires: 7 days
-! Last modified: Sun, 02 Feb 2025 20:51:49 +0000
+! Last modified: Tue, 04 Feb 2025 08:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-annoyances
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -4055,3 +4055,9 @@ loverslab.com##+js(nano-sib)
 easyjet.com,ing.nl##+js(cookie-remover, ak_bmsc, when, scroll keydown)
 !#endif
 cowcotland.com##+js(rmnt, script, /adbl/i)
+! GliaCloud
+||player.gliacloud.com^$3p
+##.gliaplayer-container
+appget.com###side_right > div[style="margin: 0 0 20px 25px;"]
+ejje.weblio.jp##.mainBlock[style="min-height: 270px;"]
+weblio.jp##.firstDictVideoAd
