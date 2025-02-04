@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Tue, 04 Feb 2025 08:49:24 +0000
+! Last modified: Tue, 04 Feb 2025 14:49:35 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -17781,7 +17781,7 @@ emturbovid.com,findjav.com,javggvideo.xyz,mmtv01.xyz,stbturbo.xyz,streamsilk.com
 ||javggvideo.xyz^$replace=/openNewTab\(".*?"\)/null/g
 ||emturbovid.com^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 !#endif
-##.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
+! ##.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
 !#if env_mobile
 emturbovid.com,hihihehe01.xyz,playm4u.xyz#@#.jw-wrapper > div[style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"]
 !#endif
@@ -21041,7 +21041,7 @@ apkmirror.com##^script:has-text(document.createTextNode)
 !#if !cap_html_filtering
 apkmirror.com##+js(rmnt, script, document.createTextNode)
 !#endif
-vidsrc.*##+js(acs, document.write)
+!vidsrc.*##+js(acs, document.write)
 vidsrc.*##+js(nosiif, /0x|sandCheck/)
 vidsrc.*##+js(nowoif)
 vidsrc.*##+js(aopr, __Y)
@@ -22580,8 +22580,11 @@ game8.co##.js-side-ads-movie-container:remove()
 modrinth.com##section.normal-page__content a[href*="/redirect/"] img
 modrinth.com##section.normal-page__content [href^="https://bisecthosting.com/"][href*="?r="] img
 modrinth.com##section.normal-page__content :is([href^="https://ModdersAgainstBlockers.github.io"],[href*="/kinetic/"],[href*="/creeperhost"],[href^="https://fxco.ca/assets/"],[href^="https://rb.gy/"]) > img
+modrinth.com##section.normal-page__content p > img[alt^="Use code"]
 curseforge.com##:is(.project-description,div.project-detail__content) [href^="/linkout?remoteUrl=http"]:is([href*="fxco.ca"]) > img
 ||i.imgur.com/h4556XW.gif$image,3p
+curseforge.com##:is(.project-description,div.project-detail__content) p > img[alt^="Use code"]
+modrinth.com,curseforge.com##+js(rmnt, h2, /creeperhost/i)
 arenascan.com##+js(aost, document.getElementById, adsBlocked)
 arenascan.com###floatcenter
 datanodes.to##[href^="https://cinemaunlocked.com"]
@@ -23705,6 +23708,7 @@ msn.com##msft-article-card:not(.contentCard)
 www.msn.com##+js(json-prune-fetch-response, properties.componentConfigs.slideshowConfigs.slideshowSettings.interstitialNativeAds, , propsToMatch, url:consumptionpage/gallery_windows/config.json)
 www.msn.com##+js(json-prune-fetch-response, *, list.[].link.kicker, propsToMatch, /content/v1/cms/api/amp/Document)
 msn.com##.vd-ad
+www.msn.com##+js(json-prune-fetch-response, properties.tiles.[-].isAd, , propsToMatch, /mestripewc/default/config)
 camhub.world##+js(nostif, visibility, 2000)
 ||camhub.world/player/player_ads.html$frame,1p,redirect=noopframe
 ! camhub.cc anti-adb/popunder
@@ -23950,3 +23954,4 @@ reshare.pm##+js(rmnt, script, popundersPerIP)
 pienovels.com##+js(noeval-if, adsbygoogle)
 maggotdrowning.com##+js(aeld, DOMContentLoaded, adBlockNotice)
 gleaks.pro##+js(acs, document.createElement, fuckAdBlock)
+animepahe.*##+js(no-xhr-if, googlesyndication)
