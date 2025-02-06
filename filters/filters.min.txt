@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Thu, 06 Feb 2025 14:49:23 +0000
+! Last modified: Thu, 06 Feb 2025 20:59:17 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -2175,10 +2175,6 @@ alphaporno.com,zedporn.com##.block-banner
 alphaporno.com##.movies-block > div[style*="text-align:center;"]
 alphaporno.com,zedporn.com##.sponsor
 ||alphaporno.com/bravoplayer/custom/alphapornocom/scripts/inplaybn-
-lequipe.fr##+js(nostif, start, 0)
-@@||lequipe.fr/js/thirdparty/smarttag.js$script,1p
-@@||lequipe.fr/js/thirdparty/prebid.js$script,1p
-@@||lequipe.fr^$ghide
 ?zoneId=*&sponsor$frame
 porntube.com##.relatedContainer
 porntube.com##.col-md-3:has(> iframe[src^="/external"])
@@ -8627,14 +8623,14 @@ blog.disheye.com###gourl:style(display: block !important;)
 blog.disheye.com###gourl:others()
 amanguides.com,highkeyfinance.com##+js(rmnt, script, deblocker)
 ! cuty.io (https://cutty.app/b6InEDRzF8NF)
-cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##.steps-to-earn, .flex.share-icons-container, .register-banner, fieldset, .partners-container, .actions
-cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##+js(aeld, click, /handleClick|popup/)
-cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##+js(set, blurred, false)
-cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##+js(acs, navigator, FingerprintJS)
+cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##.steps-to-earn, .flex.share-icons-container, .register-banner, fieldset, .partners-container, .actions
+cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(aeld, click, /handleClick|popup/)
+cety.app,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(set, blurred, false)
+cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(acs, navigator, FingerprintJS)
 !#if cap_html_filtering
-cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##^script:has-text(/popup/i)
+cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##^script:has-text(/popup/i)
 !#else
-cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net##+js(rmnt, script, /popup/i)
+cety.app,exe-urls.com,exego.app,cutlink.net,cutsy.net,cutyurls.com,cutty.app,cutnet.net,jixo.online##+js(rmnt, script, /popup/i)
 !#endif
 cety.app,cuty.me##+js(trusted-override-element-method, HTMLAnchorElement.prototype.click, a[target="_blank"][style])
 cety.app,cuty.me##+js(aeld, DOMContentLoaded, history.go)
