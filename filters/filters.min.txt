@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sun, 09 Feb 2025 14:49:25 +0000
+! Last modified: Sun, 09 Feb 2025 20:49:23 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -3009,9 +3009,6 @@ peliculas24.*##+js(acs, blur)
 peliculas24.*##+js(aopw, smrtSB)
 peliculas24.*##[href^="http://refpadsm.host/"]
 topvideosgay.com##+js(aopr, open)
-kissjav.*##.column:has(> .card > .adv)
-kissjav.*##.is-12-touch.is-narrow-desktop.has-text-centered
-kissjav.*##+js(aost, atob, _0x)
 ihackedgames.com##+js(aopr, decodeURIComponent)
 onlinevideoconverter.*##+js(nowoif)
 @@||onlinevideoconverter.*^$ghide
@@ -23782,6 +23779,7 @@ unlimitedfiles.xyz##+js(nowoif)
 ||condemnfundraiserjune.com^
 ||frankerreedits.com^
 ||gillspaste.com^
+||jousteevoofooge.net^
 ||pingergauss.com^
 ||questioningcomplimentarypotato.com^
 ||uncotorture.com^
@@ -23996,3 +23994,9 @@ bgmiupdate.com.in##+js(set, HTMLImageElement.prototype.onerror, undefined)
 lewdgames.to##+js(acs, document.addEventListener, adLink)
 lewdgames.to##a.downloadLink[data-wpel-link="external"]
 /\/js\/script_\d{2}\.\d{2}\.js\?\d+$/$script,1p,strict1p
+kissjav.*##+js(acs, WebAssembly, Promise)
+kissjav.*##.asside-link
+quotesshine.com##+js(set, detectAdBlock, noopFunc)
+||pagead2.googlesyndication.com/pagead/imgad?$image,redirect=1x1.gif
+flixhouse.com##+js(rpnt, script, /window.location.href[^?]+this[^?]+;/)
+flixhouse.com##.bottom-left.jq-toast-wrap
