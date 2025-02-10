@@ -1,5 +1,5 @@
 ! Title: uBlock filters – Cookie Notices
-! Last modified: Mon, 10 Feb 2025 08:49:24 +0000
+! Last modified: Mon, 10 Feb 2025 20:50:08 +0000
 ! Expires: 7 days
 ! Description: Filters optimized for uBlock Origin, to be used with EasyList's and/or Adguard's "Cookie Notices" list(s)
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -450,6 +450,8 @@ skandia.se##+js(trusted-set-cookie, SK_CONSENT, {%22hasAccepted%22:true%2C%22fun
 welcomestores.gr##+js(trusted-set-cookie, ConsentChecked, '{"userHasSetCookies":true,"functionalityCookies":false,"statisticCookies":false,"marketingCookies":false}')
 ! https://github.com/uBlockOrigin/uAssets/issues/27140
 cosmo-hairshop.de##+js(trusted-click-element, #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll)
+! https://www.siivous.fi/
+siivous.fi##+js(trusted-set-cookie, cc_cookie, %7B%22level%22%3A%5B%22necessary%22%5D%2C%22revision%22%3A0%2C%22data%22%3Anull%2C%22rfc_cookie%22%3Atrue%7D, 1year)
 
 
 !! Needs additional cookies
@@ -1727,7 +1729,7 @@ cdn.privacy-mgmt.co##+js(trusted-click-element, button[title="TILLAD NØDVENDIGE
 consent.spielaffe.de##+js(trusted-click-element, button[title="Accept All & Close"], ,1000)
 
 ! just Use necessary cookies only
-degiro.*,vikingline.com,tfl.gov.uk##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline)
+degiro.*,vikingline.com,tfl.gov.uk##+js(trusted-click-element, #CybotCookiebotDialogBodyButtonDecline, , 1000)
 
 ! Necessary + functional cookies
 interactivebrokers.com##+js(trusted-set-local-storage-item, consentMode, '{"functionality_storage":"granted","security_storage":"granted","ad_storage":"denied","analytics_storage":"denied","ad_personalization":"denied","ad_user_data":"denied"}')
@@ -3275,6 +3277,10 @@ uza.be,uzafoundation.be,uzajobs.be##+js(trusted-click-element, a.eu-cookie-compl
 ! reject
 programmes.uliege.be##+js(trusted-set-cookie, CookieScriptConsent, '{"action":"reject","categories":"[]"}')
 
+! reject
+bergzeit.*##+js(trusted-click-element, button[class="cookie-disclaimer__button-save | button"], , 1000)
+bergzeit.*##+js(trusted-click-element, button[class="cookie-disclaimer__button | button button--secondary"], , 1000)
+
 ! required
 renault-hoffmann-niedernhausen.de##+js(set-cookie, hide-gdpr-bar, true)
 renault-hoffmann-niedernhausen.de##+js(trusted-set-cookie, gdpr-opt-ins, '[]')
@@ -3334,3 +3340,6 @@ svtplay.se##+js(trusted-set-cookie, cookie-consent-1, '{"required_storage":true,
 ! https://github.com/uBlockOrigin/uAssets/issues/27133 - embeds
 ioplus.nl##+js(set-local-storage-item, consentInteraction, true)
 ioplus.nl##+js(trusted-set-local-storage-item, consentSettings, {"essential":true\,"embeds":true})
+
+! Necessary + preferences
+napakka.fi##+js(trusted-set-cookie, CookieConsent, {necessary:true%2Cpreferences:true%2Cstatistics:false%2Cmarketing:false%2Cmethod:%27explicit%27}, 1year)
