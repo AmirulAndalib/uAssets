@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Quick fixes
 ! Expires: 12 hours
-! Last modified: Fri, 14 Feb 2025 08:49:23 +0000
+! Last modified: Fri, 14 Feb 2025 14:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-quick-fixes
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -72,7 +72,7 @@ maxfinishseveral.com##+js(acs, EventTarget.prototype.addEventListener, delete wi
 japscan.lol##+js(norafif, /^/)
 japscan.lol##+js(trusted-set-attr, .navbar-nav > li#navpromo2.nav-item > a, onclick, 'let a=function(){};return false;')
 japscan.lol#@#+js(rmnt, script, Good_2025)
-japscan.lol##+js(rmnt, script, getElementsByClassName)
+japscan.lol##+js(aeld, load, querySelectorAll')
 ! START: Counter Liste FR rules
 japscan.lol#@##main > .card:has(a[href*="/manga/?type="][href*="&content="][target="_blank"])
 japscan.lol#@#div.container > [href]
@@ -105,6 +105,7 @@ poophq.com,veev.to##+js(rpnt, script, /=\(['"].*?h.*?o.*?c.*?a.*?s['"]?/, "$1(fu
 poophq.com,veev.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
 !#if cap_html_filtering
 poophq.com,veev.to##^script:has-text(/__abburi|ad-provider\.js|while\\x20\(true\)|\'gger\'|291714XFibRN|\;\}\;\}\(\)\)\;\(|__proto__|\'bind\'|\(\)\{return\!\!\[\]\;\}|parseInt\(b\(0x/)
+||static.veevcdn.co/assets/videoplayer/$script,3p,replace=/\'\;return new Promise\(function\(_0x.*?\}\)\[_0x/';[_0x/,domain=poophq.com|veev.to
 !#else
 poophq.com,veev.to##+js(rmnt, script, /__abburi|ad-provider\.js|while\\x20\(true\)|\'gger\'|291714XFibRN|\;\}\;\}\(\)\)\;\(|__proto__|\'bind\'|\(\)\{return\!\!\[\]\;\}|parseInt\(b\(0x/)
 !#endif
@@ -113,8 +114,7 @@ poophq.com,veev.to##+js(rmnt, script, /__abburi|ad-provider\.js|while\\x20\(true
 ||adsco.re^$xhr,important,domain=poophq.com|veev.to
 poophq.com,veev.to##+js(no-xhr-if, 162.252.214.4, true)
 !#else
-poophq.com,veev.to##+js(nosiif, !/^function timer\(\) \{.*window\._iabc.*?clearInterval.*?     \$\(\'\.download-content\'\)\.slideDown\(\)\;/s)
-poophq.com,veev.to##+js(rpnt, script, "loading" !==this.state, false)
+poophq.com,veev.to##+js(set, adscoreLibLoader.ontimeoutHandlers, undefined)
 !#endif
 *$script,3p,domain=poophq.com|veev.to,redirect-rule=noopjs
 *$other,3p,denyallow=veevcdn.co,domain=poophq.com|veev.to
@@ -141,8 +141,8 @@ panel.freemcserver.net##+js(rpnt, script, 'G-1B4LC0KT6C');, 'G-1B4LC0KT6C'); loc
 1001tracklists.com###head + div[id] > div:last-child > div > a:has(> img[src*="/"][src*="_"][alt])
 1001tracklists.com##+js(spoof-css, div[class="nav tabTop"] + div > div:first-child > div:first-child > a:has(> img[src*="/"][src*="_"][alt])\, #head + div[id] > div:last-child > div > a:has(> img[src*="/"][src*="_"][alt]), display, block)
 ! filemoon
-stephenking-00qvxikv.fun##+js(nowoif)
-stephenking-00qvxikv.fun##+js(acs, Math, localStorage['\x)
+huzi6or1.fun,stephenking-00qvxikv.fun##+js(nowoif)
+huzi6or1.fun,stephenking-00qvxikv.fun##+js(acs, Math, localStorage['\x)
 u26bekrb.fun##+js(set, adBlockDetected, undefined)
 !#if ext_devbuild
 $frame,3p,domain=filemoon.*|8rm3l0i9.fun,replace='/^/<script>(()=>{window.open=new Proxy(window.open,{apply:(n,o,w)=>{}});let e=document.querySelector("script");e.innerHTML.includes("window.open")&&e.parentElement.removeChild(e)})();<\/script>/i'
@@ -160,6 +160,7 @@ $frame,3p,domain=filemoon.*|8rm3l0i9.fun,replace='/^/<script>(()=>{window.open=n
 0cbcq8mu.com,2cf0xzdu.com,4k2h4w04.xyz,a6iqb4m8.xyz,afl3ua5u.xyz,jmzkzesy.xyz##+js(nowoif)
 0cbcq8mu.com,2cf0xzdu.com,4k2h4w04.xyz,a6iqb4m8.xyz,afl3ua5u.xyz,jmzkzesy.xyz##+js(acs, Math, localStorage['\x)
 0cbcq8mu.com,2cf0xzdu.com,4k2h4w04.xyz,a6iqb4m8.xyz,afl3ua5u.xyz,jmzkzesy.xyz##^script:has-text(/popunder|\(\)\{try\{localStorage\[/)
+||droci.buzz^$popup,doc
 ||qsiyfgazubcu.top^$popup,doc
 ||sez88e.fun^$popup,doc
 ||vrkonefd.buzz^$popup,doc
