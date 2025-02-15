@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Cookie Notices
-! Last modified: Fri, 14 Feb 2025 14:49:24 +0000
+! Last modified: Sat, 15 Feb 2025 02:49:29 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3103,7 +3103,6 @@
 ###cookie-legislation
 ###cookie-lightbox
 ###cookie-line
-###cookie-list
 ###cookie-mask
 ###cookie-melding
 ###cookie-melding-container
@@ -3918,7 +3917,6 @@
 ###cookieWarningLayer
 ###cookieWarningLayout
 ###cookieWarningMessage
-###cookieWarningMessageNew
 ###cookieWarningModal
 ###cookieWarningPanel
 ###cookieWarningR
@@ -8768,7 +8766,6 @@
 ###zse-cookie-container
 ###zsmsg-policy
 ###zw_cookie_law_short_info
-##.--framer-cookie-banner-container
 ##.-active.cookies
 ##.-cookie-disclaimer
 ##.-s-cookie-bar
@@ -11930,7 +11927,6 @@
 ##.cookiemanager_banner--container
 ##.cookiemanager_show_simple
 ##.cookiemelding-container
-##.cookiemelding:not(html):not(body)
 ##.cookiemeldung
 ##.cookiemessage-holder
 ##.cookiemessage__overlay
@@ -14014,7 +14010,6 @@
 ##.jw-widget-show-cookies-policy
 ##.k4-cookie
 ##.kacookie-cm-window
-##.kadence-conversion-banner
 ##.kakor-bar
 ##.kali-cc-bandeau
 ##.kb-ck-bar-notify-block
@@ -16183,7 +16178,6 @@
 ##.ws-cookie-notice
 ##.ws-cookie__wrapper
 ##.ws-cookiebar-wrapper
-##.wsa-cookielaw
 ##.wsc-cookies-bar
 ##.wsr--data-protection
 ##.wt-confirm-layer
@@ -17499,6 +17493,8 @@ moringa.com###cookieNoticeSoww
 forbestravelguide.com###cookiePolicyWrap
 visitseoul.net###cookiePopup
 viavisolutions.com###cookieRibbon
+turkishairlines.com###cookieWarningMessageNew
+turkishairlines.com###cookieWarningOverlay
 bulgarianproperties.com###cookie_bar_new
 semiconductor.samsung.com###cookie_component_emea
 sendgb.com###cookie_disabled
@@ -22421,7 +22417,7 @@ onnibus.com##+js(set-cookie, marketingCookies, false)
 onnibus.com##+js(set-cookie, statisticalCookies, false)
 ! set-cookie (cookielawinfo)
 ! viewed_cookie_policy
-mailhilfe.de,lesfruitsetlegumesfrais.com,lbms.cz,atalmedial.nl,ahepaseniorliving.org,atw.jp,kallidus.com,abels.co.uk,mesterslagteren.dk,lyndonroofing.co.uk,raymond-weil.us,raymond-weil.com,ames-tools.co.uk,camra.org.uk,ukbrewerytours.com,sk-nic.sk,worldcupchampionships.com,arturofuente.com,protos.com,timhortons.co.th,toyota.co.uk,businessaccountingbasics.co.uk,flickr.org,espacocasa.com,altraeta.it,centrooceano.it,allstoresdigital.com,cultarm3d.de,soulbounce.com,fluidtopics.com,uvetgbt.com,malcorentacar.com,emondo.de,maspero.it,kelkay.com,underground-england.com,vert.eco,turcolegal.com,magnet4blogging.net,moovly.com,automationafrica.co.za,jornaldoalgarve.pt,keravanenergia.fi,kuopas.fi,frag-machiavelli.de,healthera.co.uk,mobeleader.com,powerup-gaming.com,developer-blog.net,medical.edu.mt,deh.mt,bluebell-railway.com,ribescasals.com,javea.com,chinaimportal.com,inds.co.uk,raoul-follereau.org,serramenti-milano.it,cosasdemujer.com,luz-blanca.info,cosasdeviajes.com,safehaven.io,havocpoint.it,motofocus.pl,nomanssky.com,drei-franken-info.de,clausnehring.com,alttab.net,kinderleicht.berlin,kiakkoradio.fi,cosasdelcaribe.es,de-sjove-jokes.dk,serverprofis.de,biographyonline.net,iziconfort.com,sportinnederland.com,natureatblog.com,wtsenergy.com,cosasdesalud.es,internetpasoapaso.com,zurzeit.at,contaspoupanca.pt,steamdeckhq.com,ipouritinc.com,hemglass.se,sumsub.com,atman.pl,fabriziovanmarciano.com,nationalrail.com,eett.gr,funkypotato.com,equalexchange.co.uk,swnsdigital.com,gogolf.fi,hanse-haus-greifswald.de,tampereenratikka.fi##+js(set-cookie, viewed_cookie_policy, yes, , reload, 1)
+worldairlineawards.com,mailhilfe.de,lesfruitsetlegumesfrais.com,lbms.cz,atalmedial.nl,ahepaseniorliving.org,atw.jp,kallidus.com,abels.co.uk,mesterslagteren.dk,lyndonroofing.co.uk,raymond-weil.us,raymond-weil.com,ames-tools.co.uk,camra.org.uk,ukbrewerytours.com,sk-nic.sk,worldcupchampionships.com,arturofuente.com,protos.com,timhortons.co.th,toyota.co.uk,businessaccountingbasics.co.uk,flickr.org,espacocasa.com,altraeta.it,centrooceano.it,allstoresdigital.com,cultarm3d.de,soulbounce.com,fluidtopics.com,uvetgbt.com,malcorentacar.com,emondo.de,maspero.it,kelkay.com,underground-england.com,vert.eco,turcolegal.com,magnet4blogging.net,moovly.com,automationafrica.co.za,jornaldoalgarve.pt,keravanenergia.fi,kuopas.fi,frag-machiavelli.de,healthera.co.uk,mobeleader.com,powerup-gaming.com,developer-blog.net,medical.edu.mt,deh.mt,bluebell-railway.com,ribescasals.com,javea.com,chinaimportal.com,inds.co.uk,raoul-follereau.org,serramenti-milano.it,cosasdemujer.com,luz-blanca.info,cosasdeviajes.com,safehaven.io,havocpoint.it,motofocus.pl,nomanssky.com,drei-franken-info.de,clausnehring.com,alttab.net,kinderleicht.berlin,kiakkoradio.fi,cosasdelcaribe.es,de-sjove-jokes.dk,serverprofis.de,biographyonline.net,iziconfort.com,sportinnederland.com,natureatblog.com,wtsenergy.com,cosasdesalud.es,internetpasoapaso.com,zurzeit.at,contaspoupanca.pt,steamdeckhq.com,ipouritinc.com,hemglass.se,sumsub.com,atman.pl,fabriziovanmarciano.com,nationalrail.com,eett.gr,funkypotato.com,equalexchange.co.uk,swnsdigital.com,gogolf.fi,hanse-haus-greifswald.de,tampereenratikka.fi##+js(set-cookie, viewed_cookie_policy, yes, , reload, 1)
 ! cookielawinfo-checkbox-functional
 timhortons.co.th,toyota.co.uk,businessaccountingbasics.co.uk,flickr.org,steamdeckhq.com,sumsub.com,atman.pl,fabriziovanmarciano.com,nationalrail.com,eett.gr,funkypotato.com,equalexchange.co.uk,swnsdigital.com##+js(set-cookie, cookielawinfo-checkbox-functional, yes)
 ! cookielawinfo-checkbox-necessary
@@ -22445,6 +22441,7 @@ nhnieuws.nl##+js(set-local-storage-item, psh:cookies-seen, true)
 nhnieuws.nl##+js(set-local-storage-item, psh:cookies-social, true)
 posthog.com##+js(set-local-storage-item, cookie_consent, no)
 varusteleka.com##+js(set-local-storage-item, cookieConsent, false)
+bunq.com,framer.com##+js(set-local-storage-item, framerCookiesDismissed, true)
 connorduffy.abundancerei.com##+js(set-local-storage-item, COOKIE_AUTHORITY_QUERY_V2, 1)
 bc.gamem##+js(set-local-storage-item, ignore_cookie_warn, true)
 akkushop-turkiye.com.tr##+js(set-local-storage-item, CerezUyariGosterildi, true)
