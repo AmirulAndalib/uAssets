@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sat, 22 Feb 2025 08:49:22 +0000
+! Last modified: Sat, 22 Feb 2025 14:49:28 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -2681,8 +2681,9 @@ camwhores.*##+js(set, flashvars.video_click_url, '')
 ||h-cdn.com/loader.js$script,domain=camwhores.tv
 ||lexozfldkklgvc.com^$3p
 ||virtwishmodels.com^$frame,3p
-||cemiocw.com^$3p
 ||enjoyx.com^$frame,3p
+||kuvirixa.com^
+camwhores.*##.table
 camwhores.*,camwhorestv.*##.place
 camwhores.*,camwhorestv.*##[href^="https://go.schjmp.com"]
 camwhores.*,camwhorestv.*##.row-models
@@ -20694,7 +20695,6 @@ cimanow.cc##+js(aopr, navigator.brave)
 cimanow.cc###ad1
 cimanow.cc##section[aria-label="details"] a[id][target="_blank"]
 cimanow.cc,cimanow.online##+js(ra, href, [target="_blank"], stay)
-cimanow.cc##+js(rmnt, script, _0x)
 qiwi.gg##+js(aeld, , sessionStorage)
 qiwi.gg##+js(nowoif, , 10)
 qiwi.gg##+js(acs, globalThis, break;case)
