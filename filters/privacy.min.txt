@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Privacy
 ! Expires: 7 days
-! Last modified: Thu, 27 Feb 2025 02:49:22 +0000
+! Last modified: Thu, 27 Feb 2025 20:49:25 +0000
 ! Diff-Path: %diffpath%#ublock-privacy
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -216,7 +216,8 @@ endbasic.dev,jmmv.dev##+js(no-xhr-if, method:POST)
 ||hktvmall.com/_ui/shared/common/js/analytics/with-intersection-track.js
 ||hktvmall.com/_ui/shared/common/js/util/jquery.analytics-utils.js
 ||hktvmall.com/yuicombo|$script,1p
-/discourse-fingerprint-
+/discourse-fingerprint-$domain=~btt.community
+||btt.community/plugins/discourse-fingerprint/javascripts/fp.js$script,1p
 ericdraken.com##+js(aopr, dataLayer)
 ericdraken.com##^script[async]
 /s/s/js/m/om.js?v=
@@ -897,9 +898,9 @@ discord.com##+js(no-xhr-if, discord.com/api/v9/science)
 ||bitchute.com/data/1
 ||api.flipkart.com/4/data/collector/business
 ||internal-api.prolific.com/api/v1/statistics/
-||chat.deepseek.com/api/v0/events$xhr,method=post
-chat.deepseek.com##.ds-theme.ds-modal-wrapper:has-text(uBlock)
-chat.deepseek.com##.ds-modal-overlay
+! chat.deepseek.com analytics
+||apmplus.volces.com/monitor_web/collect$xhr,method=post
+||gator.volces.com/list$xhr,method=post
 ||sex-empire.org/templates/*/js/metrika.js
 ||ipify.org^$domain=realmoasis.com
 www.hoyolab.com,www.hoyoverse.com##+js(remove-cookie, /^DEVICEFP/)
