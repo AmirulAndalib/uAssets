@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Tue, 04 Mar 2025 08:49:27 +0000
+! Last modified: Tue, 04 Mar 2025 14:49:31 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -7583,7 +7583,7 @@ memexcomputer.it##ins.adsbygoogle
 layarkaca21indo.com##+js(aopr, adBlockDetected)
 @@||forbes.com^$ghide
 forbes.com##fbs-ad
-forbes.com##.ad-unit:not(.text-ad):not(.textads):not([style=""width: 1px; height: 1px; position: absolute; left: -999px;"])
+forbes.com##.ad-unit:not(.text-ad):not(.textads):not([style="width: 1px; height: 1px; position: absolute; left: -999px;"])
 forbes.com##.footer-ad-labeling
 forbes.com##.ad-rail
 forbes.com##.ed-wrap.rafeed__block
@@ -9317,7 +9317,7 @@ cutyion.com##+js(aeld, click, shouldOpenPopUp)
 *##.ad-block
 *##.ad-center
 *##.ad-slot:not(.adsbox):not(.adsbygoogle)
-~lamire.jp,*##.ad-unit:not(.text-ad):not(.textads):not([style=""width: 1px; height: 1px; position: absolute; left: -999px;"])
+~lamire.jp,*##.ad-unit:not(.text-ad):not(.textads):not([style="width: 1px; height: 1px; position: absolute; left: -999px;"])
 *##.ad-wrapper
 *##.ad_container
 *##.ads-wrapper
@@ -9414,9 +9414,6 @@ arcai.com##+js(set, pubAdsService, trueFunc)
 @@||fundingchoicesmessages.google.com^$script,domain=arcai.com
 @@||googletagservices.com/tag/js/gpt.js$script,domain=arcai.com
 @@*$ghide,domain=arcai.com
-de-baystars.doorblog.jp##+js(acs, document.addEventListener, google_ad_client)
-azm.to##+js(aopr, mm)
-*$script,3p,denyallow=jquery.com|hwcdn.net|plyr.io|fastly.net|jwpcdn.com|googleapis.com|zencdn.net|hcaptcha.com,domain=azm.to
 mysflink.blogspot.com##+js(set, safelink.adblock, false)
 mysflink.blogspot.com##+js(nano-sib)
 sofwaremania.blogspot.com##+js(nano-stb)
@@ -9431,8 +9428,8 @@ l2db.info##[href^="https://overworld.pro/"]
 l2db.info###wrapper-content:style(margin-top:0px !important)
 l2db.info##[href*="adv"]
 l2db.info##[href^="https://castle-town.net/ru"]
+l2db.info###branding
 psychic.de##+js(nostif, offsetHeight)
-10convert.com##+js(aopr, HTMLIFrameElement)
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
 my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 *$script,redirect-rule=noopjs,domain=my-code4you.blogspot.com
@@ -9530,7 +9527,6 @@ teachersguidetn.blogspot.com,bayaningfilipino.blogspot.com##+js(acs, addEventLis
 firefile.cc##+js(set, blockAdBlock._options.baitClass, null)
 @@||manhwa18.com^$ghide
 uploadhub.*##+js(nowoif)
-uploadhub.to##center
 *$script,3p,denyallow=bootstrapcdn.com|cloudflare.com,domain=uploadhub.*
 verteleseriesonline.com##+js(aopr, adBlockDetected)
 verteleseriesonline.com##+js(nosiif, visibility, 1000)
@@ -12583,8 +12579,6 @@ manga18fx.com##.kadx
 sudoku-aktuell.de###ajax
 sudoku-aktuell.de###billboard
 sudoku-aktuell.de###blockdiv
-! jexmovie. com => vidlink. org popup
-vidlink.org##[target="_blank"]
 ! host2.jptorrent.org timer
 jptorrent.org##+js(nano-stb)
 !#if env_firefox
@@ -14693,7 +14687,7 @@ mmiyue.com#@#.google-ad:not(.testAd)
 ##.ad-link:not(.adsbox)
 #@#.ad-unit
 #@#.ad_unit
-~lamire.jp##.ad-unit:not(.text-ad):not(.textads):not([style=""width: 1px; height: 1px; position: absolute; left: -999px;"])
+~lamire.jp##.ad-unit:not(.text-ad):not(.textads):not([style="width: 1px; height: 1px; position: absolute; left: -999px;"])
 ##.ad_unit:not(.text-ad)
 #@#[data-ad-module]
 #@#[data-ad-width]
@@ -21880,6 +21874,7 @@ qwant.com#@#div[data-testid="pam.container"]
 qwant.com##div[data-testid="pam.container"]:style(max-height: 1px !important; opacity: 0 !important; pointer-events: none !important;)
 @@||qwant.com/apm/intake/v2/rum/events$xhr,1p
 @@||qwant.com^$ping,1p
+||qwant.com/action/click_serp$ping,1p,important
 @@||spite.cz^$ghide
 civitai.com##+js(no-fetch-if, googlesyndication)
 civitai.com##div:is(.shadow, .flex.w-full.justify-center[style=""]):has(a[href="/pricing"] img[alt="Please support civitai and creators by disabling adblock"]):remove()
@@ -24183,3 +24178,7 @@ khatrimazafull.shop##^script:has-text(wpadmngr.com)
 !#else
 khatrimazafull.shop##+js(rmnt, script, wpadmngr.com)
 !#endif
+! antiadb diskmovies.com
+||securepubads.shareus.io/scripts/tag/js/gpt.js$script,domain=diskmovies.com,redirect=noopjs
+! video detection https://gorzowianin.com/wiadomosc/25899-sad-w-gorzowie-zdecydowal-recydywista-z-trzykrotnym-zakazem-prowadzenia-pojazdow-trafi-do-aresztu.html
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=gorzowianin.com,redirect=google-ima.js
