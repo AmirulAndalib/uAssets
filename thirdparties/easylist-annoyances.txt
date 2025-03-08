@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Fri, 07 Mar 2025 02:49:22 +0000
+! Last modified: Sat, 08 Mar 2025 14:49:25 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -984,6 +984,7 @@ dashboard.razorpay.com#@##credential_picker_container
 ||addinto.com^$third-party
 ||adobe-campaign.com^$third-party
 ||advantagemedia.com^$third-party
+||affilizz.com^$third-party
 ||allpass.salemwebnetwork.com^$third-party
 ||amazonaws.com/fby.js
 ||amazonaws.com/fby/
@@ -2123,6 +2124,7 @@ ourworldindata.org##.donate-footer
 dailyartmagazine.com##.donate-row
 mprnews.org##.donateAsk
 democracynow.org##.donate_banner
+thenationalpulse.com##.donate_button
 peoplesworld.org##.donate_strip
 audubon.org##.donation
 catholicnewsagency.com##.donation-box
@@ -2260,6 +2262,7 @@ bizpacreview.com##.membership-appeal-top
 daily.jstor.org##.membership-incontent-banner
 birdwatchingdaily.com##.membership-promotion-header-banner
 euobserver.com##.membership-upsell
+thenationalpulse.com##.menu-top-bar-trending-container
 bakusai.com##.menuTopAds
 eurogamer.net,rockpapershotgun.com,vg247.com##.merch_component
 miraheze.org##.mh-notice
