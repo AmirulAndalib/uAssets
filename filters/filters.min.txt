@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Mon, 10 Mar 2025 14:49:55 +0000
+! Last modified: Mon, 10 Mar 2025 20:49:34 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -9271,21 +9271,6 @@ cutyion.com##+js(aeld, click, shouldOpenPopUp)
 !#if env_mobile
 ! *** filters/filters-mobile.txt ***
 !----- 2020 -----
-*##.ad-block
-*##.ad-center
-*##.ad-slot:not(.adsbox):not(.adsbygoogle)
-~lamire.jp,*##.ad-unit:not(.text-ad):not(.textads):not([style^="width: 1px; height: 1px; position: absolute;"])
-*##.ad-wrapper
-*##.ad_container
-*##.ads-wrapper
-*##.dfp-ad
-*##.ezoic-ad
-*##.top-ad-container
-*##AMP-AD
-*##div[id*="ScriptRoot"]
-*##ins.adsbygoogle[data-ad-client]
-*##ins.adsbygoogle[data-ad-slot]
-~cinelatino.net,*##[id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
 xnxx.com,xvideos.com###ad-header-mobile
 jprime.jp##.ad-overlay
 apkdone.com##.adplaceholder-top
@@ -11045,9 +11030,9 @@ top.gg###rewarded-video
 top.gg###parent_nn_player
 top.gg##.chakra-stack[data-testid="p-p"]
 top.gg##div[class^="css-"]:not(.chakra-stack):has(> #parent_nn_player)
-top.gg##body:style(overflow: auto !important;)
-top.gg##div[class^="chakra-modal__overlay"][style="opacity: 1;"]:style(display: none !important;)
-top.gg##div[class^="chakra-modal__overlay"][style="opacity: 1;"] ~ div[data-focus-lock-disabled]:style(display: none !important;)
+!top.gg##body:style(overflow: auto !important;)
+!top.gg##div[class^="chakra-modal__overlay"][style="opacity: 1;"]:style(display: none !important;)
+!top.gg##div[class^="chakra-modal__overlay"][style="opacity: 1;"] ~ div[data-focus-lock-disabled]:style(display: none !important;)
 top.gg##.css-adfhee:upward(2)
 @@||arrowos.net/js/*$script,1p
 arrowos.net##body:style(visibility:visible !important)
@@ -15323,9 +15308,6 @@ basic-tutorials.de##+js(aopr, advanced_ads_ready)
 ! xxxvideohd.net popup
 ||xxxvideohd.net/js/main.course.js
 ||xxxvideohd.net/js/sellito.js
-vidplaystream.top##+js(nowoif)
-vidplaystream.top##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
-nashstream.top##+js(aopr, __Y)
 *$xhr,redirect-rule=noop.txt,domain=thingiverse.com
 coverapi.store,tenies-online.*##+js(aopr, mm)
 tubeload.co##+js(nowoif)
@@ -15333,11 +15315,6 @@ coverapi.store##.close00
 @@||coverapi.store^$script,1p
 *$script,redirect-rule=noopjs,domain=mrlabtest.com
 infinityblogger.in##+js(acs, eval, replace)
-! health-and.me anti-adb, timer https://foofly.xyz/EYwC
-health-and.me##+js(acs, document.addEventListener, google_ad_client)
-health-and.me##^script:has-text(google_ad_client)
-forexeen.us,health-and.me##+js(nano-sib, counter)
-forexeen.us##+js(nostif, getComputedStyle)
 magdownload.org##+js(nostif, _0x)
 magdownload.org##.home-jumbotron
 *$script,domain=multiclaim.net,redirect-rule=noopjs
@@ -15391,10 +15368,6 @@ thedigitalfix.com##.sticky_rail600:remove()
 bigpixel.cn##.portal_ad
 ! uptobhai. com/info ads
 ||uptobhai.*^$csp=default-src 'self' *.favicon.cc *.google.com *.gstatic.com *.googleapis.com
-masahub.net##+js(aopr, decodeURI)
-masahub.net##+js(aopr, mm)
-masahub.net##+js(aeld, , _0x)
-||gifyu.com/*.gif$image,domain=masahub.net
 striptube.net##+js(aopr, loadTool)
 dulichkhanhhoa.net,noithatmyphu.vn##+js(no-fetch-if, googlesyndication)
 dulichkhanhhoa.net,noithatmyphu.vn###wpsafe-generate:style(display: block !important;)
@@ -15436,8 +15409,6 @@ a8ix.*,atishmkv.*##.idmuvi-topbanner-aftermenu
 a8ix.*,atishmkv.*##.inner-floatbanner-bottom
 a8ix.*,atishmkv.*##.idmuvi-footerbanner
 a8ix.*,atishmkv.*###custom_html-21
-! flixtor. stream ads
-flixtor.stream##+js(nowoif)
 xcity.org##+js(aopr, loadTool)
 xcity.org##+js(set-cookie, popunder, 1)
 portaliz.site##+js(no-xhr-if, adsbygoogle)
@@ -15523,7 +15494,6 @@ poki.*##div[width="728"][height="90"]:upward(1)
 ||ay.delivery/client-v2.js^$script,3p,redirect=noopjs
 prajwaldesai.com##+js(nostif, ai_)
 prajwaldesai.com##+js(nostif, site-access)
-@@||sub-short.link^$ghide
 ||vlitag.com^$script,redirect-rule=noopjs,domain=mangasco.com
 downloadr.in##+js(nostif, show)
 downloadr.in##+js(nano-stb, countdown)
@@ -15532,7 +15502,6 @@ topcomicporno.com##+js(nostif, show)
 bithub.win,freeshib.biz##+js(acs, eval, replace)
 bithub.win###wcfloatDiv4
 bithub.win##ins
-dzeko11.net##+js(nostif, offsetHeight)
 drawize.com##+js(acs, chAdblock)
 @@||mycinema.pro^$ghide
 mycinema.pro##[fdo]
@@ -15556,35 +15525,20 @@ topembed.pw##^script:has-text(adserverDomain)
 topembed.pw##+js(rmnt, script, adserverDomain)
 !#endif
 *.gif$image,domain=cricfree.*
-onlymp3.to##+js(nowoif)
-||onlymp3.to/ad_request.js$script,1p,redirect-rule=noopjs
 ||ublockpop.com^$all
 ||drectsearch.com^$all
 figurehunter.net##+js(no-fetch-if, google)
-||sumfaucet.com/adblock.php$xhr,redirect-rule=nooptext,1p
 ! hindimovies. to propeller ads
 hindimovies.to##+js(acs, Math, String.fromCharCode)
 hindimovies.to##+js(nowoif)
 hdmovie5.*,hdmovie2.*###clickfakeplayer[href]:remove-attr(href)
 @@||bootdey.com^$ghide
 bootdey.com##+js(nostif, offsetHeight)
-! clickyfly.com timer
-audiencepool.com,techysnap.com###interstetial-container
-audiencepool.com,techysnap.com###wpsafe-time
-audiencepool.com,techysnap.com###wpsafe-wait1
-audiencepool.com,techysnap.com###wpsafe-generate:style(display: block !important)
-audiencepool.com,techysnap.com###wpsafe-snp:style(display: block !important)
-techysnap.com##body:style(overflow: auto !important)
 ! mult34. com popunder
 mult34.com##+js(aopr, decodeURI)
 valuable.hatenablog.com##+js(acs, document.addEventListener, google_ad_client)
-! www.visflakes.com timer
-visflakes.com###wpsafe-generate:style(display: block !important;)
-visflakes.com###wpsafe-link:style(display: block !important;)
-visflakes.com##div[id^="wpsafe-wait"]
 ! cutw.in timer
 chooyomi.com##+js(nano-sib, timer)
-kissasians.org##.btn-success[href*="?key="]
 ||berangkasilmu.com^$3p
 hentaispark.com##+js(aost, Math.random, inlineScript)
 journaldemontreal.com,tvanouvelles.ca##+js(no-fetch-if, doubleclick)
@@ -15625,9 +15579,6 @@ uploadever.in,uploadingsite.com##+js(acs, getCookie, onload)
 uploadever.in##.adownload-button
 chimicamo.org##+js(no-xhr-if, ads)
 chimicamo.org##.widget:has-text(Adv)
-hentaidexy.com##+js(nostif, atob)
-filmy-hit.stream##.dwn-btn
-fiilmy-hit.stream##.btn-dwn:not([href*="Hd?d"])
 xhand.com##+js(set, flashvars.adv_start_html, '')
 xhand.com##+js(set, flashvars.adv_pause_html, '')
 /js/ppndr.
@@ -15635,7 +15586,6 @@ xhand.com##+js(set, flashvars.adv_pause_html, '')
 rureka.com##+js(aeld, , $)
 inwepo.co##+js(aopr, b2a)
 ! anti adb initBlocked
-! forfun.ist,mayclub.com.tw,sheikhjee.com,hauswirt.com,houseofcharizma.com
 ||ssl.geoplugin.net/javascript.gp$xhr,redirect-rule=noopjs
 earnme.club,jrlinks.in,usanewstoday.club##[id^="tp-wait"]
 earnme.club,jrlinks.in,usanewstoday.club###tp-generate,[id^="tp-snp"]:style(display: block !important)
@@ -15711,7 +15661,6 @@ welt.de##+js(ra, onmousedown, .ob-dynamic-rec-link, stay)
 welt.de##.q-advertisement-banner
 driveplayer.net##+js(nowoif)
 apprepack.com##+js(set, blurred, false)
-bunkr.is##+js(aeld, , exoJsPop101)
 bulbagarden.net##+js(set, setupSkin, noopFunc)
 filmeserialegratis.*,fsplayer.*##+js(nowoif)
 filessrc.com,srcimdb.com##+js(nano-sib, counter)
@@ -15838,8 +15787,6 @@ zuba.link##+js(set, blurred, false)
 @@||cutt.net^$ghide
 cutt.net##.aspace
 khsm.io##+js(nostif, getComputedStyle)
-dramaworldhd.co##+js(no-fetch-if, googlesyndication)
-dramaworldhd.co##+js(nano-sib, timeLeft)
 ||amazon-adsystem.com/aax2/apstag.js$domain=tasteofhome.com,important
 descargatepelis.com##+js(nano-sib, contador)
 teen-hd-sex.com,tube-teen-18.com,xxx-asian-tube.com##+js(aopr, exoNoExternalUI38djdkjDDJsio96)
@@ -15854,9 +15801,6 @@ watchonlinehd123.sbs##+js(nowoif)
 videofilms.*,prosongs.*##+js(aopr, __Y)
 hollywoodlife.com##+js(set, Object.prototype.enableInterstitial, false)
 entireweb.com##+js(acs, setInterval, addAds)
-tudaydeals.com##+js(no-fetch-if, googlesyndication)
-tudaydeals.com###wpsafe-generate, #wpsafe-link:style(display: block !important;)
-tudaydeals.com##div[id^="wpsafe-wait"]
 ! acrackstreams. com popups
 acrackstreams.com##+js(nowoif)
 ||mathwarehouse.com/sitefiles/*/js/fixblock.js?$script,1p
@@ -19787,7 +19731,8 @@ bestx.stream,boosterx.stream,moviesapi.club,stream.anplay.in###video_player ~ di
 ! Clickadu reinjection
 18comic.vip,18comic-gquu.vip,asiaon.*,asiaontop.com,bunkrr.*,fapfappy.com,homemoviestube.com,jav.direct,javmix.tv,klmanga.*,komikmanhwa.me,lovingsiren.com,manga1001.*,mangaraw.*,mangarawjp.*,nelomanga.com,netfapx.com,syosetu.*,xanimeporn.com##+js(acs, WebAssembly, atob)
 /aas/r45d/vki/*$script,redirect=noop.js
-/^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,7}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,3p,match-case,to=com
+/^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,10}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,3p,match-case,to=com
+/^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){3}$/$script,3p,match-case,header=etag,to=com
 ||mudacban.com^
 ||pawjfavraag.com^
 ||vutkaqlakbp.com^
