@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 12 Mar 2025 02:49:22 +0000
+! Last modified: Wed, 12 Mar 2025 08:49:33 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -11105,6 +11105,7 @@ discoveryplus.*##+js(json-prune, data.attributes.config.freewheel data.attribute
 !#endif
 discoveryplus.*,go.discovery.com,investigationdiscovery.com,watch.foodnetwork.com##+js(json-prune, data.attributes.ssaiInfo.forecastTimeline data.attributes.ssaiInfo.vendorAttributes.nonLinearAds data.attributes.ssaiInfo.vendorAttributes.videoView data.attributes.ssaiInfo.vendorAttributes.breaks.[].ads.[].adMetadata data.attributes.ssaiInfo.vendorAttributes.breaks.[].ads.[].adParameters data.attributes.ssaiInfo.vendorAttributes.breaks.[].timeOffset)
 discoveryplus.*,go.discovery.com,investigationdiscovery.com,go.tlc.com,sciencechannel.com,watch.foodnetwork.com##+js(xml-prune, xpath(//*[name()="MPD"][.//*[name()="BaseURL" and contains(text()\,'dash_clear_fmp4') and contains(text()\,'/a/')]]/@mediaPresentationDuration | //*[name()="Period"][./*[name()="BaseURL" and contains(text()\,'dash_clear_fmp4') and contains(text()\,'/a/')]]), , .mpd)
+play.discoveryplus.com##+js(json-prune, ssaiInfo)
 venge.io##+js(nofab)
 venge.io##+js(set, adsProvider.init, noopFunc)
 venge.io##+js(set, SDKLoaded, true)
@@ -18545,11 +18546,13 @@ fikper.com##+js(nowoif, ?key=)
 fikper.com##+js(nano-sib, downloadToken)
 *$xhr,redirect-rule=nooptext,domain=coins-battle.com
 cdn.gledaitv.live##+js(noeval-if, String.fromCharCode)
-cdn.gledaitv.live##+js(no-fetch-if, imasdk.googleapis.com)
+bg-gledai.*,gledaitv.*##+js(no-fetch-if, imasdk.googleapis.com)
 @@||ads.poshtata.online/loader.js^$script,domain=seir-sanduk.com
 gledaitv.*##+js(aopr, checkAdsBlocked)
 gledaitv.*##+js(acs, fetch, adsBlocked)
-||cdn.gledaitv.*/js/detectorpro_
+/js/detectorpro_*.js|$script
+*$script,redirect-rule=noopjs,domain=bg-gledai.*|gledaitv.*
+||adapex.io^$script,redirect=noopjs,domain=bg-gledai.video|gledaitv.fan
 pervclips.com##+js(aopr, decodeURI)
 pervclips.com##.thumb_spots
 pervclips.com##.spot-after
@@ -20600,6 +20603,7 @@ cimanow.cc,cimanow.online,freex2line.online##+js(overlay-buster)
 ||freex2line.online/*/?redirect$doc,urlskip=?redirect -base64
 ||flashtalking.com^$image,redirect=2x2.png,domain=cimanow.cc|cimanow.online
 cimanow.cc##main > a[id][target="_blank"]
+freex2line.online##body >a[id][href][target^="_blank"]
 qiwi.gg##+js(aeld, , sessionStorage)
 qiwi.gg##+js(nowoif, , 10)
 qiwi.gg##+js(acs, globalThis, break;case)
@@ -23730,6 +23734,9 @@ senpai-stream.net##div[wire\:click="watching"]:style(display: flex !important;)
 ||adsok.co^$3p
 ! <<<<< AG Turkish >>>>>
 dizipal851.com,dizipal852.com,dizipal853.com,dizipal854.com,dizipal855.com,dizipal856.com,dizipal857.com,dizipal858.com,dizipal859.com,dizipal860.com,dizipal861.com,dizipal862.com,dizipal863.com,dizipal864.com,dizipal865.com,dizipal866.com,dizipal867.com,dizipal868.com,dizipal869.com,dizipal870.com,dizipal871.com,dizipal872.com,dizipal873.com,dizipal874.com,dizipal875.com,dizipal876.com,dizipal877.com,dizipal878.com,dizipal879.com,dizipal880.com,dizipal881.com,dizipal882.com,dizipal883.com,dizipal884.com,dizipal885.com,dizipal886.com,dizipal887.com,dizipal888.com,dizipal889.com,dizipal890.com,dizipal891.com,dizipal892.com,dizipal893.com,dizipal894.com,dizipal895.com,dizipal896.com,dizipal897.com,dizipal898.com,dizipal899.com,dizipal900.com,dizipal901.com,dizipal902.com,dizipal903.com,dizipal904.com,dizipal905.com,dizipal906.com,dizipal907.com,dizipal908.com,dizipal909.com,dizipal910.com,dizipal911.com,dizipal912.com,dizipal913.com,dizipal914.com,dizipal915.com,dizipal916.com,dizipal917.com,dizipal918.com,dizipal919.com,dizipal920.com,dizipal921.com,dizipal922.com,dizipal923.com,dizipal924.com,dizipal925.com,dizipal926.com,dizipal927.com,dizipal928.com,dizipal929.com,dizipal930.com,dizipal931.com,dizipal932.com,dizipal933.com,dizipal934.com,dizipal935.com,dizipal936.com,dizipal937.com,dizipal938.com,dizipal939.com,dizipal940.com,dizipal941.com,dizipal942.com,dizipal943.com,dizipal944.com,dizipal945.com,dizipal946.com,dizipal947.com,dizipal948.com,dizipal949.com,dizipal950.com##+js(trusted-rpnt, script, /manageAds\(video_urls\[activeItem\]\, video_seconds\[activeItem\]\, ad_urls\[activeItem]\,true\);/, playVideo();, condition, playAdd)
+filmmodu.io###mobile-preroll
+filmmodu.io##.embed-responsive:style(display: block !important;)
+||dontmakethem.club^$domain=filmmodu.io
  
 ! END: Regional lists
 ! Arbitrary adservers
