@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Quick fixes
 ! Expires: 12 hours
-! Last modified: Fri, 14 Mar 2025 08:49:22 +0000
+! Last modified: Fri, 14 Mar 2025 14:49:26 +0000
 ! Diff-Path: %diffpath%#ublock-quick-fixes
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -94,13 +94,16 @@ japscan.lol#@#div.container > [href]
 /cuid/?f=https%$xhr,3p,domain=japscan.lol,important
 /^https:\/\/(?!curltophp|regexgenius)[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,xhr,3p,match-case,to=top,domain=japscan.lol,important
 /^https?:\/\/(?:[a-z]{2}\.)?(?!curltophp|regexgenius)[a-z]{7,14}\.com\/r(?=[a-z]*[0-9A-Z])[0-9A-Za-z]{10,16}\/[A-Za-z]{5}(?:\?v=\d+)?$/$xhr,3p,match-case,to=com,important,domain=japscan.lol
+/^https:\/\/(?!curltophp|regexgenius)[a-z]{8,15}\.com\/btag\.min\.js$/$script,xhr,3p,match-case,domain=japscan.lol,important
+||wpadmngr.com^$domain=japscan.lol,important
+||adskeeper.com^$domain=japscan.lol,important
 poophq.com,veev.to,doods.to##+js(nowoif)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /vast.php?)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, adsbygoogle, length:35000-55000)
 poophq.com,veev.to,doods.to##+js(no-xhr-if, /click\.com|preroll|native_render\.js|acscdn/, length:10001)
 poophq.com,veev.to,doods.to##+js(nostif, )]();}, 500)
 !#if cap_html_filtering
-||static.veevcdn.co/assets/videoplayer/$script,3p,replace=/return new Promise\(function\(.{100,200}adscoreLibLoader.*?\}\)\[/[/,domain=poophq.com|veev.to|doods.to
+||static.veevcdn.co/assets/videoplayer/$script,3p,replace=/return new Promise\(function\(.{50,250}(window\[a8\]|AdscoreInit|\'sub_id\').*?\}\)\[/[/,domain=poophq.com|veev.to|doods.to
 /ad-provider.js$xhr,3p,important,domain=poophq.com|veev.to|doods.to
 !#else
 !#if ext_ubol
@@ -112,7 +115,7 @@ poophq.com,veev.to,doods.to##+js(no-xhr-if, 162.252.214.4, true)
 /ad-provider.js$xhr,3p,important,domain=poophq.com|veev.to|doods.to
 ||adsco.re^$script,redirect=none:5,domain=poophq.com|veev.to|doods.to
 poophq.com,veev.to,doods.to##+js(nostif, /^\s*function\s*\(\s*\)\s*{\s*[a-z]{1\,2}\s*\(.{1\,10}$/)
-poophq.com,veev.to,doods.to##+js(nostif, /('|`|")\s*\+.{10\,100}('|`|")\s*\+|\=\'\'\,|jwvv|'ndlers'|\]\, ecde|(`|'|")\s*\+\s*(`|'|")|t\=\"tim\"/)
+poophq.com,veev.to,doods.to##+js(nostif, /('|`|")\s*\+.{10\,100}('|`|")\s*\+|kzwvv|t=\'tim\'|tzrghndky|join\(\'\'\)|kcde|[a-z]{1\,2}\s*\[\s*\[|('|`|")\s*\,\s*('|`|")/)
 poophq.com,veev.to,doods.to##+js(nostif, /^\s*function.{100\,120}$/)
 !#endif
 !#endif
@@ -165,28 +168,22 @@ $frame,3p,domain=filemoon.*|8rm3l0i9.fun|iqksisgw.xyz|u6lyxl0w.skin|l1afav.net,r
 dogdrip.net##html[lang="ko"] [id^="img_"][style]:has(iframe[frameborder="0"][style]):style(clip-path: circle(0) !important;)
 infinityfree.com##html[lang][dir="ltr"] [id^="img_"][style]:has(iframe[frameborder="0"][style]):style(clip-path: circle(0) !important;)
 smsonline.cloud##html[data-theme][lang] [id^="img_"][style]:has(iframe[frameborder="0"][style]):style(clip-path: circle(0) !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://07c225f3.online/contents/"] img:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://content-loader.com/contents/"] img:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://css-load.com/contents/"] img:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://html-load.com/contents/"] img:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://html-load.com/contents/"] video:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##a[href^="https://img-load.com/contents/"] img:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##div[id^="img_"] > div[id^="img_"][style="margin: 0px; padding: 0px; display: block; position: fixed; left: 0px; bottom: 0px; width: 100%; z-index: 2147483647; transition: 0.3s ease-in-out;"]:style(opacity: 0 !important; height: 1px !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##div[id^="img_"][style^="margin: 0px; padding: 0px; display: block; position: fixed;"]:style(height: 0 !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##body > div[class^="img_"][style="display:inline"]:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud,*##div[id^="img_"][style^="margin:0;padding:0;display:block;position:fixed;"]:style(visibility: hidden !important;)
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud##div[id^="img_"][style^="transform: scale(calc(1."][style$="transform-origin: center top;"]
-~dogdrip.net,~infinityfree.com,~slashdot.org,~smsonline.cloud##div[id^="img_"][style^="position: fixed; bottom: 0"][style*="width: 100%; z-index:2147483647;"]
-07c225f3.online,content-loader.com,css-load.com,html-load.com,img-load.com##body:not(:has(> [id^="img_"][class^="img_"][width]:only-child)):style(filter: opacity(0) !important; pointer-events: none !important;)
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##html[class^="img_"][amp4ads=""][i-amphtml-layout=""][i-amphtml-no-boilerplate=""][amp-version="2502032353000"]
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://07c225f3.online/contents/"]:not([href*="/-1/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://content-loader.com/contents/"]:not([href*="/-1/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://css-load.com/contents/"]:not([href*="/-1/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://html-load.com/contents/"]:not([href*="/-1/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://img-load.com/contents/"]:not([href*="/-1/"])
+*$domain=07c225f3.online|content-loader.com|css-load.com|html-load.com|img-load.com
+@@/-1/*$domain=07c225f3.online|content-loader.com|css-load.com|html-load.com|img-load.com
 /^https:\/\/www\.[0-9a-f]{4,8}(?:-(?:\d{4}-){3}[0-9a-f]{12})?\.(?:live|site|xyz)\/script\/[-.0-9A-Za-z]+\.[-A-Za-z]{2,30}\.js$/$script,3p,match-case,to=live|site|xyz,header=x-length
-dogdrip.net,infinityfree.com,slashdot.org,smsonline.cloud##+js(no-fetch-if, -load.com/script/, length:101)
-dogdrip.net,infinityfree.com,slashdot.org,smsonline.cloud##+js(nostif, )](this\,..., 3000-6000)
-slashdot.org##+js(aeld, , )](this\,...)
+dogdrip.net,infinityfree.com,smsonline.cloud##+js(no-fetch-if, -load.com/script/, length:101)
+dogdrip.net,infinityfree.com,smsonline.cloud##+js(nostif, )](this\,..., 3000-6000)
 -load.com/script/$xhr,domain=smsonline.cloud
 smsonline.cloud##+js(nostif, (new Error(, 3000-6000)
 smsonline.cloud##aside[class^="css-"]:has(> p:has-text(Advertisement) + ins.adsbygoogle)
-bing.com##+js(rpnt, script, '/(\(function\([a-z]\,[a-z]\)\{onload)/', '(()=>{const e={apply:(e,t,l)=>(l[0].includes("img.rms_img")&&(t.style.display="none"),Reflect.apply(e,t,l))};HTMLLIElement.prototype.querySelector=new Proxy(HTMLLIElement.prototype.querySelector,e)})();$1')
+bing.com##+js(rpnt, script, '/(\(function\([a-z]\,[a-z]\)\{onload)/', '(()=>{const e={apply:(e,t,l)=>(l[0].includes(".wr_fav img")&&(t.style.display="none"),Reflect.apply(e,t,l))};HTMLLIElement.prototype.querySelectorAll=new Proxy(HTMLLIElement.prototype.querySelectorAll,e)})();$1')
+bing.com##+js(no-xhr-if, /fd/ls/lsp.aspx)
 bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 bg-gledai.*,gledaitv.*##+js(no-fetch-if, method:HEAD)
 ||fujoho.jp/index.php$frame,3p,badfilter
