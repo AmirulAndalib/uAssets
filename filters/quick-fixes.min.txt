@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Quick fixes
 ! Expires: 12 hours
-! Last modified: Sat, 15 Mar 2025 08:49:24 +0000
+! Last modified: Sat, 15 Mar 2025 14:49:25 +0000
 ! Diff-Path: %diffpath%#ublock-quick-fixes
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -91,12 +91,11 @@ poophq.com,veev.to,doods.to##+js(nosiif, ![];}[_0x , 4000)
 ||adsco.re^$xhr,important,domain=poophq.com|veev.to|doods.to
 poophq.com,veev.to,doods.to##+js(no-xhr-if, 162.252.214.4, true)
 !#else
-/dl?op=aa&cmd=ga&_a=$xhr,1p,important,domain=poophq.com|veev.to|doods.to
+/dl?op=player_api&cmd=*adb=$xhr,1p,important,domain=poophq.com|veev.to|doods.to
 /ad-provider.js$xhr,3p,important,domain=poophq.com|veev.to|doods.to
 ||adsco.re^$script,redirect=none:5,domain=poophq.com|veev.to|doods.to
 poophq.com,veev.to,doods.to##+js(nostif, /^\s*function\s*\(\s*\)\s*{\s*[a-zA-Z]{1\,2}\s*\(.{1\,10}$/)
-poophq.com,veev.to,doods.to##+js(nostif, /('|`|")\s*\+.{10\,100}('|`|")\s*\+|[a-z]{1\,2}\s*\[\s*\[|('|`|")\s*\,\s*('|`|")|function\s*\(\s*\)\s*\{\s*function\s*_0|timeout|0x18|'\s*e3\s*'|"\s*e3\s*"|w\=f\;u\=|\'\,b\[w\(/)
-poophq.com,veev.to,doods.to##+js(nostif, /^\s*function.{50\,70}$/)
+poophq.com,veev.to,doods.to##+js(nostif, /('|`|")\s*\+.{10\,100}('|`|")\s*\+|[a-z]{1\,2}\s*\[\s*\[|('|`|")\s*\,\s*('|`|")|function\s*\(\s*\)\s*\{\s*function\s*_0|timeout|atob|dGltZW91dA|GFuZGxlcnM|b250aW1lb3V|ZTM=|triggerHandlers|justavartoannoy|\(\s*\:\s*\"\s*\;/)
 !#endif
 !#endif
 *$script,3p,domain=poophq.com|veev.to|doods.to,redirect-rule=noopjs
@@ -154,6 +153,7 @@ smsonline.cloud##html[data-theme][lang] [id^="img_"][style]:has(iframe[framebord
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://css-load.com/contents/"]:not([href*="/-1/"])
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://html-load.com/contents/"]:not([href*="/-1/"])
 ~dogdrip.net,~infinityfree.com,~smsonline.cloud##a[href^="https://img-load.com/contents/"]:not([href*="/-1/"])
+~dogdrip.net,~infinityfree.com,~smsonline.cloud##div[id^="img_"][style^="transform: scale(calc"][style$="transform-origin: left top;"]
 *$domain=07c225f3.online|content-loader.com|css-load.com|html-load.com|img-load.com
 @@/-1/*$domain=07c225f3.online|content-loader.com|css-load.com|html-load.com|img-load.com
 /^https:\/\/www\.[0-9a-f]{4,8}(?:-(?:\d{4}-){3}[0-9a-f]{12})?\.(?:live|site|xyz)\/script\/[-.0-9A-Za-z]+\.[-A-Za-z]{2,30}\.js$/$script,3p,match-case,to=live|site|xyz,header=x-length
