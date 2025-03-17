@@ -1,6 +1,6 @@
 ! Title: uBlock filters – Badware risks
 ! Expires: 5 days
-! Last modified: Sun, 16 Mar 2025 08:49:23 +0000
+! Last modified: Mon, 17 Mar 2025 14:49:49 +0000
 ! Diff-Path: %diffpath%#ublock-badware
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -2447,6 +2447,8 @@ torrdroidforpc.com##[href^="http://slugmefilehos.xyz/"]
 ||windows.net/js/customone.js
 ||windows.net/js/customtwo.js
 ||windows.net/media/apked.mp4
+.online/js/esc.js|$script,1p
+.online/js/flscn.js|$script,1p
 ||japanonlinebroadcast.live^$all
 ||crackedpc.org^$all
 ||cracksway.com^$all
@@ -4540,6 +4542,7 @@ uploadfox.net###ad-gs-05
 ||evri.*.xyz^$doc,to=xyz|~evri.com
 ||sharedrop.io^$all
 ||snapdrop.net^$all
+||snap-drop.net^$all
 ||deep-whitelist.com^$all
 ||deepseek-aiassistant.com^$all,to=~deepseek.com
 ||usadeepseek.com^$all,to=~deepseek.com
