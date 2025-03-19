@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Tue, 18 Mar 2025 20:49:27 +0000
+! Last modified: Wed, 19 Mar 2025 02:49:32 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -21797,9 +21797,7 @@ govtech.com##+js(trusted-set-cookie, adTakeOver, seen)
 govtech.com##body[data-billboard="true"]:remove-attr(data-billboard)
 govtech.com##.Enhancement:has(.GoogleDfpAd)
 ||pubfuture-ad.com^$script,3p,redirect=noopjs,domain=faqwiki.us
-faqwiki.us##+js(nostif, EzoIvent)
 faqwiki.us##+js(aopr, antiAdBlockerHandler)
-faqwiki.us##+js(nostif, adsVisible)
 fdownloader.net##+js(rmnt, script, showAd)
 ||fussballtransfers.com^$script,1p,redirect-rule=noopjs
 anime7.download##+js(aopw, app_advert)
@@ -24117,7 +24115,7 @@ forgee.xyz,gamehub.cam###clickme
 videograbber.cc##+js(rmnt, script, popundersPerIP)
 poophd.video-src.com##+js(no-fetch-if, method:GET)
 ||hb.vntsm.com/*/live/$script,domain=skill4ltu.eu,redirect=noopjs
-skill4ltu.eu##+js(nostif, , 1000)
+skill4ltu.eu##+js(aost, setTimeout, onload)
 skill4ltu.eu##div[id^="top-banner"]
 edgedeliverynetwork.com##+js(nowoif, _blank)
 hwbusters.com##+js(rmnt, script, adbl)
