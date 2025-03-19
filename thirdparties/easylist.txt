@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: EasyList
 ! Expires: 6 days (update frequency)
-! Last modified: Wed, 19 Mar 2025 02:49:32 +0000
+! Last modified: Wed, 19 Mar 2025 08:49:25 +0000
 ! Diff-Path: %diffpath%#easylist
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -52335,6 +52335,7 @@ asgg.php$domain=ghostbin.me|paste.fo
 ||lifehack.org/Tm73FWA1STxF.js
 ||linkedin.com/tscp-serving/
 ||linkhub.icu/vendors/h.js
+||links.duckduckgo.com/d.js?q=
 ||linkshare.pro/img/btc.gif
 ||linuxtracker.org/images/dw.png
 ||livescore.az/images/banners
@@ -55091,6 +55092,7 @@ inverness-courier.co.uk,johnogroat-journal.co.uk,stamfordmercury.co.uk##.MPU
 abergavennychronicle.com,tenby-today.co.uk##.MPUstyled__MPUWrapper-sc-1cdmm4p-0
 engadget.com##.Mih\(90px\)
 medievalists.net##.Mnet_TopLeft_970x250
+wired.com##.MobileProductCardOuter-kMqsSf
 accuradio.com##.MobileSquareAd__Container-sc-1p4cjdt-0
 metservice.com##.Mrec-min-height
 boardgameoracle.com##.MuiContainer-root > .jss232
