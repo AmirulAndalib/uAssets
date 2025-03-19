@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Tue, 18 Mar 2025 20:49:27 +0000
+! Last modified: Wed, 19 Mar 2025 14:49:43 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -8314,6 +8314,7 @@ omni.soundestlink.com$image
 ||virgoplato.com^
 ||virtualvincent.com^
 ||vivaciousveil.com^
+||vividmeadow.com^
 ||vividplume.com^
 ||voicelessvein.com^
 ||voicevegetable.com^
@@ -12056,6 +12057,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||x.babe.today^
 ||x.disq.us^
 ||x.weather.com^
+||xeno.media-lab.ai/events
 ||xp2023-pix.s3.amazonaws.com^
 ||yahoo.co.jp/js/s_retargeting.js
 ||yahoo.com/sync/casale/
@@ -14059,6 +14061,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||firebaselogging.googleapis.com^
 ||fishki.net/counter/
 ||fiverr.com/api/v1/activities
+||flagr.worldstarhiphop.com/api/v1/evaluation
 ||flaticon.com/_ga?
 ||flipboard.com/api/v2/reporting
 ||flipboard.com/usage?
