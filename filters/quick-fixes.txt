@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Thu, 20 Mar 2025 14:49:40 +0000
+! Last modified: Fri, 21 Mar 2025 08:49:26 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -69,7 +69,9 @@ web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/null,"cat
 !#endif
 ! https://github.com/uBlockOrigin/uAssets/issues/3367#issuecomment-2644501087
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeed.nodes.0.advertisements)
+web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeed.nodes.0.adverts)
 web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.sideFeed.nodes.[].advertisements, , propsToMatch, /api/graphql)
+web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.sideFeed.nodes.[].adverts, , propsToMatch, /api/graphql)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24745 - https://voe.sx/e/2z9smej3tebe
 ! VOE sites
@@ -208,7 +210,7 @@ smsonline.cloud##aside[class^="css-"]:has(> p:has-text(Advertisement) + ins.adsb
 ! https://github.com/uBlockOrigin/uAssets/pull/26342
 ! https://github.com/uBlockOrigin/uAssets/issues/26393
 ! https://github.com/uBlockOrigin/uAssets/issues/26623
-bing.com##+js(rpnt, script, '/(\(function\([a-z]\,[a-z]\)\{onload)/', '(()=>{const e={apply:(e,l,t)=>("a"===t[0]&&"b_algo"===l.classList.value&&(l.style.display="none"),Reflect.apply(e,l,t))};HTMLLIElement.prototype.getElementsByTagName=new Proxy(HTMLLIElement.prototype.getElementsByTagName,e)})();$1')
+bing.com##+js(rpnt, script, 'sa_loader=', '(()=>{const e={apply:(e,l,o)=>(console.log(l,o[0]),"a"===o[0]&&"b_algo"===l.classList.value&&setTimeout((()=>{l.style.display="none"}),100),Reflect.apply(e,l,o))};HTMLLIElement.prototype.querySelectorAll=new Proxy(HTMLLIElement.prototype.querySelectorAll,e)})();sa_loader=')
 bing.com##+js(no-xhr-if, /fd/ls/lsp.aspx)
 bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 
