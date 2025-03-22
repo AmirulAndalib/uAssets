@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Sat, 22 Mar 2025 02:49:26 +0000
+! Last modified: Sat, 22 Mar 2025 08:49:24 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -22704,7 +22704,6 @@ androidpolice.com,babygaga.com,backyardboss.net,carbuzz.com,cbr.com,collider.com
 @@||video.adsninja.ca/*.mp4^$3p,media
 ! Miscellaneous
 ||adsninja.ca^$removeparam=url
-||adforge.io^
 kaas.ro##+js(aopr, aclib)
 kaas.ro##+js(aopr, Adcash)
 vidco.pro##+js(rmnt, script, adserverDomain)
@@ -24089,3 +24088,5 @@ bigconv.com##+js(nowoif)
 1001tracklists.com##+js(spoof-css, div[class="nav tabTop"] + div > div:first-child > div:first-child > a:has(> img[src*="/"][src*="_"][alt])\, #head + div[id] > div:last-child > div > a:has(> img[src*="/"][src*="_"][alt]), display, block)
 breznikar.com##+js(nostif, modal)
 sport.es##+js(no-fetch-if, mode:no-cors)
+||imasdk.googleapis.com/js/sdkloader/ima3.js^$redirect=google-ima.js,domain=isekaitube.cfd
+zilla-xr.xyz##+js(nowoif)
