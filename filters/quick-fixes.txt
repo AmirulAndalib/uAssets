@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Mon, 24 Mar 2025 14:49:38 +0000
+! Last modified: Tue, 25 Mar 2025 08:49:26 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -59,7 +59,7 @@ www.youtube.com##+js(trusted-prevent-dom-bypass, Node.prototype.appendChild, Req
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeed.nodes.0.{-}.nodes.0.rhc_ad)
 web.facebook.com,www.facebook.com##+js(json-prune-xhr-response, data.viewer.sideFeed.nodes.0.{-}.nodes.0.rhc_ad, , propsToMatch, /api/graphql)
 web.facebook.com,www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.{-}.comet_sections.content.story.*.ad_id)
-web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/null,"node":\{"__typename"[^\n]{0,170}__typename":"SponsoredData"[^\n]+?,"__isFeedEdge"/g', 'null,"__isFeedEdge"', /api/graphql)
+web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/null,[^\n]{0,170}"node":\{"__typename"[^\n]{0,170}__typename":"SponsoredData"[^\n]+?,"__isFeedEdge"/g', 'null,"__isFeedEdge"', /api/graphql)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24745 - https://voe.sx/e/2z9smej3tebe
 ! VOE sites
@@ -202,7 +202,7 @@ smsonline.cloud##aside[class^="css-"]:has(> p:has-text(Advertisement) + ins.adsb
 ! https://github.com/uBlockOrigin/uAssets/pull/26342
 ! https://github.com/uBlockOrigin/uAssets/issues/26393
 ! https://github.com/uBlockOrigin/uAssets/issues/26623
-bing.com##+js(rpnt, script, 'sa_loader=', '(()=>{const e={apply:(e,t,o)=>("a"===o?.[0]&&"b_algo"===t?.classList?.value&&setTimeout((()=>{t.style.display="none"}),100),Reflect.apply(e,t,o))};HTMLLIElement.prototype.querySelectorAll=new Proxy(HTMLLIElement.prototype.querySelectorAll,e);const t={apply:(e,t,o)=>{if("b_algo"!==o?.[0]?.classList?.value)return Reflect.apply(e,t,o)}};MutationObserver.prototype.observe=new Proxy(MutationObserver.prototype.observe,t)})();sa_loader=')
+bing.com##+js(rpnt, script, _w.keyMap=, '(()=>{const e={apply:(e,t,n)=>{let o=Reflect.apply(e,t,n);return o instanceof HTMLIFrameElement&&!o.src&&o.contentWindow&&(o.contentWindow.document.body.getElementsByTagName=window.document.body.getElementsByTagName,o.contentWindow.MutationObserver=void 0),o}};HTMLBodyElement.prototype.appendChild=new Proxy(HTMLBodyElement.prototype.appendChild,e);const t={apply:(e,t,n)=>(t instanceof HTMLLIElement&&"b_algo"===t?.classList?.value&&"a"===n?.[0]&&setTimeout((()=>{t.style.display="none"}),100),Reflect.apply(e,t,n))};HTMLBodyElement.prototype.getElementsByTagName=new Proxy(HTMLBodyElement.prototype.getElementsByTagName,t)})();_w.keyMap=')
 bing.com##+js(no-xhr-if, /fd/ls/lsp.aspx)
 bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 
