@@ -1,6 +1,6 @@
 ! Title: uBlock filters
 ! Expires: 5 days
-! Last modified: Wed, 26 Mar 2025 08:49:26 +0000
+! Last modified: Wed, 26 Mar 2025 14:49:30 +0000
 ! Diff-Path: %diffpath%#ublock-filters
 ! Diff-Expires: 317 minutes
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -20362,12 +20362,14 @@ cimanow.cc##+js(aopr, navigator.brave)
 cimanow.cc###ad1
 cimanow.cc##section[aria-label="details"] a[id][target="_blank"]
 cimanow.online##+js(ra, href, [target="_blank"], stay)
-cimanow.cc,cimanow.online##+js(acs, document.createElement, MutationObserver)
+cimanow.cc,freex2line.online##+js(acs, document.createElement, globalThis)
 freex2line.online##+js(overlay-buster)
 ||freex2line.online/*/?redirect$doc,urlskip=?redirect -base64
 ||flashtalking.com^$image,redirect=2x2.png,domain=cimanow.cc|cimanow.online
 cimanow.cc##main > a[id][target="_blank"]
 freex2line.online##body >a[id][href][target^="_blank"]
+||freex2line.online/dwcn/Assets/js/jquery.countdown360.min.js$script,1p
+freex2line.online##.downloadbtn:style(display: block !important;)
 qiwi.gg##+js(aeld, , sessionStorage)
 qiwi.gg##+js(nowoif, , 10)
 qiwi.gg##+js(acs, globalThis, break;case)
@@ -24029,3 +24031,8 @@ anime-world.co>>##+js(nowoif)
 ##.gliaplayer-container
 ||player.gliacloud.com^$3p
 ||gaypornhot.com/wp-content/uploads/ountsvf.js
+! sat-sharing.com detection
+sat-sharing.com##+js(rmnt, script, navigator.userAgent)
+fastt.gg###startDownload
+fastt.gg##+js(nowoif, _blank)
+qrcodemonkey.net##+js(nostif, #ad_blocker_detector)
