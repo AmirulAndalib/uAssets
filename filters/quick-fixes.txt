@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Sat, 29 Mar 2025 02:49:22 +0000
+! Last modified: Sat, 29 Mar 2025 14:49:40 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -64,11 +64,11 @@ web.facebook.com,www.facebook.com##+js(trusted-replace-xhr-response, '/null,[^\n
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24745 - https://voe.sx/e/2z9smej3tebe
 ! VOE sites
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=heatherwholeinvolve.com,important
-heatherwholeinvolve.com##+js(nowoif)
-heatherwholeinvolve.com##+js(set, console.clear, undefined)
-heatherwholeinvolve.com##+js(acs, globalThis, break;case)
-heatherwholeinvolve.com##+js(acs, WebAssembly, atob)
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=kristiesoundsimply.com,important
+kristiesoundsimply.com##+js(nowoif)
+kristiesoundsimply.com##+js(set, console.clear, undefined)
+kristiesoundsimply.com##+js(acs, globalThis, break;case)
+kristiesoundsimply.com##+js(acs, WebAssembly, atob)
 
 ! next-episode .net
 !next-episode.net##+js(rmnt, script, '/[\s\S]{0,}head[\s\S]{1900,}/')
@@ -188,7 +188,7 @@ smsonline.cloud##aside[class^="css-"]:has(> p:has-text(Advertisement) + ins.adsb
 ! https://github.com/uBlockOrigin/uAssets/pull/26342
 ! https://github.com/uBlockOrigin/uAssets/issues/26393
 ! https://github.com/uBlockOrigin/uAssets/issues/26623
-bing.com##+js(rpnt, script, _w.keyMap=, '(()=>{const e={apply:(e,l,o)=>{const t=Reflect.apply(e,l,o),n=o[0];if(n.includes(":before{")&&!n.includes("b_lineclamp")){const e=n.split(":before")[0];let l=document.querySelector(`ol#b_results>li[class="b_algo"]:has(>div[class="b_caption"]>${e})`);l instanceof HTMLLIElement&&(l.style.display="none")}return t}};document.createTextNode=new Proxy(document.createTextNode,e)})();_w.keyMap=')
+bing.com##+js(rpnt, script, _w.keyMap=, '(()=>{const e={apply:(e,t,n)=>{let o=Reflect.apply(e,t,n);return o instanceof HTMLIFrameElement&&!o.src&&o.contentWindow&&(o.contentWindow.document.body.getElementsByTagName=window.document.body.getElementsByTagName,o.contentWindow.MutationObserver=void 0),o}};HTMLBodyElement.prototype.appendChild=new Proxy(HTMLBodyElement.prototype.appendChild,e);const t={apply:(e,t,n)=>(t instanceof HTMLLIElement&&"b_algo"===t?.classList?.value&&"a"===n?.[0]&&setTimeout((()=>{t.style.display="none"}),100),Reflect.apply(e,t,n))};HTMLBodyElement.prototype.getElementsByTagName=new Proxy(HTMLBodyElement.prototype.getElementsByTagName,t)})();_w.keyMap=')
 bing.com##+js(no-xhr-if, /fd/ls/lsp.aspx)
 bing.com##ol#b_results > li:has(> :is(.b_tpcn, .b_title, h2) a[href^="https://www.bing.com/aclk?"])
 
@@ -203,24 +203,12 @@ bg-gledai.*,gledaitv.*##+js(no-fetch-if, method:HEAD)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=video-ac.com
 @@||safeframe.googlesyndication.com/safeframe/$domain=video-ac.com
 
-! https://github.com/uBlockOrigin/uBlock-issues/issues/3576 - until 1.63 available on Firefox
-!#if env_firefox
-/.*/$permissions=identity-credentials-get=(),document,badfilter
-!#endif
-
 ! https://www.reddit.com/r/uBlockOrigin/comments/1jef4qb/having_adblock_issues_with_faqwikius/
 faqwiki.us##+js(nostif, .offsetHeight>0)
 faqwiki.us##+js(rmnt, script, /adblock/i)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/17998#issuecomment-2735133418
-||links.duckduckgo.com/d.js?q=$badfilter
 duckduckgo.com##ol.react-results--sidebar > li:has(.badge--ad-wrap)
-
-! https://www.reddit.com/r/uBlockOrigin/comments/1jghjku/missing_embedded_gmail_images/
-&mi_ecmp=$image,badfilter
-
-! https://github.com/uBlockOrigin/uAssets/issues/27689
-*$script,redirect-rule=prebid-ads.js,badfilter
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1ji7r4o/mirurotv_displays_a_totally_black_page/
 @@||miruro.*/assets/components-shared-popunder-$script,1p
@@ -234,3 +222,56 @@ _adv.js$badfilter
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201894
 ||luluvdo.com^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/27751
+@@||tix.axs.com^$removeparam=irclickid
+
+! START: Popular revolving adservers
+
+! Adsterra
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p,redirect=noop.js,to=com
+! https://github.com/easylist/easylist/issues/6476
+! https://github.com/uBlockOrigin/uBlock-discussions/discussions/790#discussioncomment-10759144
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$script,3p,match-case,redirect=noop.js
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$frame,xhr,popup,3p,match-case,to=com
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$frame,xhr,popup,3p,match-case
+! https://github.com/easylist/easylist/issues/6471
+/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
+/^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$script,xhr,3p
+! https://github.com/easylist/easylist/pull/9330
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,3p,to=com
+! https://github.com/uBlockOrigin/uAssets/issues/26815 - superembed server
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\/\d{6}\b/$xhr,3p,match-case,to=com
+! globalThis
+/^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$xhr,3p
+/^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$xhr,3p
+! propeller new variants
+/^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$frame,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.top\/(?!api|available|team)[a-z]{4,}\.json$/$xhr,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.top\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$css,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.top\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$frame,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.xyz\/(?!api|available|team)[a-z]{4,}\.json$/$xhr,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.xyz\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$css,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.xyz\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,3p,match-case
+.top/event|$xhr,3p
+.xyz/event|$xhr,3p
+! hilltopads
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xhr,3p,match-case,to=co|com|info|pro|xyz
+
+! https://github.com/uBlockOrigin/uAssets/issues/27526
+! https://github.com/uBlockOrigin/uAssets/issues/27636
+! https://github.com/uBlockOrigin/uAssets/issues/27679
+! https://github.com/uBlockOrigin/uAssets/issues/16244#issuecomment-2746349805
+! https://github.com/uBlockOrigin/uAssets/issues/24812#issuecomment-2762608201
+/\/[0-9a-f]{32}\.js\b/$script,3p,redirect=noopjs,to=com,from=141jav.com|2embed.cc|aniworld.to|bstsrs.in|fsportshd.net|hianime.to|moviemaniak.com|omegascans.org|player4u.xyz|s.to|torrentgalaxy-official.com
+||fedbuoy.com^
+||charmshoist.com^
+||squirtpresented.com^
+||todayswigcontagious.com^
+
+! END: Popular revolving adservers
+
+! https://github.com/uBlockOrigin/uAssets/issues/27782
+! https://github.com/uBlockOrigin/uAssets/issues/15918#issuecomment-2763252637
+de,~gov.de##+js(nostif, /^function\(\)\{[a-z]\.call\(null\)\,[a-z]\[n\]&&[A-Za-z]+\([a-z]\,[a-z]\)\}$/, 10)
