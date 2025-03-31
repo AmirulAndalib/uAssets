@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Fri, 28 Mar 2025 02:49:26 +0000
+! Last modified: Mon, 31 Mar 2025 02:49:23 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3301,6 +3301,8 @@ niagarafallsreview.ca,stcatharinesstandard.ca,therecord.com,thespec.com,thestar.
 ! mutualart.com login wall 
 ||mutualart.com/Ajax/AjaxLoader/Popup
 mutualart.com##.modal-backdrop
+! chatgpt.com login popup
+chatgpt.com##+js(set-session-storage-item, oai/apps/noAuthHasDismissedSoftRateLimitModal, true)
 ! hartfordbusiness.com login wall
 hartfordbusiness.com##.paywallMsgTypeTwo
 hartfordbusiness.com##.payWallOverlay
