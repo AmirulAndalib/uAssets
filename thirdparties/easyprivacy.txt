@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
 ! Title: EasyPrivacy
 ! Expires: 6 days (update frequency)
-! Last modified: Wed, 02 Apr 2025 02:49:22 +0000
+! Last modified: Wed, 02 Apr 2025 14:49:30 +0000
 ! Diff-Path: %diffpath%#easyprivacy
 ! Diff-Expires: 317 minutes
 ! *** easylist:template_header.txt ***
@@ -669,7 +669,7 @@
 /core-tracking.js
 /coretracking.php?
 /count.cfm?
-/count.do?
+/count.do?$domain=~its.busan.go.kr
 /count.exe?
 /count.fcg?
 /count.fcgi?
@@ -10021,7 +10021,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||clevertap-prod.com^$third-party
 ||click.appinthestore.com^
 ||click360v2-ingest.azurewebsites.net^
-||click4assistance.co.uk/PageHit/
+||click4assistance.co.uk/HeartBeat
 ||clickdimensions.com/ts.js
 ||clickiocdn.com/clickiotag_log/
 ||clickiocdn.com/consent/log/

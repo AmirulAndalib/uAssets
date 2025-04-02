@@ -1,5 +1,5 @@
 ! Title: uBlock₀ filters – Quick fixes
-! Last modified: Tue, 01 Apr 2025 20:49:24 +0000
+! Last modified: Wed, 02 Apr 2025 14:49:30 +0000
 ! Expires: 8 hours
 ! Description: Immediate, temporary filters to fix websites
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -86,9 +86,8 @@ japscan.lol#@#div.container > [href]
 ! END
 ||japscan.lol/zjs/$script,replace=/function GoodDay\(\)\{.+?\}\}\}//
 @@*$image,xhr,script,domain=japscan.lol
-*$script,xhr,3p,denyallow=aozoiekopoaka.shop|base64easy.com|base64hub.com|challenges.cloudflare.com|cdn.jsdelivr.net|cdnjs.cloudflare.com|code.jquery.com|curltophp.com|ebooksmangaia.com|faireundon.vip|frjelsoieapoas.shop|hakoroubita.shop|mamamiaroubita.shop|morinavotarius.top|regexgenius.com|reoiamlsa.shop|smaltourinto.shop|tourpowouro.shop,domain=japscan.lol,important
-japscan.lol##.KNOaW:remove()
-japscan.lol###ULQZQP:remove()
+*$script,xhr,3p,denyallow=acscdn.com|aozoiekopoaka.shop|base64easy.com|base64hub.com|challenges.cloudflare.com|cdn.jsdelivr.net|cdnjs.cloudflare.com|code.jquery.com|curltophp.com|ebooksmangaia.com|faireundon.vip|frjelsoieapoas.shop|hakoroubita.shop|mamamiaroubita.shop|morinavotarius.top|regexgenius.com|reoiamlsa.shop|smaltourinto.shop|tourpowouro.shop,domain=japscan.lol,important
+||acscdn.com/script/$script,3p,important,domain=japscan.lol
 japscan.lol#@#+js(rmnt, script, /^\s{5}/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/21064
@@ -221,5 +220,4 @@ _adv.js$badfilter
 @@||tix.axs.com^$removeparam=irclickid
 
 ! https://github.com/uBlockOrigin/uAssets/issues/26441
-cool-web.de,gps-cache.de,web-spiele.de,fun-seiten.de,photo-alben.de,wetter-vorhersage.de,coolsoftware.de,kryptografie.de,cool--web-de.translate.goog,gps--cache-de.translate.goog,web--spiele-de.translate.goog,fun--seiten-de.translate.goog,photo--alben-de.translate.goog,wetter--vorhersage-de.translate.goog,coolsoftware-de.translate.goog,kryptografie-de.translate.goog##+js(nostif, IKDESW)
-cool-web.de,gps-cache.de,web-spiele.de,fun-seiten.de,photo-alben.de,wetter-vorhersage.de,coolsoftware.de,kryptografie.de,cool--web-de.translate.goog,gps--cache-de.translate.goog,web--spiele-de.translate.goog,fun--seiten-de.translate.goog,photo--alben-de.translate.goog,wetter--vorhersage-de.translate.goog,coolsoftware-de.translate.goog,kryptografie-de.translate.goog##+js(set, CHRAN, 1)
+cool-web.de,gps-cache.de,web-spiele.de,fun-seiten.de,photo-alben.de,wetter-vorhersage.de,coolsoftware.de,kryptografie.de,cool--web-de.translate.goog,gps--cache-de.translate.goog,web--spiele-de.translate.goog,fun--seiten-de.translate.goog,photo--alben-de.translate.goog,wetter--vorhersage-de.translate.goog,coolsoftware-de.translate.goog,kryptografie-de.translate.goog##+js(nostif, , 10000)
