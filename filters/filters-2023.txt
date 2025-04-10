@@ -1,5 +1,5 @@
 ! Title: uBlock filters (2023)
-! Last modified: Thu, 10 Apr 2025 02:49:24 +0000
+! Last modified: Thu, 10 Apr 2025 08:49:46 +0000
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -909,7 +909,7 @@ asianmilfhub.com###custom_html-2
 ! deblocker sites
 hayatarehber.com##+js(acs, eval, replace)
 allcelebspics.com,alttyab.net,an1me.*,androjungle.com,arkadmin.fr,azoranov.com,barranquillaestereo.com,brasilsimulatormods.com,cambrevenements.com,cartoonstvonline.com,comparili.net,diaobe.net,filegajah.com,filmestorrent.tv,franceprefecture.fr,freecricket.net,gcpainters.com,germanvibes.org,getmaths.co.uk,gewinnspiele-markt.com,hamzag.com,hannibalfm.net,hornyconfessions.com,ilcamminodiluce.it,joguinhosgratis.com,joziporn.com,justpaste.top,mctechsolutions.in,medibok.se,megafire.net,mirrorpoi.my.id,mockuphunts.com,mortaltech.com,multivideodownloader.com,nauci-engleski.com,nauci-njemacki.com,nekopoi.my.id,nuketree.com,pa1n.xyz,papafoot.*,playertv.net,programsolve.com,radio-deejay.com,ranaaclanhungary.com,rasoi.me,riprendiamocicatania.com,rsrlink.in,seriesperu.com,shmapp.ca,sub2unlocker.com,romviet.com,skillmineopportunities.com,teczpert.com,totalsportek.app,tromcap.com,tv0800.com,tv3monde.com,ustrendynews.com,watchnow.fun,weashare.com,yelitzonpc.com,ymknow.xyz##+js(trusted-suppress-native-method, eval, '"adsBlocked"')
-jipinsoft.com,surfsees.com,truthnews.de##+js(nostif, show)
+jipinsoft.com,truthnews.de##+js(nostif, show)
 smgplaza.com##+js(aost, document.addEventListener, litespeed)
 titbytz.tk##+js(aeld, DOMContentLoaded, adsBlocked)
 ||allcelebspics.com/assets/popunder.js
@@ -4414,10 +4414,9 @@ expertplay.net##+js(acis, ips.controller.register)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/20219
 ! https://www.reddit.com/r/uBlockOrigin/comments/1b6g96i/royal_road_user_ads_arent_blocked/
-! https://www.reddit.com/r/uBlockOrigin/comments/1bfx7k8/how_do_i_allow_user_ads_on_rr/
-royalroad.com##+js(nostif, loadBanners)
+! https://www.reddit.com/r/uBlockOrigin/comments/1bfx7k8/how_do_i_allow_user_ads_on_rr/)
 royalroad.com##.text-center:has(> div[id*="_"] > div > div a[rel$="sponsored"] img)
-royalroad.com##a[href*="a/r?campaign="] img
+! royalroad.com##a[href*="a/r?campaign="] img
 royalroad.com##a[rel$="sponsored"] img
 royalroad.com##.t-center:has(> .bold.uppercase, #Content_Top_Desktop)
 royalroad.com##.portlet:has(> h6)
