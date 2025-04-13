@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: EasyList – Annoyances
-! Last modified: Thu, 10 Apr 2025 14:49:34 +0000
+! Last modified: Sun, 13 Apr 2025 08:49:22 +0000
 ! Expires: 7 days (update frequency)
 ! *** easylist:template_header.txt ***
 !
@@ -3421,6 +3421,7 @@ thscore.mobi###returnTop
 baguette.at###TopBtn
 jobsuche-bw.de###UpToTopButton
 valentins.de###arrow-up
+apollo-news.net###banner-below
 unsertirol24.com###beginn-arrow
 reifenpresse.de###custom_html-2
 mywheels.tv###flyout-recommended-content
